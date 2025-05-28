@@ -1,0 +1,97 @@
+main {
+  display: flex;
+  flex-direction: column;
+}
+p
+{
+  font-family: mullish,Verdana,'Courier New', Courier, monospace;
+  font-size: 1rem;
+  color: #C8C9C8; /* Isaac Steel Grey */
+  /color: inherit;
+}
+h2
+{
+  font-family: all_text, Arial, Geneva, Tahoma, sans-serif;
+  color: #C8C9C8; /* Isaac Steel Grey */
+  text-transform: uppercase;
+  text-align: center;
+}
+div
+{
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  background-color: black;
+}
+main div {
+  height: 90vh;
+}
+/*FONTS*/
+@font-face {
+  font-family: unitology;
+  src: url("../fonts/DeadSpace Unitology.ttf") format('truetype');
+}
+@font-face {
+  font-family: glitch;
+  src: url("../fonts/RubikGlitch-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: crashing;
+  src: url("../fonts/VENOM.ttf") format('truetype');
+}
+@font-face {
+  font-family: panic;
+  src: url(../fonts/Akira\ Expanded\ Demo.otf)
+}
+@font-face {
+  font-family: all_text;
+  src: url(../fonts/Mulish-VariableFont_wght.ttf);
+}
+/*Dialogue*/
+/**p.speech {
+  padding: 10px 2vw;
+  max-width: 80%;
+  margin: auto;
+  background-color: white;
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+}
+p.hammond {
+  border-color: #502821d0;
+  background-color: #502821d0;
+}
+p.kendra {
+  border-color: #c07b35da; /*#C07B35
+  background-color: #c07b35da;
+}
+p.misc {
+  border-color: #7e9e7e85;
+  background-color: #7e9e7e85;
+}
+p.ai {
+}**/
+
+/**HUD**/
+button
+{
+  background-color: inherit;
+  border: 1px solid;
+  border-color: #64B8BC !important;
+  color: #64B8BC;
+}
+button.save_game
+{
+  position: relative;
+  background-color: #000000;
+  width: 40%;
+  margin: 0 30%;
+  bottom: 10vh;
+    a
+    {
+      text-decoration: none;
+      font-size: inherit;
+      color: inherit;
+    }
+}

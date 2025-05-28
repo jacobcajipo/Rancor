@@ -1,0 +1,150 @@
+main div {
+  align-content: center;
+  / border: 1px red solid;
+}
+div.half {
+  height: 30vh;
+
+}
+/*div.full {
+  height: 90vh;*
+}/
+/*Monologue parts*/
+p.mono {
+  padding: 10px 2vw;
+  align-content: center;
+  max-height: 30vh; 
+  / border: 1px yellow solid;
+}
+p.mono.righttitle {
+  height: 100%;
+}
+
+/*Text location*/
+p.righttitle {
+  width: 60%; 
+  float: inline-end; 
+  align-content: center;
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  /background-color: rgba(0, 0, 0, 0.75);
+  margin: 0;
+}
+p.lefttitle {
+  width: 55%; 
+  float: inline-start; 
+  align-content: center;
+  text-align: left;
+  padding: 0 1vw;
+  margin: 0;
+}
+div.suptitle {
+  align-content: start; 
+  justify-content: start;
+  padding-top: 20vh;
+}
+div.subtitle {
+  align-content: end; 
+  padding-bottom: 20vh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+/*Speech Bubbles*/
+p.speech {
+  padding: 10px 2vw;
+  width: fit-content;
+  max-width: 80%;
+  max-height: 30vh;
+  margin: auto;
+  background-color: none;
+  color: white;
+  
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+}
+p.hammond {
+  background-color: #502821d0;
+}
+p.kendra {
+  background-color: #c07b35da; /*#C07B35*/
+}
+p.misc {
+  background-color: #7e9e7e85;
+}
+
+/*parallax and masking*/
+.parallax {
+  background-color: none;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  margin: 0;
+  padding: 0;
+}
+.bottom-mask {
+  mask-image: linear-gradient(black 0%, gray 88%,transparent 100%);
+}
+.top-mask {
+  mask-image: linear-gradient(transparent 0%, gray 13%, black 100%);
+}
+.top-bottom-mask {
+  mask-image: linear-gradient(transparent 0%, gray 13%, black 50% , gray 88%, transparent 100%)
+}
+ 
+/*AWAKE PART*/
+.awake-00 {
+  background-image: url(../img/part_2/1_0.webp);
+}
+.awake-01 {
+  background-image: url(../img/part_2/1_1.webp);
+}
+.awake-02 {
+  background-image: url(../img/part_2/1_2.webp);
+} 
+
+/*RIG FILL PART*/
+.parallax-rig {
+  background-position: left;
+}
+  .no-bar {
+    background-image: url(../img/part_2/2_0.webp);
+  }
+  .one-bar {
+  background-image: url(../img/part_2/2_1.webp);
+  }
+  .two-bar {
+  background-image: url(../img/part_2/2_2.webp);
+  }
+  .three-bar {
+  background-image: url(../img/part_2/2_3.webp);
+  }
+  .four-bar {
+  background-image: url(../img/part_2/2_4.webp);
+  }
+.parallax-rig p.mono{
+  height: 100%;
+  max-height: 100%;
+  width: fit-content;
+  min-width: 30%;
+  max-width: 60%;
+  background-color: rgba(0, 0, 0, 0.75);
+  /mask-image: linear-gradient(transparent 0%, black 50% , transparent 100%);
+}
+
+.parallax-level-1-gear {
+  background-position: center;
+}
+
+  div.angle-one {
+    background-image: url(../img/part_2/3_1.webp);
+  }
+  div.angle-two {
+    background-image: url(../img/part_2/3_2.webp);
+  }
+  div.angle-three {
+    background-image: url(../img/part_2/3_3.webp);
+  }
+

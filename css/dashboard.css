@@ -1,0 +1,62 @@
+/*MAIN*/
+/*COVER ART*/
+main section.cover_art {
+  background-image: none;
+  background-size: cover;
+  height: 30vh;
+  }
+
+  main section.cover_art div {
+  height: 100%; align-content: end;
+  }
+  main section.cover_art div a button {
+  background-color: none; 
+  background-color: red; 
+  color: white;
+  border: none; 
+  width: 30vw; 
+  height: 50px;
+  cursor: pointer;
+  }
+  main section.cover_art div a button:hover {
+  background-color: darkred;
+  }
+/*SUMMARY*/
+main section.summary {
+  padding: 10px 2vw;
+}
+/*PARTS*/
+  main section.parts div {
+  display: block;
+  min-height: 90vh;
+  padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  main section.parts div a {
+    
+  text-decoration: none;
+  color: white;
+  height: 120px;
+  width: 95%;
+  padding-left: 2vw;
+  margin: auto;
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+  }
+  main section.parts div a:hover {
+  background-color: red;
+  border: 0.1px red solid;
+  color:white;
+}
+/*TRAILER*/
+main section.trailer div {
+  height: 90vh;
+}

@@ -1,0 +1,110 @@
+/*common*/
+body  {
+  margin: 3vh auto;
+  padding: 0;
+  width: 80vw;
+  background-color: black;
+  
+  font-family: mullish, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.9rem;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/*FONTS*/
+@font-face {
+  font-family: rancor;
+  src: url(../fonts/Akira\ Expanded\ Demo.otf);
+}
+@font-face {
+  font-family: mullish;
+  src: url(../fonts/Mulish-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: outfit;
+  src: url(../fonts/Outfit-VariableFont_wght.ttf);
+}
+/*BUTTONS*/
+button {
+  min-height: 50px;
+  min-width: 100px;
+  border: none;
+  border: 1px solid red;
+  background-color: inherit;
+
+  font-family: outfit;
+  color: inherit;
+}
+button:hover {
+  background-color: rgba(50, 50, 50, .75);
+  color: white;
+  cursor: pointer;
+}
+
+/*HEADER*/
+header {
+  /   border: 1px solid red;
+  background-color: inherit;
+  color: inherit;
+  height: 50px;
+  padding: 2px;
+  
+  position: sticky;
+  top: 0;
+
+  z-index: 1;
+  }
+
+  header nav ul {
+  background-color: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav ul li a {
+  color: inherit;
+  font-size: inherit;
+}
+
+/*FOOTER*/
+footer {
+  font-size: 0.55em;
+  padding: 2.5px 0;
+  height: 20px;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+   bottom: 0;
+}
+footer div  {
+  width: 100%;
+  padding: 3px 0;
+  text-align: center;
+  background-color: red;
+  color: white;
+  
+  
+}
+
+/*RWD*/
+@media only screen and (max-width: 600px) {
+body 
+{
+  margin: 0;
+  padding: 0 2px;
+  width: 100%;
+}
+p {
+  font-size: 0.9rem;
+}
+}

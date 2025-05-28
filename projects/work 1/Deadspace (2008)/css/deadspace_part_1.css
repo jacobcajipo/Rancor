@@ -1,0 +1,179 @@
+/**images**/
+div.shockpoint  { 
+  background-image: 
+  url(../img/part_1/shockpoint.gif);
+}
+div.floating-hand {
+  background-image: 
+  url(../img/part_1/floating-hand.webp);
+  background-size: fit-content;
+}
+div.deadspace {
+  background-image: 
+  url(../img/part_1/deadspace.webp);
+  background-color: transparent;
+  height: 100vmax;
+  background-size: contain !important;
+}
+div.static  {
+  background-image: 
+  url(../img/part_1/static_2.gif);
+}
+div.nicole_1  {
+  background-image: 
+  url(../img/part_1/nicole_1.webp);
+}
+div.nicole_2  {
+  background-image: 
+  url(../img/part_1/nicole_2.png);
+}
+div.kendra_1  {
+  background-image: 
+  url(../img/part_1/kendra_1.webp);
+}
+div.kendra_3 {
+  background-image: 
+  url(../img/part_1/kendra_3.webp);
+}
+div.asteroids {
+  background-image: 
+  url(../img/part_1/asteroids_1.webp), 
+  url(../img/part_1/asteroids_2.png), 
+  url(../img/part_1/asteroids_3.webp);
+}
+div.aegis7  {
+  background-image: 
+  url(../img/part_1/aegis7.webp);
+}
+div.hammond {
+  background-image: 
+  url(../img/part_1/hammond.webp);
+}
+div.cec {
+  background-image: 
+  url(../img/part_1/cec.webp);
+}
+div.cec_2 {
+  background-image: 
+  url(../img/part_1/cec_2.webp);
+}
+div.ishimura  {
+  background-image: 
+  url(../img/part_1/ishimura.webp);
+}
+div.silence {
+  background-image: 
+  url(../img/part_1/silence.png);
+}
+div.crash_impact  {
+  background-image: 
+  url(../img/part_1/crash.webp);
+}
+div.crash_chen  {
+  background-image: 
+  url(../img/part_1/crash_chen.png);
+}
+div.crash_fade_1  {
+  background-image: 
+  url(../img/part_1/crash_fade_1.webp);
+}
+div.crash_fade_2  {
+  background-image: 
+  url(../img/part_1/crash_fade_2.webp);
+}
+div.crash_fade_3  {
+  background-image: 
+  url(../img/part_1/crash_fade_3.webp);
+}
+div.crash {
+  background-size: contain !important;
+}
+/**images_end**/
+
+/**parallax and masking**/
+div.parallax
+{
+  mask-image: linear-gradient(transparent 0%, gray 40%, gray 50%, gray 60%, transparent 100%);
+}
+
+div.stills 
+{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+div.top-bottom-mask
+{
+  mask-image: linear-gradient(transparent 0%, black 30%, black 50%, black 70%, transparent 100%);
+}
+
+div.top-mask
+{
+  mask-image: linear-gradient(transparent 0%, gray 40%, black 100%);
+}
+
+div.bottom-mask
+{
+  mask-image: linear-gradient(black 0%, gray 40%, transparent 100%);
+}
+
+div.no-mask
+{
+  mask-image: none;
+}
+
+/**parallax and masking end**/
+
+/**fonts**/
+div.static p
+{
+  width: fit-content;
+  max-width: 90%;
+  margin: 0 10vw;
+  border: none !important;
+}
+div.glitching p 
+{
+  font-family: glitch;
+  font-size: 2rem;
+  width: 100%;
+  color: white;
+}
+p.crashing
+{
+  display: block;
+  margin: auto;
+  padding: 3px;
+  font-family: crashing;
+  /font-size: 9em;
+  overflow: hidden;
+  color: black;
+  background-color: transparent !important;
+  transform: scale(15);
+}
+
+/**darkening texts against parallax**/
+.parallax p
+{
+  width: fit-content;
+  max-width: 80vw;
+  background: rgb(0,0,0,0.75);
+}
+
+/*characters*/
+.is_panic p
+{
+  background-color: red;
+  width: fit-content;
+  max-width: 80vw;
+  padding: 10px 2vw;
+  color: white;
+  font-weight: bold;
+  /font-size: .9em;
+}
+  p.panic_mono
+{
+  background-color: black;
+  color: red;
+}
