@@ -4,6 +4,7 @@ main div {
 }
 div.half {
   height: 30vh;
+  position: relative;
 
 }
 /*div.full {
