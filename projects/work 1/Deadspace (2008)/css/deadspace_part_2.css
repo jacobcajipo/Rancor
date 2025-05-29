@@ -20,6 +20,11 @@ p.mono {
 p.mono.righttitle {
   height: 100%;
 }
+p.mono.lefttitle {
+  width: fit-content;
+  height: fit-content;
+  background-color: black;
+}
 
 /*Text location*/
 p.righttitle {
@@ -36,7 +41,7 @@ p.lefttitle {
   float: inline-start; 
   align-content: center;
   text-align: left;
-  padding: 0 1vw;
+  /padding: 0 1vw;
   margin: 0;
 }
 div.suptitle {
@@ -71,6 +76,9 @@ p.kendra {
 }
 p.misc {
   background-color: #7e9e7e85;
+}
+.speech p.lefttitle{
+  margin-left: 1vw;
 }
 
 /*parallax and masking*/
@@ -175,12 +183,23 @@ p.misc {
     background-position: top right;
   }
 
-.parallax-crash {
+.parallax-hangar {
  
 }
-  .crash-kendra-rant {
+  .hangar-kendra {
     background-image: url(../img/part_2/5_1.png);
   }
-  .crash-kellion-state {
+  .hangar-kellion {
     background-image: url(../img/part_2/5_2.png);
+  }
+  .hangar-greeting {
+  background-image: url(../img/part_2/5_3.png);
+  }
+  .hangar-ishimura {
+  background-color: white;
+  height: fit-content;
+  overflow-x: auto;
+    display: flex;
+    align-content: center;
+    align-items: center;
   }
