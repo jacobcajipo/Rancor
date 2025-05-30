@@ -198,7 +198,7 @@ p.misc {
   .hangar-ishimura {
   background-color: white;
   height: fit-content;
-  overflow-x: auto;
+  overflow-x: scroll;
     display: flex;
     align-content: center;
     align-items: center;
