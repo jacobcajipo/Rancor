@@ -78,8 +78,8 @@ button
 {
   background-color: inherit;
   border: 1px solid;
-  border-color: #64B8BC !important;
-  color: #64B8BC;
+  border-color: #C8C9C8; /* Isaac Steel Grey */
+  color: #C8C9C8; /* Isaac Steel Grey and Aqua #64B8BC */
 }
 button.save_game
 {
@@ -88,10 +88,10 @@ button.save_game
   width: 40%;
   margin: 0 30%;
   bottom: 10vh;
+  color: #C8C9C8;
     a
     {
       text-decoration: none;
       font-size: inherit;
-      color: inherit;
     }
 }
