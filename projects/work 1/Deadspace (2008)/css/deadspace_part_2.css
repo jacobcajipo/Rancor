@@ -18,7 +18,8 @@ p.mono {
   / border: 1px yellow solid;
 }
 p.mono.righttitle {
-  height: 100%;
+  height: 50% !important;
+  width: 60% !important;
 }
 p.mono.lefttitle {
   width: fit-content;
@@ -186,6 +187,10 @@ p.misc {
 .parallax-hangar {
  
 }
+
+  .hangar-step {
+    background-image: url(../img/part_2/5_0.png);
+  }
   .hangar-kendra {
     background-image: url(../img/part_2/5_1.png);
   }
