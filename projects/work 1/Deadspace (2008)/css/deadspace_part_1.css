@@ -142,12 +142,7 @@ div.glitching p
 }
 p.crashing
 {
-  display: block;
-  margin: auto;
-  padding: 3px;
   font-family: crashing;
-  /font-size: 9em;
-  overflow: hidden;
   color: black;
   background-color: transparent !important;
   transform: scale(15);
@@ -156,8 +151,6 @@ p.crashing
 /**darkening texts against parallax**/
 .parallax p
 {
-  width: fit-content;
-  max-width: 80vw;
   background: rgb(0,0,0,0.75);
 }
 

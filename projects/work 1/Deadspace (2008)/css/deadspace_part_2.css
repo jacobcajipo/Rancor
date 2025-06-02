@@ -5,26 +5,31 @@ main div {
 div.half {
   height: 30vh;
   position: relative;
-
 }
-/*div.full {
-  height: 90vh;*
-}/
+
 /*Monologue parts*/
 p.mono {
-  padding: 10px 2vw;
+  padding: 10px;
   align-content: center;
   max-height: 30vh; 
   / border: 1px yellow solid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 p.mono.righttitle {
-  height: 50% !important;
-  width: 60% !important;
+  height: fit-content;
+  width: fit-content;
+  text-align: left;
+  float: inline-end; 
 }
 p.mono.lefttitle {
   width: fit-content;
   height: fit-content;
-  background-color: black;
+  /background-color: black;
+  text-align: left;
+  float: inline-start; 
 }
 
 /*Text location*/
@@ -33,8 +38,7 @@ p.righttitle {
   float: inline-end; 
   align-content: center;
   text-align: left;
-  padding: 10px 0 10px 10px;
-  /background-color: rgba(0, 0, 0, 0.75);
+  padding: 10px;
   margin: 0;
 }
 p.lefttitle {
@@ -42,17 +46,17 @@ p.lefttitle {
   float: inline-start; 
   align-content: center;
   text-align: left;
-  /padding: 0 1vw;
+  padding: 10px;
   margin: 0;
 }
 div.suptitle {
   align-content: start; 
   justify-content: start;
-  padding-top: 20vh;
+  padding-top: 15vh;
 }
 div.subtitle {
   align-content: end; 
-  padding-bottom: 20vh;
+  padding-bottom: 15vh;
   background-color: rgba(0, 0, 0, 0.75);
 }
 /*Speech Bubbles*/
@@ -78,9 +82,6 @@ p.kendra {
 p.misc {
   background-color: #7e9e7e85;
 }
-.speech p.lefttitle{
-  margin-left: 1vw;
-}
 
 /*parallax and masking*/
 .parallax {
@@ -90,7 +91,7 @@ p.misc {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  height: 88vh;
   margin: 0;
   padding: 0;
 }
@@ -201,7 +202,7 @@ p.misc {
   background-image: url(../img/part_2/5_3.png);
   }
   .hangar-ishimura {
-  background-color: white;
+  /background-color: white;
   height: fit-content;
   overflow-x: scroll;
     display: flex;

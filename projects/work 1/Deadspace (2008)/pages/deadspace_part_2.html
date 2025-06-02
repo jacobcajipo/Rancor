@@ -41,7 +41,7 @@
 
   <main>
     <div class="half">
-      <h2 style="text-align: left; padding: 10px 2vw;">
+      <h2 style="text-align: center; padding: 10px 2vw;">
         The limit
       </h2>
     </div>
@@ -79,7 +79,7 @@
       </p>
     </div>
     
-    <div class="parallax half awake-01">
+    <div class="parallax awake-01 suptitle">
       <p class="speech kendra">
         Kendra: 
         What...? What the hell were you thinking?! 
@@ -139,7 +139,7 @@
 
     <!-- RIG FILL -->
       <div class="parallax parallax-rig one-bar">
-        <p class="mono righttitle">
+        <p class="mono righttitle" style="width: 50%;">
           Embedded straight to their spine, <br>
           The Resource Integration Gear (RIG). <br>
           It lights from the bottom, red to blue, <br>
@@ -147,7 +147,7 @@
         </p>
       </div>
       <div class="parallax parallax-rig two-bar">
-        <p class="mono righttitle" >
+        <p class="mono righttitle" style="width: 50%;">
           Used to view vitals of the aged, <br>
           reducing cords and machinery. <br>
           Administers medications, too. <br>
@@ -155,11 +155,11 @@
         </p>
       </div>
       <div class="parallax parallax-rig three-bar">
-        <p class="mono righttitle">
+        <p class="mono righttitle" style="width: 50%;">
           Seeing other potential uses, <br>
           its market expanded to sectors. <br>
-          workers, military, scientists. <br>
-          Significantly improved since then. <br>
+          Workers, military, scientists, <br>
+          significantly improved it since. <br>
         </p>
       </div>
       <div class="subtitle parallax parallax-rig four-bar">
@@ -234,14 +234,6 @@
         Plethora of applications were developed for it. <br>
       </div>
 
-    <!--div class="half">
-      <p class="mono">
-        And just like any other device that has a screen, <br>
-        a plethora of applications were developed for it. <br>
-        Along with the built-in messenger for every media, <br>
-      </p>
-    </div-->
-
     <!--EMPTYDIV-->
     <div class="half"></div>
 
@@ -255,7 +247,7 @@
     <div class="half"></div>
 
     <div class="half parallax parallax-rig-apps app-map top-bottom-mask">
-      <p class="mono lefttitle">
+      <p class="mono righttitle">
         a 3D wireframe mapping of his current location,<br>
       </p>
     </div>
@@ -271,9 +263,27 @@
 
     <!--EMPTYDIV-->
     <div class="half"></div>
+  
+    <div class="half parallax parallax-rig-apps app-mis top-bottom-mask">
+      <p class="mono righttitle" style="background-color: black; height: fit-content; width: fit-content;">
+        and a Journal to organize prioritized missions.<br>
+      </p>
+    </div>
 
-    <!-- RIG HUD>
-    <div style="
+    <!--EMPTYDIV-->
+    <div class="half"></div>
+
+    <div class="half">
+      <p class="mono">
+        As he pulled up the hologram interface from his wrist, <br>
+        parts of the cockpit in vicinity lit up with it. <br>
+        He takes note of his next objective into his Journal- <br>
+        Follow the others outside and begin looking for help. <br>
+      </p>
+    </div>
+
+    <!--RIG HUD-->
+    <!--div style="
     text-align: right; 
     height: 50px; 
     background-color: transparent;
@@ -286,7 +296,7 @@
         gap: 5px;
 
     ">
-      <div id="rig_content" style="display: flex; padding: 0; margin: 0;">
+      <div id="rig_content" style="display: flex; padding: 0; margin: 0; background-color: transparent;">
         <ul style="
           list-style-type: none;
           padding: 0; 
@@ -295,17 +305,17 @@
             flex-direction: row;
             gap: 5px;
           ">
-          <li><button style="min-width: 0; width: 50px; min-height: 50px;">INV</button></li>
-          <li><button style="min-width: 0; width: 50px; min-height: 50px;">MAP</button></li>
-          <li><button style="min-width: 0; width: 50px; min-height: 50px;">MIS</button></li>
-          <li><button style="min-width: 0; width: 50px; min-height: 50px;">DAT</button></li>
+          <li><button style="background-color: black; min-width: 0; width: 50px; min-height: 50px;">INV</button></li>
+          <li><button style="background-color: black; min-width: 0; width: 50px; min-height: 50px;">MAP</button></li>
+          <li><button style="background-color: black; min-width: 0; width: 50px; min-height: 50px;">MIS</button></li>
+          <li><button style="background-color: black; min-width: 0; width: 50px; min-height: 50px;">DAT</button></li>
         </ul>
       </div>
 
       <button 
       id="rig_toggle" 
       style="
-      background-color: #64B8BC;
+      background-color: white;
       border: none;
       color: black;
       ">
@@ -322,44 +332,22 @@
             rigToggle.innerHTML = 'CLOSE';
           } else {
             rigContent.style.display = 'none';
-            rigToggle.innerHTML = 'RIG';
+            rigToggle.innerHTML = 'MENU';
           }
         });
       </script>
     </div>
-    <RIG HUD END-->
-  
-    <div class="half parallax parallax-rig-apps app-mis top-bottom-mask">
-      <p class="mono" style="background-color: black; height: fit-content; width: fit-content;">
-        and a Journal to organize prioritized missions.<br>
-      </p>
-    </div>
+    <!--RIG HUD END-->
 
     <!--EMPTYDIV-->
-    <div class="half"></div>
-
-    <div class="">
-      <p class="mono">
-        As he pulled up the hologram interface from his wrist, <br>
-        parts of the cockpit in vicinity lit up as well. <br>
-        He takes note of his next objective into his Journal- <br>
-        Follow the others outside and begin looking for help. <br>
-      </p>
-    </div>
-
-    <!--EMPTYDIV-->
-    <div class="half"></div>
-    
-    <!--div class='half' style="text-align: center;" >
-      <button onclick="alert('New objective added to [MIS]');">ADD OBJECTIVE</button>
-    </div-->
+    <div class=""></div>
 
     <div class="parallax parallax-crash hangar-step">
-      <p class="mono">
+      <p class="mono righttitle">
         Upon setting foot inside USG Ishimura, <br>
         sharp cold air amidst the heated flames wafted around him. <br>
         Eerie echoes reverberating an empty hangar, <br>
-        listening close, ominous resemblance of a warning.
+        listening close, uncanny resemblance of a warning.
       </p>
     </div>
 
@@ -371,7 +359,7 @@
     </div>
 
     <div class="parallax parallax-crash hangar-kellion">
-      <p class="mono">
+      <p class="mono lefttitle">
         Furious as she examine the ship's predicament, <br>
         Kendra still thought there would've been a better method. <br>
         One that doesn't involve destroying half of the shuttle, <br>
@@ -380,7 +368,7 @@
     </div>
       
     <div class="parallax parallax-crash hangar-greeting">
-      <p class="mono">
+      <p class="mono righttitle">
         They continued walking along the bridge to the lobby. <br>
         Suddenly, the large television turned on by itself. <br>
         Automatic greeting for newly arrived employees. <br>
@@ -432,7 +420,7 @@
 
     <div class="hangar-ishimura">
     <img src="../img/part_2/5_4.png" alt="">
-    <p class="mono" style="min-width: fit-content; color: black;">
+    <p class="mono" style="min-width: fit-content; text-align: left;">
       Aptly named after Hideki Ishimura, <br>
       the creator of the ShockPoint Drive. <br>
       They say it translates to "rock village". <br>
@@ -440,24 +428,28 @@
     </p>
     </div>
 
-    <!--div style="text-align: center; height: fit-content;">
-      <button style="
-        position: sticky; 
-        top: 0; 
-        color: white;
-        border-top: none;
-        border-bottom: none;
-        border-color: white !important;
-        background-color: #64B8BC;
-        padding: 0 30%;
-        ">
-        OBJECTIVE <br> COMPLETE
-      </button>
-    </div-->
-
   <!--EMPTYDIV-->
   <div class="half"></div>
 
+  <div class="half">
+    <p class="mono">
+      Arriving at the lobby, he caught up with the others. <br>
+      The place was dark, with only the emergency lights on. <br>
+      The door was supposed to open automatically, <br>
+      but was locked tight and quite impossible operate. <br>
+    </p>
+  </div>
+
+  <div class="parallax">
+    <p class="speech hammond">
+      Hammond: Guess the power's down everywhere. 
+      Isaac, get over here and hack the door pad.
+    </p>
+  </div>
+
+
+<!--EMPTYDIV-->
+  <div class="half"></div>
 <a href="deadspace_part_3.html">
 <button id="bottom" class="save_game">
     NEXT

@@ -9,7 +9,5 @@ body
 p {
   font-size: 0.9rem;
 }
-p.mono {
-  min-width: 100%;
-}
+
 }
