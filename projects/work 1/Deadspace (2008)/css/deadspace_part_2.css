@@ -189,23 +189,66 @@ p.misc {
  
 }
 
-  .hangar-step {
+  .hangar-5_0 {
     background-image: url(../img/part_2/5_0.png);
   }
-  .hangar-kendra {
+  .hangar-5_1 {
     background-image: url(../img/part_2/5_1.png);
   }
-  .hangar-kellion {
+  .hangar-5_2 {
     background-image: url(../img/part_2/5_2.png);
   }
-  .hangar-greeting {
+  .hangar-5_3 {
   background-image: url(../img/part_2/5_3.png);
   }
-  .hangar-ishimura {
-  /background-color: white;
+  .hangar-5_3_half {
+    background-image: url(../img/part_2/5_3_half.png);
+  }
+  .hangar-5_4 {
   height: fit-content;
   overflow-x: scroll;
     display: flex;
     align-content: center;
     align-items: center;
   }
+  .hangar-5_5 {
+    background-image: url(../img/part_2/5_5.png);
+  }
+  .hangar-5_6 {
+    background-image: url(../img/part_2/5_6.png);
+    background-position: left;
+  }
+  .hangar-5_7 {
+  height: fit-content;
+  overflow-x: scroll;
+    display: flex;
+    align-content: center;
+    align-items: center;
+  }
+
+section#lounge {
+  display: none;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+.lounge-6_0 {
+  background-image: url(../img/part_2/6_0.png);
+}
+.lounge-6_1 {
+  background-image: url(../img/part_2/6_1.png);
+}
+.lounge-6_2 {
+  background-image: url(../img/part_2/6_2.png);
+}
+.lounge-6_3 {
+  background-image: url(../img/part_2/6_3.png);
+}
+.lounge-6_4 {
+  background-image: url(../img/part_2/6_4.png);
+}
+.lounge-6_5 {
+  background-image: url(../img/part_2/6_5.png);
+}
+
+

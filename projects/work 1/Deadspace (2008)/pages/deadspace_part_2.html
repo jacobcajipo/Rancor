@@ -247,7 +247,7 @@
     <div class="half"></div>
 
     <div class="half parallax parallax-rig-apps app-map top-bottom-mask">
-      <p class="mono righttitle">
+      <p class="mono lefttitle">
         a 3D wireframe mapping of his current location,<br>
       </p>
     </div>
@@ -265,7 +265,7 @@
     <div class="half"></div>
   
     <div class="half parallax parallax-rig-apps app-mis top-bottom-mask">
-      <p class="mono righttitle" style="background-color: black; height: fit-content; width: fit-content;">
+      <p class="mono lefttitle" style="background-color: black; height: fit-content; width: fit-content;">
         and a Journal to organize prioritized missions.<br>
       </p>
     </div>
@@ -342,7 +342,7 @@
     <!--EMPTYDIV-->
     <div class=""></div>
 
-    <div class="parallax parallax-crash hangar-step">
+    <div class="parallax parallax-hangar hangar-5_0">
       <p class="mono righttitle">
         Upon setting foot inside USG Ishimura, <br>
         sharp cold air amidst the heated flames wafted around him. <br>
@@ -351,14 +351,14 @@
       </p>
     </div>
 
-      <div class="parallax parallax-crash hangar-kendra subtitle">
+      <div class="parallax parallax-hangar hangar-5_1 subtitle">
       <p class="speech kendra">
         Kendra: You didn't lose power to the port booster. 
         You  <strong>LOST</strong> the port booster! Unbelievable.
       </p>
     </div>
 
-    <div class="parallax parallax-crash hangar-kellion">
+    <div class="parallax parallax-hangar hangar-5_2">
       <p class="mono lefttitle">
         Furious as she examine the ship's predicament, <br>
         Kendra still thought there would've been a better method. <br>
@@ -367,7 +367,7 @@
       </p>
     </div>
       
-    <div class="parallax parallax-crash hangar-greeting">
+    <div class="parallax parallax-hangar hangar-5_3">
       <p class="mono righttitle">
         They continued walking along the bridge to the lobby. <br>
         Suddenly, the large television turned on by itself. <br>
@@ -404,21 +404,10 @@
       </p-->
     </div>
 
-    <div class="half parallax parallax-crash hangar-greeting">
+    <div class="parallax parallax-crash hangar-5_3_half">
     </div>
 
-    <div class="half"></div>
-
-    <div class="">
-    <p class="mono">
-      Looking upwards from where the television is playing, <br>
-      The iconic plaque of the ship, glowing valiantly. <br>
-      Each letter is scaled up so it spans from left to right. <br>
-      Its grandiose persisting in the dilapidation.
-    </p>
-    </div>
-
-    <div class="hangar-ishimura">
+    <div class="hangar-5_4">
     <img src="../img/part_2/5_4.png" alt="">
     <p class="mono" style="min-width: fit-content; text-align: left;">
       Aptly named after Hideki Ishimura, <br>
@@ -428,30 +417,107 @@
     </p>
     </div>
 
-  <!--EMPTYDIV-->
-  <div class="half"></div>
-
-  <div class="half">
+    <div class="half">
     <p class="mono">
+      Looking upwards from where the television is playing, <br>
+      The iconic plaque of the ship, glowing valiantly. <br>
+      Each letter is scaled up so it spans from left to right. <br>
+      Its grandiose persisting in the dilapidation.
+    </p>
+    </div>
+
+  <!--EMPTYDIV-->
+  <div class=""></div>
+
+  <div class="parallax parallax-hangar hangar-5_5">
+    <p class="mono lefttitle">
       Arriving at the lobby, he caught up with the others. <br>
-      The place was dark, with only the emergency lights on. <br>
-      The door was supposed to open automatically, <br>
-      but was locked tight and quite impossible operate. <br>
+      Whole place was dark, with only the emergency lights on. <br>
+      The door was supposed to open at close proximity, <br>
+      but it seems the mechanism is inoperable. <br>
     </p>
   </div>
 
-  <div class="parallax">
+  <div class="parallax subtitle parallax-hangar hangar-5_6">
     <p class="speech hammond">
       Hammond: Guess the power's down everywhere. 
       Isaac, get over here and hack the door pad.
     </p>
   </div>
 
+  <div>
+    <p class="mono">
+      As engineer, Isaac has admin priveleges to security. <br>
+      He can override protocols and pry the open doors. <br>
+      Provided that the door pads have a sufficient power, <br>
+      it can be done by using his RIG's interface and a click. <br>
+    </p>
+  </div>
+
+  <!--EMPTYDIV-->
+  <div class="half"></div>
+
+  <!--DOOR PAD - LOUNGE-->
+  <div class="hangar-5_7" id="door_pad_lounge">
+    <img 
+    width="1280"
+    height="480" 
+    src="../img/part_2/5_7.png" alt="" 
+    usemap="#lounge"
+    >
+      
+    <map name="lounge" cursor="pointer">
+      <area shape="circle" coords="650, 240,100" href="#lounge" alt=""
+      onclick="open_lounge()" id="lounge_area" style="cursor: pointer;">
+
+      <script>
+        function open_lounge() {
+          document.getElementById("door_pad_lounge").style.display = "none";
+          document.getElementById("next").style.display = "inline-block";
+          document.getElementById("lounge").style.display = "flex";
+        }
+      </script>
+    </map>
+  </div>
+
+  <!--FLIGHT LOUNGE-->
+  <section id="lounge">
+    <div class="parallax lounge-6_0"></div>
+    <div class="parallax lounge-6_1"></div>
+    <div class="parallax lounge-6_2"></div>
+    <div class="parallax lounge-6_3"></div>
+    <div class="">
+      <p class="mono">
+        Like an abandoned residence, the flight lounge was pitch black. <br>
+        A heavy layer of dust had covered the stained floor, <br>
+        Frozen with anxiety, his body refused to move, <br>
+        relieved by humming lightbulbs turning on in disarray, <br>
+      </p>
+    </div>
+    <div class="parallax lounge-6_4">
+      <p class="speech kendra">
+        Kendra: Seems like everyone was trying to pack in a hurry.
+      </p>
+    </div>
+    <div class="subtitle parallax lounge-6_5">
+      <p class="speech hammond">
+        Hammond: There should be a security detail here.
+      </p>
+    </div>
+    <div>
+      <p class="speech kendra">
+        Kendra: Yeah, well there's not. 
+        There's nobody here. 
+        I can't pick up any broadcasts.
+      </p>
+    </div>
+  </section>
+
 
 <!--EMPTYDIV-->
   <div class="half"></div>
 <a href="deadspace_part_3.html">
-<button id="bottom" class="save_game">
+<button id="next" class="save_game" style="display: none;">
     NEXT
 </button>
 </a>
