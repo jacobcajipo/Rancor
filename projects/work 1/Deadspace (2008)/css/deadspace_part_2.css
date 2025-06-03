@@ -211,6 +211,10 @@ p.misc {
     align-content: center;
     align-items: center;
   }
+    .hangar-5_4:hover {
+    filter: contrast(105%);
+    transition: filter 0.5s ease-in-out;
+  }
   .hangar-5_5 {
     background-image: url(../img/part_2/5_5.png);
   }
@@ -224,6 +228,11 @@ p.misc {
     display: flex;
     align-content: center;
     align-items: center;
+  }
+
+  .hangar-5_7:hover {
+    filter: contrast(110%);
+    transition: filter 0.5s ease-in-out;
   }
 
 section#lounge {
