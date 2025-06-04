@@ -170,17 +170,17 @@ p.misc {
 }
 
   div.app-inv {
-    background-image: url(../img/part_2/4_1.png);
+    background-image: url(../img/part_2/4_1.webp);
   }
   div.app-map {
-    background-image: url(../img/part_2/4_2.png);
+    background-image: url(../img/part_2/4_2.webp);
     background-position: center;
   }
   div.app-dat {
-    background-image: url(../img/part_2/4_3.png);
+    background-image: url(../img/part_2/4_3.webp);
   }
   div.app-mis {
-    background-image: url(../img/part_2/4_4.png);
+    background-image: url(../img/part_2/4_4.webp);
     /background-size: contain;
     background-position: top right;
   }
@@ -190,19 +190,20 @@ p.misc {
 }
 
   .hangar-5_0 {
-    background-image: url(../img/part_2/5_0.png);
+    background-image: url(../img/part_2/5_0.webp);
+    background-position: left;
   }
   .hangar-5_1 {
-    background-image: url(../img/part_2/5_1.png);
+    background-image: url(../img/part_2/5_1.webp);
   }
   .hangar-5_2 {
-    background-image: url(../img/part_2/5_2.png);
+    background-image: url(../img/part_2/5_2.webp);
   }
   .hangar-5_3 {
-  background-image: url(../img/part_2/5_3.png);
+  background-image: url(../img/part_2/5_3.webp);
   }
   .hangar-5_3_half {
-    background-image: url(../img/part_2/5_3_half.png);
+    background-image: url(../img/part_2/5_3_half.webp);
   }
   .hangar-5_4 {
   height: fit-content;
@@ -211,15 +212,11 @@ p.misc {
     align-content: center;
     align-items: center;
   }
-    .hangar-5_4:hover {
-    filter: contrast(105%);
-    transition: filter 0.5s ease-in-out;
-  }
   .hangar-5_5 {
-    background-image: url(../img/part_2/5_5.png);
+    background-image: url(../img/part_2/5_5.webp);
   }
   .hangar-5_6 {
-    background-image: url(../img/part_2/5_6.png);
+    background-image: url(../img/part_2/5_6.webp);
     background-position: left;
   }
   .hangar-5_7 {
@@ -230,11 +227,6 @@ p.misc {
     align-items: center;
   }
 
-  .hangar-5_7:hover {
-    filter: contrast(110%);
-    transition: filter 0.5s ease-in-out;
-  }
-
 section#lounge {
   display: none;
   flex-direction: column;
@@ -242,22 +234,22 @@ section#lounge {
   margin: 0;
 }
 .lounge-6_0 {
-  background-image: url(../img/part_2/6_0.png);
+  background-image: url(../img/part_2/6_0.webp);
 }
 .lounge-6_1 {
-  background-image: url(../img/part_2/6_1.png);
+  background-image: url(../img/part_2/6_1.webp);
 }
 .lounge-6_2 {
-  background-image: url(../img/part_2/6_2.png);
+  background-image: url(../img/part_2/6_2.webp);
 }
 .lounge-6_3 {
-  background-image: url(../img/part_2/6_3.png);
+  background-image: url(../img/part_2/6_3.webp);
 }
 .lounge-6_4 {
-  background-image: url(../img/part_2/6_4.png);
+  background-image: url(../img/part_2/6_4.webp);
 }
 .lounge-6_5 {
-  background-image: url(../img/part_2/6_5.png);
+  background-image: url(../img/part_2/6_5.webp);
 }
 
 
