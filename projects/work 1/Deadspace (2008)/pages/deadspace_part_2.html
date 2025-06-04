@@ -27,17 +27,16 @@
           </p>
         </li>
         <li>
-          <button id="ambient_button" onclick="ambient_music()">
-          </button>
+          <audio 
+          src="../audio/Dead Space - Audio - Ambience.mp3" 
+          controls loop
+          style="height: 50px; width: 100px;">
+          </audio>
         </li>
       </ul>
     </nav>
   </header>
-  <audio 
-  id="ambient" 
-  loop
-  src="../audio/Dead Space - Audio - Ambience.mp3">
-  </audio>
+
 
   <main>
     <div class="half">
@@ -139,15 +138,15 @@
 
     <!-- RIG FILL -->
       <div class="parallax parallax-rig one-bar">
-        <p class="mono righttitle" style="width: 50%;">
+        <p class="mono righttitle" style="width: 55%;">
           Embedded straight to their spine, <br>
-          The Resource Integration Gear (RIG). <br>
+          The Resource Integration Gear. <br>
           It lights from the bottom, red to blue, <br>
           For displaying the overall health. <br>
         </p>
       </div>
       <div class="parallax parallax-rig two-bar">
-        <p class="mono righttitle" style="width: 50%;">
+        <p class="mono righttitle" style="width: 55%;">
           Used to view vitals of the aged, <br>
           reducing cords and machinery. <br>
           Administers medications, too. <br>
@@ -155,7 +154,7 @@
         </p>
       </div>
       <div class="parallax parallax-rig three-bar">
-        <p class="mono righttitle" style="width: 50%;">
+        <p class="mono righttitle" style="width: 55%;">
           Seeing other potential uses, <br>
           its market expanded to sectors. <br>
           Workers, military, scientists, <br>
@@ -407,14 +406,17 @@
     <div class="parallax parallax-crash hangar-5_3_half">
     </div>
 
+    <!--EMPTYDIV-->
+  <div class="half"></div>
+
     <div class="hangar-5_4">
-    <img src="../img/part_2/5_4.webp" alt="">
-    <p class="mono" style="min-width: fit-content; text-align: left;">
+    <img width="1280" src="../img/part_2/ishimura.webp" alt="">
+    <!--p class="mono" style="min-width: fit-content; text-align: left;">
       Aptly named after Hideki Ishimura, <br>
       the creator of the ShockPoint Drive. <br>
       They say it translates to "rock village". <br>
       Commemoration aligned with purpose.
-    </p>
+    </p-->
     </div>
 
     <div class="half">
@@ -447,7 +449,7 @@
 
   <div>
     <p class="mono">
-      As engineer, Isaac has admin priveleges to security. <br>
+      As engineer, Isaac has admin privileges to security. <br>
       He can override protocols and pry open the doors. <br>
       Provided that the door pads have a sufficient power, <br>
       it can be done by using his RIG's interface and a click. <br>
@@ -460,20 +462,17 @@
   <!--DOOR PAD - LOUNGE-->
   <div class="hangar-5_7" id="door_pad_lounge">
     <img 
-    width="1280"
-    height="480" 
-    src="../img/part_2/5_7.webp" alt="" 
+    src="../img/part_2/loungepad.webp" alt="" 
     usemap="#lounge"
     >
       
     <map name="lounge" cursor="pointer">
-      <area shape="circle" coords="650, 240,100" href="#lounge" alt=""
+      <area shape="circle" coords="395, 245,115" href="#lounge" alt=""
       onclick="open_lounge()" id="lounge_area" style="cursor: pointer;">
 
       <script>
         function open_lounge() {
           document.getElementById("door_pad_lounge").style.display = "none";
-          document.getElementById("next").style.display = "inline-block";
           document.getElementById("lounge").style.display = "flex";
         }
       </script>
@@ -484,33 +483,102 @@
   <section id="lounge">
     <div class="parallax lounge-6_0"></div>
     <div class="parallax lounge-6_1"></div>
-    <div class="parallax lounge-6_2"></div>
+    <!--div class="parallax lounge-6_2"></div-->
     <div class="parallax lounge-6_3"></div>
     <div class="">
       <p class="mono">
-        Like an abandoned residence, the flight lounge was pitch black. <br>
+        The flight lounge was pitch black. <br>
         A heavy layer of dust had covered the stained floor, <br>
         Frozen with anxiety, his body refused to move, <br>
         relieved by humming lightbulbs turning on in disarray, <br>
       </p>
     </div>
+
     <div class="parallax lounge-6_4">
       <p class="speech kendra">
         Kendra: Seems like everyone was trying to pack in a hurry.
       </p>
     </div>
+
     <div class="subtitle parallax lounge-6_5">
       <p class="speech hammond">
         Hammond: There should be a security detail here.
       </p>
     </div>
-    <div>
-      <p class="speech kendra">
+
+    <div class="half">
+      <p class="speech kendra lefttitle">
         Kendra: Yeah, well there's not. 
         There's nobody here. 
         I can't pick up any broadcasts.
       </p>
     </div>
+
+    <div class="half">
+      <p class="speech hammond righttitle">
+        Hammond: That security console is still live. 
+        Isaac, log in and see what you can find. 
+        Kendra, get that elevator back online.
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="speech kendra lefttitle">
+        Kendra: Power's dead. I can't.
+      </p>
+    </div>
+
+    <div class="parallax lounge-6_6">
+      <p class="speech hammond">
+       Hammond: Then re-route the damn power! 
+       Look, if we all cooperate, we can figure this out a lot sooner. 
+      </p>
+    </div>
+
+    <div class="parallax lounge-6_7">
+      <p class="speech hammond">
+        Hammond: Let's get that computer display up, Isaac.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono">
+        As Hammond delegated the tasks with authority, <br>
+        There was a sliver where he almost lost composure. <br>
+        Kendra de-escalated the tension, turning her back. <br>
+        There was a brewing enmity but they all must comply. <br>
+      </p>
+    </div>
+  
+    <!--DOOR PAD - SECURITY-->
+  <div class="hangar-5_7" id="door_pad_security">
+    <img 
+    src="../img/part_2/security.webp" alt="" 
+    usemap="#security_map"
+    >
+      
+    <map name="security_map" cursor="pointer">
+      <area shape="circle" coords="395, 245,115" 
+      href="#security" id="security_area" alt=""
+      onclick="open_security()"  style="cursor: pointer;">
+
+      <script>
+        function open_security() {
+          document.getElementById("door_pad_security").style.display = "none";
+          document.getElementById("security").style.display = "flex";
+          document.getElementById("next").style.display = "inline-block";
+        }
+      </script>
+    </map>
+  </div>
+  
+  </section>
+
+  <section id="security">
+    <div class="parallax security-7_0"></div>
+    <div class="parallax security-7_1"></div>
+    <div class="parallax security-7_2"></div>
+    <div></div>
   </section>
 
 
