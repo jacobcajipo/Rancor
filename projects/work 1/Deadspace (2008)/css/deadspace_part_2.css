@@ -228,7 +228,7 @@ p.misc {
     display: flex;
     align-content: center;
     align-items: center;
-    margin: auto;
+    /margin: auto;
   }
 
 section#lounge {
