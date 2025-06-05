@@ -410,7 +410,7 @@
   <div class="half"></div>
 
     <div class="hangar-5_4">
-    <img width="1280" src="../img/part_2/ishimura.webp" alt="">
+    <img width="1280" src="../img/part_2/ishimura_static.webp" alt="">
     <!--p class="mono" style="min-width: fit-content; text-align: left;">
       Aptly named after Hideki Ishimura, <br>
       the creator of the ShockPoint Drive. <br>
@@ -470,13 +470,6 @@
     <map name="lounge" cursor="pointer">
       <area shape="circle" coords="395, 245,115" href="#lounge" alt=""
       onclick="open_lounge()" id="lounge_area" style="cursor: pointer;">
-
-      <script>
-        function open_lounge() {
-          document.getElementById("door_pad_lounge").style.display = "none";
-          document.getElementById("lounge").style.display = "flex";
-        }
-      </script>
     </map>
   </div>
 
@@ -563,14 +556,6 @@
       <area shape="circle" coords="400, 230,160" 
       href="#security" id="security_area" alt=""
       onclick="open_security()"  style="cursor: pointer;">
-
-      <script>
-        function open_security() {
-          document.getElementById("door_pad_security").style.display = "none";
-          document.getElementById("security").style.display = "flex";
-          document.getElementById("next").style.display = "inline-block";
-        }
-      </script>
     </map>
   </div>
   
@@ -595,9 +580,115 @@
       <p class="mono">
         He had a job to do, so needs to keep moving. <br>
         He took a deep breath, and walked towards the console. <br>
+      </p>
+    </div>
+
+    <div>
+      <p class="mono">
         Stepping over the hardened red substance in the process. <br>
       </p>
     </div>
+
+    <div id="console" class="hangar-5_7">
+      <img src="../img/part_2/console.webp" alt="" usemap="#console_map">
+      <map name="console_map" cursor="pointer">
+        <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" onclick="open_quarantine()">
+      </map>
+
+    </div>
+  </section>
+
+  <section id="quarantine">
+    <div class="suptitle parallax quarantine-8_0">
+      <p class="speech misc">
+        Johnston: Huh. That doesn't look good. She's taken a lot of damage.
+      </p>
+    </div>
+
+    <div class="subtitle parallax quarantine-8_1">
+      <p class="speech hammond">
+        Hammond: The tram system's offline. 
+        Getting around is going to be difficult. 
+      </p>
+    </div>
+
+    <div class="subtitle parallax quarantine-8_2">
+      <p class="speech hammond">
+        Hammond: The air seems to be flowing again. That's a start.
+      </p>
+    </div>
+
+    <div class="parallax quarantine-8_3">
+    </div>
+
+    <div class="">
+      <p class="mono">
+        monologue
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="speech kendra">
+        Kendra: "What the hell was that?"
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="speech hammond">
+        Hammond: "Automatic quarantine must have tripped when the filtration system restarted. 
+        Everybody relax..."
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono">
+        monologue
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="speech kendra">
+        Kendra: "What was that? Did you hear that?!"
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="speech hammond">
+        Hammond: "I'm not sure..."
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="mono">
+        {Something falls to the floor from the ceiling nearby Corporal Johnston.}
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="speech misc">
+        Johnston: "What the hell?"
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="mono">
+        {Quietly, a slasher rises up behind Johnston.}
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="speech kendra">
+        Kendra: "I don't know! Something's in the room with us!"
+      </p>
+    </div>
+
+    <div class="half">
+      <p class="mono">
+        {The slasher decapitates Corporal Johnston. His RIG registers his death after a pause; it emits a flatline sound, 
+          audible even over subsequent gunfire.}
+      </p>
+    </div>
+
   </section>
 
 
