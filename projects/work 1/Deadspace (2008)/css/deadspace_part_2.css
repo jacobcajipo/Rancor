@@ -1,5 +1,6 @@
 main div {
   align-content: center;
+  padding: 0 8vw;
   / border: 1px red solid;
 }
 div.half {
@@ -12,7 +13,7 @@ p.mono {
   padding: 10px;
   align-content: center;
   max-height: 30vh; 
-  text-align: center;
+  text-align: left;
   font-weight: bold;
   /word-spacing: 0.15em;
   line-height: 1.5em;
@@ -60,6 +61,11 @@ div.subtitle {
   align-content: end; 
   padding-bottom: 15vh;
   background-color: rgba(0, 0, 0, 0.75);
+}
+div.centertitle {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
 }
 /*Speech Bubbles*/
 p.speech {

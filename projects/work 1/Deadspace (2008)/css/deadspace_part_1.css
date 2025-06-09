@@ -56,6 +56,7 @@ div.cec {
 div.cec_2 {
   background-image: 
   url(../img/part_1/cec_2.webp);
+  background-position: top;
 }
 div.ishimura  {
   background-image: 
@@ -64,6 +65,14 @@ div.ishimura  {
 div.silence {
   background-image: 
   url(../img/part_1/silence.png);
+}
+div.silence_2 {
+  background-image: 
+  url(../img/part_1/silence_2.png);
+}
+div.silence_3 {
+  background-image: 
+  url(../img/part_1/silence_3.png);
 }
 div.crash_impact  {
   background-image: 
