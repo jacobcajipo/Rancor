@@ -175,15 +175,12 @@ p.misc {
   }
   div.app-map {
     background-image: url(../img/part_2/4_2.webp);
-    background-position: center;
   }
   div.app-dat {
     background-image: url(../img/part_2/4_3.webp);
   }
   div.app-mis {
     background-image: url(../img/part_2/4_4.webp);
-    /background-size: contain;
-    background-position: top right;
   }
 
 .parallax-hangar {
@@ -216,6 +213,7 @@ p.misc {
   }
   .hangar-5_5 {
     background-image: url(../img/part_2/5_5.webp);
+    background-position: left;
   }
   .hangar-5_6 {
     background-image: url(../img/part_2/5_6.webp);

@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/deadspace_part_2.css">
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
 </head>
-<body>
+<body onload="document.getElementById('ambient').play();">
 
   <header>
     <nav>
@@ -27,15 +27,33 @@
           </p>
         </li>
         <li>
-          <audio 
-          src="../audio/Dead Space - Audio - Ambience.mp3" 
-          controls loop
-          style="height: 50px; width: 100px;">
-          </audio>
+          <button id="ambient_button" onclick="ambient_music()">
+          </button>
         </li>
       </ul>
     </nav>
   </header>
+<audio 
+  id="ambient" loop
+  src="../audio/Dead Space - Audio - Ambience.mp3">
+</audio>
+<audio 
+  id="ambient_2" loop
+  src="../audio/Dead Space (2008) - USG Ishimura PA system announcementsmessages.mp3">
+</audio>
+<audio 
+id="heartbeat" loop
+src="../audio/Dead Space Isaac's breath and heartbeat.mp3">
+</audio>
+<audio 
+id="quarantine_alarm" loop
+src="../audio/Quarantine Alarm.mp3">
+</audio>
+<audio 
+id="quarantine_lockdown"
+loop
+src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
+</audio>
 
 
   <main>
@@ -58,8 +76,8 @@
       <p class="mono">
         The first to go haywire is the visual faculty, 
         straining every little vein that goes around the eyes. <br><br>
-        Followed by bruising in random parts as they bleed inside, 
-        none survived to defy this limit nor came out unscathed.
+        Followed by bruising in random parts as they bleed inside. 
+        Some survived to defy this limit, but none came out unscathed.
       </p>
     </div>
 
@@ -93,7 +111,7 @@
       <p class="speech hammond">
         Hammond: I just saved our asses, Ms. Daniels! 
         If we had aborted at that speed and distance, 
-        we would have smashed right into the side of the Ishimura. 
+        we would have smashed right into the side of the Ishimura. <br><br>
         Now settle down, and let's get to work. 
         Corporal, report!
       </p>
@@ -101,8 +119,8 @@
 
     <div class="">
       <p class="mono">
-       While the two officers bicker in the foreground, 
-       the blast shields retracted. Showing the insides of a hangar. <br><br>
+       The two officers kept on with their bickering. 
+       The blast shields retracted, showing the insides of a hangar.<br><br>
        Isaac put on his helmet and got ready to work, 
        painfully aware of their shuttle's demise from the crash.
       </p>
@@ -123,16 +141,17 @@
       </p>
     </div>
 
-    <!--EMPTYDIV-->
-    <div class="half"></div>
-
     <div>
       <p class="mono">
+        Before Ishimura, Kellion would need fixing first.<br><br>
         As their directive starts off requiring manpower, 
         Kendra performs standard operating procedure. 
         Keeping record of their status throughout the mission.
       </p>
     </div>
+
+    <!--EMPTYDIV-->
+    <div class=""></div>
 
     <div style="background-position: center;" class="parallax parallax-rig no-bar">
       <p class="speech kendra">
@@ -142,10 +161,14 @@
     </div>
 
     <!-- RIG FILL -->
+     <div class="centertitle parallax parallax-rig one-bar">
+      <p class="mono">
+        Embedded straight to their spine, <br>
+        The Resource Integration Gear (RIG)
+      </p>
+     </div>
       <div class="centertitle parallax parallax-rig one-bar">
         <p class="mono">
-          Embedded straight to their spine, <br>
-          The Resource Integration Gear. <br><br>
           It lights from the bottom, red to blue, <br>
           For displaying the overall health. <br>
         </p>
@@ -153,7 +176,11 @@
       <div class="centertitle parallax parallax-rig two-bar">
         <p class="mono">
           Used to view vitals of the aged, <br>
-          reducing cords and machinery. <br><br>
+          reducing cords and machinery.
+        </p>
+      </div>
+      <div class="centertitle parallax parallax-rig two-bar">
+        <p class="mono">
           Administers medications, too. <br>
           Injecting the drugs to vertebrae. <br>
         </p>
@@ -161,7 +188,11 @@
       <div class="centertitle parallax parallax-rig three-bar">
         <p class="mono">
           Seeing other potential uses, <br>
-          its market expanded to sectors. <br><br>
+          its market expanded to sectors.
+        </p>
+      </div>
+      <div class="centertitle parallax parallax-rig three-bar">
+        <p class="mono">
           Workers, military, scientists, <br>
           significantly improved it since. <br>
         </p>
@@ -173,7 +204,7 @@
       </p>
       </div>
 
-    <div class="half centertitle parallax parallax-rig four-bar">
+    <div class="half">
       <p class="speech hammond">
         Hammond: All right. 
         We've still got a job to do. We're moving out.
@@ -198,7 +229,7 @@
       <p class="mono">
         A helmet that covers the entirety of his head, <br>
         appendages portruding from his jaw towards his face. <br><br>
-        Completely of metal, emitting a glinting blue light. <br>
+        Completely of metal, emitting a steady blue light. <br>
         Giving the impression of a machine more than a man. <br>
       </p>
     </div>
@@ -215,10 +246,10 @@
 
     <div class="half">
       <p class="mono">
-        It's common to be forgotten by the corporation. <br>
-        Nevertheless, elicits a polarized reaction. <br><br>
-        A commendation for loyalty and dedication? <br>
-        Or pity their welfare's unworthy of preservation? <br>          
+        Nothing new to be forgotten by a corporation.<br> 
+        Nevertheless, elicits a polarized reaction.<br> <br> 
+        A commendation for loyalty and dedication?<br> 
+        Or pity their welfare's unworthy of attention?<br> 
       </p>
     </div>
 
@@ -236,9 +267,9 @@
 
     <div class="">
       <p class="mono">
-        This reflects in the minimalist nature of his RIG. 
-        Aside from detecting wearer's deteriorating health, <br><br>
-        its key feature's projecting interactive holograms. 
+        This reflects in the minimalist nature of his RIG. <br><br>
+        Aside from detecting wearer's deteriorating health, 
+        its key feature's projecting interactive holograms. <br><br>
         Plethora of applications were developed for it.
       </div>
 
@@ -284,12 +315,15 @@
     </div>
 
     <!--EMPTYDIV-->
-    <div class="parallax parallax-hangar hangar-5_0"></div>
-
-    <div class="parallax parallax-hangar hangar-5_0">
-      <p class="mono righttitle">
+    <div class="centertitle parallax parallax-hangar hangar-5_0" style="background-position: right;">
+      <p class="mono">
         Upon setting foot inside USG Ishimura, <br>
-        sharp cold air amidst the heated flames wafted. <br><br>
+        sharp cold air amidst the heated flames wafted. 
+      </p>
+    </div>
+
+    <div class="centertitle parallax parallax-hangar hangar-5_0">
+      <p class="mono">
         Eerie echoes reverberating an empty hangar, <br>
         listening closely, resemblant of a dying animal.
       </p>
@@ -303,9 +337,13 @@
     </div>
 
     <div class="parallax parallax-hangar hangar-5_2">
-      <p class="mono lefttitle">
+      <p class="mono">
         Furious as she examine the ship's predicament,<br>
-        Kendra still thought there would've been a better method.<br><br>
+        Kendra still thought there would've been a better way.
+      </p>
+    </div>
+    <div class="parallax parallax-hangar hangar-5_2">
+      <p class="mono lefttitle">
         One that doesn't involve destroying half of the shuttle,<br>
         and probably along with it, their ticket way back home.<br>           
       </p>
@@ -313,15 +351,24 @@
       
     <div class="parallax parallax-hangar hangar-5_3">
       <p class="mono righttitle">
-        They continued walking along the bridge to the lobby. <br>
-        Suddenly, the large television turned on by itself. <br>
-        Automatic greeting for newly arrived employees. <br>
-        They've triggered the first sensor onboard the planetcracker. <br>
+        They continued treading down the bridge at a careful pace. <br>
+        Still, they tripped a sensor that detects movements... <br>
       </p>
     </div>
     
+    <div class="parallax parallax-crash hangar-5_3_half">
+      <p class="mono righttitle">
+        causing the large television to turn on by itself. <br>
+        An automated greeting for newly arrived employees.<br>
+      </p>
+    </div>
+
     <div style="height: auto;">
       <video 
+      id="welcome_video"
+      onpointerenter="
+      this.play();"
+      onplaying="ambient_music().pause();"
       src="../videos/Welcome Aboard USG Ishimura (English).mp4"
       controls
       width="100%"
@@ -348,38 +395,45 @@
       </p-->
     </div>
 
-    <div class="half parallax parallax-crash hangar-5_3_half">
-    </div>
-
-
-    <div class="hangar-5_4">
-    <img width="1280" src="../img/part_2/ishimura_static.webp" alt="">
-    <!--p class="mono" style="min-width: fit-content; text-align: left;">
-      Aptly named after Hideki Ishimura, <br>
-      the creator of the ShockPoint Drive. <br>
-      They say it translates to "rock village". <br>
-      Commemoration aligned with purpose.
-    </p-->
-    </div>
+    <!--EMPTYDIV-->
+    <div class="half"></div>
 
     <div class="">
     <p class="mono">
-      Looking upwards from where the television is playing, <br>
-      The iconic plaque of the ship, glowing valiantly. <br>
-      Each letter is scaled up so it spans from left to right. <br>
-      Its grandiose persisting in the dilapidation.
+      Looking upwards from where the television is playing, 
+      the gazing nameplate of the ship, glowing valiantly. <br><br>
+      Each letter is scaled up so it spans from left to right. 
+      Its grandiose rebelling against the dilapidation.
+    </p>
+    </div>
+
+    <div class="hangar-5_4">
+    <img width="1280" src="../img/part_2/ishimura_static.webp" alt="">
+    </div>
+
+    <div class="centertitle">
+      <p class="mono" style="min-width: fit-content; text-align: left;">
+      Aptly named after Hideki Ishimura, <br>
+      the creator of the ShockPoint Drive. <br><br>
+      They say it translates to "rock village". <br>
+      Commemoration aligned with purpose.<br>
     </p>
     </div>
 
   <!--EMPTYDIV-->
-  <div class="half"></div>
+  <div class=""></div>
 
   <div class="parallax parallax-hangar hangar-5_5">
-    <p class="mono lefttitle">
-      Arriving at the lobby, he caught up with the others. <br>
+    <p class="mono">
+      Having caught up with the others, thus another hurdle. <br>
       Whole place was dark, with only the emergency lights on. <br>
-      The door was supposed to open at close proximity, <br>
-      but it seems the mechanism is inoperable. <br>
+    </p>
+  </div>
+
+  <div class="parallax parallax-hangar hangar-5_5" style="background-position: right;">
+    <p class="mono righttitle">
+      The door was supposed to open at close proximity <br>
+      but the sensor mechanism is inoperable.<br>
     </p>
   </div>
 
@@ -392,10 +446,10 @@
 
   <div>
     <p class="mono">
-      As engineer, Isaac has admin privileges to security. <br>
-      He can override protocols and pry open the doors. <br>
-      Provided that the door pads have a sufficient power, <br>
-      it can be done by using his RIG's interface and a click. <br>
+      As engineer, Isaac has admin privileges to security. 
+      He can override protocols and pry open the doors. <br><br>
+      Provided that the door pads have sufficient power, 
+      it can be done by using his RIG's interface and a click.
     </p>
   </div>
 
@@ -542,7 +596,7 @@
   </section>
 
   <section id="quarantine">
-    <div class="suptitle parallax quarantine-8_0">
+    <div class="centertitle parallax quarantine-8_0">
       <p class="speech misc">
         Johnston: Huh. That doesn't look good. She's taken a lot of damage.
       </p>
@@ -561,7 +615,7 @@
       </p>
     </div>
 
-    <div class="parallax quarantine-8_3">
+    <div class="parallax quarantine-8_3"  onpointerenter="document.getElementById('quarantine_alarm').play()">
     </div>
 
     <div class="">
@@ -583,7 +637,7 @@
       </p>
     </div>
 
-    <div class="">
+    <div class="" onpointerenter="document.getElementById('quarantine_lockdown').play();">
       <p class="mono">
         monologue
       </p>
