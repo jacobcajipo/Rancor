@@ -252,6 +252,19 @@ section#lounge {
 .lounge-6_5 {
   background-image: url(../img/part_2/6_5.webp);
 }
+.lounge-6_5_2 {
+  background-image: url(../img/part_2/6_5_2.png);
+}
+.lounge-6_5_3 {
+  background-image: url(../img/part_2/6_5_3.png);
+}
+.lounge-6_5_4 {
+  background-image: url(../img/part_2/6_5_4.png);
+}
+.lounge-6_5_5 {
+  background-image: url(../img/part_2/6_5_5.png);
+}
+
 .lounge-6_6 {
   background-image: url(../img/part_2/6_6.webp);
 }
@@ -296,4 +309,14 @@ section#quarantine {
 }
 .quarantine-8_3 {
   background-image: url(../img/part_2/8_3.webp);
+}
+.quarantine-8_4 {
+  background-image: url(../img/part_2/8_4.png);
+  background-position: top;
+}
+.quarantine-8_5 {
+  background-image: url(../img/part_2/8_5.png);
+}
+.quarantine-8_6 {
+  background-image: url(../img/part_2/8_6.png);
 }

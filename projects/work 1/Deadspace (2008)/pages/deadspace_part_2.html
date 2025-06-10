@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/deadspace_part_2.css">
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
 </head>
-<body onload="document.getElementById('ambient').play();">
+<body>
 
   <header>
     <nav>
@@ -46,13 +46,26 @@ id="heartbeat" loop
 src="../audio/Dead Space Isaac's breath and heartbeat.mp3">
 </audio>
 <audio 
-id="quarantine_alarm" loop
-src="../audio/Quarantine Alarm.mp3">
+id="quarantine_activated" 
+src="../audio/quaratine_activated.mp3">
 </audio>
 <audio 
-id="quarantine_lockdown"
+id="quarantine_normal"
 loop
-src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
+src="../audio/quarantine_normal.mp3">
+</audio>
+<audio 
+id="quarantine_necro"
+loop
+src="../audio/quarantine_necro.mp3">
+</audio>
+<audio 
+id="quarantine_necro_2"
+src="../audio/Sound Effect- Crash.mp3">
+</audio>
+<audio 
+id="quarantine_necro_arrives"
+src="../audio/quarantine_necro_arrives.mp3">
 </audio>
 
 
@@ -93,7 +106,7 @@ src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
     <!--EMPTYDIV-->
     <div class="half"></div>
 
-    <div class="centertitle parallax top-mask awake-00">
+    <div class="centertitle parallax top-mask awake-00" onpointerenter="document.getElementById('ambient').play();">
       <p class="speech hammond">
         Hammond: Is everyone okay?
       </p>
@@ -351,7 +364,7 @@ src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
       
     <div class="parallax parallax-hangar hangar-5_3">
       <p class="mono righttitle">
-        They continued treading down the bridge at a careful pace. <br>
+        They continued treading down the bridge at a pace. <br>
         Still, they tripped a sensor that detects movements... <br>
       </p>
     </div>
@@ -363,12 +376,11 @@ src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
       </p>
     </div>
 
-    <div style="height: auto;">
+    <div style="height: auto;" onpointerenter="ambient_music().pause();">
       <video 
       id="welcome_video"
       onpointerenter="
       this.play();"
-      onplaying="ambient_music().pause();"
       src="../videos/Welcome Aboard USG Ishimura (English).mp4"
       controls
       width="100%"
@@ -475,37 +487,55 @@ src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
     <div class="parallax lounge-6_0"></div>
     <div class="parallax lounge-6_1"></div>
     <!--div class="parallax lounge-6_2"></div-->
-    <div class="parallax lounge-6_3"></div>
+    <div class="centertitle parallax lounge-6_3">
+      <p class="mono">
+        Unexpectedly reminiscent of an abandoned house, <br>
+        a fine layer of dust accumulated on the stained floor. <br>
+      </p>
+    </div>
     <div class="">
       <p class="mono">
-        The flight lounge was pitch black. <br>
-        A heavy layer of dust had covered the stained floor, <br>
-        Frozen with anxiety, his body refused to move, <br>
-        relieved by humming lightbulbs turning on in disarray, <br>
+        People are supposed to be waiting for them in this lounge. <br>
+        Frozen with anxiety, it took him a while to snap back.<br>
       </p>
     </div>
 
     <div class="parallax lounge-6_4">
-      <p class="speech kendra">
+      <p class="speech kendra lefttitle">
         Kendra: Seems like everyone was trying to pack in a hurry.
       </p>
     </div>
 
-    <div class="subtitle parallax lounge-6_5">
-      <p class="speech hammond">
+    <div class="parallax lounge-6_5">
+      <p class="speech hammond righttitle">
         Hammond: There should be a security detail here.
       </p>
     </div>
 
-    <div class="half">
-      <p class="speech kendra lefttitle">
+    <div class="parallax lounge-6_5_2">
+      <p class="speech kendra">
         Kendra: Yeah, well there's not. 
         There's nobody here. 
         I can't pick up any broadcasts.
       </p>
     </div>
 
-    <div class="half">
+    <div class="centertitle parallax lounge-6_5_3">
+      <p class="mono">
+        It’s obvious that multiple personnel came this way. <br>
+        Numerous luggages on the seats left unattended.<br>
+      </p>
+    </div>
+
+    <div class="centertitle parallax lounge-6_5_4">
+      <p class="mono">
+        Puzzling why the prompter tells that all flights were cancelled.<br>
+        If no one was allowed to get out, then where are they now? <br>
+
+      </p>
+    </div>
+
+    <div class="parallax lounge-6_5_5" style="background-position: right;">
       <p class="speech hammond righttitle">
         Hammond: That security console is still live. 
         Isaac, log in and see what you can find. 
@@ -513,7 +543,7 @@ src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
       </p>
     </div>
 
-    <div class="half">
+    <div class="parallax lounge-6_5_5" style="background-position: left;">
       <p class="speech kendra lefttitle">
         Kendra: Power's dead. I can't.
       </p>
@@ -534,10 +564,11 @@ src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
 
     <div class="">
       <p class="mono">
-        As Hammond delegated the tasks with authority, <br>
-        There was a sliver where he almost lost composure. <br>
-        Kendra de-escalated the tension, turning her back. <br>
-        There was a brewing enmity but they all must comply. <br>
+        When Hammond delegated the tasks with authority, 
+        there was a sliver where he almost lost composure. <br><br>
+        Kendra de-escalated the tension, turning her back. 
+        It’s clear that Isaac wasn’t the only one on edge.
+
       </p>
     </div>
   
@@ -560,29 +591,43 @@ src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
 
   <section id="security">
     <div class="parallax security-7_0"></div>
-    <div class="parallax security-7_1">
+    <div class="centertitle parallax security-7_1">
       <p class="mono">
-        Upon opening the door to security, his eyes widened, <br>
-        He took a second glance for good measure til he's certain, <br>
+        Soon as the door to the console opened, his chest tightened.<br>
+        He took a second glance for good measure until he's certain.<br>
       </p>
     </div>
-    <div class="suptitle parallax security-7_2">
+    <div class="centertitle parallax security-7_2">
       <p class="mono">
-        Pools of blood were splattered across the floor and walls, <br>
-        It was an overwhelming scene, enough to make him nauseous, <br>
-        Someone died in here yet he couldn't see the body, <br>
+        A nauseating puddle of blood, <br>
+        some splattered across the walls. <br>
       </p>
     </div>
-    <div class="subtitle parallax security-7_3">
+
+    <div class="centertitle parallax security-7_2">
       <p class="mono">
-        He had a job to do, so needs to keep moving. <br>
-        He took a deep breath, and walked towards the console. <br>
+        Someone died in this cold, dark room.<br>
+        The absent corpse failed to ease him.<br>
+      </p>
+    </div>
+
+    <div class="centertitle parallax security-7_3">
+      <p class="mono">
+        With a deep breath and clenched teeth, <br>
+        he quietly pushed himself onwards.<br>
+      </p>
+    </div>
+    <div class="centertitle parallax security-7_3">
+      <p class="mono">
+        Pictures of death with each step,<br>
+        Couple of strides feeling like a mile.<br>
       </p>
     </div>
 
     <div>
       <p class="mono">
-        Stepping over the hardened red substance in the process. <br>
+        His reward, a fully functional terminal to interface.<br>
+        Unfortunately, they wouldn’t like what they’re about to see.
       </p>
     </div>
 
@@ -615,53 +660,56 @@ src="../audio/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3">
       </p>
     </div>
 
-    <div class="parallax quarantine-8_3"  onpointerenter="document.getElementById('quarantine_alarm').play()">
+    <div class="parallax quarantine-8_3"  onpointerenter="document.getElementById('quarantine_activated').play()">
     </div>
 
-    <div class="">
+    <div class="" onpointerenter="document.getElementById('quarantine_normal').play()">
       <p class="mono">
-        monologue
+        If they only knew that the hope they bestowed to themselves.<br>
+        Will be squandered by the horrors about to unfold.<br>
       </p>
     </div>
 
-    <div class="half">
-      <p class="speech kendra">
+    <div class="half parallax quarantine-8_4">
+      <p class="speech kendra lefttitle">
         Kendra: "What the hell was that?"
       </p>
     </div>
 
-    <div class="half">
-      <p class="speech hammond">
+    <div class="half parallax quarantine-8_4">
+      <p class="speech hammond righttitle">
         Hammond: "Automatic quarantine must have tripped when the filtration system restarted. 
         Everybody relax..."
       </p>
     </div>
 
-    <div class="" onpointerenter="document.getElementById('quarantine_lockdown').play();">
+    <div class="" onpointerenter="document.getElementById('quarantine_necro').play();">
       <p class="mono">
-        monologue
+        the walls and the ceiling started to creak, <br>
+        immediately followed by growling and scratching.
+
       </p>
     </div>
 
-    <div class="half">
-      <p class="speech kendra">
+    <div class="half parallax quarantine-8_5">
+      <p class="speech kendra lefttitle">
         Kendra: "What was that? Did you hear that?!"
       </p>
     </div>
 
-    <div class="half">
-      <p class="speech hammond">
+    <div class="half parallax quarantine-8_5">
+      <p class="speech hammond righttitle">
         Hammond: "I'm not sure..."
       </p>
     </div>
 
-    <div class="half">
+    <div class="" onpointerenter="document.getElementById('quarantine_necro_2').play();">
       <p class="mono">
-        {Something falls to the floor from the ceiling nearby Corporal Johnston.}
+        CRASH
       </p>
     </div>
 
-    <div class="half">
+    <div class="parallax quarantine-8_6" style="background-position: top right;" onpointerenter="document.getElementById('quarantine_necro_arrives').play();">
       <p class="speech misc">
         Johnston: "What the hell?"
       </p>
