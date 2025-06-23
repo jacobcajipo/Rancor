@@ -38,7 +38,7 @@ div.kendra_3 {
 div.asteroids {
   background-image: 
   url(../img/part_1/asteroids_1.webp), 
-  url(../img/part_1/asteroids_2.png), 
+  url(../img/part_1/asteroids_2.webp), 
   url(../img/part_1/asteroids_3.webp);
 }
 div.aegis7  {
@@ -64,15 +64,15 @@ div.ishimura  {
 }
 div.silence {
   background-image: 
-  url(../img/part_1/silence.png);
+  url(../img/part_1/silence.webp);
 }
 div.silence_2 {
   background-image: 
-  url(../img/part_1/silence_2.png);
+  url(../img/part_1/silence_2.webp);
 }
 div.silence_3 {
   background-image: 
-  url(../img/part_1/silence_3.png);
+  url(../img/part_1/silence_3.webp);
 }
 div.crash_impact  {
   background-image: 
@@ -80,7 +80,7 @@ div.crash_impact  {
 }
 div.crash_chen  {
   background-image: 
-  url(../img/part_1/crash_chen.png);
+  url(../img/part_1/crash_chen.webp);
 }
 div.crash_fade_1  {
   background-image: 

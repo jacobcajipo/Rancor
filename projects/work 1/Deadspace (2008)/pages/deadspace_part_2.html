@@ -67,7 +67,17 @@ src="../audio/Sound Effect- Crash.mp3">
 id="quarantine_necro_arrives"
 src="../audio/quarantine_necro_arrives.mp3">
 </audio>
-
+<audio src="../audio/door_pad_activated.mp3"
+id="door_pad_activated"></audio>
+<audio src="../audio/Dead Space _ Objective Complete [Sound Effect].mp3"
+id="objective_complete"></audio>
+<audio src="../audio/flatline_start.mp3"
+id="flatline_start"></audio>
+<audio src="../audio/flatline_loop.mp3"
+id="flatline_loop"
+loop></audio>
+<audio src="../audio/Flesh Ripping and Gutting Free Sound Effect (Various Versions!).mp3"
+id="flesh"></audio>
 
   <main>
     <div class="">
@@ -106,7 +116,8 @@ src="../audio/quarantine_necro_arrives.mp3">
     <!--EMPTYDIV-->
     <div class="half"></div>
 
-    <div class="centertitle parallax top-mask awake-00" onpointerenter="document.getElementById('ambient').play();">
+    <section id="hangar" onpointerenter="document.getElementById('ambient').play();" onpointerleave="document.getElementById('ambient').pause();">
+    <div class="centertitle parallax top-mask awake-00">
       <p class="speech hammond">
         Hammond: Is everyone okay?
       </p>
@@ -177,23 +188,15 @@ src="../audio/quarantine_necro_arrives.mp3">
      <div class="centertitle parallax parallax-rig one-bar">
       <p class="mono">
         Embedded straight to their spine, <br>
-        The Resource Integration Gear (RIG)
-      </p>
-     </div>
-      <div class="centertitle parallax parallax-rig one-bar">
-        <p class="mono">
-          It lights from the bottom, red to blue, <br>
-          For displaying the overall health. <br>
+        The Resource Integration Gear (RIG) <br>
+        It lights from the bottom, red to blue, <br>
+        For displaying the overall health. <br>
         </p>
       </div>
       <div class="centertitle parallax parallax-rig two-bar">
         <p class="mono">
           Used to view vitals of the aged, <br>
-          reducing cords and machinery.
-        </p>
-      </div>
-      <div class="centertitle parallax parallax-rig two-bar">
-        <p class="mono">
+          reducing cords and machinery. <br>
           Administers medications, too. <br>
           Injecting the drugs to vertebrae. <br>
         </p>
@@ -201,11 +204,7 @@ src="../audio/quarantine_necro_arrives.mp3">
       <div class="centertitle parallax parallax-rig three-bar">
         <p class="mono">
           Seeing other potential uses, <br>
-          its market expanded to sectors.
-        </p>
-      </div>
-      <div class="centertitle parallax parallax-rig three-bar">
-        <p class="mono">
+          its market expanded to sectors. <br>
           Workers, military, scientists, <br>
           significantly improved it since. <br>
         </p>
@@ -376,13 +375,10 @@ src="../audio/quarantine_necro_arrives.mp3">
       </p>
     </div>
 
-    <div style="height: auto;" onpointerenter="ambient_music().pause();">
+    <div style="height: auto;" onpointerenter="welcome_video.play();" onpointerleave="welcome_video.pause();">
       <video 
       id="welcome_video"
-      onpointerenter="
-      this.play();"
       src="../videos/Welcome Aboard USG Ishimura (English).mp4"
-      controls
       width="100%"
       height="fit-content"
       >
@@ -478,10 +474,10 @@ src="../audio/quarantine_necro_arrives.mp3">
       
     <map name="lounge" cursor="pointer">
       <area shape="circle" coords="395, 245,115" href="#lounge" alt=""
-      onclick="open_lounge()" id="lounge_area" style="cursor: pointer;">
+      onclick="open_lounge(); document.getElementById('door_pad_activated').play();" id="lounge_area" style="cursor: pointer;">
     </map>
   </div>
-
+  </section>
   <!--FLIGHT LOUNGE-->
   <section id="lounge">
     <div class="parallax lounge-6_0"></div>
@@ -529,7 +525,7 @@ src="../audio/quarantine_necro_arrives.mp3">
 
     <div class="centertitle parallax lounge-6_5_4">
       <p class="mono">
-        Puzzling why the prompter tells that all flights were cancelled.<br>
+        The prompter tells that all flights were cancelled.<br>
         If no one was allowed to get out, then where are they now? <br>
 
       </p>
@@ -583,7 +579,7 @@ src="../audio/quarantine_necro_arrives.mp3">
     <map name="security_map" cursor="pointer">
       <area shape="circle" coords="400, 230,160" 
       href="#security" id="security_area" alt=""
-      onclick="open_security()"  style="cursor: pointer;">
+      onclick="open_security(); document.getElementById('door_pad_activated').play();"  style="cursor: pointer;">
     </map>
   </div>
   
@@ -614,7 +610,7 @@ src="../audio/quarantine_necro_arrives.mp3">
     <div class="centertitle parallax security-7_3">
       <p class="mono">
         With a deep breath and clenched teeth, <br>
-        he quietly pushed himself onwards.<br>
+        he carefully pushed himself onwards.<br>
       </p>
     </div>
     <div class="centertitle parallax security-7_3">
@@ -634,7 +630,7 @@ src="../audio/quarantine_necro_arrives.mp3">
     <div id="console" class="hangar-5_7">
       <img src="../img/part_2/console.webp" alt="" usemap="#console_map">
       <map name="console_map" cursor="pointer">
-        <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" onclick="open_quarantine()">
+        <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" onclick="open_quarantine(); document.getElementById('objective_complete').play();">
       </map>
 
     </div>
@@ -660,13 +656,13 @@ src="../audio/quarantine_necro_arrives.mp3">
       </p>
     </div>
 
-    <div class="parallax quarantine-8_3"  onpointerenter="document.getElementById('quarantine_activated').play()">
+    <div class="parallax quarantine-8_3"  onpointerenter="document.getElementById('quarantine_activated').play(); document.getElementById('quarantine_normal').play()">
     </div>
 
-    <div class="" onpointerenter="document.getElementById('quarantine_normal').play()">
+    <div class="" onpointerenter="">
       <p class="mono">
-        If they only knew that the hope they bestowed to themselves.<br>
-        Will be squandered by the horrors about to unfold.<br>
+        The unrelenting blare of the alarm caught them off guard. <br>
+        It’s hard to remain calm with shock and trauma still fresh.
       </p>
     </div>
 
@@ -685,9 +681,8 @@ src="../audio/quarantine_necro_arrives.mp3">
 
     <div class="" onpointerenter="document.getElementById('quarantine_necro').play();">
       <p class="mono">
-        the walls and the ceiling started to creak, <br>
-        immediately followed by growling and scratching.
-
+        Something beyond a logical explanation happens, <br>
+        There are voices coming right out of the walls and ceiling.
       </p>
     </div>
 
@@ -703,37 +698,76 @@ src="../audio/quarantine_necro_arrives.mp3">
       </p>
     </div>
 
+    <div class="half"></div>
+
     <div class="" onpointerenter="document.getElementById('quarantine_necro_2').play();">
-      <p class="mono">
+      <p class="loudnoise">
         CRASH
       </p>
     </div>
+    <div class="half"></div>
 
-    <div class="parallax quarantine-8_6" style="background-position: top right;" onpointerenter="document.getElementById('quarantine_necro_arrives').play();">
+    <div class="parallax quarantine-8_6">
       <p class="speech misc">
         Johnston: "What the hell?"
       </p>
     </div>
 
-    <div class="half">
-      <p class="mono">
-        {Quietly, a slasher rises up behind Johnston.}
+    <div class="half"></div>
+    <div onpointerenter="document.getElementById('quarantine_necro_arrives').play();">
+      <p class="loudnoise">
+        flop
       </p>
     </div>
+    <div class="half"></div>
 
-    <div class="half">
+    <div class="parallax quarantine-8_7">
       <p class="speech kendra">
         Kendra: "I don't know! Something's in the room with us!"
       </p>
     </div>
 
-    <div class="half">
+    <div class="parallax quarantine-8_7">
+    <p class="mono">
+      A figure emerged from where the sound originated.
+    </p>
+    </div> 
+
+    <div class="parallax quarantine-8_7">
       <p class="mono">
-        {The slasher decapitates Corporal Johnston. His RIG registers his death after a pause; it emits a flatline sound, 
-          audible even over subsequent gunfire.}
+        It was bleeding profusely, curled up but facing the floor.
       </p>
     </div>
 
+    <div>
+      <p class="mono">
+        With pale skin stretching across its back like rubber. <br>
+        It almost looked human...
+      </p>
+    </div>
+    <div>
+      <p class="mono">
+        but then it stood up.
+      </p>
+    </div>
+
+    <div class="centertitle parallax quarantine-8_8"></div>
+
+    <div class="centertitle parallax quarantine-8_8">
+      <p class="mono">
+        An abnormally elongated limb with a sharp end. <br>
+        Reached out to Corporal Johnston in the blink of an eye.
+      </p>
+    </div>
+
+    <div class="centertitle parallax quarantine-8_9" onpointerenter="document.getElementById('flatline_start').play(); document.getElementById('flatline_loop').play(); document.getElementById('flesh').play();">
+      <p class="mono">
+        Blood gushed from his neck and spread on to the glass windows. <br>
+        His head fell off and rolled away from his impaled body.
+      </p>
+    </div>
+
+    <div class=""></div>
   </section>
 
 
