@@ -93,7 +93,7 @@ p.misc {
 /*Sound effects font*/
 p.loudnoise {
   font-family: crashing;
-  font-size: clamp(1rem, 80vw, 20rem);
+  font-size: clamp(10em, -2.3654rem + 10.7692vw, 20em);
   text-align: center;
   color: red;
   width: 100%;
@@ -348,5 +348,5 @@ section#quarantine {
 }
 .quarantine-8_9 {
   background-image: url(../img/part_2/8_9.webp);
-  background-position: center;
+  background-position: top right;
 }
