@@ -221,7 +221,7 @@ section#hangar {
     background-position: left;
   }
   .hangar-5_4 {
-  height: 80vh;
+  height: auto;
   overflow-x: auto;
     display: flex;
     justify-content: start;
@@ -348,5 +348,5 @@ section#quarantine {
 }
 .quarantine-8_9 {
   background-image: url(../img/part_2/8_9.webp);
-  background-position: top right;
+  background-position: center;
 }
