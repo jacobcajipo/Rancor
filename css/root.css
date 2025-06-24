@@ -1,4 +1,7 @@
 /*common*/
+html {
+    scroll-behavior: smooth;
+}
 body  {
   margin: 3vh auto;
   padding: 0;
@@ -13,7 +16,6 @@ body  {
   flex-direction: column;
 
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 /*FONTS*/

@@ -97,43 +97,6 @@ div.crash_fade_3  {
 div.crash {
   background-size: contain !important;
 }
-/**images_end**/
-
-/**parallax and masking**/
-div.parallax
-{
-  mask-image: linear-gradient(transparent 0%, gray 40%, gray 50%, gray 60%, transparent 100%);
-}
-
-div.stills 
-{
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-div.top-bottom-mask
-{
-  mask-image: linear-gradient(transparent 0%, black 30%, black 50%, black 70%, transparent 100%);
-}
-
-div.top-mask
-{
-  mask-image: linear-gradient(transparent 0%, gray 40%, black 100%);
-}
-
-div.bottom-mask
-{
-  mask-image: linear-gradient(black 0%, gray 40%, transparent 100%);
-}
-
-div.no-mask
-{
-  mask-image: none;
-}
-
-/**parallax and masking end**/
-
 /**fonts**/
 div.static p
 {
@@ -156,13 +119,6 @@ p.crashing
   background-color: transparent !important;
   transform: scale(15);
 }
-
-/**darkening texts against parallax**/
-.parallax p
-{
-  background: rgb(0,0,0,0.75);
-}
-
 /*characters*/
 .is_panic p
 {

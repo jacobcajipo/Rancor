@@ -27,66 +27,73 @@
           </p>
         </li>
         <li>
-          <button id="ambient_button" onclick="ambient_music()">
+          <button id="" onclick="#intro">
+            NEXT
           </button>
         </li>
       </ul>
     </nav>
   </header>
 <audio 
-  id="ambient" loop
-  src="../audio/Dead Space - Audio - Ambience.mp3">
+  id="ambient"
+  src="../audio/part_2/wreck.mp3">
 </audio>
+<audio src="../audio/part_2/lights.mp3"
+id="lights"></audio>
 <audio 
   id="ambient_2" loop
-  src="../audio/Dead Space (2008) - USG Ishimura PA system announcementsmessages.mp3">
+  src="../audio/part_2/PA_system.mp3">
 </audio>
 <audio 
 id="heartbeat" loop
-src="../audio/Dead Space Isaac's breath and heartbeat.mp3">
+src="../audio/part_2/Dead Space Isaac's breath and heartbeat.mp3">
 </audio>
 <audio 
 id="quarantine_activated" 
-src="../audio/quaratine_activated.mp3">
+src="../audio/part_2/quaratine_activated.mp3">
 </audio>
 <audio 
 id="quarantine_normal"
 loop
-src="../audio/quarantine_normal.mp3">
+src="../audio/part_2/quarantine_normal.mp3">
 </audio>
 <audio 
 id="quarantine_necro"
 loop
-src="../audio/quarantine_necro.mp3">
+src="../audio/part_2/quarantine_necro.mp3">
 </audio>
 <audio 
 id="quarantine_necro_2"
-src="../audio/Sound Effect- Crash.mp3">
+src="../audio/part_2/crash.mp3">
 </audio>
 <audio 
 id="quarantine_necro_arrives"
-src="../audio/quarantine_necro_arrives.mp3">
+src="../audio/part_2/quarantine_necro_arrives.mp3">
 </audio>
-<audio src="../audio/door_pad_activated.mp3"
-id="door_pad_activated"></audio>
-<audio src="../audio/Dead Space _ Objective Complete [Sound Effect].mp3"
-id="objective_complete"></audio>
-<audio src="../audio/flatline_start.mp3"
-id="flatline_start"></audio>
-<audio src="../audio/flatline_loop.mp3"
+<audio src="../audio/part_2/door_pad_activated.mp3"
+id="door_pad_activated">
+</audio>
+<audio src="../audio/part_2/Dead Space _ Objective Complete [Sound Effect].mp3"
+id="objective_complete">
+</audio>
+<audio src="../audio/part_2/flatline_start.mp3"
+id="flatline_start">
+</audio>
+<audio src="../audio/part_2/flatline_loop.mp3"
 id="flatline_loop"
 loop></audio>
-<audio src="../audio/Flesh Ripping and Gutting Free Sound Effect (Various Versions!).mp3"
+<audio src="../audio/part_2/Flesh Ripping and Gutting Free Sound Effect (Various Versions!).mp3"
 id="flesh"></audio>
-
+<audio src="../audio/part_2/stab.mp3"
+id="stab"></audio>
   <main>
-    <div class="">
+    <div class="" id="top" >
       <h2 style="text-align: center; padding: 10px 2vw;">
         The limit
       </h2>
     </div>
     
-    <div class="">    
+    <div class="" id="intro">    
         <p class="mono">
         Even with intense contingent drills and simulations, 
         the human body has a fixed gravitational force threshold. <br><br>
@@ -131,11 +138,16 @@ id="flesh"></audio>
       </p>
     </div>
 
-    <div class="parallax bottom-mask subtitle awake-02">
+    <div class="centertitle parallax bottom-mask subtitle awake-02">
       <p class="speech hammond">
         Hammond: I just saved our asses, Ms. Daniels! 
         If we had aborted at that speed and distance, 
-        we would have smashed right into the side of the Ishimura. <br><br>
+        we would have smashed right into the side of the Ishimura.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="speech hammond">
         Now settle down, and let's get to work. 
         Corporal, report!
       </p>
@@ -209,14 +221,14 @@ id="flesh"></audio>
           significantly improved it since. <br>
         </p>
       </div>
-      <div class="subtitle parallax parallax-rig four-bar">
+      <div class="centertitle parallax parallax-rig four-bar">
       <p class="speech kendra">
         Kendra: 
         Okay, we're done. Clean bill of health for everyone.
       </p>
       </div>
 
-    <div class="half">
+    <div class="">
       <p class="speech hammond">
         Hammond: All right. 
         We've still got a job to do. We're moving out.
@@ -224,7 +236,7 @@ id="flesh"></audio>
     </div>
 
     <!--EMPTYDIV-->
-    <div class=""></div>
+    <div class="half"></div>
 
     <div class="">
       <p class="mono">
@@ -237,7 +249,7 @@ id="flesh"></audio>
 
     <!-- View Gear -->
     <div class="parallax parallax-level-1-gear angle-one"></div>
-      <div class="half">
+      <div class="">
       <p class="mono">
         A helmet that covers the entirety of his head, <br>
         appendages portruding from his jaw towards his face. <br><br>
@@ -246,7 +258,7 @@ id="flesh"></audio>
       </p>
     </div>
     <div class="parallax parallax-level-1-gear angle-two"></div>
-    <div class="half">
+    <div class="">
       <p class="mono">
         Standard issue uniform that has seen better days. <br>
         The insulation had scratches, burnt scars, and poked holes. <br><br>
@@ -256,7 +268,7 @@ id="flesh"></audio>
     </div>
     <div class="parallax parallax-level-1-gear angle-three"></div>
 
-    <div class="half">
+    <div class="">
       <p class="mono">
         Nothing new to be forgotten by a corporation.<br> 
         Nevertheless, elicits a polarized reaction.<br> <br> 
@@ -266,7 +278,7 @@ id="flesh"></audio>
     </div>
 
     <!--EMPTYDIV-->
-    <div></div>
+    <div class="half"></div>
 
     <div class="">
       <p class="mono">
@@ -489,7 +501,7 @@ id="flesh"></audio>
         a fine layer of dust accumulated on the stained floor. <br>
       </p>
     </div>
-    <div class="">
+    <div class="" onpointerenter="document.getElementById('lights').play();">
       <p class="mono">
         People are supposed to be waiting for them in this lounge. <br>
         Frozen with anxiety, it took him a while to snap back.<br>
@@ -662,7 +674,7 @@ id="flesh"></audio>
     <div class="" onpointerenter="">
       <p class="mono">
         The unrelenting blare of the alarm caught them off guard. <br>
-        It’s hard to remain calm with shock and trauma still fresh.
+        Their adrenaline from the fatal crash got them spooked.
       </p>
     </div>
 
@@ -675,6 +687,11 @@ id="flesh"></audio>
     <div class="half parallax quarantine-8_4">
       <p class="speech hammond righttitle">
         Hammond: "Automatic quarantine must have tripped when the filtration system restarted. 
+      </p>
+    </div>
+
+    <div class="centertitle parallax quarantine-8_4">
+      <p class="speech hammond">
         Everybody relax..."
       </p>
     </div>
@@ -686,20 +703,19 @@ id="flesh"></audio>
       </p>
     </div>
 
-    <div class="half parallax quarantine-8_5">
+    <div class="parallax quarantine-8_5">
       <p class="speech kendra lefttitle">
         Kendra: "What was that? Did you hear that?!"
       </p>
     </div>
 
-    <div class="half parallax quarantine-8_5">
+    <div class="parallax quarantine-8_5">
       <p class="speech hammond righttitle">
         Hammond: "I'm not sure..."
       </p>
     </div>
 
     <div class="half"></div>
-
     <div class="" onpointerenter="document.getElementById('quarantine_necro_2').play();">
       <p class="loudnoise">
         CRASH
@@ -760,6 +776,14 @@ id="flesh"></audio>
       </p>
     </div>
 
+    <div class="half"></div>
+    <div class="" onpointerenter="document.getElementById('stab').play();">
+      <p class="loudnoise">
+        SHTUK
+      </p>
+    </div>
+    <div class="half"></div>
+
     <div class="centertitle parallax quarantine-8_9" onpointerenter="document.getElementById('flatline_start').play(); document.getElementById('flatline_loop').play(); document.getElementById('flesh').play();">
       <p class="mono">
         Blood gushed from his neck and spread on to the glass windows.
@@ -770,10 +794,6 @@ id="flesh"></audio>
       <p class="mono">
         His head fell off and rolled away from his impaled body.
       </p>
-    </div>
-
-    <div class="centertitle parallax quarantine-8_9" style="background-position: center;">
-    
     </div>
 
     <div class=""></div>

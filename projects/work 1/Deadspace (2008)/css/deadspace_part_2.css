@@ -1,140 +1,10 @@
-main div {
-  align-content: center;
-  padding: 0 8vw;
-  / border: 1px red solid;
-}
-div.half {
-  height: 30vh;
-  position: relative;
-}
-
-/*Monologue parts*/
-p.mono {
-  padding: 10px;
-  align-content: center;
-  max-height: 30vh; 
-  text-align: left;
-  font-weight: bold;
-  /word-spacing: 0.15em;
-  line-height: 1.5em;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.9) !important;
-}
-p.mono.righttitle {
-  height: fit-content;
-  width: fit-content;
-  text-align: left;
-  float: inline-end; 
-}
-p.mono.lefttitle {
-  width: fit-content;
-  height: fit-content;
-  /background-color: black;
-  text-align: left;
-  float: inline-start; 
-}
-
-/*Text location*/
-p.righttitle {
-  width: 60%; 
-  float: inline-end; 
-  align-content: center;
-  text-align: left;
-  padding: 10px;
-  margin: 0;
-}
-p.lefttitle {
-  width: 55%; 
-  float: inline-start; 
-  align-content: center;
-  text-align: left;
-  padding: 10px;
-  margin: 0;
-}
-div.suptitle {
-  align-content: start; 
-  justify-content: start;
-  padding-top: 15vh;
-}
-div.subtitle {
-  align-content: end; 
-  padding-bottom: 15vh;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-div.centertitle {
-  display: flex; 
-  justify-content: center; 
-  align-items: center;
-}
-/*Speech Bubbles*/
-p.speech {
-  padding: 10px 2vw;
-  width: fit-content;
-  max-width: 80%;
-  max-height: 30vh;
-  margin: auto;
-  background-color: none;
-  color: white;
-  
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 5px;
-}
-p.hammond {
-  background-color: #502821d0;
-}
-p.kendra {
-  background-color: #c07b35da; /*#C07B35*/
-}
-p.misc {
-  background-color: #7e9e7e;
-}
-/*Sound effects font*/
-p.loudnoise {
-  font-family: crashing;
-  font-size: clamp(10em, -2.3654rem + 10.7692vw, 20em);
-  text-align: center;
-  color: red;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-/*parallax and masking*/
-.parallax {
-  background-color: none;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 88vh;
-  margin: 0;
-  padding: 0;
-}
-.parallax p.mono{
-  background-color: black;
-  height: fit-content;
-  width: fit-content;
-}
-.bottom-mask {
-  mask-image: linear-gradient(black 0%, gray 88%,transparent 100%);
-}
-.top-mask {
-  mask-image: linear-gradient(transparent 0%, gray 13%, black 100%);
-}
-.top-bottom-mask {
-  mask-image: linear-gradient(transparent 0%, gray 13%, black 50% , gray 88%, transparent 100%)
-}
- 
+/*AWAKEN*/
 section#hangar {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin: 0;
 }
-/*AWAKE PART*/
 .awake-00 {
   background-image: url(../img/part_2/1_0.webp);
 }
@@ -144,11 +14,9 @@ section#hangar {
 .awake-02 {
   background-image: url(../img/part_2/1_2.webp);
 } 
-
 /*RIG FILL PART*/
 .parallax-rig {
   background-position: left;
-
 }
   .no-bar {
     background-image: url(../img/part_2/2_0.webp);
@@ -165,12 +33,9 @@ section#hangar {
   .four-bar {
   background-image: url(../img/part_2/2_4.webp);
   }
-
-
 .parallax-level-1-gear {
   background-position: center;
 }
-
   div.angle-one {
     background-image: url(../img/part_2/3_1.webp);
   }
@@ -180,12 +45,10 @@ section#hangar {
   div.angle-three {
     background-image: url(../img/part_2/3_3.webp);
   }
-
 .parallax-rig-apps {
   background-position: top;
   /background-size: contain;
 }
-
   div.app-inv {
     background-image: url(../img/part_2/4_1.webp);
   }
@@ -198,11 +61,9 @@ section#hangar {
   div.app-mis {
     background-image: url(../img/part_2/4_4.webp);
   }
-
 .parallax-hangar {
- 
-}
 
+}
   .hangar-5_0 {
     background-image: url(../img/part_2/5_0.webp);
     background-position: left;
@@ -244,7 +105,6 @@ section#hangar {
     align-items: center;
     justify-content: center;
   }
-
 section#lounge {
   display: none;
   flex-direction: column;
@@ -281,14 +141,12 @@ section#lounge {
 .lounge-6_5_5 {
   background-image: url(../img/part_2/6_5_5.webp);
 }
-
 .lounge-6_6 {
   background-image: url(../img/part_2/6_6.webp);
 }
 .lounge-6_7 {
   background-image: url(../img/part_2/6_7.webp);
 }
-
 section#security {
   display: none;
   flex-direction: column;
@@ -307,14 +165,12 @@ section#security {
 .security-7_3 {
   background-image: url(../img/part_2/7_3.webp);
 }
-
 section#quarantine {
   display: none;
   flex-direction: column;
   padding: 0;
   margin: 0;
 }
-
 .quarantine-8_0 {
   background-image: url(../img/part_2/8_0.webp);
 }
