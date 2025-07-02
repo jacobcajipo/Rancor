@@ -39,12 +39,41 @@
   </nav>
   </header>
     <audio 
-    id="ambient"
-    src="../audio/Welcome Aboard The U.S.G. Ishimura_mixed.mp3">
+    id="theme_01"
+    src="../audio/part_1/theme_01.mp3">
     </audio>
+    <audio 
+    id="theme_02"
+    src="../audio/part_1/theme_02.mp3">
+    </audio>
+    <audio 
+    id="theme_ishimura"
+    src="../audio/part_1/theme_ishimura.mp3">
+    </audio>
+    <audio 
+    id="crash"
+    src="../audio/part_1/theme_crashing.mp3">
+     </audio>
+    <audio 
+    id="crash1"
+    src="../audio/part_1/crash1.mp3">
+    </audio>
+    <audio 
+    id="crash2"
+    src="../audio/part_1/crash2.mp3">
+    </audio>
+    <audio 
+    id="crash3"
+    src="../audio/part_1/crash3.mp3">
+    </audio>
+    <audio 
+    id="unintelligible"
+    src="../audio/part_1/unintelligible.mp3">
+    </audio>
+
   <main>
     
-
+    <section onpointerenter="document.getElementById('theme_01').play()">
     <!--Dead Space Logo-->
     <div class="">
       <p style="
@@ -68,29 +97,30 @@
 
     <div class="">
       <p class="mono">
-        With eyes still closed, Isaac managed to block out the noise. 
+        With eyes still closed, Isaac managed to block out the noise. <br>
         There's a constant screeching of metal against metal. <br><br>
-        It’s suffocating but somehow he finds it oddly comforting.
-        Perhaps after years of employment, he'd grown used to it.
+        It’s suffocating but somehow he finds it oddly comforting. <br>
+        Perhaps after years of employment, he'd grown used to it. <br>
 
       </p>
     </div>
 
     <div class="">
       <p class="mono">
-        A blue light, however, managed to find its way to him. 
+        A blue light, however, managed to find its way to him. <br>
         His vision, hijacked by a machine-generated list. <br><br>
-        The mission, a few names, and even fewer directives. 
-        Judging from the premise, a simple routine maintenance.
+        The mission, a few names, and even fewer directives. <br>
+        Judging from the premise, a simple routine maintenance. <br>
 
       </p>
     </div>
 
+    </section>
     <!--EMPTYDIV-->
     <div class="half"></div>
     <!--Status Update List-->
     <!--Please animate the text to simulate autotyping-->
-    <div class="static stills top-bottom-mask" style="display: flex; justify-content: center; align-content: center; align-items: center;">
+    <div class="stills static no-mask" style="display: flex; justify-content: center; align-content: center; align-items: center;">
       <p>
         <strong>CEC MISSION ER529</strong><br>
         <small> STATUS UPDATE...</small> <br>
@@ -105,25 +135,26 @@
       </p>
     </div>
 
+
     <!--EMPTYDIV-->
     <div class="half"></div>
 
     <div class="">
       <p class="mono">
-        Including the two pilots, would make a total of five. 
+        Including the two pilots, would make a total of five. <br>
         Isaac volunteered himself to be part of their crew. <br><br>
-        They were beyond delighted to accept his offering,
-        perhaps one would've been insane to work without a fee.
+        They were beyond delighted to accept his offering, <br>
+        perhaps one would've been insane to work without a fee. <br>
 
       </p>
     </div>
 
     <div class="">
       <p class="mono">
-        The seasoned engineer he is, he worked on some theory. 
+        The seasoned engineer he is, he worked on some theory. <br>
         And only theories, since all assumptions are far-fetched. <br><br>
-        Because a total blackout had never happened before. 
-        After all, these Planet Cracker - Class ships were built to last.
+        Because a total blackout had never happened before. <br>
+        After all, these Planet Cracker - Class ships were built to last. <br>
 
       </p>
     </div>
@@ -134,33 +165,29 @@
     <!--Isaac's Motive-->
     <div class="">
       <p class="mono">
-        Love for his career wasn't his motive for being here. 
+        Love for his career wasn't his motive for being here. <br>
         Few days prior to these events, he had received a message. <br><br> 
-        An incomplete, concerning video log from Nicole, 
-        former co-worker at the corporation, now partner.
+        An incomplete, concerning video log from Nicole, <br>
+        former co-worker at the corporation, now partner. <br>
       </p>
     </div>
 
-    <div class="centertitle nicole_1 char_nicole parallax top-bottom-mask">
-      <p class="speech">
-        Nicole:
-        Isaac, it's me. I wish I could talk to you. 
-        I'm sorry.
-        I'm sorry about everything. 
-        I wish I could just talk to someone.
-      </p>
+    
+
+    <div class="" onpointerenter="document.getElementById('nicole_message').play()">
+      <video id="nicole_message" src="../videos/Nicole's Last Message.mp4" width="100%"></video>
     </div>
 
+    <section onpointerenter="document.getElementById('theme_02').play();">
     <div class="">
       <p class="mono">
-        Earning the job as Medical Officer months ago, 
+        Earning the job as Medical Officer months ago, <br>
         she had been in contact aboard the Ishimura. <br><br>
-        From his standpoint, she's satisfied with her new title. 
-        Despite the heavier workload being placed upon her.
+        From his standpoint, she's satisfied with her new title. <br>
+        Despite the heavier workload being placed upon her. <br>
 
       </p>
     </div>
-
 
     <div class="centertitle nicole_2 char_nicole parallax top-bottom-mask">
       <p class="speech">
@@ -173,10 +200,10 @@
 
     <div class="">
       <p class="mono">
-        Which made the circumstances a shocking development. 
+        Which made the circumstances a shocking development. <br>
         Isaac just couldn't shrug off an estranged undertone. <br><br>
-        A hunch that something terrible had already happened. 
-        He would need to find her fast, and hope to get an answer.
+        A hunch that something terrible had already happened. <br>
+        He would need to find her fast, and hope to get an answer. <br>
       </p>
     </div>
 
@@ -203,6 +230,8 @@
         It's Kendra Daniels, the crew's computer specialist. <br>
       </p>
     </div>
+
+    </section>
 
     <div class="kendra_3 parallax no-mask">
       <p class="mono lefttitle">
@@ -252,19 +281,19 @@
 
     <div class="">
       <p class="mono">
-        The first words Kendra thought of upon seeing the Aegis, 
+        The first words Kendra thought of upon seeing the Aegis, <br>
         sounded like she was talking about a scrapped junk piece.  <br> <br>
-        Though her intention wasn't to offend anybody, 
-        She could just be attempting to initiate rapport.
+        Though her intention wasn't to offend anybody, <br>
+        She could just be attempting to initiate rapport. <br>
       </p>
     </div>
 
     <div class="">
       <p class="mono">
-        Zach Hammond, the Chief Security Officer, ticked off. 
+        Zach Hammond, the Chief Security Officer, ticked off. <br>
         It was blatant arrogance that needed correcting. <br><br>
-        One that he felt obliged to step in and explain himself. 
-        Hint of his reverent and rigid personality.
+        One that he felt obliged to step in and explain himself. <br>
+        Hint of his reverent and rigid personality. <br>
 
       </p>
     </div>
@@ -279,10 +308,10 @@
 
     <div class="">
       <p class="mono">
-       Mining for materials on Earth used to be a process. 
+       Mining for materials on Earth used to be a process. <br>
        The Concordance Extraction Corporation (CEC), <br><br>
-       had worked on a solution for years to expedite this. 
-       They claim that it is for the benefit of all mankind.
+       had worked on a solution for years to expedite this. <br>
+       They claim that it is for the benefit of all mankind. <br>
 
       </p>
     </div>
@@ -290,7 +319,7 @@
     <div class="centertitle cec_2 parallax top-mask">
       <p class="mono lefttitle">
         For there's a hundred known planets devoid of any life,<br>
-        and thousand others waiting to be surveyed for prospect.
+        and thousand others waiting to be surveyed for prospect. <br>
       </p>
     </div>
 
@@ -299,6 +328,7 @@
     <!--EMPTYDIV-->
     <div class=""></div>
 
+    <section onpointerenter="document.getElementById('theme_ishimura').play()">
     <div class="half">
       <p class="speech hammond lefttitle">
         Hammond: Now, where is she? There she is. We have visual contact.
@@ -313,7 +343,7 @@
 
     <div class="centertitle ishimura parallax top-mask">
       <p class="mono">
-        <strong>Planet Cracker - Class Vessels.</strong>
+       Planet Cracker - Class Vessels
       </p>
     </div>
 
@@ -337,13 +367,14 @@
       And it looks like they already popped the cork.
     </p>
     </div>
+    </section>
 
     <div class="">
       <p class="mono">
-        The USG Ishimura was the first of its kind, 
+        The USG Ishimura was the first of its kind, <br>
         used to be the crowning achievement of the CEC. <br><br>
-        It has served tirelessly for almost 62 years now. 
-        A miracle that it held out for as long as it did.
+        It has served tirelessly for almost 62 years now. <br>
+        A miracle that it held out for as long as it did. <br>
       </p>
     </div>
 
@@ -399,22 +430,11 @@
     </p>
     </div>
 
-    <div class="centertitle" 
-    style="
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: space-evenly;
-    ">
-      <p class="mono" style="text-align: left; min-width:50%;">
+    <div onpointerenter="document.getElementById('unintelligible').play()">
+      <p class="mono">
         A bizarre audio slipped in.<br>
         They all strained hard to make sense of it.<br>
       </p>
-      <audio 
-      src="../audio/unintelligible.mp3" 
-      controls
-      style="height: 20px; width: 20px;">
-      </audio>
     </div>
 
     <!--EMPTYDIV-->
@@ -456,7 +476,12 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-    ">
+    "
+    onpointerover="
+    document.getElementById('crash').play();
+    document.getElementById('crash3').play();
+    "
+    >
       <p class="crashing" style="color: red;" >
         CRASH
       </p>
@@ -549,6 +574,7 @@
     align-content: center;
     align-items: center;
     "
+    onpointerenter="document.getElementById('crash1').play();"
     >
     <p class="crashing">
       THUD
