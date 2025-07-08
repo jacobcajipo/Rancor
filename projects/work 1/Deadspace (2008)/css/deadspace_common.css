@@ -152,6 +152,13 @@ p.loudnoise {
   padding: 0;
   margin: 0;
 }
+/*video*/
+video {
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
 /*parallax and masking*/
 .parallax {
   background-color: none;

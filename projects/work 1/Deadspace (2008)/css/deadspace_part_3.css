@@ -1,0 +1,27 @@
+section {
+  flex-direction: column;
+}
+.secu_1 {
+  background-image: url(../img/part_3/1_secu_1.png);
+}
+.secu_2 {
+  background-image: url(../img/part_3/1_secu_2.png);
+}
+.secu_3 {
+  background-image: url(../img/part_3/1_secu_3.png);
+}
+.secu_4 {
+  background-image: url(../img/part_3/1_secu_4.png);
+}
+.secu_5 {
+  background-image: url(../img/part_3/1_secu_5.png);
+}
+.elev_1 {
+  background-image: url(../img/part_3/3_elev_1.png);
+}
+.elev_2 {
+  background-image: url(../img/part_3/3_elev_2.png);
+}
+.elev_3 {
+  background-image: url(../img/part_3/3_elev_3.png);
+}

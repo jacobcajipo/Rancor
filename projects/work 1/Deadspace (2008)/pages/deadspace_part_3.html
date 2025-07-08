@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../../css/root.css">
     <link rel="stylesheet" href="../css/deadspace_common.css">
+    <link rel="stylesheet" href="../css/deadspace_part_3.css">
     <title>Dead Space Part 3</title>
 </head>
 <body>
@@ -32,14 +33,125 @@
         </li>
     </ul>
     </nav>
-
+    <audio id="flatline" src="../audio/part_2/Dead Space RIG Flatline (Death) Sound.mp3"></audio>
+    <audio id="flatline_loop" src="../audio/part_2/flatline_loop.mp3" loop></audio>
+    <audio src="../audio/part_2/Dead Space Isaac's breath and heartbeat.mp3"></audio>
+    <audio id="stab" src="../audio/part_2/stab.mp3"></audio>
+    <audio id="gun_1" src="../audio/part_3/Gun_1.mp3" loop></audio>
+    <audio id="gun_2" src="../audio/part_3/Gun_2.mp3" loop></audio>
+    <audio id="chase" src="../audio/part_3/Chase.mp3"></audio>
+    <audio id="elev_op" src="../audio/part_3/Elev_op.mp3"></audio>
 </header>
 <main>
-    <div>
+    <section>
+        <div class="parallax secu_1">
+        </div>
+        <div class="parallax secu_2">
+            <p class="speech hammond">
+                Hammond: Jesus!
+            </p>
+        </div>
+        <div class="parallax secu_3" onpointerenter="
+        document.getElementById('gun_1').play();
+        ">
+            <p class="speech hammond">
+                Open fire!
+            </p>
+        </div>
+        <div class="parallax secu_4" onpointerenter="
+        document.getElementById('gun_2').play();">
+            <p class="speech hammond">
+                OPEN FIRE!
+            </p>
+        </div>
+        <div class="parallax secu_5" onpointerenter="">
+            <p class="speech hammond">
+                KENDRA! POWER!
+            </p>
+        </div>
+        <div onpointerenter="
+        document.getElementById('stab').play();
+        document.getElementById('gun_2').pause();
+        ">
+            <p class="mono">
+                chen dies
+            </p>
+        </div>
+        <div class="">
+            <p class="speech hammond">
+                Hammond: "Kendra...!"
+            </p>
+        </div>
+        <div>
+            <p class="speech kendra">
+                Kendra: "Come on... come on."
+            </p>
+        </div>
+        <div>
+            <p class="speech kendra">
+                GOT IT
+            </p>
+        </div>
+        <div class="" onpointerenter="
+        document.getElementById('gun_1').pause();
+        ">
+            <p class="speech hammond">
+                Hammond: "Isaac, get the hell out of there!"
+            </p>
+        </div>
+        <div onpointerenter="document.getElementById('chase').play();">
+            <p class="speech kendra">
+                Kendra: "The door's unlocked, run!"
+            </p>
+        </div>
+    </section>
 
+    <section id="section-chase" onpointerenter="
+        document.getElementById('flatline_loop').pause();
+        
+        ">
+        <div>
+            ABC
+        </div>
+        <div>
+            DEF
+        </div>
+        <div>
+            GHI
+        </div>
+    </section>
+    <section onpointerenter="
+        document.getElementById('chase').pause();
+        ">
+    <div class=""></div>
+    <div id="scare" onpointerenter="document.getElementById('necro_elevator').play();" style="padding: 0; justify-content: center; align-content: center; display: flex;">
+        <video id="necro_elevator" width="fit-screen" height="100%" 
+        onplay="
+            this.style.position = 'fixed'; 
+            this.style.top = '50px';
+            "
+        onended="
+            this.style.position = 'static';
+            document.getElementById('section-2').style.display = 'flex';
+            document.getElementById('section-2').scrollIntoView({ behavior: 'smooth' });
+            ">
+            <source src="../videos/necro elevator.mp4" type="video/mp4">
+        </video>
     </div>
+    <div class="half"></div>
+    </section>
+
+    <section id="section-2" style="display: none;">
+        <div class="parallax elev_2" onpointerenter="
+        document.getElementById('elev_op').play();">
+           
+        </div>
+        <div class="parallax elev_3">
+            
+        </div>
+    </section>
 </main>
-<footer>
+<footer style="display: none;">
     <div>
         JACOB CAJIPO, 2025
     </div>
