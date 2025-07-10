@@ -152,7 +152,7 @@ id="stab"></audio>
 
     <div class="">
       <p class="speech hammond">
-        Now settle down, and let's get to work. 
+        Hammond: Now settle down, and let's get to work. 
         Corporal, report!
       </p>
     </div>
@@ -492,7 +492,13 @@ id="stab"></audio>
       
     <map name="lounge" cursor="pointer">
       <area shape="circle" coords="395, 245,115" href="#lounge" alt=""
-      onclick="open_lounge(); document.getElementById('door_pad_activated').play();" id="lounge_area" style="cursor: pointer;">
+      onclick="
+      open_lounge(); 
+      document.getElementById('door_pad_activated').play();
+      welcome_video.pause();
+      ambient.pause();
+      " 
+      id="lounge_area" style="cursor: pointer;">
     </map>
   </div>
   
@@ -597,7 +603,11 @@ id="stab"></audio>
     <map name="security_map" cursor="pointer">
       <area shape="circle" coords="400, 230,160" 
       href="#security" id="security_area" alt=""
-      onclick="open_security(); document.getElementById('door_pad_activated').play();"  style="cursor: pointer;">
+      onclick="
+      open_security();
+      document.getElementById('door_pad_activated').play();
+      
+      "  style="cursor: pointer;">
     </map>
   </div>
   
@@ -686,19 +696,19 @@ id="stab"></audio>
 
     <div class="half parallax quarantine-8_4">
       <p class="speech kendra lefttitle">
-        Kendra: "What the hell was that?"
+        Kendra: What the hell was that?
       </p>
     </div>
 
     <div class="half parallax quarantine-8_4">
       <p class="speech hammond righttitle">
-        Hammond: "Automatic quarantine must have tripped when the filtration system restarted. 
+        Hammond: Automatic quarantine must have tripped when the filtration system restarted. 
       </p>
     </div>
 
     <div class="centertitle parallax quarantine-8_4">
       <p class="speech hammond">
-        Everybody relax..."
+        Hammond: Everybody relax...
       </p>
     </div>
 
@@ -711,13 +721,13 @@ id="stab"></audio>
 
     <div class="parallax quarantine-8_5">
       <p class="speech kendra lefttitle">
-        Kendra: "What was that? Did you hear that?!"
+        Kendra: What was that? Did you hear that?!
       </p>
     </div>
 
     <div class="parallax quarantine-8_5">
       <p class="speech hammond righttitle">
-        Hammond: "I'm not sure..."
+        Hammond: I'm not sure.
       </p>
     </div>
 
@@ -731,7 +741,7 @@ id="stab"></audio>
 
     <div class="parallax quarantine-8_6">
       <p class="speech misc">
-        Johnston: "What the hell?"
+        Johnston: What the hell?
       </p>
     </div>
 
@@ -745,7 +755,7 @@ id="stab"></audio>
 
     <div class="parallax quarantine-8_7">
       <p class="speech kendra">
-        Kendra: "I don't know! Something's in the room with us!"
+        Kendra: I don't know! Something's in the room with us!
       </p>
     </div>
 
@@ -773,7 +783,7 @@ id="stab"></audio>
       </p>
     </div>
 
-    <div class="centertitle parallax quarantine-8_7"></div>
+    <div class="centertitle parallax quarantine-8_10"></div>
 
     <div class="centertitle parallax quarantine-8_8" style="background-position: center;">
       <p class="mono">
@@ -796,7 +806,7 @@ id="stab"></audio>
       </p>
     </div>
 
-    <div class="centertitle parallax quarantine-8_9" style="background-position: center;">
+    <div class="centertitle parallax quarantine-8_11">
       <p class="mono">
         His head fell off and rolled away from his impaled body.
       </p>

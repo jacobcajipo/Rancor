@@ -206,3 +206,11 @@ section#quarantine {
   background-image: url(../img/part_2/8_9.webp);
   background-position: top right;
 }
+.quarantine-8_10 {
+  background-image: url(../img/part_2/8_10.webp);
+  background-position: top right;
+}
+.quarantine-8_11 {
+  background-image: url(../img/part_2/8_11.webp);
+  background-position: center;
+}

@@ -2,35 +2,53 @@ section {
   flex-direction: column;
 }
 .secu_1 {
-  background-image: url(../img/part_3/1_secu_1.png);
+  background-image: url(../img/part_3/1_secu_1.webp);
 }
 .secu_2 {
-  background-image: url(../img/part_3/1_secu_2.png);
+  background-image: url(../img/part_3/1_secu_2.webp);
 }
 .secu_3 {
-  background-image: url(../img/part_3/1_secu_3.png);
+  background-image: url(../img/part_3/1_secu_3.webp);
 }
 .secu_4 {
-  background-image: url(../img/part_3/1_secu_4.png);
+  background-image: url(../img/part_3/1_secu_4.webp);
 }
 .secu_5 {
-  background-image: url(../img/part_3/1_secu_5.png);
+  background-image: url(../img/part_3/1_secu_5.webp);
 }
 .secu_6 {
-  background-image: url(../img/part_3/1_secu_6.png);
+  background-image: url(../img/part_3/1_secu_6.webp);
 }
 .secu_7 {
-  background-image: url(../img/part_3/1_secu_7.png);
+  background-image: url(../img/part_3/1_secu_7.webp);
 }
 .secu_8 {
-  background-image: url(../img/part_3/1_secu_8.png);
+  background-image: url(../img/part_3/1_secu_8.webp);
+}
+.chase_1 {
+  background-image: url(../img/part_3/2_chase_1.webp);
+}
+.chase_2 {
+  background-image: url(../img/part_3/2_chase_2.webp);
+}
+.chase_3 {
+  background-image: url(../img/part_3/2_chase_3.webp);
 }
 .elev_1 {
-  background-image: url(../img/part_3/3_elev_1.png);
+  background-image: url(../img/part_3/3_elev_1.webp);
 }
 .elev_2 {
-  background-image: url(../img/part_3/3_elev_2.png);
+  background-image: url(../img/part_3/3_elev_2.webp);
 }
 .elev_3 {
-  background-image: url(../img/part_3/3_elev_3.png);
+  background-image: url(../img/part_3/3_elev_3.webp);
+}
+.elev_4 {
+  background-image: url(../img/part_3/3_elev_4.webp);
+}
+.elev_5 {
+  background-image: url(../img/part_3/3_elev_5.webp);
+}
+.elev_6 {
+  background-image: url(../img/part_3/3_elev_6.webp);
 }

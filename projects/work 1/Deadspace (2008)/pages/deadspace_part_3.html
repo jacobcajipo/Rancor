@@ -35,17 +35,22 @@
     </nav>
     <audio id="flatline" src="../audio/part_2/Dead Space RIG Flatline (Death) Sound.mp3"></audio>
     <audio id="flatline_loop" src="../audio/part_2/flatline_loop.mp3" loop></audio>
-    <audio src="../audio/part_2/Dead Space Isaac's breath and heartbeat.mp3"></audio>
+    <audio id="heartbeat" src="../audio/part_2/Dead Space Isaac's breath and heartbeat.mp3"></audio>
+    <audio id="slasher_1" src="../audio/part_3/slasher_male.mp3"></audio>
+    <audio id="slasher_2" src="../audio/part_3/slasher_female.mp3"></audio>
     <audio id="stab" src="../audio/part_2/stab.mp3"></audio>
     <audio id="gun_1" src="../audio/part_3/Gun_1.mp3" loop></audio>
     <audio id="gun_2" src="../audio/part_3/Gun_2.mp3" loop></audio>
     <audio id="chase" src="../audio/part_3/Chase.mp3"></audio>
+    <audio id="broken_lights" src="../audio/part_3/broken_light.mp3" loop></audio>
     <audio id="elev_op" src="../audio/part_3/Elev_op.mp3"></audio>
 </header>
 <main>
-    <div></div>
+    <div onpointerenter="
+        document.getElementById('heartbeat').play();"></div>
     <section>
-        <div class="parallax secu_1">
+        <div class="parallax secu_1" onpointerenter="
+        document.getElementById('slasher_1').play();">
         </div>
         <div class="parallax secu_3" onpointerenter="
         document.getElementById('gun_1').play();
@@ -62,12 +67,12 @@
         </div>
         <div class="parallax secu_5" onpointerenter="">
             <p class="speech hammond">
-                Hammond: KENDRA! POWER!
+                Hammond: Kendra! Power!
             </p>
         </div>
         <div class="parallax secu_5">
             <p class="speech hammond">
-                Hammond: "Kendra...!"
+                Hammond: Kendra!
             </p>
         </div>
         <div onpointerenter="
@@ -80,24 +85,24 @@
         </div>
         <div class="parallax secu_6">
             <p class="speech kendra">
-                Kendra: "Come on... come on."
+                Kendra: Come on... come on.
             </p>
         </div>
         <div class="parallax secu_6">
             <p class="speech kendra">
-                GOT IT
+                Kendra: GOT IT!
             </p>
         </div>
         <div class="parallax secu_8" style="background-position: left" onpointerenter="
         document.getElementById('gun_1').pause();
         ">
             <p class="speech hammond">
-                Hammond: "Isaac, get the hell out of there!"
+                Hammond: Isaac, get the hell out of there!
             </p>
         </div>
-        <div class="parallax secu_8" style="background-position: right;" onpointerenter="document.getElementById('chase').play();">
+        <div class="parallax secu_8" style="background-position: right;">
             <p class="speech kendra">
-                Kendra: "The door's unlocked, run!"
+                Kendra: The door's unlocked, run!
             </p>
         </div>
     </section>
@@ -106,14 +111,16 @@
         document.getElementById('flatline_loop').pause();
         
         ">
-        <div>
-            ABC
+        <div class="parallax chase_1" onpointerenter="
+        document.getElementById('chase').play();
+        ">
+            
         </div>
-        <div>
-            DEF
+        <div class="parallax chase_2" onpointerenter="document.getElementById('slasher_2').play();">
+            
         </div>
-        <div>
-            GHI
+        <div class="parallax chase_3">
+            
         </div>
     </section>
     <section onpointerenter="
@@ -122,29 +129,43 @@
     <div class=""></div>
     <div id="scare" onpointerenter="document.getElementById('necro_elevator').play();" style="padding: 0; justify-content: center; align-content: center; display: flex;">
         <video id="necro_elevator" width="fit-screen" height="100%" 
-        oncanplaythrough="alert('video can play through');"
         onplay="
+            document.getElementById('gun_1').pause();
+            document.getElementById('gun_2').pause();
+            document.getElementById('chase').pause();
+            document.getElementById('heartbeat').pause();
+            document.getElementById('slasher_1').pause();
+            document.getElementById('slasher_2').pause();
+            document.getElementById('broken_lights').play();
             this.style.position = 'fixed'; 
             this.style.top = '50px';
             "
         onended="
             this.style.position = 'static';
+            
             document.getElementById('section-2').style.display = 'flex';
             document.getElementById('section-2').scrollIntoView({ behavior: 'smooth' });
             ">
             <source src="../videos/necro elevator.mp4" type="video/mp4">
         </video>
     </div>
-    <div class="half"></div>
     </section>
 
     <section id="section-2" style="display: none;">
-        <div class="parallax elev_2" onpointerenter="
+        <div class="parallax elev_1"></div>
+        <div class="parallax elev_2"></div>
+        <div class="parallax elev_3"></div>
+
+        <div class="parallax elev_4" onpointerenter="
         document.getElementById('elev_op').play();">
-           
         </div>
-        <div class="parallax elev_3">
-            
+        <div class="parallax elev_5"></div>
+        <div class="parallax elev_6"></div>
+    </section>
+
+    <section>
+        <div>
+
         </div>
     </section>
 </main>
