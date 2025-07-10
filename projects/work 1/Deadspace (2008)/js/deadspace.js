@@ -1,3 +1,6 @@
+onload = function() { 
+  
+}
 function open_lounge() {
   document.getElementById("door_pad_lounge").style.display = "none";
   document.getElementById("lounge").style.display = "flex";

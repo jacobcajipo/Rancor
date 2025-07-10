@@ -43,30 +43,31 @@
     <audio id="elev_op" src="../audio/part_3/Elev_op.mp3"></audio>
 </header>
 <main>
+    <div></div>
     <section>
         <div class="parallax secu_1">
-        </div>
-        <div class="parallax secu_2">
-            <p class="speech hammond">
-                Hammond: Jesus!
-            </p>
         </div>
         <div class="parallax secu_3" onpointerenter="
         document.getElementById('gun_1').play();
         ">
             <p class="speech hammond">
-                Open fire!
+                Hammond: Jesus! Open fire!
             </p>
         </div>
         <div class="parallax secu_4" onpointerenter="
         document.getElementById('gun_2').play();">
             <p class="speech hammond">
-                OPEN FIRE!
+                Hammond: OPEN FIRE!
             </p>
         </div>
         <div class="parallax secu_5" onpointerenter="">
             <p class="speech hammond">
-                KENDRA! POWER!
+                Hammond: KENDRA! POWER!
+            </p>
+        </div>
+        <div class="parallax secu_5">
+            <p class="speech hammond">
+                Hammond: "Kendra...!"
             </p>
         </div>
         <div onpointerenter="
@@ -77,29 +78,24 @@
                 chen dies
             </p>
         </div>
-        <div class="">
-            <p class="speech hammond">
-                Hammond: "Kendra...!"
-            </p>
-        </div>
-        <div>
+        <div class="parallax secu_6">
             <p class="speech kendra">
                 Kendra: "Come on... come on."
             </p>
         </div>
-        <div>
+        <div class="parallax secu_6">
             <p class="speech kendra">
                 GOT IT
             </p>
         </div>
-        <div class="" onpointerenter="
+        <div class="parallax secu_8" style="background-position: left" onpointerenter="
         document.getElementById('gun_1').pause();
         ">
             <p class="speech hammond">
                 Hammond: "Isaac, get the hell out of there!"
             </p>
         </div>
-        <div onpointerenter="document.getElementById('chase').play();">
+        <div class="parallax secu_8" style="background-position: right;" onpointerenter="document.getElementById('chase').play();">
             <p class="speech kendra">
                 Kendra: "The door's unlocked, run!"
             </p>
@@ -126,6 +122,7 @@
     <div class=""></div>
     <div id="scare" onpointerenter="document.getElementById('necro_elevator').play();" style="padding: 0; justify-content: center; align-content: center; display: flex;">
         <video id="necro_elevator" width="fit-screen" height="100%" 
+        oncanplaythrough="alert('video can play through');"
         onplay="
             this.style.position = 'fixed'; 
             this.style.top = '50px';
