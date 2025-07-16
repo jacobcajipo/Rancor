@@ -19,5 +19,8 @@ main div {
 p {
   font-size: 0.9rem;
 }
+.parallax {
+  height: 88dvh;
+}
 
 }
