@@ -122,6 +122,7 @@ p.speech {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.90);
   color: white;
+  font-style: italic;
   
   border-width: 2.5px;
   border-style: solid;
@@ -137,7 +138,8 @@ p.kendra {
   border-color: #c07b35;
   outline: 1px solid #c07b35;
   outline-offset: 2px;
-  /background-color: #c07b35da; /*#C07B35*/
+  background-color: rgba(255,255,255,0.90); /*#C07B35*/
+  color:black;
 }
 p.misc {
   /background-color: #7e9e7e;

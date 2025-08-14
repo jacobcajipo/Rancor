@@ -10,6 +10,7 @@ function open_lounge() {
 function open_security() {
   document.getElementById("door_pad_security").style.display = "none";
   document.getElementById("security").style.display = "flex";
+  document.getElementById("next").style.display = "inline-block"; // Show the next button
 
     document.getElementById("ambient").pause();
     document.getElementById("ambient_2").pause();
@@ -18,5 +19,5 @@ function open_security() {
 function open_quarantine() {
   document.getElementById("console").style.display = "none";
   document.getElementById("quarantine").style.display = "flex";
-  document.getElementById("next").style.display = "inline-block"; // Show the next button
+
 }
