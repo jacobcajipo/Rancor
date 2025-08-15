@@ -60,13 +60,34 @@ p.mono {
   align-content: center;
   max-height: 30vh; 
   text-align: left;
-  font-weight: bold;
+  /font-weight: bold;
   /word-spacing: 0.15em;
   line-height: 1.5em;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9) !important;
 }
+
+p.panic_mono
+{
+  background-color: black;
+  color: red;
+  font-weight: bolder;
+}
+
+.is_panic p
+{
+  /background-color: red;
+  /width: fit-content;
+  /max-width: 80vw;
+  /padding: 10px 2vw;
+  /color: red !important;
+  text-transform: uppercase;
+  font-style: normal !important;
+  border-radius: 0 !important;
+  /font-size: .9em;
+}
+
 p.mono.righttitle {
   height: fit-content;
   width: fit-content;

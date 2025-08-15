@@ -120,18 +120,4 @@ p.crashing
   transform: scale(15);
 }
 /*characters*/
-.is_panic p
-{
-  background-color: red;
-  width: fit-content;
-  max-width: 80vw;
-  padding: 10px 2vw;
-  color: white;
-  font-weight: bold;
-  /font-size: .9em;
-}
-  p.panic_mono
-{
-  background-color: black;
-  color: red;
-}
+
