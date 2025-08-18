@@ -71,9 +71,10 @@ p.mono {
 
 p.panic_mono
 {
-  background-color: black;
-  color: red;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: white;
   font-weight: bolder;
+  /text-transform: uppercase;
 }
 
 .is_panic p
@@ -246,4 +247,21 @@ button.save_game
       text-decoration: none;
       font-size: inherit;
     }
+}
+footer::before {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+
+  margin: 0;
+  padding: 0;
+
+  content: "jacob cajipo, 2025";
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  background-color: red;
+  width: 100%;
+  height: 20px;
 }
