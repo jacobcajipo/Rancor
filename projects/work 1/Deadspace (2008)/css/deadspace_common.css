@@ -71,7 +71,7 @@ p.mono {
 
 p.panic_mono
 {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(255, 0, 0, 0.75);
   color: white;
   font-weight: bolder;
   /text-transform: uppercase;

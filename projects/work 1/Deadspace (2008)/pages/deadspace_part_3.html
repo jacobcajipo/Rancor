@@ -49,7 +49,7 @@
 </header>
 <main>
     <section>
-      <div class="centertitle">
+      <div class="">
         <p class="mono">
 Placing his hand on the computer to view the report.
 The Ishimura’s scaled model sprang up in a hologram.
@@ -292,8 +292,13 @@ Open fire! OPEN FIRE!
 
         <div>
           <p class="mono panic_mono">
-            A barrage of rapid gunfire echoed throughout the quarantined area.
+A barrage of rapid gunfire echoed throughout the quarantined area.
 Aimed at his direction but deflected by the glass of the console room.
+          </p>
+        </div>
+
+        <div>
+          <p class="mono panic_mono">
 It should’ve been impossible to miss, considering its proximity.
 But the creature continued its gnawing, unfazed by the firepower.
           </p>
@@ -378,7 +383,7 @@ He made a run for it without a second thought.
             </p>
         </div>
 
-        <div class="parallax secu_8" style="background-position: top right;">
+        <div class="parallax secu_8 is_panic" style="background-position: top right;">
             <p class="speech kendra">
 The door's unlocked! Run!
             </p>
@@ -387,18 +392,94 @@ The door's unlocked! Run!
         <div class="parallax chase_1" onpointerenter="
         document.getElementById('chase').play();
         ">
-            <p class="speech kendra">
-
+            <p class="mono panic_mono">
+Without a moment to spare, he ran to the door.
             </p>
         </div>
         <div class="parallax chase_2" onpointerenter="document.getElementById('slasher_2').play();">
-            
+          <p class="mono panic_mono">
+But something crawled from the ventilation shaft.
+Letting out an agonizing scream as it chokes on its blood.
+          </p>
         </div>
         <div class="parallax chase_3">
-            
+           <p class="mono panic_mono">
+He kept running, but just as he stepped out of the door--
+           </p> 
         </div>
 
-    <div class=""></div>
+    <div style="background-color: red;">
+    </div>
+
+    <div class="centertitle"> 
+      <p class="mono panic_mono">
+One...
+      </p>
+    </div>
+
+    <div style="background-color: red;">
+    </div>
+
+    <div class="centertitle"> 
+      <p class="mono panic_mono">
+After...
+
+      </p>
+    </div>
+
+    <div style="background-color: red;">
+    </div>
+
+    <div class="centertitle"> 
+      <p class="mono panic_mono">
+Another...
+      </p>
+    </div>
+
+    <div class="centertitle"> 
+      <p class="mono panic_mono">
+They were running right after him.
+      </p>
+    </div>
+
+    <div class="parallax is_panic">
+      <p class="speech kendra">
+Run, Isaac! Get the hell out of there!
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
+With all his strength, 
+despite the heavy suit,
+without looking back,
+Isaac kept running.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
+Then he sees it-at the end of the hallway, an elevator.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
+He felt its sharp limbs slicing across his back as he got in.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
+Blood dripping down his fingers, he pushed the button.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
+The door closes, and the muted screaming outside dwindles.
+      </p>
+    </div>
 
     <div class="centertitle" 
     onpointerenter="
@@ -423,12 +504,14 @@ He’s still alive.
       </p>
     </div>
 
-      <div id="scare" onpointerenter="document.getElementById('necro_elevator').play();" 
+      <div id="scare" onpointerenter="
+      document.getElementById('necro_elevator').play();
+      necro_scare_attach();" 
       style="padding: 0; justify-content: center; align-content: center; display: flex;">
           <video id="necro_elevator" width="fit-screen" height="100%" 
           onplay="
           pause_all_loops();
-          necro_scare_attach();
+          
           document.getElementById('necro_elevator').style.position = 'fixed';
           document.getElementById('necro_elevator').style.top = '50px';
           "
