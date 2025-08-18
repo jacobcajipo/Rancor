@@ -66,7 +66,7 @@ p.mono {
   justify-content: center;
   align-items: center;
   /background-color: rgba(0, 0, 0, 0.9) !important;
-  background-color: rgba(5, 5, 5, 0.9) ;
+  background-color: rgba(10, 10, 10, 0.9) ;
 }
 
 p.panic_mono
