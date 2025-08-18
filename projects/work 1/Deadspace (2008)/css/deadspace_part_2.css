@@ -97,6 +97,14 @@ section#hangar {
     background-image: url(../img/part_2/5_6.webp);
     background-position: left;
   }
+  .hangar-5_7 {
+  height: fit-content;
+  overflow-x: hidden;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
   
 section#lounge {
   display: none;
