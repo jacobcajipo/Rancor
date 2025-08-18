@@ -65,7 +65,8 @@ p.mono {
   line-height: 1.5em;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  /background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(5, 5, 5, 0.9) ;
 }
 
 p.panic_mono
@@ -149,22 +150,32 @@ p.speech {
   border-style: solid;
   border-radius: 5px;
 }
+
 p.hammond {
   border-color: #7a1200;
   outline: 1px solid #7a1200;
   outline-offset: 2px;
   /background-color: #502821d0;
 }
+p.hammond::before {
+  content: "Hammond:";
+  font-weight: bold;
+}
 p.kendra {
   border-color: #c07b35;
   outline: 1px solid #c07b35;
   outline-offset: 2px;
-  background-color: rgba(255,255,255,0.90); /*#C07B35*/
+  background-color: rgba(255,255,255,0.90) !important; /*#C07B35*/
   color:black;
+}
+p.kendra::before {
+  content: "Kendra:";
+  font-weight: bold;
 }
 p.misc {
   /background-color: #7e9e7e;
 }
+
 /*Sound effects font*/
 p.loudnoise {
   font-family: crashing;
@@ -201,7 +212,7 @@ div.stills
   background-size: cover;
 }
 .parallax p.mono, .speech{
-  background-color: black;
+  background-color: black !important;
   height: fit-content;
   width: fit-content;
 }

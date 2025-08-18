@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../../../../css/root.css">
     <link rel="stylesheet" href="../css/deadspace_common.css">
     <link rel="stylesheet" href="../css/deadspace_part_3.css">
+    <script src="../js/deadspace.js"></script>
     <title>Dead Space Part 3</title>
 </head>
 <body>
@@ -40,13 +41,20 @@
     <audio id="elev_op" src="../audio/part_3/Elev_op.mp3"></audio>
 </header>
 <main>
+    <section>
+      <div>
+        <p class="mono">
+          asdfasdf
+        </p>
+      </div>
 
     <div id="console" class="hangar-5_7">
       <img src="../img/part_2/console.webp" alt="" usemap="#console_map">
       <map name="console_map" cursor="pointer">
         <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" onclick="open_quarantine(); document.getElementById('objective_complete').play();">
       </map>
-      
+    </section>
+
     <section id="quarantine">
     <div class="centertitle parallax quarantine-8_0">
       <p class="speech misc">
@@ -56,14 +64,14 @@
 
     <div class="subtitle parallax quarantine-8_1">
       <p class="speech hammond">
-        Hammond: The tram system's offline. 
+          The tram system's offline. 
         Getting around is going to be difficult. 
       </p>
     </div>
 
     <div class="subtitle parallax quarantine-8_2">
       <p class="speech hammond">
-        Hammond: The air seems to be flowing again. That's a start.
+          The air seems to be flowing again. That's a start.
       </p>
     </div>
 
@@ -79,19 +87,19 @@
 
     <div class="half parallax quarantine-8_4">
       <p class="speech kendra lefttitle">
-        Kendra: What the hell was that?
+          What the hell was that?
       </p>
     </div>
 
     <div class="half parallax quarantine-8_4">
       <p class="speech hammond righttitle">
-        Hammond: Automatic quarantine must have tripped when the filtration system restarted. 
+          Automatic quarantine must have tripped when the filtration system restarted. 
       </p>
     </div>
 
     <div class="centertitle parallax quarantine-8_4">
       <p class="speech hammond">
-        Hammond: Everybody relax...
+          Everybody relax...
       </p>
     </div>
 
@@ -104,13 +112,13 @@
 
     <div class="parallax quarantine-8_5">
       <p class="speech kendra lefttitle">
-        Kendra: What was that? Did you hear that?!
+          What was that? Did you hear that?!
       </p>
     </div>
 
     <div class="parallax quarantine-8_5">
       <p class="speech hammond righttitle">
-        Hammond: I'm not sure.
+          I'm not sure.
       </p>
     </div>
 
@@ -138,7 +146,7 @@
 
     <div class="parallax quarantine-8_7">
       <p class="speech kendra">
-        Kendra: I don't know! Something's in the room with us!
+          I don't know! Something's in the room with us!
       </p>
     </div>
 
@@ -194,13 +202,10 @@
         His head fell off and rolled away from his impaled body.
       </p>
     </div>
-
-    <div class=""></div>
-  </section>
-
+  
     <div onpointerenter="
         document.getElementById('heartbeat').play();"></div>
-    <section>
+    
         <div class="parallax secu_1" onpointerenter="
         document.getElementById('slasher_1').play();">
         </div>
@@ -208,23 +213,23 @@
         document.getElementById('gun_1').play();
         ">
             <p class="speech hammond">
-                Hammond: Jesus! Open fire!
+                  Jesus! Open fire!
             </p>
         </div>
         <div class="parallax secu_4" onpointerenter="
         document.getElementById('gun_2').play();">
             <p class="speech hammond">
-                Hammond: OPEN FIRE!
+                  OPEN FIRE!
             </p>
         </div>
         <div class="parallax secu_5" onpointerenter="">
             <p class="speech hammond">
-                Hammond: Kendra! Power!
+                  Kendra! Power!
             </p>
         </div>
         <div class="parallax secu_5">
             <p class="speech hammond">
-                Hammond: Kendra!
+                  Kendra!
             </p>
         </div>
         <div onpointerenter="
@@ -237,36 +242,32 @@
         </div>
         <div class="parallax secu_6">
             <p class="speech kendra">
-                Kendra: Come on... come on.
+                  Come on... come on.
             </p>
         </div>
         <div class="parallax secu_6">
             <p class="speech kendra">
-                Kendra: GOT IT!
+                  GOT IT!
             </p>
         </div>
         <div class="parallax secu_8" style="background-position: left" onpointerenter="
         document.getElementById('gun_1').pause();
         ">
             <p class="speech hammond">
-                Hammond: Isaac, get the hell out of there!
+                  Isaac, get the hell out of there!
             </p>
         </div>
         <div class="parallax secu_8" style="background-position: top right;">
             <p class="speech kendra">
-                Kendra: The door's unlocked!
+                  The door's unlocked!
             </p>
         </div>
-    </section>
 
-    <section id="section-chase" onpointerenter="
-        document.getElementById('flatline_loop').pause();
-        ">
         <div class="parallax chase_1" onpointerenter="
         document.getElementById('chase').play();
         ">
             <p class="speech kendra">
-                Kendra: Isaac, run!
+                  Isaac, run!
             </p>
         </div>
         <div class="parallax chase_2" onpointerenter="document.getElementById('slasher_2').play();">
@@ -275,13 +276,10 @@
         <div class="parallax chase_3">
             
         </div>
-        <div style="padding: 0; justify-content: center; align-content: center; display: flex;">
+        <!--div style="padding: 0; justify-content: center; align-content: center; display: flex;">
             <video width="fit-screen" height="100%" src="../videos/chase hall.mp4" controls></video>
-        </div>
-    </section>
-    <section onpointerenter="
-        document.getElementById('chase').pause();
-        ">
+        </div-->
+
     <div class=""></div>
     <div id="scare" onpointerenter="document.getElementById('necro_elevator').play();" style="padding: 0; justify-content: center; align-content: center; display: flex;">
         <video id="necro_elevator" width="fit-screen" height="100%" 
@@ -319,11 +317,6 @@
         <div class="parallax elev_6"></div>
     </section>
 
-    <section>
-        <div>
-
-        </div>
-    </section>
 </main>
 <footer style="display: none;">
     <div>
