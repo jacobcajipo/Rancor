@@ -171,8 +171,8 @@ p.kendra {
   border-color: #c07b35;
   outline: 1px solid #c07b35;
   outline-offset: 2px;
-  background-color: rgba(255,255,255,0.90) !important; /*#C07B35*/
-  color:black;
+  /background-color: rgba(255,255,255,0.90) !important; /*#C07B35*/
+  /color:black;
 }
 p.kendra::before {
   content: "Kendra:";
