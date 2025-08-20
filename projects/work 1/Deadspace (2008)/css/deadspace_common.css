@@ -71,10 +71,15 @@ p.mono {
 
 p.panic_mono
 {
-  background-color: rgba(255, 0, 0, 0.75);
-  color: white;
+  outline: 1px dotted rgb(148, 0, 0);
+  outline-offset: 2px;
+  border: 1px solid red;
+  /background-color: rgb(148, 0, 0);
+  background-color: black ;
+  /color: white;
+  color: red;
   font-weight: bolder;
-  /text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .is_panic p
@@ -143,7 +148,7 @@ p.speech {
   max-width: 80%;
   max-height: 30vh;
   margin: auto;
-  background-color: rgba(0, 0, 0, 0.90);
+  background-color: rgba(0, 0, 0, 0.90) !important;
   color: white;
   font-style: italic;
   
@@ -213,9 +218,9 @@ div.stills
   background-size: cover;
 }
 .parallax p.mono, .speech{
-  background-color: black !important;
-  height: fit-content;
-  width: fit-content;
+  /background-color: black !important;
+  /height: fit-content;
+  /width: fit-content;
 }
 .bottom-mask {
   mask-image: linear-gradient(black 0%, gray 88%,transparent 100%);
