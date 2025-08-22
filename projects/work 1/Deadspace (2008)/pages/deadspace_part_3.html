@@ -9,7 +9,7 @@
     <script src="../js/deadspace.js"></script>
     <title>Dead Space Part 3</title>
 </head>
-<body>
+<body onload="play_normal_heart_rate();">
 <header>
     <nav>
     <ul>
@@ -59,7 +59,8 @@ The Ishimura’s scaled model sprang up in a hologram.
     <div id="console" class="hangar-5_7">
       <img src="../img/part_2/console.webp" alt="" usemap="#console_map">
       <map name="console_map" cursor="pointer">
-        <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" onclick="open_quarantine(); document.getElementById('objective_complete').play();">
+        <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" 
+        onclick="open_quarantine(); objective_complete();">
       </map>
     </section>
 
@@ -71,9 +72,14 @@ Huh. That doesn't look good. She's taken a lot of damage.
       </p>
     </div>
 
-    <div class="centertitle parallax quarantine-8_1">
+    <div class="centertitle parallax quarantine-8_0">
       <p class="mono">
 Indicating which areas of the ship are compromised,
+      </p>
+    </div>
+
+    <div class="centertitle parallax quarantine-8_1">
+      <p class="mono">
 It lit up blazingly red with every inch of the display.
       </p>
     </div>
@@ -94,7 +100,8 @@ The air seems to be flowing again. That's a start.
     <div class="parallax quarantine-8_2">
     </div>
     <!--emptydiv-->
-    <div class="parallax quarantine-8_3"  onpointerenter="document.getElementById('quarantine_activated').play(); document.getElementById('quarantine_normal').play()">
+    <div class="parallax quarantine-8_3"  
+    onpointerenter="play_quarantine_activated(); play_quarantine_loop();">
     </div>
 
     <div class="centertitle">
@@ -127,13 +134,15 @@ Everybody relax...
       </p>
     </div>
 
-    <div class="centertitle" onpointerenter="document.getElementById('quarantine_necro').play(); document.getElementById('quarantine_normal').pause();">
+    <div class="centertitle"
+    onpointerenter="pause_quarantine_loop();">
       <p class="mono">
 An occurrence beyond even Hammond’s logical explanation, 
       </p>
     </div>
 
-     <div class="centertitle">
+     <div class="centertitle"
+     onpointerenter="play_quarantine_necro();">
       <p class="mono panic_mono">
 Voices coming from the walls, slowly surrounding them.
       </p>
@@ -147,12 +156,13 @@ What was that? Did you hear that?!
 
     <div class="parallax quarantine-8_5">
       <p class="speech hammond">
-          I'm not sure.
+I'm not sure.
       </p>
     </div>
 
     <div class="half"></div>
-    <div class="" onpointerenter="document.getElementById('quarantine_necro_2').play();">
+    <div class="" 
+    onpointerenter="play_crash()">
       <p class="loudnoise">
 CRASH
       </p>
@@ -171,13 +181,19 @@ Part of the ceiling near Johnston collapsed, dropping <em>something</em> with it
       </p>
     </div>
 
-    <div class="half"></div>
-    <div onpointerenter="document.getElementById('quarantine_necro_arrives').play();">
+    <!--Empty Div-->
+    <div class="half">
+    </div>
+
+    <div 
+    onpointerenter="play_flop();">
       <p class="loudnoise">
 flop
       </p>
     </div>
-    <div class="half"></div>
+    <!--Empty Div-->
+    <div class="half">
+    </div>
 
     <div class="parallax quarantine-8_7 is_panic">
       <p class="speech kendra">
@@ -215,7 +231,9 @@ But then it stood up.
       </p>
     </div>
 
-    <div class="centertitle parallax quarantine-8_10"></div>
+    <div class="centertitle parallax quarantine-8_10">
+
+    </div>
 
 <div class="centertitle">
   <p class="mono">
@@ -239,14 +257,16 @@ stabbing him.
     </div>
 
     <div class="half"></div>
-    <div class="" onpointerenter="document.getElementById('stab').play();">
+    <div class="" 
+    onpointerenter="play_stab();">
       <p class="loudnoise">
         SHTUK
       </p>
     </div>
     <div class="half"></div>
 
-    <div class="centertitle parallax quarantine-8_9" onpointerenter="document.getElementById('flatline_start').play(); document.getElementById('flatline_loop').play(); document.getElementById('flesh').play();">
+    <div class="centertitle parallax quarantine-8_9" 
+    onpointerenter="play_flatline();">
       <p class="mono panic_mono">
 Blood gushed from his neck
       </p>
@@ -258,7 +278,8 @@ and spread onto the glass windows.
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle"
+    onpointerenter="pause_flatline_loop();">
       <p class="mono panic_mono">
 Then his head fell off,   
       </p>
@@ -270,82 +291,87 @@ rolling away from his impaled body.
       </p>
     </div>
     
-      <div class="parallax secu_1" onpointerenter="
-        document.getElementById('slasher_1').play();">
+      <div class="parallax secu_1" 
+      onpointerenter="
+      pause_quarantine_necro();
+      pause_normal_heart_rate();
+      ">
       </div>
 
-    <div class="centertitle parallax secu_1"
-    onpointerenter="document.getElementById('heartbeat').play();">
+    <div class="centertitle parallax secu_1">
       <p class="mono">
 Isaac stares at his decapitated comrade in shock.
       </p>
     </div>
 
-        <div class="parallax secu_1">
+        <div class="centertitle parallax secu_1">
           <p class="mono">
 The disturbing brutality was too much for the man to take.
           </p>
         </div>
 
-        <div class="parallax secu_1">
+        <div class="centertitle parallax secu_1">
           <p class="mono">
 He knew he wouldn’t be the same after what he’d witnessed.
           </p>
         </div>
 
-        <div>
+        <div class="centertitle">
           <p class="mono panic_mono">
 Oddly enough, he just couldn’t take his eyes off the thing.
           </p>
         </div>
         
-        <div class="parallax secu_3">
+        <div class="centertitle parallax secu_3"
+        onpointerenter="play_slasher_male_loop();">
           <p class="mono">
 Leaving him fixated amidst the flashing lights and dripping blood.
           </p>
         </div>
 
-        <div class="parallax secu_3 is_panic" onpointerenter="
-        document.getElementById('gun_1').play();
-        document.getElementById('flatline_loop').pause();
-        ">
+        <div class="parallax secu_3 is_panic">
             <p class="speech hammond">
 Jesus!
             </p>
         </div>
-        <div class="parallax secu_4 is_panic" onpointerenter="
-        document.getElementById('gun_2').play();">
+
+        <div class="parallax secu_4 is_panic" 
+        onpointerenter="
+        play_gun_hammond();
+        play_gun_chen();
+        ">
             <p class="speech hammond">
 Open fire! OPEN FIRE!
             </p>
         </div>
 
-        <div class="parallax secu_4">
+        <div class="centertitle parallax secu_4">
           <p class="mono">
 A barrage of rapid gunfire echoed throughout the quarantined area.
           </p>
         </div>
 
-        <div class="parallax secu_4">
+        <div class="centertitle parallax secu_4">
           <p class="mono">
 Aimed at his direction but deflected by the glass of the console room.
           </p>
         </div>
 
-        <div class="parallax secu_4">
+        <div class="centertitle parallax secu_4">
           <p class="mono">
 It should’ve been impossible to miss, considering its proximity.
           </p>
         </div>
 
-        <div onpointerenter="
-        document.getElementById('stab').play();">
+        <div class="centertitle" 
+        onpointerenter="
+          play_stab();">
           <p class="mono panic_mono">
 But the creature continued its gnawing, unfazed by the firepower.
           </p>
         </div>
 
-        <div class="parallax secu_5">
+        <div class="centertitle parallax secu_5">
           <p class="mono">
 Kendra started tinkering with the door pad to brute force the mechanism.
           </p>
@@ -357,34 +383,43 @@ Kendra! Power!
             </p>
         </div>
 
-        <div class="parallax secu_5">
+        <div class="centertitle parallax secu_5">
           <p class="mono">
 No matter how swiftly she was working, it still wasn’t enough.
           </p>
         </div>
 
-        <div class="">
+        <div class="centertitle"
+        onpointerenter="
+          play_crash();"
+        >
           <p class="mono">
 Another one dropped from the ceiling in the same fashion.
           </p>
         </div>
 
-      <div onpointerenter="
-        document.getElementById('gun_2').pause();
+      <div class="centertitle"
+      onpointerenter="
+        play_stab();
         ">
         <p class="mono panic_mono">
 It quickly mangled Chen, but he kept pulling the trigger until the end.
         </p>
       </div>
 
-      <div onpointerenter="
-        document.getElementById('stab').play();" class="parallax secu_6 is_panic">
+      <div class="centertitle parallax secu_6 is_panic"
+      onpointerenter="
+        pause_gun_chen();
+        play_stab();
+        play_flatline();
+        " >
             <p class="mono panic_mono">
 The cracking bones, ripping flesh can be heard despite the heavy fire.
             </p>
         </div>
 
-        <div class="parallax secu_6 is_panic">
+        <div class="parallax secu_6 is_panic"
+        onpointerenter="">
             <p class="speech hammond">
 Kendra!
             </p>
@@ -396,7 +431,8 @@ Come on… Come on...
             </p>
         </div>
 
-        <div class="centertitle">
+        <div class="centertitle"
+        onpointerenter="pause_flatline_loop();">
           <p class="mono panic_mono">
 With both pilots mercilessly dismembered and beheaded,
           </p>
@@ -408,41 +444,45 @@ The creatures probed their next victims.
           </p>
         </div>
 
-        <div class="is_panic">
+        <div class="is_panic"
+        onpointerenter="
+        pause_gun_hammond();
+        pause_slasher_male_loop();">
             <p class="speech kendra">
 Got it!
             </p>
         </div>
 
-        <div>
+        <div class="centertitle">
           <p class="mono">
 The red hologram in front of her disappears. 
 Followed by a spark along the door’s hinge.
           </p>
         </div>
 
-        <div>
+        <div class="centertitle">
           <p class="mono">
 Then it opened forcibly on its own.
 Her bypass of the power was a success.
           </p>
         </div>
 
-        <div class="is_panic" style="background-position: left" onpointerenter="
-        document.getElementById('gun_1').pause(); document.getElementById('flatline_loop').pause(); document.getElementById('quarantine_necro').pause(); 
+        <div class="is_panic" style="background-position:left;" 
+        onpointerenter="
+        play_necromorph_chase();
         ">
             <p class="speech hammond">
 Isaac, get the hell out of there!
             </p>
         </div>
 
-        <div class="parallax secu_8" style="background-position: top right;">
+        <div class="centertitle parallax secu_8" style="background-position: top right;">
             <p class="mono">
 The same thing happened on the exit next to Isaac.
             </p>
         </div>
 
-        <div class="parallax secu_8" style="background-position: top right;">
+        <div class="centertitle parallax secu_8" style="background-position: top right;">
             <p class="mono">
 Sparks flew, snapping him out of the ensuing chaos.
             </p>
@@ -454,25 +494,29 @@ The door's unlocked! Run!
             </p>
         </div>
 
-        <div class="parallax chase_1" onpointerenter="
-        document.getElementById('chase').play();
-        ">
+        <div class="centertitle parallax chase_1"
+        onpointerenter="play_crash();">
             <p class="mono">
-But something crawled from the ventilation shaft.            </p>
+But something crawled from the ventilation shaft.            
+            </p>
         </div>
-        <div class="parallax chase_2" onpointerenter="document.getElementById('slasher_2').play();">
+
+        <div class="centertitle parallax chase_2" 
+        onpointerenter="
+        play_slasher_female_loop();">
           <p class="mono panic_mono">
 Letting out an agonizing scream as it chokes on its blood.
           </p>
         </div>
 
-        <div class="">
+        <div class="centertitle">
            <p class="mono">
 He rushed to the door, but just as he stepped out...
            </p> 
         </div>
 
-    <div style="background-color: red;">
+    <div style="background-color: red;"
+     onpointerenter="play_crash(); play_slasher_male_loop();">
     </div>
 
     <div class="centertitle"> 
@@ -481,7 +525,8 @@ One...
       </p>
     </div>
 
-    <div style="background-color: red;">
+    <div style="background-color: red;"
+     onpointerenter="play_crash();">
     </div>
 
     <div class="centertitle"> 
@@ -491,7 +536,8 @@ After...
       </p>
     </div>
 
-    <div style="background-color: red;">
+    <div style="background-color: red;"
+     onpointerenter="play_crash();">
     </div>
 
     <div class="centertitle"> 
@@ -516,6 +562,11 @@ Run, Isaac! Get the hell out of there!
       <p class="mono">
 With all his strength, 
 despite the heavy suit,
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
 without looking back,
 Isaac kept running.
       </p>
@@ -527,29 +578,37 @@ Then he sees it-at the end of the hallway, an elevator.
       </p>
     </div>
 
-    <div class="centertitle">
-      <p class="mono">
+    <div class="centertitle" >
+      <p class="mono panic_mono">
 He felt its sharp limbs slicing across his back as he got in.
       </p>
     </div>
 
     <div class="centertitle">
-      <p class="mono">
+      <p class="mono panic_mono">
 Blood dripping down his fingers, he pushed the button.
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle"
+    onpointerenter="play_elevator ();">
       <p class="mono">
-The door closes, and the muted screaming outside dwindles.
+The door closes,
+      </p>
+    </div>
+
+    <div class="centertitle"
+    onpointerenter="
+    pause_all_loops();">
+      <p class="mono">
+and the muted screaming outside dwindles.
       </p>
     </div>
 
     <div class="centertitle" 
     onpointerenter="
-    document.getElementById('elev_op').play();
-    document.getElementById('broken_lights').play();
-    pause_all_loops(); 
+    pause_necromorph_chase();
+    play_fluorescent();
     ">
       <p class="mono">
 He made it out. 
@@ -575,9 +634,6 @@ He’s still alive.
           <video id="necro_elevator" width="fit-screen" height="100%" 
           onplay="
           pause_all_loops();
-          
-          document.getElementById('necro_elevator').style.position = 'fixed';
-          document.getElementById('necro_elevator').style.top = '50px';
           "
           onended="
           this.style.position = 'static';
@@ -609,10 +665,14 @@ A hard lesson to never let his guard down.
           </p>
         </div>
 
-        <div class="parallax elev_4" onpointerenter="
-        document.getElementById('elev_op').play();">
+        <div class="parallax elev_4" 
+        onpointerenter="
+        play_elevator();">
         </div>
-        <div class="parallax elev_5"></div>
+
+        <div class="parallax elev_5">
+          
+        </div>
 
         <div class="centertitle parallax elev_6">
           <p class="mono">

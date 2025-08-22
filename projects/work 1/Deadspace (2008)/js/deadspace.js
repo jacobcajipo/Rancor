@@ -1,6 +1,11 @@
 onload = function() { 
   
 }
+//Prologue
+function play_theme() {
+  document.getElementById('theme').play();
+}
+
 //Part 2
 function open_lounge() {
   document.getElementById("door_pad_lounge").style.display = "none";
@@ -18,15 +23,81 @@ function open_security() {
     document.getElementById("heartbeat").play();
 }
 //Part 3
-function open_quarantine() {
+function play_normal_heart_rate () {
+  document.getElementById('heartbeat').play();
+}
+function pause_normal_heart_rate () {
+  document.getElementById('heartbeat').pause();
+}
+function open_quarantine () {
   document.getElementById("console").style.display = "none";
   document.getElementById("quarantine").style.display = "flex";
+}
+function objective_complete() {
+  document.getElementById('objective_complete').play();
+}
+function play_quarantine_activated() {
+  document.getElementById('quarantine_activated').play();
+}
+function play_quarantine_loop () {
+    document.getElementById('quarantine_normal').play();
+}
+function pause_quarantine_loop () {
+    document.getElementById('quarantine_normal').pause();
+}
+function play_quarantine_necro () {
+    document.getElementById('quarantine_necro').play();
+}
+function pause_quarantine_necro () {
+    document.getElementById('quarantine_necro').pause()
+}
+function play_crash () {
+  document.getElementById('quarantine_necro_2').play();
+}
+function play_stab () {
+  document.getElementById('stab').play();
+}
+function play_flop () {
+  document.getElementById('quarantine_necro_arrives').play();
+}
+function play_flatline () {
+  document.getElementById('flatline_start').play(); 
+  document.getElementById('flatline_loop').play(); 
+}
+function play_slasher_male_loop () {
+  document.getElementById('slasher_1').play();
+}
+function pause_slasher_male_loop () {
+  document.getElementById('slasher_1').pause();
+}
+function play_slasher_female_loop() {
+  document.getElementById('slasher_2').play();
+}
+function pause_flatline_loop () {
+  document.getElementById('flatline_loop').pause(); 
+}
+function play_gun_hammond() {
+  document.getElementById('gun_1').play();
+}
+function pause_gun_hammond() {
+  document.getElementById('gun_1').pause();
+}
+function play_gun_chen() {
+  document.getElementById('gun_2').play();
+}
+function pause_gun_chen() {
+  document.getElementById('gun_2').pause();
+}
+function play_necromorph_chase () {
+  document.getElementById('chase').play();
+}
+function pause_necromorph_chase () {
+  document.getElementById('chase').pause();
 }
 function pause_all_loops() {
   document.getElementById('flatline_loop').pause();
   document.getElementById('gun_1').pause();
   document.getElementById('gun_2').pause();
-  document.getElementById('chase').pause();
   document.getElementById('heartbeat').pause();
   document.getElementById('slasher_1').pause();
   document.getElementById('slasher_2').pause();    
@@ -37,4 +108,10 @@ function pause_all_loops() {
 function necro_scare_attach() {
    document.getElementById('necro_elevator').style.position = 'fixed';
    document.getElementById('necro_elevator').style.top = '50px';
+}
+function play_elevator () {
+  document.getElementById('elev_op').play();
+}
+function play_fluorescent() {
+  
 }

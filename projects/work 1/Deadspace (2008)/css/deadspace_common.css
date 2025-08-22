@@ -6,8 +6,6 @@ p
 {
   font-family: mullish,Verdana,'Courier New', Courier, monospace;
   font-size: 1rem;
-  /color: #C8C9C8; /* Isaac Steel Grey */
-  /color: inherit;
 }
 h2
 {
@@ -22,6 +20,9 @@ div
   margin: 0px;
   overflow: hidden;
   background-color: black;
+}
+div.whited {
+  background-color: #C8C9C8;
 }
 main div {
   height: 90vh;
@@ -60,23 +61,18 @@ p.mono {
   align-content: center;
   max-height: 30vh; 
   text-align: left;
-  /font-weight: bold;
-  /word-spacing: 0.15em;
   line-height: 1.5em;
   justify-content: center;
   align-items: center;
-  /background-color: rgba(0, 0, 0, 0.9) !important;
   background-color: rgba(10, 10, 10, 0.9) ;
 }
 
 p.panic_mono
 {
-  outline: 1px dashed rgb(148, 0, 0);
+  /outline: 1px dashed rgb(148, 0, 0);
   outline-offset: 2px;
   border: 1px solid red;
-  /background-color: rgb(148, 0, 0);
   background-color: black ;
-  /color: white;
   color: red;
   font-weight: bolder;
   text-transform: uppercase;
@@ -84,15 +80,9 @@ p.panic_mono
 
 .is_panic p
 {
-  /background-color: red;
-  /width: fit-content;
-  /max-width: 80vw;
-  /padding: 10px 2vw;
-  /color: red !important;
   text-transform: uppercase;
   font-style: normal !important;
   border-radius: 0 !important;
-  /font-size: .9em;
 }
 
 p.mono.righttitle {
@@ -104,7 +94,6 @@ p.mono.righttitle {
 p.mono.lefttitle {
   width: fit-content;
   height: fit-content;
-  /background-color: black;
   text-align: left;
   float: inline-start; 
 }
@@ -150,8 +139,6 @@ p.speech {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.90) !important;
   color: white;
-  /font-style: italic;
-  
   border-width: 2.5px;
   border-style: solid;
   border-radius: 5px;
@@ -161,51 +148,51 @@ p.hammond {
   border-color:#7a1200;
   outline: 1px solid #7a1200;
   outline-offset: 2px;
-  /background-color: #502821d0;
 }
 p.hammond::before {
   content: "Hammond: ";
   font-weight: bold;
   font-style: normal;
-  color:#971701;
+  text-transform: uppercase;
+  color:white;
+  
 }
 p.kendra {
   border-color: #c07b35;
   outline: 1px solid #c07b35;
   outline-offset: 2px;
-  /background-color: rgba(255,255,255,0.90) !important; /*#C07B35*/
-  /color:black;
 }
 p.kendra::before {
   content: "Kendra: ";
   font-weight: bold;
   font-style: normal;
+  text-transform: uppercase;
   color: #c07b35;
 }
 p.chen {
-  border-color: mediumseagreen;
-  outline: 1px solid mediumseagreen;
+  outline: 1px solid white;
   outline-offset: 2px;
 }
 p.chen::before {
   content: "Chen: ";
   font-weight: bold;
   font-style: normal;
-  color: mediumseagreen;
+  text-transform: uppercase;
+  color: white;
 }
 p.johnston {
-  border-color: mediumseagreen;
-  outline: 1px solid mediumseagreen;
+  outline: 1px solid white;
   outline-offset: 2px;
 }
 p.johnston::before {
   content: "Johnston: ";
   font-weight: bold;
   font-style: normal;
-  color: mediumseagreen;
+  text-transform: uppercase;
+  color: white;
 }
 p.misc {
-  /background-color: #7e9e7e;
+  
 }
 
 /*Sound effects font*/
@@ -244,9 +231,7 @@ div.stills
   background-size: cover;
 }
 .parallax p.mono, .speech{
-  /background-color: black !important;
-  /height: fit-content;
-  /width: fit-content;
+  
 }
 .bottom-mask {
   mask-image: linear-gradient(black 0%, gray 88%,transparent 100%);

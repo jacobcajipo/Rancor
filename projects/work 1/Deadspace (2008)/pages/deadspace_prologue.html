@@ -9,10 +9,12 @@
   <link rel="stylesheet" href="../css/deadspace_part_2.css">
   <link rel="stylesheet" href="../css/deadspace_common.css">
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
+  <script src="../js/deadspace.js"></script>
   <title>Dead Space Part 1</title>
-<audio src="../audio/prologue/Dead Space Theme.mp3" id="theme"></audio>
+<audio  id="theme" src="../audio/prologue/Dead Space Theme.mp3"></audio>
 </head>
-<body oncontextmenu="return false" onload="document.getElementById('theme').play();">
+
+<body oncontextmenu="return false" onload="play_theme();">
   <header>
   <nav>
     <ul>
@@ -31,116 +33,248 @@
     </ul>
   </nav>
   </header>
-    <audio 
-    id="ambient"
-    src="../audio/Welcome Aboard The U.S.G. Ishimura_mixed.mp3">
-    </audio>
+
   <main>
     <!-- Prologue -->
 
-    <div class="">
+    <div class="centertitle">
       <p class="mono">
 It's only natural for us to fear whatever's lurking in the dark.
+      </p>
+    </div>
+
+    <div class="centertitle whited top-mask">
+      <p class="mono">
 After all, we are creatures that constantly crave certainty.
+      </p>
+    </div>
+
+    <div class="centertitle whited">
+      <p class="mono">
 Not knowing what lies ahead triggers a primal need to escape from it.
+      </p>
+    </div>
+
+    <div class="centertitle whited bottom-mask">
+      <p class="mono">
 Somewhere filled with other people, we know we can be safe.
       </p>
     </div>
 
-    <div class="">
+    <div class="centertitle">
       <p class="mono">
 Yet some were born and bred differently among the pack.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
 Whose curiosities far outweigh the need for the comfort of familiarity.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
 Willing to go against their instinct to run and face the unknown.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
 These acts of defiance pushed humanity towards great distances.
       </p>
     </div>
 
-    <div class="">
-      <p class="mono">
-The defiance that would drive them to explore even the farthest stars.      </p>
+    <div class="centertitle">
+      <p class="mono panic_mono">
+The defiance that would drive them to explore even the farthest stars.      
+      </p>
     </div>
 
     <!--ShockPoint introduction-->
-    <div class="centertitle shockpoint parallax top-mask">
-      <p class="mono">
+    <div class="shockpoint parallax top-mask">
+      <p class="mono righttitle">
 Since ancient times, people have traveled by various modes of transportation.
+      </p>
+    </div>
+
+    <div class="shockpoint parallax no-mask">
+      <p class="mono righttitle">
 An accurate indicator of how far we have made progress in technology.
+      </p>
+    </div>
+
+    <div class="shockpoint parallax no-mask">
+      <p class="mono righttitle">
 More specifically, how much faster can we get from one point to another?
+      </p>
+    </div>
+
+    <div class="shockpoint parallax no-mask">
+      <p class="mono righttitle">
 Enter the creation of a device that changed the world–
       </p>
     </div>
 
-    <div class="centertitle shockpoint parallax bottom-mask">
-      <p class="mono">
+    <div class="shockpoint parallax bottom-mask">
+      <p class="mono righttitle">
 The ShockPoint Drive.
       </p>
     </div>
 
     <div class="">
-      <p class="mono">
+      <p class="mono lefttitle">
 An invention by an astrophysicist of Japanese descent, circa 2300.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono lefttitle">
 It completely reinforced how the spacetime continuum functions.
+      </p>
+    </div>
+
+   <div class="">
+      <p class="mono lefttitle">
 Forgoing the idea of pushing the engines to their limits to reach lightspeed.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono lefttitle">
 Focusing instead on poking a hole in the fabric of space using nuclear energy.
       </p>
     </div>
 
-    <div class="">
+    <div class="centertitle">
       <p class="mono">
 The ShockPoint Drive became the catalyst for interstellar travel.
+      </p>
+    </div>
+
+     <div class="centertitle">
+      <p class="mono">
 Igniting the race for mankind's search for life on other planets.
       </p>
     </div>
 
-    <div class="">
+    <div class="centertitle whited top-mask">
       <p class="mono">
 Governments and private corporations flocked to the start of a new era.
+      </p>
+    </div>
+
+    <div class="centertitle whited no-mask">
+      <p class="mono">
 The idea of exploring new worlds was too good to pass up.
+      </p>
+    </div>
+
+    <div class="centertitle whited no-mask">
+      <p class="mono">
 With Earth bordering the state of being uninhabitable, it was necessary.
-It's the second wind everybody needs. An excuse to hope and to start again.
+      </p>
+    </div>
+
+    <div class="centertitle whited no-mask">
+      <p class="mono">
+It's the second wind everybody needs.
+      </p>
+    </div>
+
+    <div class="centertitle whited bottom-mask">
+      <p class="mono">
+An excuse to hope and to start again.
       </p>
     </div>
 
     <div class="">
-      <p class="mono">
+      <p class="mono righttitle">
 A hundred years of extensive study of the cosmos went by.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono righttitle">
 New entries were added to the periodic table of elements.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono righttitle">
 Biomes thought to be impossible to exist were made known.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono righttitle">
 The library of knowledge kept expanding, with a singular irony.
       </p>
     </div>
 
-    <div>
+    <div class="centertitle whited top-bottom-mask">
       <p class="mono">
 All the planets deemed suitable for life were strangely–
- <br> <br>
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono panic_mono">
 Lifeless.
       </p>
     </div>
 
-    <div>
-      <p class="mono">
+    <div class="">
+      <p class="mono lefttitle">
 This phenomenon gave birth to revised philosophies and religions.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono righttitle">
 Although it is more or less just a distorted version of older beliefs.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono lefttitle">
 Catering to those who can no longer be convinced of a man in the sky.
+      </p>
+    </div>
+
+    <div class="">
+      <p class="mono righttitle">
 But looking to justify their existence in this meaningless universe.
       </p>
     </div>
 
-    <div class="parallax centertitle" style="background-color: grey;">
-      <p class="mono">
+    <div class="centertitle whited top-bottom-mask">
+      <p class="mono panic_mono">
         One even went as far as to say that death is their ultimate calling.
       </p>
     </div>
 
-    <div>
+    <div class="centertitle">
       <p class="mono">
 A man named Isaac Clarke was never fond of the said worship.
-Fearing death just as much as he's afraid of being left in the dark.
-Clinging to life and to the only person he holds dearly.
-He feels as if he will never be whole without her.
+      </p>
+    </div>
 
+    <div class="centertitle">
+      <p class="mono">
+Fearing death just as much as he's afraid of being left in the dark.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
+Clinging to life and to the only person he holds dearly.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
+He feels as if he will never be whole without her.
       </p>
     </div>
 
