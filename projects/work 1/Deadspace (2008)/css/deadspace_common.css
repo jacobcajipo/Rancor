@@ -6,7 +6,7 @@ p
 {
   font-family: mullish,Verdana,'Courier New', Courier, monospace;
   font-size: 1rem;
-  color: #C8C9C8; /* Isaac Steel Grey */
+  /color: #C8C9C8; /* Isaac Steel Grey */
   /color: inherit;
 }
 h2
@@ -71,7 +71,7 @@ p.mono {
 
 p.panic_mono
 {
-  outline: 1px dotted rgb(148, 0, 0);
+  outline: 1px dashed rgb(148, 0, 0);
   outline-offset: 2px;
   border: 1px solid red;
   /background-color: rgb(148, 0, 0);
@@ -150,7 +150,7 @@ p.speech {
   margin: auto;
   background-color: rgba(0, 0, 0, 0.90) !important;
   color: white;
-  font-style: italic;
+  /font-style: italic;
   
   border-width: 2.5px;
   border-style: solid;
@@ -158,14 +158,16 @@ p.speech {
 }
 
 p.hammond {
-  border-color: #7a1200;
+  border-color:#7a1200;
   outline: 1px solid #7a1200;
   outline-offset: 2px;
   /background-color: #502821d0;
 }
 p.hammond::before {
-  content: "Hammond:";
+  content: "Hammond: ";
   font-weight: bold;
+  font-style: normal;
+  color:#971701;
 }
 p.kendra {
   border-color: #c07b35;
@@ -175,8 +177,32 @@ p.kendra {
   /color:black;
 }
 p.kendra::before {
-  content: "Kendra:";
+  content: "Kendra: ";
   font-weight: bold;
+  font-style: normal;
+  color: #c07b35;
+}
+p.chen {
+  border-color: mediumseagreen;
+  outline: 1px solid mediumseagreen;
+  outline-offset: 2px;
+}
+p.chen::before {
+  content: "Chen: ";
+  font-weight: bold;
+  font-style: normal;
+  color: mediumseagreen;
+}
+p.johnston {
+  border-color: mediumseagreen;
+  outline: 1px solid mediumseagreen;
+  outline-offset: 2px;
+}
+p.johnston::before {
+  content: "Johnston: ";
+  font-weight: bold;
+  font-style: normal;
+  color: mediumseagreen;
 }
 p.misc {
   /background-color: #7e9e7e;
