@@ -1,6 +1,9 @@
 onload = function() { 
   
 }
+function show_next_button () {
+  document.getElementById('next').style.display = "inline-block";
+}
 //Prologue
 function play_theme() {
   document.getElementById('theme').play();

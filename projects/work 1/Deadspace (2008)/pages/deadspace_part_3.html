@@ -22,7 +22,7 @@
         </li>
         <li>
             <p>
-                Part 3/3
+                Part 3/4
             </p>
         </li>
         
@@ -627,18 +627,27 @@ He’s still alive.
       </p>
     </div>
 
-      <div id="scare" onpointerenter="
+    <button id="fake" class="save_game"
+    onclick="
       document.getElementById('necro_elevator').play();
-      necro_scare_attach();" 
+      necro_scare_attach();
+      ">
+      NEXT
+    </button>
+
+      <div id="scare"  
       style="padding: 0; justify-content: center; align-content: center; display: flex;">
           <video id="necro_elevator" width="fit-screen" height="100%" 
           onplay="
           pause_all_loops();
           "
           onended="
+          document.getElementById('fake').style.display = 'none'
           this.style.position = 'static';
             document.getElementById('section-2').style.display = 'flex';
-            document.getElementById('section-2').scrollIntoView({ behavior: 'smooth' });"
+            document.getElementById('section-2').scrollIntoView({ behavior: 'smooth' });
+            show_next_button();
+            "
             
               >
               <source src="../videos/necro elevator.mp4" type="video/mp4">
@@ -670,16 +679,43 @@ A hard lesson to never let his guard down.
         play_elevator();">
         </div>
 
-        <div class="parallax elev_5">
-          
-        </div>
-
-        <div class="centertitle parallax elev_6">
-          <p class="mono">
+        <div class="centertitle parallax elev_5">
+           <p class="mono">
 The elevator had taken him to the lower level.
           </p>
         </div>
+
+        <div class="centertitle parallax elev_6 bottom-mask">
+          <p class="mono">
+Gaining back his senses, he looked beneath his feet.          
+          </p>
+        </div>
+
+        <div class="half">
+
+        </div>
+
+        <div class="centertitle parallax whited top-mask">
+             <p class="mono panic_mono">
+A monstrous limb, a human head, and a pool of blood.
+             </p>
+         </div>
+
+         <div class="centertitle parallax whited bottom-mask">
+             <p class="mono panic_mono">
+The mechanical doors cut off parts of the creature as it closed.
+             </p>
+         </div>
+
     </section>
+
+    <!--EMPTYDIV-->
+  <div class="half"></div>
+<a href="deadspace_part_4.html">
+<button id="next" class="save_game" style="display: none;">
+    NEXT
+</button>
+</a>
 
 </main>
 <div class="half"></div>
