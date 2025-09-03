@@ -8,7 +8,10 @@ function show_next_button () {
 function play_theme() {
   document.getElementById('theme').play();
 }
-
+//Part 1
+function play_video_nicole() {
+  document.getElementById('nicole_message').play();
+}
 //Part 2
 function open_lounge() {
   document.getElementById("door_pad_lounge").style.display = "none";
