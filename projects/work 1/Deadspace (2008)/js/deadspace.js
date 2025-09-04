@@ -113,7 +113,7 @@ function pause_all_loops() {
 }
 function necro_scare_attach() {
    document.getElementById('necro_elevator').style.position = 'fixed';
-   document.getElementById('necro_elevator').style.top = '50px';
+   document.getElementById('necro_elevator').style.top = '0px';
 }
 function play_elevator () {
   document.getElementById('elev_op').play();

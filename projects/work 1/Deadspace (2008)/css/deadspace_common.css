@@ -71,11 +71,11 @@ p.panic_mono
 {
   /outline: 1px dashed rgb(148, 0, 0);
   outline-offset: 2px;
-  border: 1px solid red;
-  background-color: black ;
-  color: red;
+  border: 1px solid maroon;
+  background-color: maroon ;
+  color: white;
   font-weight: bolder;
-  text-transform: uppercase;
+  /text-transform: uppercase;
 }
 
 .is_panic p
@@ -200,7 +200,7 @@ p.loudnoise {
   font-family: crashing;
   font-size: clamp(10em, -2.3654rem + 10.7692vw, 20em);
   text-align: center;
-  color: red;
+  color: maroon;
   width: 100%;
   padding: 0;
   margin: 0;

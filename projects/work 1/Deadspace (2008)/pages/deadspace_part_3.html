@@ -16,7 +16,7 @@
         <li>
             <a href="./deadspace_part_2.html">
             <button>
-                PREV
+                BACK
             </button>
             </a>
         </li>
@@ -52,6 +52,11 @@
       <div class="centertitle">
         <p class="mono">
 Placing his hand on the computer to view the report.
+        </p>
+      </div>
+
+      <div class="centertitle">
+        <p class="mono">
 The Ishimura’s scaled model sprang up in a hologram.
         </p>
       </div>
@@ -144,7 +149,14 @@ An occurrence beyond even Hammond’s logical explanation,
      <div class="centertitle"
      onpointerenter="play_quarantine_necro();">
       <p class="mono panic_mono">
-Voices coming from the walls, slowly surrounding them.
+Voices coming from the walls,
+      </p>
+    </div>
+
+    <div class="centertitle"
+     onpointerenter="play_quarantine_necro();">
+      <p class="mono panic_mono">
+slowly surrounding them.
       </p>
     </div>
 
@@ -177,7 +189,13 @@ What the hell?
 
     <div class="centertitle">
       <p class="mono panic_mono">
-Part of the ceiling near Johnston collapsed, dropping <em>something</em> with it.
+Part of the ceiling near Johnston collapsed,
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono panic_mono">
+dropping <em>something</em> with it.
       </p>
     </div>
 
@@ -310,26 +328,16 @@ The disturbing brutality was too much for the man to take.
           </p>
         </div>
 
-        <div class="centertitle parallax secu_1">
-          <p class="mono">
-He knew he wouldn’t be the same after what he’d witnessed.
-          </p>
-        </div>
-
-        <div class="centertitle">
-          <p class="mono panic_mono">
-Oddly enough, he just couldn’t take his eyes off the thing.
-          </p>
-        </div>
         
-        <div class="centertitle parallax secu_3"
+        <div class="centertitle parallax secu_1"
         onpointerenter="play_slasher_male_loop();">
           <p class="mono">
 Leaving him fixated amidst the flashing lights and dripping blood.
           </p>
         </div>
 
-        <div class="parallax secu_3 is_panic">
+        <div class="parallax secu_3 is_panic"
+        onpointerenter="play_gun_hammond();">
             <p class="speech hammond">
 Jesus!
             </p>
@@ -337,7 +345,6 @@ Jesus!
 
         <div class="parallax secu_4 is_panic" 
         onpointerenter="
-        play_gun_hammond();
         play_gun_chen();
         ">
             <p class="speech hammond">
@@ -414,7 +421,18 @@ It quickly mangled Chen, but he kept pulling the trigger until the end.
         play_flatline();
         " >
             <p class="mono panic_mono">
-The cracking bones, ripping flesh can be heard despite the heavy fire.
+The cracking bones, ripping flesh can be heard
+            </p>
+        </div>
+
+        <div class="centertitle parallax secu_6 is_panic"
+      onpointerenter="
+        pause_gun_chen();
+        play_stab();
+        play_flatline();
+        " >
+            <p class="mono panic_mono">
+despite the heavy fire.
             </p>
         </div>
 
@@ -629,6 +647,7 @@ He’s still alive.
 
     <button id="fake" class="save_game"
     onclick="
+      document.getElementById('scare').style.display = 'flex';
       document.getElementById('necro_elevator').play();
       necro_scare_attach();
       ">
@@ -636,21 +655,24 @@ He’s still alive.
     </button>
 
       <div id="scare"  
-      style="padding: 0; justify-content: center; align-content: center; display: flex;">
+      style="padding: 0; justify-content: center; align-content: center; display: none; z-index: 99;">
           <video id="necro_elevator" width="fit-screen" height="100%" 
           onplay="
           pause_all_loops();
+
           "
           onended="
-          document.getElementById('fake').style.display = 'none'
+          document.getElementById('fake').style.display = 'none';
           this.style.position = 'static';
             document.getElementById('section-2').style.display = 'flex';
             document.getElementById('section-2').scrollIntoView({ behavior: 'smooth' });
             show_next_button();
+  
             "
             
               >
-              <source src="../videos/necro elevator.mp4" type="video/mp4">
+              <source src="../videos/necro elevator.mp4" type="video/mp4"
+              style="z-index: 99;">
           </video>
       </div>
     </section>
@@ -665,6 +687,10 @@ It tried to force open the doors.
         <div class="centertitle parallax elev_2">
           <p class="mono">
 It happened so fast, it was a blur,
+          </p>
+        </div>
+        <div class="centertitle parallax elev_2">
+          <p class="mono">
 All he could remember was the fear.
           </p>
         </div>
