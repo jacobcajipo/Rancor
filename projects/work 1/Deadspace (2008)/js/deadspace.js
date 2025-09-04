@@ -9,6 +9,12 @@ function play_theme() {
   document.getElementById('theme').play();
 }
 //Part 1
+function play_theme01() {
+  document.getElementById('theme_01').play();
+}
+function pause_theme01() {
+  document.getElementById('theme_01').pause();
+}
 function play_video_nicole() {
   document.getElementById('nicole_message').play();
 }

@@ -12,7 +12,7 @@
   <title>Dead Space Part 1</title>
 
 </head>
-<body oncontextmenu="return false">
+<body>
   <header>
   <nav>
     <ul>
@@ -31,7 +31,9 @@
     </ul>
   </nav>
   </header>
+
   <audio>
+    <audio>
     <audio 
     id="theme_01"
     src="../audio/part_1/theme_01.mp3">
@@ -65,9 +67,11 @@
     src="../audio/part_1/unintelligible.mp3">
     </audio>
   </audio>
+  </audio>
+
   <main>
     
-    <section onpointerenter="document.getElementById('theme_01').play()">
+    <section onpointerenter="play_theme01();">
     <!--Dead Space Logo-->
     <div class="">
       <p style="
@@ -234,7 +238,9 @@ An incomplete video log from Nicole,
       </p>
     </div>
 
-    <div class="">
+    <div class=""
+    onpointerenter="
+    play_video_nicole();">
       <p class="mono righttitle">
 a former co-worker at the corporation, 
       </p>
@@ -250,6 +256,7 @@ who is now a partner.
 
     <div class="top-bottom-mask">
       <video id="nicole_message" src="../videos/Nicole's Last Message.mp4" width="100%" controls
+      onplay="pause_theme01();"
       onended="document.getElementById('theme_02').play();"
       ></video>
     </div>
@@ -770,7 +777,10 @@ Automatic docking procedure is a go.
       </p>
     </div>
 
-    <div class="centertitle is_panic half crash_impact parallax no-mask">
+    <div class="centertitle is_panic half crash_impact parallax no-mask" 
+    onpointerover="
+    document.getElementById('crash').play();
+    document.getElementById('crash3').play();">
       <p class="speech chen">
 What the hell?
       </p>
