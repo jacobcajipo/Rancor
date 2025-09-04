@@ -28,6 +28,9 @@
         
     </ul>
     </nav>
+</header>
+
+<audio>
 <audio id="objective_complete" src="../audio/part_2/Dead Space _ Objective Complete [Sound Effect].mp3"></audio>
 <audio id="quarantine_activated" src="../audio/part_2/quaratine_activated.mp3"></audio>
 <audio id="quarantine_normal"src="../audio/part_2/quarantine_normal.mp3" loop></audio>
@@ -46,7 +49,8 @@
     <audio id="chase" src="../audio/part_3/Chase.mp3"></audio>
     <audio id="broken_lights" src="../audio/part_3/broken_light.mp3" loop></audio>
     <audio id="elev_op" src="../audio/part_3/Elev_op.mp3"></audio>
-</header>
+</audio>
+
 <main>
     <section>
       <div class="centertitle">
@@ -61,7 +65,7 @@ The Ishimura’s scaled model sprang up in a hologram.
         </p>
       </div>
 
-    <div id="console" class="hangar-5_7">
+    <div id="console" class="hangar-5_7 top-bottom-mask">
       <img src="../img/part_2/console.webp" alt="" usemap="#console_map">
       <map name="console_map" cursor="pointer">
         <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" 
@@ -71,7 +75,7 @@ The Ishimura’s scaled model sprang up in a hologram.
 
     <section id="quarantine">
 
-    <div class="centertitle parallax quarantine-8_0">
+    <div class="centertitle parallax quarantine-8_0 top-mask">
       <p class="speech johnston">
 Huh. That doesn't look good. She's taken a lot of damage.
       </p>
@@ -109,13 +113,13 @@ The air seems to be flowing again. That's a start.
     onpointerenter="play_quarantine_activated(); play_quarantine_loop();">
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax quarantine-8_3">
       <p class="mono panic_mono">
 An unrelenting blare of the alarm caught them by surprise.
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax quarantine-8_3">
       <p class="mono panic_mono">
 The adrenaline from the fatal crash got them spooked.
       </p>
@@ -139,21 +143,21 @@ Everybody relax...
       </p>
     </div>
 
-    <div class="centertitle"
+    <div class="centertitle parallax quarantine-8_5"
     onpointerenter="pause_quarantine_loop();">
       <p class="mono">
 An occurrence beyond even Hammond’s logical explanation, 
       </p>
     </div>
 
-     <div class="centertitle"
+     <div class="centertitle parallax quarantine-8_5"
      onpointerenter="play_quarantine_necro();">
       <p class="mono panic_mono">
 Voices coming from the walls,
       </p>
     </div>
 
-    <div class="centertitle"
+    <div class="centertitle parallax quarantine-8_5"
      onpointerenter="play_quarantine_necro();">
       <p class="mono panic_mono">
 slowly surrounding them.
@@ -187,7 +191,7 @@ What the hell?
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax quarantine-8_6">
       <p class="mono panic_mono">
 Part of the ceiling near Johnston collapsed,
       </p>
@@ -199,27 +203,20 @@ dropping <em>something</em> with it.
       </p>
     </div>
 
-    <!--Empty Div-->
-    <div class="half">
-    </div>
-
     <div 
     onpointerenter="play_flop();">
       <p class="loudnoise">
 flop
       </p>
     </div>
-    <!--Empty Div-->
-    <div class="half">
-    </div>
 
-    <div class="parallax quarantine-8_7 is_panic">
+    <div class="centertitle is_panic">
       <p class="speech kendra">
 I don't know! Something's in the room with us!
       </p>
     </div>
 
-    <div class="centertitle parallax quarantine-8_7">
+    <div class="centertitle">
     <p class="mono">
 A figure below the ruins of the ceiling emerged.
     </p>
@@ -231,19 +228,19 @@ Wounded, bleeding profusely, curled up on the floor.
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax quarantine-8_7">
       <p class="mono">
 Rubbery, pale skin stretched across its back.
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax quarantine-8_7">
       <p class="mono">
 It <em>almost</em> looked human… 
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax quarantine-8_7">
       <p class="mono panic_mono">
 But then it stood up.
       </p>
@@ -392,7 +389,13 @@ Kendra! Power!
 
         <div class="centertitle parallax secu_5">
           <p class="mono">
-No matter how swiftly she was working, it still wasn’t enough.
+No matter how swiftly she was working,
+          </p>
+        </div>
+
+        <div class="centertitle parallax secu_5">
+          <p class="mono">
+it still wasn’t enough.
           </p>
         </div>
 
@@ -421,7 +424,7 @@ It quickly mangled Chen, but he kept pulling the trigger until the end.
         play_flatline();
         " >
             <p class="mono panic_mono">
-The cracking bones, ripping flesh can be heard
+His screaming, cracking bones, ripping flesh
             </p>
         </div>
 
@@ -432,7 +435,7 @@ The cracking bones, ripping flesh can be heard
         play_flatline();
         " >
             <p class="mono panic_mono">
-despite the heavy fire.
+can be heard despite the heavy fire.
             </p>
         </div>
 
@@ -744,6 +747,7 @@ The mechanical doors cut off parts of the creature as it closed.
 </a>
 
 </main>
+
 <div class="half"></div>
 <footer>
 </footer>
