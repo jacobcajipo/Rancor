@@ -1,3 +1,60 @@
-.low-1_1 {
-    background-image: url(../img/part_4/1_low_1.png);
+.low-1_0 {
+    background-image: url(../img/part_4/1_low_0.webp);
 }
+.low-1_1 {
+    background-image: url(../img/part_4/1_low_1.webp);
+}
+.low-1_2 {
+    background-image: url(../img/part_4/1_low_2.webp);
+}
+.invert {
+    filter: invert();
+    background-size: 500%;
+}
+.flashback {
+    filter: grayscale();
+}
+.background-focus-right {
+    background-position: right;
+}
+.background-focus-left {
+    background-position: left;
+}
+.flash-2_1 {
+    background-image: url(../img/part_4/2_flash_1.webp);
+}
+.flash-2_2 {
+    background-image: url(../img/part_4/2_flash_2.webp);
+}
+.flash-2_3 {
+    background-image: url(../img/part_4/2_flash_3.webp);
+}
+.flash-2_4 {
+    background-image: url(../img/part_4/2_flash_4.webp);
+}
+.shop-3_1 {
+    background-image: url(../img/part_4/3_shop_1.webp);
+}
+.shop-3_2 {
+    background-image: url(../img/part_4/3_shop_2.webp);
+}
+.shop-3_3 {
+    background-image: url(../img/part_4/3_shop_3.webp);
+}
+.shop-3_4 {
+    background-image: url(../img/part_4/3_shop_4.webp);
+}
+.shop-3_5 {
+    background-image: url(../img/part_4/3_shop_5.webp);
+}
+.shop-3_6 {
+    background-image: url(../img/part_4/3_shop_6.webp);
+}
+.imagemap-scaling-mobile {
+    height: fit-content;
+    overflow-x: hidden;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
