@@ -8,8 +8,14 @@
     <link rel="stylesheet" href="../css/deadspace_part_4.css">
     <script src="../js/deadspace.js"></script>
     <title>Dead Space Part 4</title>
+<script>
+    function show_section(section_number) {
+        document.getElementsByTagName('section')[section_number].style.display = 'flex';
+    }
+</script>
+
 </head>
-<body>
+<body onpageshow="show_section(0);">
     <header>
         <nav>
     <ul>
@@ -31,7 +37,7 @@
     </header>
 
     <main>
-    </section>
+    <section id="section-0">
 
         <div class="centertitle">
           <p class="mono">
@@ -191,12 +197,41 @@ Isaac picks up one of the mining tools atop the workstation.
          <div class="imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/plasma_cutter.webp" usemap="#plasma" alt="">
             <map name="plasma" cursor="pointer">
-                <area shape="square" coords="340,160,450,290" href="" alt="">
+                <area shape="square" coords="340,160,450,290" href="#section-1" 
+                onclick="show_section(1);"
+                alt="">
             </map>
         </div>
     </section>
+
+    <section id="section-1">
+        <div class="centertitle">
+            <p class="mono">
+                The Plasma Cutter
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+                capable of shooting ionized plasma in a straight line.
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+                If it can cut through stone and minerals,
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono panic_mono">
+it would do well on the creature.
+            </p>
+        </div>
+    </section>
+    
     </main>
 
+    <div class="half">
+        
+    </div>
     <footer>
 
     </footer>

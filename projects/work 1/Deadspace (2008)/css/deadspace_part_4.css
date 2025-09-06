@@ -1,3 +1,7 @@
+section {
+    display: none;
+    flex-direction: column;
+}
 .low-1_0 {
     background-image: url(../img/part_4/1_low_0.webp);
 }
@@ -50,11 +54,4 @@
 .shop-3_6 {
     background-image: url(../img/part_4/3_shop_6.webp);
 }
-.imagemap-scaling-mobile {
-    height: fit-content;
-    overflow-x: hidden;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-  }
+
