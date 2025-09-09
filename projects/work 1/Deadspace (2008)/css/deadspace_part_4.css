@@ -64,12 +64,15 @@ section {
     background-image: url(../img/part_4/3_shop_6_1.png);
 }
 .shop-3_6_2 {
-    background-image: url(../img/part_4/3_shop_6_2.png);
+    background-image: url(../img/part_4/3_shop_6_2.webp);
 }
 .shop-3_7 {
     background-image: url(../img/part_4/3_shop_7.webp);
 }
 .shop-3_8 {
     background-image: url(../img/part_4/3_shop_8.webp);
+}
+.shop-3_9 {
+    background-image: url(../img/part_4/3_shop_9.webp);
 }
 
