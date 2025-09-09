@@ -210,12 +210,12 @@ Isaac picks up one of the mining tools atop the workstation.
                 The Plasma Cutter
             </p>
         </div>
-        <div class="centertitle">
+        <div class="centertitle parallax shop-3_7 top-mask">
             <p class="mono">
                 capable of shooting ionized plasma in a straight line.
             </p>
         </div>
-        <div class="centertitle">
+        <div class="centertitle parallax shop-3_8 bottom-mask">
             <p class="mono">
                 If it can cut through stone and minerals,
             </p>
@@ -225,7 +225,48 @@ Isaac picks up one of the mining tools atop the workstation.
 it would do well on the creature.
             </p>
         </div>
+        <div class="centertitle">
+            <p class="mono">
+He can now aid the helpless man trapped in the adjacent room,
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+Whose cries grew louder with each passing second.
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
+        </div>
+        <div id="fuse_break" class="imagemap-scaling-mobile top-bottom-mask">
+            <img src="../img/part_4/fuse.webp" alt="" usemap="#fuse">
+            <map name="fuse">
+                <area shape="rect" coords="340,120,490,330" href="#section-2" alt="" cursor="pointer"
+                onclick="
+                show_section(2);
+                document.getElementById('fuse_break').style.display = 'none';
+                document.getElementById('break_fuse').play();
+                "
+                >
+            </map>
+        </div>
+        
+    </section id="section-2">
+    <section>
+        <div class="imagemap-scaling-mobile top-bottom-mask" >
+            <video id="break_fuse" src="../videos/break fuse.mp4"
+            onended="
+            document.getElementById('doorpad').scrollIntoView({behaviorL: 'smooth'});
+            "
+            ></video>
+        </div>
+        <div id="doorpad" class="centertitle">
+            <p class="mono">
+Using his RIG once again to interface with the door pads as fast as he could.            </p>
+        </div>
     </section>
+
     
     </main>
 
