@@ -22,5 +22,9 @@ p {
 .parallax {
   height: 100vh;
 }
-
+.plasma-cutter {
+  max-width: none;
+  max-width: unset;
+  width: 100%;
+}
 }

@@ -11,6 +11,9 @@ section {
 .low-1_2 {
     background-image: url(../img/part_4/1_low_2.webp);
 }
+.plasma-cutter {
+    max-width:800px;
+}
 .invert {
     filter: invert();
     background-size: 500%;
@@ -23,6 +26,9 @@ section {
 }
 .background-focus-left {
     background-position: left;
+}
+.background-fitted {
+    background-size: contain;
 }
 .flash-2_1 {
     background-image: url(../img/part_4/2_flash_1.webp);
@@ -53,6 +59,12 @@ section {
 }
 .shop-3_6 {
     background-image: url(../img/part_4/3_shop_6.webp);
+}
+.shop-3_6_1 {
+    background-image: url(../img/part_4/3_shop_6_1.png);
+}
+.shop-3_6_2 {
+    background-image: url(../img/part_4/3_shop_6_2.png);
 }
 .shop-3_7 {
     background-image: url(../img/part_4/3_shop_7.webp);

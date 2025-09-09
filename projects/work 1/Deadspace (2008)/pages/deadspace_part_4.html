@@ -6,12 +6,20 @@
     <link rel="stylesheet" href="../../../../css/root.css">
     <link rel="stylesheet" href="../css/deadspace_common.css">
     <link rel="stylesheet" href="../css/deadspace_part_4.css">
+    <link rel="stylesheet" href="../css/deadspace_mobile.css">
     <script src="../js/deadspace.js"></script>
     <title>Dead Space Part 4</title>
 <script>
     function show_section(section_number) {
         document.getElementsByTagName('section')[section_number].style.display = 'flex';
     }
+    function play_video(video_id) {
+        document.getElementById(video_id).play();
+    }
+    function hide_div(div_called) {
+        document.getElementById(div_called).style.display = 'none';
+    }
+
 </script>
 
 </head>
@@ -194,35 +202,44 @@ Isaac picks up one of the mining tools atop the workstation.
             </p>
          </div>
 
-         <div class="imagemap-scaling-mobile top-bottom-mask">
+         <div id="cutter_plasma" class="imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/plasma_cutter.webp" usemap="#plasma" alt="">
             <map name="plasma" cursor="pointer">
                 <area shape="square" coords="340,160,450,290" href="#section-1" 
-                onclick="show_section(1);"
+                onclick="show_section(1);
+                hide_div('cutter_plasma');
+                "
                 alt="">
             </map>
         </div>
     </section>
 
     <section id="section-1">
+        <div class="centertitle parallax shop-3_6_2 top-bottom-mask">
+        </div>
+        <div class="half"></div>
         <div class="centertitle">
+            <img src="../img/part_4/3_shop_6_1.png" class="plasma-cutter" alt="">
+        </div>
+         <div class="centertitle half">
             <p class="mono">
                 The Plasma Cutter
             </p>
         </div>
+         <div class="half"></div>
         <div class="centertitle parallax shop-3_7 top-mask">
             <p class="mono">
                 capable of shooting ionized plasma in a straight line.
             </p>
         </div>
-        <div class="centertitle parallax shop-3_8 bottom-mask">
+        <div class="centertitle parallax shop-3_7">
             <p class="mono">
                 If it can cut through stone and minerals,
             </p>
         </div>
-        <div class="centertitle">
+        <div class="centertitle parallax shop-3_8 bottom-mask">
             <p class="mono panic_mono">
-it would do well on the creature.
+it <strong>should</strong> do well on the creature.
             </p>
         </div>
         <div class="centertitle">
@@ -245,8 +262,8 @@ Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
                 <area shape="rect" coords="340,120,490,330" href="#section-2" alt="" cursor="pointer"
                 onclick="
                 show_section(2);
-                document.getElementById('fuse_break').style.display = 'none';
-                document.getElementById('break_fuse').play();
+                play_video('break_fuse');
+                hide_div('fuse_break');
                 "
                 >
             </map>
@@ -257,7 +274,7 @@ Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
         <div class="imagemap-scaling-mobile top-bottom-mask" >
             <video id="break_fuse" src="../videos/break fuse.mp4"
             onended="
-            document.getElementById('doorpad').scrollIntoView({behaviorL: 'smooth'});
+        document.getElementById('doorpad').scrollIntoView({behaviorL: 'smooth'});
             "
             ></video>
         </div>
