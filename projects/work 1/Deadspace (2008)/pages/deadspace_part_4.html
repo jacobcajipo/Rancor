@@ -109,7 +109,7 @@ The mechanical doors cut off parts of the creature as it closed.
 Might’ve been a trick of the light or his mind,
              </p>
         </div>
-        <div class="centertitle parallax low-1_2 invert top-bottom-mask">
+        <div class="centertitle parallax low-1_2 top-bottom-mask invert zoomed-500">
             
          </div>
          <div class="centertitle">
@@ -170,12 +170,12 @@ Where the muffled cries of a man can be heard.
          </div>
          <div class="centertitle parallax shop-3_5">
             <p class="mono">
-With bloodied hands,            
+With bloodied hands, he approached the board           
             </p>
          </div>
          <div class="centertitle parallax shop-3_5">
             <p class="mono">
-he approached the board and wrote:            
+ and wrote:            
             </p>
          </div>
          <div class="centertitle parallax shop-3_6 bottom-mask">
@@ -206,8 +206,9 @@ Isaac picks up one of the mining tools atop the workstation.
             <img src="../img/part_4/plasma_cutter.webp" usemap="#plasma" alt="">
             <map name="plasma" cursor="pointer">
                 <area shape="square" coords="340,160,450,290" href="#section-1" 
-                onclick="show_section(1);
-                hide_div('cutter_plasma');
+                onclick="
+                    show_section(1);
+                    hide_div('cutter_plasma');
                 "
                 alt="">
             </map>
@@ -232,19 +233,19 @@ Isaac picks up one of the mining tools atop the workstation.
                 capable of shooting ionized plasma in a straight line.
             </p>
         </div>
-        <div class="centertitle parallax shop-3_7">
+        <div class="centertitle parallax shop-3_8">
             <p class="mono">
                 If it can cut through stone and minerals,
             </p>
         </div>
-        <div class="centertitle parallax shop-3_8 bottom-mask">
+        <div class="centertitle parallax shop-3_7 bottom-mask">
             <p class="mono panic_mono">
 it <strong>should</strong> do well on the creature.
             </p>
         </div>
         <div class="centertitle">
             <p class="mono">
-He can now aid the helpless man trapped in the adjacent room,
+He can now aid the helpless man trapped in the next room,
             </p>
         </div>
         <div class="centertitle parallax shop-3_9 top-bottom-mask">
@@ -261,9 +262,9 @@ Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
             <map name="fuse">
                 <area shape="rect" coords="340,120,490,330" href="#section-2" alt="" cursor="pointer"
                 onclick="
-                show_section(2);
-                play_video('break_fuse');
-                hide_div('fuse_break');
+                    show_section(2);
+                    play_video('break_fuse');
+                    hide_div('fuse_break');
                 "
                 >
             </map>
@@ -273,8 +274,10 @@ Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
     <section>
         <div class="imagemap-scaling-mobile top-bottom-mask" >
             <video id="break_fuse" src="../videos/break fuse.mp4"
+            onplay="
+                this.scrollIntoView({behaviorL: 'smooth'});"
             onended="
-        document.getElementById('doorpad').scrollIntoView({behaviorL: 'smooth'});
+                document.getElementById('doorpad').scrollIntoView({behaviorL: 'smooth'});
             "
             ></video>
         </div>
@@ -282,8 +285,123 @@ Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
             <p class="mono">
 Using his RIG once again to interface with the door pads as fast as he could.            </p>
         </div>
+        <div id="late" class="imagemap-scaling-mobile top-bottom-mask">
+            <img src="../img/part_4/doorpad_lower.webp" alt="" usemap="#doorpad_lower">
+            <map name="doorpad_lower" cursor="pointer"
+            onclick="
+            show_section(3);
+            hide_div('late');
+            play_video('too_late');
+            ">
+                <area shape="circle" coords="407,250,70" href="#section-3" alt="">
+            </map>
+        </div>
     </section>
-
+    <section id="section-3">
+        <div class="imagemap-scaling-mobile top-bottom-mask">
+            <video id="too_late" src="../videos/too late.mp4"
+            onplay="
+            this.scrollIntoView({behavior:'smooth'});
+            "
+            onended="
+            document.getElementById('already_dead').scrollIntoView({behavior:'smooth'});
+            "
+            ></video>
+        </div>
+        <div id="already_dead" class="centertitle">
+            <p class="mono">
+                But he was a second too late.
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono panic_mono">
+                The man was already dead.
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+Feeling the vibrations of its scream,
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+He pointed the Plasma Cutter and fired,
+            </p>
+        </div>
+        <script>
+            function show_div(div_name) {
+                document.getElementById(div_name).style.display = 'flex';
+            }
+        </script>
+        <div id="shot_01" class="imagemap-scaling-mobile top-bottom-mask">
+            <video src="../videos/shot_01.mp4"
+            onclick="
+                this.play();                
+                "
+            onended="
+                hide_div('shot_01');
+                show_div('shot_02');
+                "
+                >
+            </video>
+        </div>
+        <div id="shot_02" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video src="../videos/shot_02.mp4"
+            onclick="
+                this.play();                
+                "
+            onended="
+                hide_div('shot_02');
+                show_div('shot_03');
+                "
+                >
+            </video>
+        </div>
+        <div id="shot_03" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video src="../videos/shot_03.mp4"
+            onclick="
+                this.play();
+            "
+            onended="
+            show_section(4);
+            document.getElementById('section-4').scrollIntoView({behavior:'smooth'});
+            "
+                >
+            </video>
+        </div>
+    </section>
+    <section id="section-4">
+        <div class="centertitle">
+            <p class="mono">
+Trying his best to aim at its limb,            
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+it sounded easy on his head,            
+            </p>
+        </div>
+        <div class="centertitle whited top-bottom-mask">
+            <p class="mono">
+He failed to take account of its erratic movements.
+            </p>
+        </div>
+        <div class="">
+            <p class="mono panic_mono lefttitle">
+His hands and feet began to feel cold.
+            </p>
+        </div>
+        <div class="">
+            <p class="mono panic_mono lefttitle">
+He took a step back and continued firing.            
+            </p>
+        </div>
+        <div class="">
+            <p class="mono panic_mono lefttitle">
+Focusing his aim on its shoulders.
+            </p>
+        </div>
+    </section>
     
     </main>
 

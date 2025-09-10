@@ -12,10 +12,18 @@ section {
     background-image: url(../img/part_4/1_low_2.webp);
 }
 .plasma-cutter {
-    max-width:800px;
+    max-width:500px;
 }
 .invert {
     filter: invert();
+}
+.zoomed-150 {
+    background-size: 150%;
+}
+.zoomed-250 {
+    background-size: 250%;
+}
+.zoomed-500 {
     background-size: 500%;
 }
 .flashback {
@@ -75,4 +83,6 @@ section {
 .shop-3_9 {
     background-image: url(../img/part_4/3_shop_9.webp);
 }
-
+.hidden-div {
+    display: none;
+}
