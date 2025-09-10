@@ -339,8 +339,8 @@ He pointed the Plasma Cutter and fired,
                 this.play();                
                 "
             onended="
-                hide_div('shot_01');
                 show_div('shot_02');
+                hide_div('shot_01');
                 "
                 >
             </video>
@@ -351,8 +351,8 @@ He pointed the Plasma Cutter and fired,
                 this.play();                
                 "
             onended="
-                hide_div('shot_02');
                 show_div('shot_03');
+                hide_div('shot_02');
                 "
                 >
             </video>
@@ -400,6 +400,46 @@ He took a step back and continued firing.
             <p class="mono panic_mono lefttitle">
 Focusing his aim on its shoulders.
             </p>
+        </div>
+        <div id="hit-01-vid" class="imagemap-scaling-mobile top-bottom-mask">
+            <video src="../videos/hit_01.mp4"
+            onclick="
+                this.play();           
+                "
+            onended="
+                show_div('hit-01-pic');
+                hide_div('hit-01-vid');
+                document.getElementById('hit-01-pic').scrollIntoView({behavior:'smooth'});
+                "
+            >
+            </video>
+        </div>
+        <div id="hit-01-pic" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <img src="../img/part_4/hit01_map.png" usemap="#hit01_map" alt="">
+            <map name="hit01_map" cursor="pointer" style="border: 1px solid white;">
+                <area shape="circle" coords="390,245,50" href="#hit02" alt=""
+                onclick="
+                play_video('2nd-fire');
+                show_div('hit-02-vid');
+                hide_div('hit-01-pic');
+                document.getElementById('hit-02-vid').scrollIntoView({behavior:'smooth'});
+                "
+                >
+            </map>
+        </div>
+        <div id="hit-02-vid" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video id="2nd-fire" src="../videos/hit_02.mp4"
+            onended="
+                show_div('hit-02-pic');
+                hide_div('hit-02-vid');
+                document.getElementById('hit-02-pic').scrollIntoView({behavior:'smooth'});
+                "
+            >
+
+            </video>
+        </div>
+        <div id="hit-02-pic" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <img src="../img/part_4/hit02_map.png" alt="">
         </div>
     </section>
     
