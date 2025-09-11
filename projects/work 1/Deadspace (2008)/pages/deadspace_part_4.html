@@ -413,7 +413,6 @@ Focusing his aim on its shoulders.
             onended="
                 show_div('hit-01-pic');
                 hide_div('hit-01-vid');
-                document.getElementById('hit-01-pic').scrollIntoView({behavior:'smooth'});
                 "
             >
             </video>
@@ -426,7 +425,6 @@ Focusing his aim on its shoulders.
                 play_video('2nd-fire');
                 show_div('hit-02-vid');
                 hide_div('hit-01-pic');
-                document.getElementById('hit-02-vid').scrollIntoView({behavior:'smooth'});
                 "
                 >
             </map>
@@ -436,7 +434,6 @@ Focusing his aim on its shoulders.
             onended="
                 show_div('hit-02-pic');
                 hide_div('hit-02-vid');
-                document.getElementById('hit-02-pic').scrollIntoView({behavior:'smooth'});
                 "
             >
 
@@ -450,8 +447,6 @@ Focusing his aim on its shoulders.
                 play_video('3rd-fire');
                 show_div('hit-03-vid');
                 hide_div('hit-02-pic');
-                document.getElementById('hit-03-vid').scrollIntoView({behavior:'smooth'});
-
                 "
                 >
             </map>
@@ -494,7 +489,6 @@ he hacked its leg apart as well.
                     play_video('4th-fire');
                     show_div('hit-04-vid');
                     hide_div('hit-04-pic');
-                    document.getElementById('hit-04-vid').scrollIntoView({behavior:'smooth'});
                 "
                 >
             </map>
@@ -515,7 +509,6 @@ he hacked its leg apart as well.
                     play_video('5th-fire');
                     show_div('hit-05-vid');
                     hide_div('hit-05-pic');
-                    document.getElementById('hit-05-vid').scrollIntoView({behavior:'smooth'});
                 "
                 >
             </map>
@@ -536,7 +529,6 @@ he hacked its leg apart as well.
                     play_video('6th-fire');
                     show_div('hit-06-vid');
                     hide_div('hit-06-pic');
-                    document.getElementById('hit-06-vid').scrollIntoView({behavior:'smooth'});
                 "
                 >
             </map>
@@ -590,7 +582,6 @@ as he stomped on it <strong>like an insect.</strong>
             <video id="1st-stomp" src="../videos/stomp_01.mp4"
             onclick="
                 play_video('1st-stomp');
-                document.getElementById('stomp_01').scrollIntoView({behavior:'smooth'});
 
             "
             onended="
@@ -614,7 +605,6 @@ as he stomped on it <strong>like an insect.</strong>
                 show_div('riddled');
                 document.getElementById('riddled').scrollIntoView({behavior:'smooth'});
                 show_div('stomp_03');
-
                 "
             ></video>
         </div>
@@ -631,6 +621,7 @@ as he stomped on it <strong>like an insect.</strong>
             onended="
                 show_section(7);
                 document.getElementById('section-7').scrollIntoView({behavior:'smooth'});
+                show_next_button();
                 "
             ></video>
         </div>
@@ -641,12 +632,30 @@ as he stomped on it <strong>like an insect.</strong>
                 It was left with neither limbs nor a head,
             </p>
         </div>
-        <div class="centertitle">
-            <p class="mono">
+        <div class="centertitle parallax carcass-0_1 top-bottom-mask">
+            <p class="mono panic_mono">
                 just another carcass in a slaughterhouse.
             </p>
         </div>
+        <div class="centertitle">
+            <p class="mono">
+But if cutting off the limbs only meant disabling it,
+            </p>
+        </div>
+        <div class="centertitle whited top-bottom-mask">
+            <p class="mono panic_mono">
+Does it truly fit the definition of being dead?
+            </p>
+        </div>
     </section>
+    
+    <!--EMPTYDIV-->
+  <div class="half"></div>
+<a href="deadspace_epilogue.html">
+<button id="next" class="save_game" style="display: none;">
+    NEXT
+</button>
+</a>
     
     </main>
 
