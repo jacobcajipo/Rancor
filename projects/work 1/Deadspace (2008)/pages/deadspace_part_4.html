@@ -283,7 +283,8 @@ Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
         </div>
         <div id="doorpad" class="centertitle">
             <p class="mono">
-Using his RIG once again to interface with the door pads as fast as he could.            </p>
+Using his RIG once again to interface with the door pads.            
+            </p>
         </div>
         <div id="late" class="imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/doorpad_lower.webp" alt="" usemap="#doorpad_lower">
@@ -402,8 +403,11 @@ Focusing his aim on its shoulders.
             </p>
         </div>
         <div id="hit-01-vid" class="imagemap-scaling-mobile top-bottom-mask">
-            <video src="../videos/hit_01.mp4"
-            onclick="
+            <video id="1st-fire" src="../videos/hit_01.mp4"
+            onpointermove="
+                this.play();           
+                "
+            onpointerenter="
                 this.play();           
                 "
             onended="
@@ -416,8 +420,8 @@ Focusing his aim on its shoulders.
         </div>
         <div id="hit-01-pic" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/hit01_map.png" usemap="#hit01_map" alt="">
-            <map name="hit01_map" cursor="pointer" style="border: 1px solid white;">
-                <area shape="circle" coords="390,245,50" href="#hit02" alt=""
+            <map name="hit01_map" cursor="pointer" >
+                <area style="border: 1px solid white;" shape="circle" coords="390,245,50" href="#hit02" alt=""
                 onclick="
                 play_video('2nd-fire');
                 show_div('hit-02-vid');
@@ -439,7 +443,208 @@ Focusing his aim on its shoulders.
             </video>
         </div>
         <div id="hit-02-pic" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
-            <img src="../img/part_4/hit02_map.png" alt="">
+            <img src="../img/part_4/hit02_map.png" usemap="#hit02_map" alt="">
+            <map name="hit02_map" cursor="pointer">
+                <area shape="circle" coords="390,255,50" href="#hit03" alt=""
+                onclick="
+                play_video('3rd-fire');
+                show_div('hit-03-vid');
+                hide_div('hit-02-pic');
+                document.getElementById('hit-03-vid').scrollIntoView({behavior:'smooth'});
+
+                "
+                >
+            </map>
+        </div>
+        <div id="hit-03-vid" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video id="3rd-fire" src="../videos/hit_03.mp4"
+            onended="
+            show_section(5)
+            document.getElementById('section-5').scrollIntoView({behavior:'smooth'});
+            "
+            ></video>
+        </div>
+    </section>
+    <section id="section-5">
+        <div class="centertitle">
+            <p class="mono">
+After multiple focused shots,          
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+Its whole arm flicked away from the body.            
+            </p>
+        </div>
+        <div class="">
+            <p class="mono lefttitle">
+Not letting go of the momentum,          
+            </p>
+        </div>
+        <div class="">
+            <p class="mono panic_mono lefttitle">
+he hacked its leg apart as well.            
+            </p>
+        </div>
+        <div id="hit-04-pic" class="imagemap-scaling-mobile top-bottom-mask">
+            <img src="../img/part_4/hit04_map.png" usemap="#hit04_map" alt="">
+            <map name="hit04_map" cursor="pointer">
+                <area shape="circle" coords="390,250,50" href="#hit05" alt=""
+                onclick="
+                    play_video('4th-fire');
+                    show_div('hit-04-vid');
+                    hide_div('hit-04-pic');
+                    document.getElementById('hit-04-vid').scrollIntoView({behavior:'smooth'});
+                "
+                >
+            </map>
+        </div>
+        <div id="hit-04-vid" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video id="4th-fire" src="../videos/hit_04.mp4"
+            onended="
+                show_div('hit-05-pic');
+                hide_div('hit-04-vid');
+            "
+            ></video>
+        </div>
+        <div id="hit-05-pic" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <img src="../img/part_4/hit05_map.png" usemap="#hit05_map" alt="">
+            <map name="hit05_map" cursor="pointer">
+                <area shape="circle" coords="400,235,50" href="#hit06" alt=""
+                onclick="
+                    play_video('5th-fire');
+                    show_div('hit-05-vid');
+                    hide_div('hit-05-pic');
+                    document.getElementById('hit-05-vid').scrollIntoView({behavior:'smooth'});
+                "
+                >
+            </map>
+        </div>
+        <div id="hit-05-vid" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video id="5th-fire" src="../videos/hit_05.mp4"
+            onended="
+                show_div('hit-06-pic');
+                hide_div('hit-05-vid');
+            "
+            ></video>
+        </div>
+        <div id="hit-06-pic" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <img src="../img/part_4/hit06_map.png" usemap="#hit06_map" alt="">
+            <map name="hit06_map" cursor="pointer">
+                <area shape="circle" coords="390,220,50" href="#stomp01" alt=""
+                onclick="
+                    play_video('6th-fire');
+                    show_div('hit-06-vid');
+                    hide_div('hit-06-pic');
+                    document.getElementById('hit-06-vid').scrollIntoView({behavior:'smooth'});
+                "
+                >
+            </map>
+        </div>
+        <div id="hit-06-vid" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video id="6th-fire" src="../videos/hit_06.mp4"
+            onended="
+                show_section(6);
+                document.getElementById('section-6').scrollIntoView({behavior:'smooth'});
+            "
+            ></video>
+        </div>
+    </section>
+    <section id="section-6">
+        <div class="centertitle">
+            <p class="mono">
+It fell like a log of lumber,
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+where it slobbered on the floor.
+            </p>
+        </div>
+        <div class="centertitle parallax no-clip-0_0 top-bottom-mask">
+            <p class="mono panic_mono">
+Eventually, he ran out of cartridges,
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono panic_mono">
+but the creature was still moving.
+            </p>
+        </div>
+        <div class="centertitle parallax no-clip-0_1 top-bottom-mask">
+            <p class="mono panic_mono">
+He walked right in front of it in desperation,
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono panic_mono">
+Letting out a guttural scream
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono panic_mono">
+as he stomped on it <strong>like an insect.</strong> 
+            </p>
+        </div>
+        <div id="stomp_01" class="imagemap-scaling-mobile top-bottom-mask">
+            <video id="1st-stomp" src="../videos/stomp_01.mp4"
+            onclick="
+                play_video('1st-stomp');
+                document.getElementById('stomp_01').scrollIntoView({behavior:'smooth'});
+
+            "
+            onended="
+                show_div('sole');
+                document.getElementById('sole').scrollIntoView({behavior:'smooth'});
+                show_div('stomp_02');
+                "
+            ></video>
+        </div>
+        <div id="sole" class="hidden-div">
+            <div class="centertitle"><p class="mono panic_mono">
+                until the sole of his boot...
+            </p></div>
+        </div>
+        <div id="stomp_02" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video id="2nd-stomp" src="../videos/stomp_02.mp4"
+            onclick="
+                play_video('2nd-stomp');
+            "
+            onended="
+                show_div('riddled');
+                document.getElementById('riddled').scrollIntoView({behavior:'smooth'});
+                show_div('stomp_03');
+
+                "
+            ></video>
+        </div>
+        <div id="riddled" class="hidden-div">
+            <div class="centertitle"><p class="mono panic_mono">
+                was riddled with flesh matter.
+            </p></div>
+        </div>        
+        <div id="stomp_03" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
+            <video id="3rd-stomp" src="../videos/stomp_03.mp4"
+            onclick="
+                play_video('3rd-stomp');
+            "
+            onended="
+                show_section(7);
+                document.getElementById('section-7').scrollIntoView({behavior:'smooth'});
+                "
+            ></video>
+        </div>
+    </section>
+    <section id="section-7">
+        <div class="centertitle">
+            <p class="mono">
+                It was left with neither limbs nor a head,
+            </p>
+        </div>
+        <div class="centertitle">
+            <p class="mono">
+                just another carcass in a slaughterhouse.
+            </p>
         </div>
     </section>
     

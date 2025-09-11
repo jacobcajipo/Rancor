@@ -86,3 +86,9 @@ section {
 .hidden-div {
     display: none;
 }
+.no-clip-0_0 {
+    background-image: url(../img/part_4/no_clip_00.png);
+}
+.no-clip-0_1 {
+    background-image: url(../img/part_4/no_clip_01.png);
+}
