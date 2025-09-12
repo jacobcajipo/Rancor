@@ -10,7 +10,7 @@
     <script src="../js/deadspace.js"></script>
     <title>Dead Space Part 3</title>
 </head>
-<body onpageshow="play_normal_heart_rate();">
+<body oncontextmenu="false" onpageshow="show_section(0);">
 <header>
     <nav>
     <ul>
@@ -53,7 +53,7 @@
 </audio>
 
 <main>
-    <section>
+    <section id="section-0">
       <div class="centertitle">
         <p class="mono">
 Placing his hand on the computer to view the report.
@@ -70,12 +70,16 @@ The Ishimura’s scaled model sprang up in a hologram.
       <img src="../img/part_2/console.webp" alt="" usemap="#console_map">
       <map name="console_map" cursor="pointer">
         <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" 
-        onclick="open_quarantine(); objective_complete();">
+        onclick="
+          show_section(1);
+          document.getElementById('section-1').scrollIntoView({behavior:'instant'});
+          hide_div('console');
+          objective_complete();">
       </map>
     </div>
     </section>
 
-    <section id="quarantine">
+    <section id="section-1">
 
     <div class="centertitle parallax quarantine-8_0 top-mask">
       <p class="speech johnston">
@@ -123,7 +127,7 @@ An unrelenting blare caught them by surprise.
 
     <div class="centertitle parallax quarantine-8_3">
       <p class="mono panic_mono">
-The adrenaline from the fatal crash got them spooked.
+The adrenaline from the crash got them spooked.
       </p>
     </div>
 
@@ -737,13 +741,13 @@ He’s still alive.
           document.getElementById('fake').style.display = 'none';
           this.style.position = 'static';
             document.getElementById('section-2').style.display = 'flex';
-            document.getElementById('section-2').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('section-2').scrollIntoView({ behavior: 'instant' });
             show_next_button();
   
             "
             
               >
-              <source src="../videos/necro elevator.mp4" type="video/mp4"
+              <source src="../videos/jump scare.mp4" type="video/mp4"
               style="z-index: 99;">
           </video>
       </div>

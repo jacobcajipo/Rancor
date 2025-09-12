@@ -2,6 +2,10 @@ main {
   display: flex;
   flex-direction: column;
 }
+section {
+    display: none;
+    flex-direction: column;
+}
 p
 {
   font-family: mullish,Verdana,'Courier New', Courier, monospace;
@@ -32,6 +36,9 @@ main div {
 div.half {
   height: 30vh;
   position: relative;
+}
+#next {
+  display: none;
 }
 /*FONT IMPORTS*/
 @font-face {

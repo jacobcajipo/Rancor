@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/deadspace_part_2.css">
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
 </head>
-<body>
+<body oncontextmenu="false" onpageshow="show_section(0);">
 
   <header>
     <nav>
@@ -41,7 +41,7 @@
 </audio>
 
   <main>
-    <section>
+    <section id="section-0">
     <div class="centertitle" id="intro">    
         <p class="mono">
 Even with intense contingent drills and simulations,
@@ -65,11 +65,10 @@ Some survived to defy this limit,
 but none came out unscathed.
       </p>
     </div>
-    </section>
+
     <!--EMPTYDIV-->
     <div class="half"></div>
 
-    <section id="hangar" onpointerenter="document.getElementById('ambient').play();">
     <div class="parallax top-mask awake-00">
       <p class="speech hammond righttitle">
  Is everyone okay?
@@ -297,7 +296,6 @@ A pity that his welfare is unworthy of attention.
 
     <!--EMPTYDIV-->
     <div class=""></div>
-    </section>
 
     <!--EMPTYDIV-->
     <div class="centertitle parallax parallax-hangar hangar-5_0 top-mask" style="background-position: right;">
@@ -512,7 +510,8 @@ it can be done by using his RIG's interface with a click.
     <map name="lounge" cursor="pointer">
       <area shape="circle" coords="395, 245,115" href="#lounge" alt=""
       onclick="
-      open_lounge(); 
+      show_section(1);
+      hide_div('door_pad_lounge');
       document.getElementById('door_pad_activated').play();
       welcome_video.pause();
       ambient.pause();
@@ -520,9 +519,9 @@ it can be done by using his RIG's interface with a click.
       id="lounge_area" style="cursor: pointer;">
     </map>
   </div>
-  
+  </section>
   <!--FLIGHT LOUNGE-->
-  <section id="lounge">
+  <section id="section-1">
     <div class="parallax lounge-6_0 top-mask"></div>
     <div class="parallax lounge-6_1"></div>
     <!--div class="parallax lounge-6_2"></div-->
@@ -670,16 +669,18 @@ He would be on his own, separated from the others.
       <area shape="circle" coords="400, 230,160" 
       href="#security" id="security_area" alt=""
       onclick="
-      open_security();
+      show_section(2);
+      hide_div('door_pad_security');
+      show_next_button();
       document.getElementById('door_pad_activated').play();
       
-      "  style="cursor: pointer;">
+      ">
     </map>
   </div>
   
   </section>
 
-  <section id="security">
+  <section id="section-2">
     <div class="parallax security-7_0 top-mask"></div>
 
     <div class="centertitle parallax security-7_1">
@@ -744,7 +745,7 @@ They all waited in anticipation but was quick to realize,
 
     <div class="centertitle">
       <p class="mono panic_mono">
-That this would be the calm before the coming storm.
+That this would be the calm before the storm.
       </p>
     </div>
 
@@ -755,7 +756,7 @@ That this would be the calm before the coming storm.
 <!--EMPTYDIV-->
   <div class="half"></div>
 <a href="deadspace_part_3.html">
-<button id="next" class="save_game" style="display: none;">
+<button id="next" class="save_game">
     NEXT
 </button>
 </a>

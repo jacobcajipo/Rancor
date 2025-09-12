@@ -1,6 +1,16 @@
-onload = function() { 
-  
-}
+//overall
+function show_section(section_number) {
+        document.getElementsByTagName('section')[section_number].style.display = 'flex';
+    }
+function play_video(video_id) {
+        document.getElementById(video_id).play();
+    }
+function pause_video(video_id) {
+        document.getElementById(video_id).pause();
+    }
+function hide_div(div_called) {
+        document.getElementById(div_called).style.display = 'none';
+    }
 function show_next_button () {
   document.getElementById('next').style.display = "inline-block";
 }
