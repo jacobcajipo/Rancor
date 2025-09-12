@@ -12,6 +12,7 @@
   <title>Dead Space Part 1</title>
 </head>
 <body oncontextmenu="false" onpageshow="show_section(0); play_video('main_menu');">
+
   <header style="background-color: transparent;">
     <nav>
       <ul>
@@ -63,11 +64,12 @@
   <main>
     
     <section id="section-0">
+      <div class="half"></div>
     <!--Dead Space Logo-->
     <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
       <video id="main_menu" src="../videos/main menu.mp4" width="100%"
       onplay="
-      this.scrollIntoView({behavior:'instant'});
+      this.scrollIntoView({behavior:'smooth'});
       "
 
       onclick="
@@ -972,8 +974,10 @@ Damn, the field's too strong!
     </a>
 
   </main>
+
   <footer>
   </footer>
+
 </body>
 <script src="../js/deadspace.js"></script>
 </html>
