@@ -2,6 +2,12 @@
 function show_section(section_number) {
         document.getElementsByTagName('section')[section_number].style.display = 'flex';
     }
+function play_music(music_id) {
+        document.getElementById(music_id).play();
+    }
+function pause_music(music_id) {
+        document.getElementById(music_id).pause();
+    }    
 function play_video(video_id) {
         document.getElementById(video_id).play();
     }

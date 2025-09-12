@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
   <title>Dead Space Part 1</title>
 </head>
-<body oncontextmenu="false" onpageshow="show_section(0);">
+<body oncontextmenu="false" onpageshow="show_section(0); play_video('main_menu');">
   <header style="background-color: transparent;">
     <nav>
       <ul>
@@ -28,18 +28,20 @@
     <audio>
     <audio 
     id="theme_01"
-    src="../audio/part_1/theme_01.mp3">
+    src="../audio/part_1/theme_01.mp3"
+    loop>
     </audio>
     <audio 
     id="theme_02"
-    src="../audio/part_1/theme_02.mp3">
+    src="../audio/part_1/theme_02.mp3"
+    loop>
     </audio>
     <audio 
     id="theme_ishimura"
     src="../audio/part_1/theme_ishimura.mp3">
     </audio>
     <audio 
-    id="crash"
+    id="theme_crashing"
     src="../audio/part_1/theme_crashing.mp3">
      </audio>
     <audio 
@@ -54,10 +56,7 @@
     id="crash3"
     src="../audio/part_1/crash3.mp3">
     </audio>
-    <audio 
-    id="unintelligible"
-    src="../audio/part_1/unintelligible.mp3">
-    </audio>
+    
   </audio>
   </audio>
 
@@ -65,21 +64,36 @@
     
     <section id="section-0">
     <!--Dead Space Logo-->
-    <div class="">
-      <p style="
-      font-family: glitch;
-      text-align: center;
-      font-size: 4em;
-      ">
-        Dead Space
-      </p> 
+    <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
+      <video id="main_menu" src="../videos/main menu.mp4" width="100%"
+      onplay="
+      this.scrollIntoView({behavior:'instant'});
+      "
+
+      onclick="
+        this.pause();
+        show_section(1);
+        hide_div('main-menu');
+        document.getElementById('chapter').scrollIntoView({behavior:'smooth'});
+        play_music('theme_01');        "
+      onended="
+        show_section(1);
+        hide_div('main-menu');
+        document.getElementById('chapter').scrollIntoView({behavior:'smooth'});
+        play_music('theme_01');
+        "
+      ></video>
     </div>
+    </section>
 
-    <!--EMPTYDIV-->
-    <div class="half"></div>
-
+    <section id="section-1"
+    onpointerenter="
+    play_music('theme_01');
+      pause_music('theme_02');
+    "
+    >
     <!--Chapter 1, Part 1 Start-->
-    <div class="">
+    <div id="chapter" class="">
       <h2>
         Chapter 1: New Arrivals
       </h2>
@@ -248,18 +262,25 @@ who is now a long-term partner.
     <div class="top-bottom-mask" style="height: fit-content;">
       <video id="nicole_message" src="../videos/Nicole's Last Message.mp4" width="100%" controls
       onplay="
-        //pause_theme01();"
+        pause_music('theme_01');
+         "
       onended="
-        //document.getElementById('theme_02').play();
+        play_music('theme_02');
         show_next_button();
-        show_section(1);
-        document.getElementById('section-1').scrollIntoView({behavior:'smooth'})
+        show_section(2);
+        show_section(3);
+        document.getElementById('section-2').scrollIntoView({behavior:'smooth'})
         "
       ></video>
     </div>
     </section>
 
-    <section id="section-1">
+    <section id="section-2"
+    onpointerenter="
+    play_music('theme_02');
+      pause_music('theme_01');
+      pause_music('theme_ishimura');
+    ">
     <div class="">
       <p class="mono lefttitle">
 Earning the job as Medical Officer months ago,
@@ -524,7 +545,6 @@ Cobalt, Silicon, Osmium.
       </p>
     </div>
 
-
     <div class="centertitle">
       <p class="mono">
 Mining for materials on Earth used to be a process.
@@ -562,7 +582,14 @@ For there are a hundred known planets devoid of any life,
 and thousands waiting to be surveyed for prospects.
       </p>
     </div>
+    </section>
 
+    <section id="section-3"
+    onpointerenter="
+      pause_music('theme_02');
+      play_music('theme_ishimura');
+    "
+    >
     <div class="half">
       <p class="speech hammond lefttitle">
 Now, where is she? There she is. We have visual contact.
@@ -621,7 +648,7 @@ they're left discarded.
       </p>
     </div>
 
-    <div class="centertitle ishimura_2 parallax top-bottom-mask" style="background-position: bottom left;">
+    <div class="centertitle ishimura_2 parallax top-bottom-mask">
       <p class="speech hammond">
 The <strong>USG</strong> Ishimura. 
 The biggest Planet Cracker in her class.
@@ -713,13 +740,41 @@ Yes, we know. Boost the signal. More.
     </p>
     </div>
 
-    <div onpointerenter="document.getElementById('unintelligible').play()">
-      <p class="mono lefttitle">
+    <div class="half centertitle" 
+    onpointerenter="
+    play_music('unintelligible');
+        ">
+      <p class="mono">
 A bizarre audio slipped in.
       </p>
     </div>
 
-    <div onpointerenter="document.getElementById('unintelligible').play()">
+    <div class="half centertitle"
+    onpointerenter="
+    play_music('unintelligible');
+    "
+    >
+    <audio 
+    id="unintelligible"
+    src="../audio/part_1/unintelligible.mp3"
+    controls
+    width="50%"
+
+      onplaying="
+      pause_music('theme_01');
+      pause_music('theme_02');
+      pause_music('theme_ishimura');
+      pause_music('theme_crashing');
+      "
+    >
+    </audio>
+      </div>
+
+    <div class="centertitle" 
+      onpointerenter="
+        play_music('unintelligible');
+      "
+    >
       <p class="mono lefttitle">
 They all strained hard to make sense of it.
       </p>
@@ -758,21 +813,33 @@ Gravity tethers engaged.
       </p>
     </div>
 
-    <div class="centertitle silence_3 parallax no-mask">
+    <div class="centertitle silence_3 parallax no-mask"
+    onpointerenter="
+      pause_music('theme_01');
+      pause_music('theme_02');
+      pause_music('theme_ishimura');
+
+      show_section(4);
+      play_music('theme_crashing');
+      play_music('crash3');
+      document.getElementById('section-4').scrollIntoView({behavior:'smooth'});
+    "
+    >
       <p class="speech johnston">
 Automatic docking procedure is a go.
       </p>
     </div>
+    </section>
 
-    <div style="
-    display: flex; 
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    <section id="section-4"
+    onpointerenter="
+      play_music('theme_crashing');
     "
+    >
+    <div class="centertitle"
     onpointerover="
-    document.getElementById('crash').play();
-    document.getElementById('crash3').play();
+    play_music('theme_crashing');
+    play_music('crash3');
     "
     >
       <p class="crashing" style="color: red;" >
@@ -780,10 +847,7 @@ Automatic docking procedure is a go.
       </p>
     </div>
 
-    <div class="centertitle is_panic half crash_impact parallax no-mask" 
-    onpointerover="
-    document.getElementById('crash').play();
-    document.getElementById('crash3').play();">
+    <div class="centertitle is_panic half crash_impact parallax no-mask">
       <p class="speech chen">
 What the hell?
       </p>
@@ -900,9 +964,7 @@ Damn, the field's too strong!
     </div>
     </section>
 
-    <!--EMPTYDIV-->
-    <div id="bottom" class=""></div>
-
+    <div class="half"></div>
     <a href="deadspace_part_2.html">
     <button id="next" class="save_game">
       NEXT
