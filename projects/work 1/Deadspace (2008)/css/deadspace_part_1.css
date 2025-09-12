@@ -60,6 +60,12 @@ div.cec_2 {
 }
 div.ishimura  {
   background-image: 
+  url(../img/part_1/asteroids_1.webp), 
+  url(../img/part_1/asteroids_2.webp),
+  url(../img/part_1/ishimura.webp);
+}
+div.ishimura_2  {
+  background-image: 
   url(../img/part_1/ishimura.webp);
 }
 div.silence {
