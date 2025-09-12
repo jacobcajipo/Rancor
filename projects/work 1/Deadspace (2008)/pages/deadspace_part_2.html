@@ -11,20 +11,13 @@
 </head>
 <body oncontextmenu="false" onpageshow="show_section(0);">
 
-  <header>
+  <header style="background-color: transparent;">
     <nav>
       <ul>
         <li>
-          <a href="deadspace_part_1.html">
-            <button>
-              BACK
-          </button>
-          </a>
         </li>
-        <li>
-          <p>
-            Part 2/4
-          </p>
+        <li style="background-color: transparent; filter: invert();">
+        <img src="../img/pasted file.png" width="45px" height="45px" alt="">
         </li>
       </ul>
     </nav>
@@ -50,7 +43,7 @@ Even with intense contingent drills and simulations,
 
     <div class="centertitle">    
         <p class="mono">
-The human body has a fixed gravitational force threshold.
+The human body has a gravitational force threshold.
       </p>
     </div>
 
@@ -512,6 +505,7 @@ it can be done by using his RIG's interface with a click.
       onclick="
       show_section(1);
       hide_div('door_pad_lounge');
+      document.getElementById('section-1').scrollIntoView({behavior:'smooth'});
       document.getElementById('door_pad_activated').play();
       welcome_video.pause();
       ambient.pause();
@@ -537,15 +531,15 @@ a fine layer of dust accumulated on the stained floor.
       </p>
     </div>
 
-    <div class="centertitle" onpointerenter="document.getElementById('lights').play();">
+    <div class="centertitle">
       <p class="mono">
-People are supposed to be waiting for them in this lounge.
+The emptiness was laden with foreboding, 
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle" onpointerenter="document.getElementById('lights').play();">
       <p class="mono">
-Frozen with anxiety, it took him a while to snap back.
+Flickering fluorescent lights snapped him back.
       </p>
     </div>
 
@@ -569,7 +563,7 @@ Frozen with anxiety, it took him a while to snap back.
 
     <div class="parallax lounge-6_5_3">
       <p class="mono lefttitle">
-Multiple personnel came this way.
+A number of personnel came this way.
       </p>
     </div>
 
@@ -762,8 +756,10 @@ That this would be the calm before the storm.
 </a>
     
   </main>
+
   <footer>
   </footer>
+
 </body>
 <script src="../js/deadspace.js"></script>
 </html>
