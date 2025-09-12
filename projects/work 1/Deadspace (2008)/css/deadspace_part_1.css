@@ -125,3 +125,52 @@ p.crashing
   background-color: transparent !important;
   transform: scale(15);
 }
+/* New HD Images*/ 
+.shockpoint-1_1 {
+  background-image: url(../img/part_1/1_shockpoint_1.png);
+}
+.shockpoint-1_2 {
+  background-image: url(../img/part_1/1_shockpoint_2.png);
+}
+.shockpoint-1_3 {
+  background-image: url(../img/part_1/1_shockpoint_3.png);
+}
+.shockpoint-1_4 {
+  background-image: url(../img/part_1/1_shockpoint_4.png);
+}
+.shockpoint-1_5 {
+  background-image: url(../img/part_1/1_shockpoint_5.png);
+}
+.shockpoint-1_6 {
+  background-image: url(../img/part_1/1_shockpoint_6.png);
+}
+.shockpoint-1_7 {
+  background-image: url(../img/part_1/1_shockpoint_7.png);
+}
+.shockpoint-1_8 {
+  background-image: url(../img/part_1/1_shockpoint_8.png);
+}
+.aegis-2_1 {
+  background-image: url(../img/part_1/2_aegis_1.png);
+}
+.aegis-2_2 {
+  background-image: url(../img/part_1/2_aegis_2.png);
+}
+.aegis-2_3 {
+  background-image: url(../img/part_1/2_aegis_3.png);
+}
+.aegis-2_4 {
+  background-image: url(../img/part_1/2_aegis_4.png);
+}
+.aegis-2_5 {
+  background-image: url(../img/part_1/2_aegis_5.png);
+}
+.aegis-2_6 {
+  background-image: url(../img/part_1/2_aegis_6.png);
+}
+.aegis-2_7 {
+  background-image: url(../img/part_1/2_aegis_7.png);
+}
+.aegis-2_8 {
+  background-image: url(../img/part_1/2_aegis_8.png);
+}
