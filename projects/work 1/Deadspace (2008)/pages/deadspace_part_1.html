@@ -13,13 +13,17 @@
 </head>
 <body oncontextmenu="return false" onpageshow="show_section(0); play_video('main_menu');">
 
-  <header style="background-color: transparent;">
+  <header>
     <nav>
       <ul>
         <li>
         </li>
-        <li style="background-color: transparent; filter: invert();">
-        <img src="../img/pasted file.png" width="45px" height="45px" alt="">
+        <li>
+        <img id="menu_button" src="../img/pasted file.png" width="45px" height="45px" alt=""
+        onclick="
+          document.getElementById('menu_button').style.rotate = '90deg';
+        "
+        >
         </li>
       </ul>
     </nav>

@@ -1,0 +1,39 @@
+.shockpoint_01 {
+    background-image: url(../img/prologue/shockpoint_01.png);
+}
+.shockpoint_02 {
+    background-image: url(../img/prologue/shockpoint_02.png);
+}
+.shockpoint_03 {
+    background-image: url(../img/prologue/shockpoint_03.png);
+}
+.earth_01 {
+    background-image: url(../img/prologue/power_plant.png);
+}
+.earth_02 {
+    background-image: url(../img/prologue/oil_rig.png);
+}
+.ignite_01 {
+    background-image: url(../img/prologue/ignite_01.png);
+}
+.ignite_02 {
+    background-image: url(../img/prologue/ignite_02.png);
+}
+.biomes_01 {
+    background-image: url(../img/prologue/biomes_01.png);
+}
+.biomes_02 {
+    background-image: url(../img/prologue/biomes_02.jpg);
+}
+.uni_01 {
+    background-image: url(../img/prologue/uni_01.jpg);
+}
+.uni_02 {
+    background-image: url(../img/prologue/uni_02.jpg);
+}
+.uni_03 {
+    background-image: url(../img/prologue/uni_03.png);
+}
+.background-position-focus-top {
+    background-position: top;
+}

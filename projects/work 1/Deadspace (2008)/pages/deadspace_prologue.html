@@ -7,104 +7,110 @@
   <link rel="stylesheet" href="../../../../css/root.css">
   <link rel="stylesheet" href="../css/deadspace_part_1.css">
   <link rel="stylesheet" href="../css/deadspace_part_2.css">
+  <link rel="stylesheet" href="../css/deadspace_prologue.css">
   <link rel="stylesheet" href="../css/deadspace_common.css">
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
   <script src="../js/deadspace.js"></script>
-  <title>Dead Space Part 1</title>
+  <title>Dead Space - Prologue</title>
 <audio  id="theme" src="../audio/prologue/Dead Space Theme.mp3"></audio>
 </head>
 
-<body oncontextmenu="return false" onpageshow="play_theme();">
-  <header style="background-color: transparent;">
+<body oncontextmenu="return false" onpageshow="show_section(0); play_theme();">
+  <header>
     <nav>
       <ul>
         <li>
         </li>
-        <li style="background-color: transparent; filter: invert();">
-        <img src="../img/pasted file.png" width="45px" height="45px" alt="">
+        <li>
+        <img id="menu_button" src="../img/pasted file.png" width="45px" height="45px" alt=""
+        onclick="
+          document.getElementById('menu_button').style.rotate = '90deg';
+        "
+        >
         </li>
       </ul>
     </nav>
   </header>
   <main>
     <!-- Prologue -->
-
+    <section>
     <div class="centertitle">
       <p class="mono">
 It's only natural for us to fear whatever's lurking in the dark.
       </p>
     </div>
 
-    <div class="centertitle whited top-mask">
-      <p class="mono">
-After all, we are creatures that constantly crave certainty.
-      </p>
-    </div>
 
-    <div class="centertitle whited">
+    <div class="centertitle whited top-mask">
       <p class="mono">
 Not knowing what lies ahead triggers a primal need to escape from it.
       </p>
     </div>
 
-    <div class="centertitle whited bottom-mask">
+    <div class="centertitle whited">
       <p class="mono">
-Somewhere filled with other people, we know we can be safe.
+Anywhere filled with other people,
+      </p>
+    </div>
+
+     <div class="centertitle whited bottom-mask">
+      <p class="mono">
+we know it's safer than being alone.
       </p>
     </div>
 
     <div class="centertitle">
       <p class="mono">
-Yet some were born and bred differently among the pack.
+Yet some were born for a different purpose.
       </p>
     </div>
 
     <div class="centertitle">
       <p class="mono">
-Whose curiosities far outweigh the need for the comfort of familiarity.
+Whose curiosities far outweigh the need for familiarity.
       </p>
     </div>
 
     <div class="centertitle">
       <p class="mono">
-Willing to go against their instinct to run and face the unknown.
+Willing to go against their instinct to run from the unknown.
       </p>
     </div>
 
     <div class="centertitle">
       <p class="mono">
-These acts of defiance pushed humanity towards great distances.
+These acts of defiance pushed humanity forward.
       </p>
     </div>
 
     <div class="centertitle">
       <p class="mono panic_mono">
-The defiance that would drive them to explore even the farthest stars.      
+The defiance that would drive them to explore the stars.      
       </p>
     </div>
 
     <!--ShockPoint introduction-->
-    <div class="centertitle shockpoint parallax top-mask">
+    <div class="centertitle shockpoint_01 parallax top-mask">
       <p class="mono">
-Since ancient times, people have traveled by various modes of transportation.
+Since ancient times, there had been various modes of transportation.
       </p>
     </div>
 
-    <div class="centertitle shockpoint parallax no-mask">
+    <div class="centertitle shockpoint_02 parallax no-mask">
       <p class="mono">
-An accurate indicator of how far we have made progress in technology.
+An accurate indicator as to how far we have made progress in technology.
       </p>
     </div>
 
-    <div class="centertitle shockpoint parallax no-mask">
+    <div class="centertitle shockpoint_03 parallax no-mask">
       <p class="mono">
 More specifically, how much faster can we get from one point to another?
       </p>
     </div>
 
-    <div class="shockpoint parallax no-mask">
+    <div class="shockpoint parallax top-mask">
       <p class="mono righttitle">
-Enter the creation of a device that changed the world–
+Hence the creation of a device that changed the world:
       </p>
     </div>
 
@@ -132,7 +138,7 @@ Forgoing the idea of pushing the engines to their limits to reach lightspeed.
       </p>
     </div>
 
-    <div class="">
+    <div class="parallax ignite_01 top-bottom-mask">
       <p class="mono lefttitle">
 Focusing instead on poking a hole in the fabric of space using nuclear energy.
       </p>
@@ -144,31 +150,37 @@ The ShockPoint Drive became the catalyst for interstellar travel.
       </p>
     </div>
 
+     <div class="centertitle parallax ignite_02 top-bottom-mask">
+      <p class="mono">
+Igniting the race for mankind's search for life on neighbour systems.
+      </p>
+    </div>
+
+    <div class="centertitle">
+      <p class="mono">
+Governments and corporations flocked to the start of a new era.
+      </p>
+    </div>
+
+    <div class="centertitle parallax earth_01 top-mask">
+      <p class="mono">
+The idea of new worlds to plunder was too good to pass up.
+      </p>
+    </div>
+
+    <div class="centertitle parallax earth_02 bottom-mask">
+      <p class="mono">
+With Earth bordering the state of being uninhabitable,
+      </p>
+    </div>
+
      <div class="centertitle">
       <p class="mono">
-Igniting the race for mankind's search for life on other planets.
+it took a planet-wide effort to bring this to reality.
       </p>
     </div>
 
     <div class="centertitle whited top-mask">
-      <p class="mono">
-Governments and private corporations flocked to the start of a new era.
-      </p>
-    </div>
-
-    <div class="centertitle whited no-mask">
-      <p class="mono">
-The idea of exploring new worlds was too good to pass up.
-      </p>
-    </div>
-
-    <div class="centertitle whited no-mask">
-      <p class="mono">
-With Earth bordering the state of being uninhabitable, it was necessary.
-      </p>
-    </div>
-
-    <div class="centertitle whited no-mask">
       <p class="mono">
 It's the second wind everybody needs.
       </p>
@@ -186,13 +198,13 @@ A hundred years of extensive study of the cosmos went by.
       </p>
     </div>
 
-    <div class="">
+    <div class="parallax biomes_01 top-mask">
       <p class="mono righttitle">
 New entries were added to the periodic table of elements.
       </p>
     </div>
 
-    <div class="">
+    <div class="parallax biomes_02 bottom-mask">
       <p class="mono righttitle">
 Biomes thought to be impossible to exist were made known.
       </p>
@@ -200,50 +212,54 @@ Biomes thought to be impossible to exist were made known.
 
     <div class="">
       <p class="mono righttitle">
-The library of knowledge kept expanding, with a singular irony.
+All with one single catch...
       </p>
     </div>
 
     <div class="centertitle whited top-bottom-mask">
       <p class="mono">
-All the planets deemed suitable for life were strangely–
+Every planet deemed suitable for life were strangely–
       </p>
     </div>
 
     <div class="centertitle">
       <p class="mono panic_mono">
-Lifeless.
+Lifeless
       </p>
     </div>
 
-    <div class="">
+    <div class="parallax uni_01 top-mask">
       <p class="mono lefttitle">
 This phenomenon gave birth to revised philosophies and religions.
       </p>
     </div>
 
-    <div class="">
+    <div class="parallax uni_01">
       <p class="mono righttitle">
 Although it is more or less just a distorted version of older beliefs.
       </p>
     </div>
 
-    <div class="">
+    <div class="parallax uni_02 background-position-focus-top">
       <p class="mono lefttitle">
 Catering to those who can no longer be convinced of a man in the sky.
       </p>
     </div>
 
-    <div class="">
+    <div class="parallax uni_02 background-position-focus-top">
       <p class="mono righttitle">
 But looking to justify their existence in this meaningless universe.
       </p>
     </div>
 
-    <div class="centertitle whited top-bottom-mask">
-      <p class="mono panic_mono">
-        One even went as far as to say that death is their ultimate calling.
+    <div class="centertitle parallax uni_03 top-mask" style="filter: grayscale();">
+      <p class="mono">
+One even went as far as to proclaim death as their calling.
       </p>
+    </div>
+
+    <div class="centertitle parallax uni_03 bottom-mask" style="filter: grayscale();">
+      <img src="../img/prologue/marker.png" alt="">
     </div>
 
     <div class="centertitle">
@@ -272,10 +288,10 @@ He feels as if he will never be whole without her.
 
     <div class="centertitle parallax floating-hand top-bottom-mask">
       <p class="mono">
-But can his fragile mind and body endure the horrors of reality?
+But can his fragile mind and body survive?
       </p>
     </div>
-
+    </section>
     <div class="half" id="bottom"></div>
 
     <a href="deadspace_part_1.html">
