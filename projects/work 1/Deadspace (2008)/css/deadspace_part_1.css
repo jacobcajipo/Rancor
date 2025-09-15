@@ -174,3 +174,21 @@ p.crashing
 .aegis-2_8 {
   background-image: url(../img/part_1/2_aegis_8.png);
 }
+.cec-3_1 {
+  background-image: url(../img/part_1/cec_01.png);
+}
+.cec-3_2 {
+  background-image: url(../img/part_1/cec_02.png);
+}
+.cec-3_3 {
+  background-image: url(../img/part_1/cec_03.png);
+}
+
+/* Background positioning */
+.background-focus-top-center {
+  background-position: top;
+  background-attachment: scroll;
+}
+.background-full-height {
+  height: fit-content;
+}

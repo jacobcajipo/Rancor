@@ -66,6 +66,10 @@ div.half {
   font-family: all_text;
   src: url(../fonts/Mulish-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: bit_font;
+  src: url(../fonts/BitcountSingle-VariableFont_CRSV\,ELSH\,ELXP\,slnt\,wght.ttf);
+}
 /*TEXT CONTENTS*/
 /*Monologue parts*/
 p.mono {
@@ -203,8 +207,8 @@ p.johnston::before {
   text-transform: uppercase;
   color: white;
 }
-p.misc {
-  
+p.transmitted {
+  font-family: bit_font;
 }
 
 /*Sound effects font*/

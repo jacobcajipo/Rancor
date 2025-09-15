@@ -27,4 +27,10 @@ p {
   max-width: unset;
   width: 100%;
 }
+p.mono.righttitle {
+  text-align: center;
+}
+p.mono.lefttitle {
+  text-align: center;
+}
 }
