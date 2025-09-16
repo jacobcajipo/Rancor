@@ -33,4 +33,42 @@ p.mono.righttitle {
 p.mono.lefttitle {
   text-align: center;
 }
+
+/*WEBP IMAGES ON MOBILE*/
+.shockpoint_01 {
+    background-image: url(../img/prologue/shockpoint_01.webp);
+}
+.shockpoint_02 {
+    background-image: url(../img/prologue/shockpoint_02.webp);
+}
+.shockpoint_03 {
+    background-image: url(../img/prologue/shockpoint_03.webp);
+}
+.earth_01 {
+    background-image: url(../img/prologue/power_plant.webp);
+}
+.earth_02 {
+    background-image: url(../img/prologue/oil_rig.webp);
+}
+.ignite_01 {
+    background-image: url(../img/prologue/ignite_01.webp);
+}
+.ignite_02 {
+    background-image: url(../img/prologue/ignite_02.webp);
+}
+.biomes_01 {
+    background-image: url(../img/prologue/biomes_01.webp);
+}
+.biomes_02 {
+    background-image: url(../img/prologue/biomes_02.webp);
+}
+.uni_01 {
+    background-image: url(../img/prologue/uni_01.webp);
+}
+.uni_02 {
+    background-image: url(../img/prologue/uni_02.webp);
+}
+.uni_03 {
+    background-image: url(../img/prologue/uni_03_2.webp);
+}
 }
