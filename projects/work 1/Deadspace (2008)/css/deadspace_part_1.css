@@ -258,6 +258,64 @@ p.crashing
 .transmit-7_8 {
   background-image: url(../img/part_1/7_transmit_8.png);
 }
+.crash-8_1 {
+  background-image: url(../img/part_1/8_crash_1.png);
+}
+.crash-8_2 {
+  background-image: url(../img/part_1/8_crash_2.png);
+}
+.crash-8_3 {
+  background-image: url(../img/part_1/8_crash_3.png);
+}
+.crash-8_4 {
+  background-image: url(../img/part_1/8_crash_4.png);
+}
+.crash-8_5 {
+  background-image: url(../img/part_1/8_crash_5.png);
+}
+.crash-8_6 {
+  background-image: url(../img/part_1/8_crash_6.png);
+}
+.crash-8_7 {
+  background-image: url(../img/part_1/8_crash_7.png);
+}
+.crash-8_8 {
+  background-image: url(../img/part_1/8_crash_8.png);
+}
+.crash-8_9 {
+  background-image: url(../img/part_1/8_crash_9.png);
+}
+.crash-8_10 {
+  background-image: url(../img/part_1/8_crash_10.png);
+}
+.abort-9_1 {
+  background-image: url(../img/part_1/9_abort_1.png);
+}
+.abort-9_2 {
+  background-image: url(../img/part_1/9_abort_2.png);
+}
+.abort-9_3 {
+  background-image: url(../img/part_1/9_abort_3.png);
+}
+.abort-9_4 {
+  background-image: url(../img/part_1/9_abort_4.png);
+}
+.abort-9_5 {
+  background-image: url(../img/part_1/9_abort_5.png);
+}
+.abort-9_6 {
+  background-image: url(../img/part_1/9_abort_6.png);
+}
+.abort-9_7 {
+  background-image: url(../img/part_1/9_abort_7.png);
+}
+.abort-9_8 {
+  background-image: url(../img/part_1/9_abort_8.png);
+}
+.abort-9_9 {
+  background-image: url(../img/part_1/9_abort_9.png);
+}
+
 /* Background positioning */
 .background-focus-top-center {
   background-position: top;

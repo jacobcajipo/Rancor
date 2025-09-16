@@ -88,6 +88,7 @@ on
         hide_div('main-menu');
         hide_div('main-menu-padding-top');
         document.getElementById('chapter').scrollIntoView({behavior:'smooth'});
+        document.getElementsByTagName('footer')[0].style.display = 'flex';
         play_music('theme_01');        "
       onended="
         //show_section(1);
@@ -107,7 +108,7 @@ on
     >
     <!--Chapter 1, Part 1 Start-->
     <div id="chapter" class="" 
-    onpointerenter="change_font_on('first-dementia');"
+    onpointerdown="change_font_on('first-dementia');"
     onpointerleave="change_font_on('first-dementia');"
     
     > 
@@ -257,39 +258,26 @@ Perhaps one would've been insane to work without a fee.
 <!--Left aligned-->
     <div class="">
       <p class="mono lefttitle">
-Love for his career wasn't his motive for being here.
+Love for his career wasn't <br>
+his motive for being here.
       </p>
     </div>
 
     <div class="">
       <p class="mono lefttitle">
-A few days before the expedition,
-      </p>
-    </div>
-
-    <div class="">
-      <p class="mono lefttitle">
+A few days before the expedition, <br>
 he received a message.
       </p>
     </div>
 
     <div class="">
       <p class="mono lefttitle">
-An incomplete video log from Nicole,
-      </p>
-    </div>
-
-    <div class=""
-    onpointerenter="
-    ">
-      <p class="mono lefttitle">
+An incomplete video log from Nicole, <br>
 a former co-worker at the corporation, 
       </p>
     </div>
 
-    <div class="" 
-    onpointerenter="
-    ">
+    <div class="">
       <p class="mono lefttitle">
 who is now a long-term partner.
       </p>
@@ -871,7 +859,13 @@ Gravity tethers engaged.
       </p>
     </div>
 
-    <div class="centertitle parallax transmit-7_8"
+    <div class="parallax transmit-7_8">
+      <p class="speech johnston">
+Automatic docking procedure is a go.
+      </p>
+    </div>
+
+    <div id="crash_start" class="centertitle parallax transmit-7_8"
     onpointerenter="
       pause_music('theme_01');
       pause_music('theme_02');
@@ -883,9 +877,7 @@ Gravity tethers engaged.
       document.getElementById('section-4').scrollIntoView({behavior:'smooth'});
     "
     >
-      <p class="speech johnston">
-Automatic docking procedure is a go.
-      </p>
+      
     </div>
     </section>
 
@@ -894,98 +886,124 @@ Automatic docking procedure is a go.
       play_music('theme_crashing');
     "
     >
-    <div class="centertitle"
-    onpointerover="
-    play_music('theme_crashing');
-    play_music('crash3');
-    "
-    >
-      <p class="crashing" style="color: red;" >
-        CRASH
-      </p>
-    </div>
 
-    <div class="centertitle is_panic half crash_impact parallax no-mask">
+    <div class="centertitle is_panic parallax crash-8_1">
       <p class="speech chen">
 What the hell?
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax crash-8_1">
       <p class="mono panic_mono"
       >
 The USG Kellion was rocked by a sudden blast,
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax crash-8_2">
       <p class="mono panic_mono">
 on a magnitude sending it into a rapid freefall.
       </p>
     </div>
 
-    <div class="centertitle">
-      <p class="mono panic_mono">
-Whatever hit them was hurling at high velocity,
-      </p>
-    </div>
 
-    <div class="centertitle">
-      <p class="mono panic_mono">
-But they would need to think even faster.
-      </p>
-    </div>
-
-    <div class="is_panic crash_impact parallax no-mask">
-      <p class="lefttitle speech johnston">
+    <div class="is_panic centertitle parallax crash-8_3">
+      <p class="speech johnston">
 Sir! The autodock-
       </p>
     </div>
 
-    <div class="is_panic crash_impact parallax no-mask">
+    <div class="is_panic parallax crash-8_4">
       <p class="righttitle speech hammond">
 What is it?      
       </p>
     </div>
 
-    <div class="is_panic crash_impact parallax no-mask">
-      <p class="lefttitle speech chen">
+    <div class="is_panic centertitle parallax crash-8_5">
+      <p class="speech chen">
 We're off track! We're going to hit the hull!
       </p>
     </div>
 
-    <div class="centertitle" style="margin: auto;">
+   <div class="centertitle parallax crash-8_6">
       <p class="mono panic_mono">
-They've come a long way
-to die.
+Whatever hit them was hurling at high speed,
       </p>
     </div>
 
-        <div class="centertitle" style="margin: auto;">
+    <div class="centertitle parallax crash-8_7">
       <p class="mono panic_mono">
-Such a waste of life.
+But they would need to think even faster.
       </p>
     </div>
 
-    <div class="is_panic">
-      <p class="lefttitle speech hammond">
-  Hit the blast shields! Their guidance tether is damaged! Switch to manual. NOW!
+    <div class="is_panic parallax crash-8_8">
+      <p class="righttitle speech hammond">
+Hit the blast shields!
       </p>
     </div>
 
-    <div class="is_panic">
-      <p class="righttitle speech kendra">
- Inside the magnetic field? Are you insane?! Abort!
+    <div class="is_panic parallax crash-8_9">
+      <p class="righttitle speech hammond">
+Their guidance tether is damaged!
       </p>
     </div>
 
-    <div class="is_panic">
-      <p class="lefttitle speech hammond">
-  No! We can make it inside! Corporal, I gave you an order!
+    <div class="is_panic parallax crash-8_10">
+      <p class="righttitle speech hammond">
+Switch to manual. NOW!
       </p>
     </div>
 
-    <div class="is_panic crash_chen parallax no-mask">
+    <div class="is_panic parallax abort-9_1">
+      <p class="lefttitle speech kendra">
+Inside the magnetic field?
+      </p>
+    </div>
+
+    <div class="is_panic parallax abort-9_2">
+      <p class="lefttitle speech kendra">
+Are you insane?! Abort!
+      </p>
+    </div>
+
+    <div class="is_panic parallax abort-9_3">
+      <p class="righttitle speech hammond">
+No! We can make it inside!
+      </p>
+    </div>
+
+    <div class="is_panic parallax abort-9_4">
+      <p class="righttitle speech hammond">
+Corporal, I gave you an order!
+      </p>
+    </div>
+
+    <div class="is_panic centertitle parallax abort-9_5">
+      <p class="mono panic_mono">
+Johnston pulls the lever on the overhead panel,
+      </p>
+    </div>
+
+    <div class="is_panic centertitle parallax abort-9_6">
+      <p class="mono panic_mono">
+Effectively closing the blast shields.
+      </p>
+    </div>
+
+    <div class="is_panic centertitle parallax abort-9_7">
+      <p class="mono panic_mono">
+The front camera allowed them to see ahead,
+      </p>
+    </div>
+
+    <div class="is_panic centertitle parallax abort-9_8">
+      <p class="mono panic_mono">
+But the USG Kellion was coming in too fast.
+      </p>
+    </div>
+
+    <div class="is_panic centertitle parallax abort-9_9">
       <p class="speech chen">
 Damn, the field's too strong!
       </p>
@@ -1000,18 +1018,8 @@ Damn, the field's too strong!
     </p>
     </div>
 
-    <div class="crash_fade_3 parallax no-mask"
-    style="
-    display: flex; 
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    "
-    onpointerenter="document.getElementById('crash1').play();"
-    >
-    <p class="crashing">
-      THUD
-    </p>
+    <div class="crash_fade_3 parallax no-mask">
+    
     </div>
 
     <div class="content og parallax bottom-mask" style="background-color: white;">
@@ -1031,7 +1039,7 @@ Damn, the field's too strong!
 
   </main>
 
-  <footer>
+  <footer style="display: none;">
   </footer>
 
 </body>
