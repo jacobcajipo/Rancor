@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
   <title>Dead Space Part 1</title>
 </head>
-<body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');"
+<body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');play_music('theme_main_menu');"
 on
 >
 
@@ -73,19 +73,20 @@ on
   <main>
     
     <section id="section-0" on>
-      <div class="half"></div>
+      <div id="main-menu-padding-top" class="half"></div>
     <!--Dead Space Logo-->
     <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
       <video id="main_menu" src="../videos/main menu.mp4" width="100%" autoplay loop muted
       onplay="
       this.scrollIntoView({behavior:'smooth'});
-      play_music('theme_main_menu');
+      
       "
       onclick="
         pause_music('theme_main_menu');
         this.pause();
         show_section(1);
         hide_div('main-menu');
+        hide_div('main-menu-padding-top');
         document.getElementById('chapter').scrollIntoView({behavior:'smooth'});
         play_music('theme_01');        "
       onended="
@@ -105,9 +106,32 @@ on
     "
     >
     <!--Chapter 1, Part 1 Start-->
-    <div id="chapter" class="">
-      <h2>
-        Chapter 1: New Arrivals
+    <div id="chapter" class="" 
+    onpointerenter="change_font_on('first-dementia');"
+    onpointerleave="change_font_on('first-dementia');"
+    
+    > 
+      <script>
+        function change_font_on(affected_element) {
+          dementia = document.getElementById(affected_element);
+          dementia_font = "unitology";
+        
+            if (dementia.style.fontFamily == dementia_font)
+              {
+                document.getElementById(affected_element).style.fontFamily = "all_text";
+                dementia.style.color = 'inherit';
+              }
+            else {
+              dementia.style.fontFamily = dementia_font;
+              dementia.style.color = 'red';
+            }
+        }
+      </script>   
+      <h2 >
+        Chapter 1:
+      </h2>
+      <h2 id="first-dementia">
+        New Arrivals
       </h2>
     </div>
 
@@ -119,19 +143,19 @@ With eyes closed, Isaac tuned out the noise.
 
     <div class="centertitle">
       <p class="mono">
-There's a constant screeching of metal against metal.
+The constant screeching of metal against metal.
       </p>
     </div>
 
     <div class="centertitle">
       <p class="mono">
-While others consider it suffocating,
+While others may find it suffocating,
       </p>
     </div>
 
     <div class="centertitle whited top-bottom-mask">
       <p class="mono">
-somehow he finds to be oddly comforting.
+somehow, it brought him comfort.
       </p>
     </div>
 
@@ -143,14 +167,14 @@ Perhaps after years of deployment,
 
     <div class="centertitle">
       <p class="mono">
-he'd grown used to it.
+he'd just grown used to it.
       </p>
     </div>
 
 
     <div class="parallax static top-mask">
       <p class="mono">
-A blue light, however, managed to find its way to him.
+A blue light, however, found its way to him.
       </p>
     </div>
 
