@@ -69,18 +69,17 @@ on
 
   <main>
     
-    <section id="section-0">
+    <section id="section-0" on>
       <div class="half"></div>
     <!--Dead Space Logo-->
     <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
       <video id="main_menu" src="../videos/main menu.mp4" width="100%" loop
-      onshow="
+      onloadeddata="
       this.play();
       "
       onplay="
       this.scrollIntoView({behavior:'smooth'});
       "
-
       onclick="
         this.pause();
         show_section(1);
@@ -100,7 +99,7 @@ on
     <section id="section-1"
     onpointerenter="
     play_music('theme_01');
-      pause_music('theme_02');
+    pause_music('theme_02');
     "
     >
     <!--Chapter 1, Part 1 Start-->
