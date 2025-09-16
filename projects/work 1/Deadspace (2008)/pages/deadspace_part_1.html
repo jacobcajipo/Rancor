@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
   <title>Dead Space Part 1</title>
 </head>
-<body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');" onload="play_video('main_menu');">
+<body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');" onload="play_video('main_menu');"
+on
+>
 
   <header>
     <nav>
@@ -72,6 +74,9 @@
     <!--Dead Space Logo-->
     <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
       <video id="main_menu" src="../videos/main menu.mp4" width="100%" loop
+      onshow="
+      this.play();
+      "
       onplay="
       this.scrollIntoView({behavior:'smooth'});
       "
