@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
   <title>Dead Space Part 1</title>
 </head>
-<body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');" onload="play_video('main_menu');"
+<body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');play_music('theme_main_menu')" onload="play_video('main_menu');"
 on
 >
 
@@ -33,6 +33,9 @@ on
 
   <audio>
     <audio>
+    <audio 
+    id="theme_main_menu"
+    src="../audio/part_1/Main Menu Music.mp3"></audio>
     <audio 
     id="theme_01"
     src="../audio/part_1/theme_01.mp3"
@@ -73,7 +76,6 @@ on
       <div class="half"></div>
     <!--Dead Space Logo-->
     <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
-      added muted attribute to video
       <video id="main_menu" src="../videos/main menu.mp4" width="100%" autoplay loop muted
       onloadeddata="
       this.play();
@@ -82,6 +84,7 @@ on
       this.scrollIntoView({behavior:'smooth'});
       "
       onclick="
+        pause_music('theme_main_menu');
         this.pause();
         show_section(1);
         hide_div('main-menu');
