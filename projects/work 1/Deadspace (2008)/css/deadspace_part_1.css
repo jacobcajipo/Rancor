@@ -183,7 +183,81 @@ p.crashing
 .cec-3_3 {
   background-image: url(../img/part_1/cec_03.png);
 }
-
+.ishimura-logo {
+  max-width: 500px;
+}
+.planetcrackers-4_1 {
+  background-image: url(../img/part_1/planetcrackers_01.jpg);
+}
+.planetcrackers-4_2 {
+  background-image: url(../img/part_1/planetcrackers_02.jpg);
+}
+.planetcrackers-4_3 {
+  background-image: url(../img/part_1/planetcrackers_03.jpg);
+}
+.planetcrackers-4_4 {
+  background-image: url(../img/part_1/planetcrackers_04.jpg);
+}
+.planetcrackers-4_5 {
+  background-image: url(../img/part_1/planetcrackers_05.jpg);
+}
+.planetcrackers-4_6 {
+  background-image: url(../img/part_1/planetcrackers_06.png);
+}
+.silence-6_1 {
+  background-image: url(../img/part_1/6_silence_1.png);
+}
+.silence-6_2 {
+  background-image: url(../img/part_1/6_silence_2.png);
+}
+.silence-6_3 {
+  background-image: url(../img/part_1/6_silence_3.png);
+}
+.silence-6_4 {
+  background-image: url(../img/part_1/6_silence_4.png);
+}
+.silence-6_5 {
+  background-image: url(../img/part_1/6_silence_5.png);
+}
+.silence-6_6 {
+  background-image: url(../img/part_1/6_silence_6.png);
+}
+.silence-6_7 {
+  background-image: url(../img/part_1/6_silence_7.png);
+}
+.silence-6_8 {
+  background-image: url(../img/part_1/6_silence_8.png);
+}
+.silence-6_9 {
+  background-image: url(../img/part_1/6_silence_9.png);
+}
+.silence-6_10 {
+  background-image: url(../img/part_1/6_silence_10.png);
+}
+.transmit-7_1 {
+  background-image: url(../img/part_1/7_transmit_1.png);
+}
+.transmit-7_2 {
+  background-image: url(../img/part_1/7_transmit_2.png);
+}
+.transmit-7_3 {
+  background-image: url(../img/part_1/7_transmit_3.png);
+}
+.transmit-7_4 {
+  background-image: url(../img/part_1/7_transmit_4.png);
+}
+.transmit-7_5 {
+  background-image: url(../img/part_1/7_transmit_5.png);
+}
+.transmit-7_6 {
+  background-image: url(../img/part_1/7_transmit_6.png);
+}
+.transmit-7_7 {
+  background-image: url(../img/part_1/7_transmit_7.png);
+}
+.transmit-7_8 {
+  background-image: url(../img/part_1/7_transmit_8.png);
+}
 /* Background positioning */
 .background-focus-top-center {
   background-position: top;

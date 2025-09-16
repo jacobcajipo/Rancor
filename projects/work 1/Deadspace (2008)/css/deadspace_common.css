@@ -240,9 +240,8 @@ video {
   margin: 0;
   padding: 0;
 }
-parallax-fix {
-  background-position: top;
-  background-attachment: scroll;
+div.parallax-contain {
+  background-size: contain;
 }
 div.stills 
 {
