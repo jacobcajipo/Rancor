@@ -311,11 +311,21 @@ footer::before {
     align-items: center;
     justify-content: center;
   }
+.background-focus-center {
+  background-position: center;
+}
 .background-focus-right {
     background-position: right;
+    right: 0;
 }
 .background-focus-left {
     background-position: left;
+    left: 0;
+}
+.background-focus-bottom-left {
+    background-position: bottom left;
+    left: 0;
+    bottom: 0;
 }
 .background-focus-top {
     background-position: top;

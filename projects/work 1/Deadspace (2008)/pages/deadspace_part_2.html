@@ -9,287 +9,257 @@
   <link rel="stylesheet" href="../css/deadspace_part_2.css">
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
 </head>
-<body oncontextmenu="return false" onpageshow="show_section(0);">
+<body oncontextmenu="return false" onpageshow="show_section(0);play_music('ambient_heartbeat');">
 
-  <header style="background-color: transparent;">
+  <header>
     <nav>
       <ul>
         <li>
         </li>
-        <li style="background-color: transparent; filter: invert();">
-        <img src="../img/pasted file.png" width="45px" height="45px" alt="">
+        <li>
+        <img id="menu_button" src="../img/pasted file.png" width="45px" height="45px" alt=""
+        onclick="
+          document.getElementById('menu_button').style.rotate = '90deg';
+        "
+        >
         </li>
       </ul>
     </nav>
   </header>
 
 <audio>
-<audio id="ambient"src="../audio/part_2/wreck.mp3"></audio>
-<audio id="lights" src="../audio/part_2/lights.mp3"></audio>
-<audio id="ambient_2" src="../audio/part_2/PA_system.mp3" loop></audio>
-<audio id="heartbeat" src="../audio/part_2/Dead Space Isaac's breath and heartbeat.mp3" loop></audio>
-<audio id="door_pad_activated" src="../audio/part_2/door_pad_activated.mp3"></audio>
-<audio id="flesh" src="../audio/part_2/Flesh Ripping and Gutting Free Sound Effect (Various Versions!).mp3"></audio>
-<audio id="stab" src="../audio/part_2/stab.mp3"></audio>
+<audio id="ambient_ishimura" src="../audio/part_2/wreck.mp3" loop></audio>
+<audio id="ambient_lounge" src="../audio/part_2/PA_system.mp3" loop></audio>
+<audio id="ambient_heartbeat" src="../audio/part_2/Dead Space Isaac's breath and heartbeat.mp3" loop></audio>
+<audio id="effect_lights" src="../audio/part_2/lights.mp3"></audio>
+<audio id="effect_doors" src="../audio/part_2/door_pad_activated.mp3"></audio>
 </audio>
 
   <main>
-    <section id="section-0">
+    <section id="section-0"
+    onpointerenter="
+    pause_music('ambient_ishimura');
+    pause_music('ambient_lounge');
+    play_music('ambient_heartbeat');
+    welcome_video.pause();
+    "
+    >
     <div class="centertitle" id="intro">    
-        <p class="mono">
-Even with intense contingent drills and simulations,
+      <p class="mono">
+        Even with intense contingent drills and simulations, <br>
+        The human body has a gravitational force threshold.
       </p>
     </div>
-
-    <div class="centertitle">    
-        <p class="mono">
-The human body has a gravitational force threshold.
-      </p>
-    </div>
-
     <div class="centertitle">
       <p class="mono">
-Some survived to defy this limit,
+        One can survive to defy this limit,
       </p>
     </div>
-
     <div class="centertitle">
       <p class="mono panic_mono">
-but none came out unscathed.
+        but none came out unscathed.
       </p>
     </div>
-
-    <!--EMPTYDIV-->
-    <div class="half"></div>
-
-    <div class="parallax top-mask awake-00">
+    <!--Bickering starts-->
+    <div class="parallax bicker-1_0 top-mask">
       <p class="speech hammond righttitle">
- Is everyone okay?
+        Is everyone okay?
       </p>
     </div>
-    
-    <div class="parallax awake-01">
+    <div class="centertitle parallax bicker-1_1">
+      <p class="mono">
+        The blast shields retracted, <br> 
+        showing the insides of a hangar.
+      </p>
+    </div>    
+    <div class="parallax bicker-1_2 background-focus-left">
       <p class="speech kendra lefttitle">
- What... What the hell were you thinking?! Were you trying to get us killed?
+        Wha... What the hell were you thinking?!
       </p>
     </div>
-
-    <div class="parallax no-mask awake-02">
+    <div class="parallax bicker-1_3 background-focus-left">
+      <p class="speech kendra lefttitle">
+        Were you trying to get us killed?
+      </p>
+    </div>
+    <div class="parallax bicker-1_4">
       <p class="speech hammond righttitle">
- I just saved our asses, Ms. Daniels.
+        I just saved our asses, Ms. Daniels.
       </p>
     </div>
-
-     <div class="parallax bottom-mask awake-02">
+    <div class="parallax bicker-1_5">
       <p class="speech hammond righttitle">
- If we had aborted at that speed and distance, we would have smashed right into the side of the Ishimura. 
+        If we had aborted at that speed and distance, 
       </p>
     </div>
-
-    <div class="is_panic">
-      <p class="speech hammond">
- Now settle down, and let's get to work. Corporal, report!
+    <div class="parallax bicker-1_6">
+      <p class="speech hammond righttitle">
+        we would have smashed right into the side of the Ishimura. 
       </p>
     </div>
-
-    <div class="centertitle">
+    <div class="is_panic parallax bicker-1_7">
+      <p class="speech hammond righttitle">
+        Now settle down, and let's get to work. Corporal, report!
+      </p>
+    </div>
+    <div class="centertitle parallax bicker-1_8">
       <p class="mono">
     The two officers kept on with their bickering.
       </p>
     </div>
-
-    <div class="centertitle">
+    <!--Isaac puts on his helmet start-->
+    <div class="centertitle parallax helmeton-1_0 background-focus-left">
       <p class="mono">
-The blast shields retracted,
+        Painfully aware of their shuttle's demise,
       </p>
     </div>
-
-     <div class="centertitle">
+    <div class="centertitle parallax helmeton-1_1 background-focus-left">
       <p class="mono">
-showing the insides of a hangar.
+        Isaac reached to out for his helmet,
       </p>
     </div>
-
-
-    <div class="centertitle">
+    <div class="centertitle parallax helmeton-1_2 background-focus-left">
       <p class="mono">
-Isaac put on his helmet and got ready to work,
+        and got himself ready for duty.
       </p>
     </div>
-
-     <div class="centertitle">
-      <p class="mono">
-painfully aware of their shuttle's demise.
-      </p>
-    </div>
-
-    <div class="centertitle half">
+    <div class="centertitle parallax helmeton-1_3 background-focus-left">
       <p class="speech chen">
-I'm not getting any readings from the port booster, and we've lost comms and autopilot. It'll take some time to fix.
+        I'm not getting any readings from the port booster, and we've lost comms and autopilot.
       </p>
     </div>
-
-    <div class="centertitle">
+     <div class="centertitle parallax helmeton-1_4 background-focus-left">
+      <p class="speech chen">
+        It'll take some time to fix.
+      </p>
+    </div>
+    <div class="centertitle parallax helmeton-1_5 background-focus-left bottom-mask">
       <p class="speech hammond">   
-All right, let's get some extra hands from the flight deck to help out.
+        All right, let's get some extra hands from the flight deck to help out.
       </p>
     </div>
-
-    <div class="centertitle whited top-mask">
-      <p class="mono">
-Before Ishimura, Kellion would need fixing first.
-      </p>
-    </div>
-
-    <div class="centertitle whited">
-      <p class="mono">
-As their directive starts off requiring manpower,
-      </p>
-    </div>
-
-     <div class="centertitle whited bottom-mask">
-      <p class="mono">
-Kendra performs the standard operating procedure.
-      </p>
-    </div>
-
     <div class="centertitle">
       <p class="mono">
-Keeping a record of their status throughout the mission.
+        Kendra performs the standard <br> operating procedure.
       </p>
     </div>
-
-    <div style="background-position: center;" class="parallax parallax-rig no-bar top-mask">
-      <p class="speech kendra">
- Hold still, Isaac, I'm syncing up everyone's RIGs with the ship.
+    <div class="centertitle">
+      <p class="mono">
+        Keeping a record of their status <br> throughout the mission.
       </p>
     </div>
-
     <!-- RIG FILL -->
-     <div class="centertitle parallax parallax-rig one-bar">
-      <p class="mono">
-Embedded straight to their spine:
-        </p>
-      </div>
-
-      <div class="centertitle parallax parallax-rig one-bar">
-      <p class="mono">
-The Resource Integration Gear.
-        </p>
-      </div>
-
-      <div class="centertitle parallax parallax-rig two-bar">
-        <p class="mono">
-Used to view the vitals of the aged,
-        </p>
-      </div>
-
-      <div class="centertitle parallax parallax-rig two-bar">
-        <p class="mono">
-Reducing cords and machinery.
-        </p>
-      </div>
-
-      <div class="centertitle parallax parallax-rig three-bar">
-        <p class="mono">
-Seeing other potential uses,
-        </p>
-      </div>
-
-      <div class="centertitle parallax parallax-rig three-bar">
-        <p class="mono">
-Workers, military, and scientists
-        </p>
-      </div>
-
-      <div class="centertitle parallax parallax-rig four-bar">
-        <p class="mono">
-have significantly improved it since.
-        </p>
-      </div>
-
-      <div class="centertitle parallax parallax-rig four-bar bottom-mask">
+    <div class="parallax rigfill-2_0 background-focus-bottom-left top-mask">
       <p class="speech kendra">
- Okay, we're done. Clean bill of health for everyone.
+        Hold still, Isaac, I'm syncing up everyone's RIGs with the ship.
       </p>
-      </div>
-
-    <div class="">
+    </div>
+    <div class="centertitle parallax rigfill-2_1 background-focus-bottom-left">
+      <p class="mono">
+        Embedded straight to their spine:
+      </p>
+    </div>
+    <div class="centertitle parallax rigfill-2_2 background-focus-bottom-left">
+      <p class="mono">
+        The Resource Integration Gear. <br> ( RIG )
+      </p>
+    </div>
+    <div class="centertitle parallax rigfill-2_3 background-focus-bottom-left">
+      <p class="mono">
+        Used to view the vitals of the aged,
+      </p>
+    </div>
+    <div class="centertitle parallax rigfill-2_4 background-focus-bottom-left">
+      <p class="mono">
+        Reducing cords and machinery.
+      </p>
+    </div>
+    <div class="centertitle parallax rigfill-2_5 background-focus-bottom-left">
+      <p class="mono">
+        Seeing other potential uses,
+      </p>
+    </div>
+    <div class="centertitle parallax rigfill-2_6 background-focus-bottom-left">
+      <p class="mono">
+        Workers, military, and scientists
+      </p>
+    </div>
+    <div class="centertitle parallax rigfill-2_7 background-focus-bottom-left">
+      <p class="mono">
+        have significantly improved it since.
+      </p>
+    </div>
+    <div class="centertitle parallax rigfill-2_8 background-focus-bottom-left">
+      <p class="speech kendra">
+        Okay, we're done. Clean bill of health for everyone.
+      </p>
+    </div>
+    <div class="centertitle parallax rigfill-2_9 background-focus-right bottom-mask">
       <p class="speech hammond">
- All right. We've still got a job to do. We're moving out.
+        All right. We've still got a job to do. We're moving out.
       </p>
     </div>
-
+    <!--Isaac waited for everyone to get out first-->
     <div class="centertitle">
       <p class="mono">
-Isaac got a good look at the crew as they passed him,
+        Isaac got a good look at the crew <br> as they passed him,
       </p>
     </div>
-
-    <div class="centertitle whited top-bottom-mask">
-      <p class="mono">
-Corporals Johnston and Chen,
-      </p>
-    </div>
-
-    <div class="centertitle whited top-bottom-mask">
-      <p class="mono">
-Hammond,
-      </p>
-    </div>
-
-    <div class="centertitle whited top-bottom-mask">
-      <p class="mono">
-and lastly Kendra.
-      </p>
-    </div>
-
-     <div class="centertitle">
-      <p class="mono">
-They couldn't help but notice his peculiarities.
-      </p>
-    </div>
-
-    <!-- View Gear -->
-    <div class="centertitle parallax parallax-level-1-gear angle-one top-mask">
-      <p class="mono">
-A helmet that covers the entirety of his head,
-      </p>
-    </div>
-
-    <div class="centertitle parallax parallax-level-1-gear angle-one">
-      <p class="mono">
-Completely of metal, emitting a steady blue light.
-      </p>
-    </div>
-
-    <div class="centertitle parallax parallax-level-1-gear angle-two">
-      <p class="mono">
-Standard issue uniform that has seen better days.
-      </p>
-    </div>
-
-    <div class="centertitle parallax parallax-level-1-gear angle-two">
-      <p class="mono">
-Armor in the early stage of rust discoloration.
-      </p>
-    </div>
-
-    <div class="centertitle parallax parallax-level-1-gear angle-three bottom-mask">
-      <p class="mono">
-        A mark of a person who had worked tirelessly for years.
-      </p>
-    </div>
-
     <div class="centertitle">
       <p class="mono">
-A pity that his welfare is unworthy of attention.
+        They couldn't help but <br> notice his peculiarities.
       </p>
     </div>
-
+    <!-- View of his uniform -->
+    <div class="parallax uniform-3_0 background-focus-center top-mask">
+      <p class="mono righttitle">
+        A helmet that covers the <br> entirety of his head,
+      </p>
+    </div>
+    <div class="parallax uniform-3_1 background-focus-center">
+      <p class="mono righttitle">
+        Completely of metal, emitting <br> a steady blue light.
+      </p>
+    </div>
+    <div class="parallax uniform-3_2 background-focus-center">
+      <p class="mono righttitle">
+        Standard issue uniform that <br> has seen better days.
+      </p>
+    </div>
+    <div class="parallax uniform-3_3 background-focus-left">
+      <p class="mono lefttitle">
+        Armor in the early stage of <br> rust discoloration.
+      </p>
+    </div>
+    <div class="centertitle parallax uniform-3_4 background-focus-left bottom-mask">
+      <p class="mono">
+        A mark of a person who had <br> worked tirelessly for years.
+      </p>
+    </div>
+    <div class="centertitle">
+      <p class="mono">
+        A pity that his welfare is <br> unworthy of attention.
+      </p>
+    </div>
     <!--EMPTYDIV-->
-    <div class=""></div>
+    <div class=""
+    onpointerenter="
+      show_section(1);
+      document.getElementById('section-1').scrollIntoView({behavior:'smooth'});
+      play_music('ambient_ishimura');
+      pause_music('ambient_lounge');
+      pause_music('ambient_heartbeat');
+    ">
+    </div>
+    </section>
 
+    <section id="section-1"
+    onpointerenter="
+      play_music('ambient_ishimura');
+      pause_music('ambient_lounge');
+      pause_music('ambient_heartbeat');
+      "
+    >
     <!--EMPTYDIV-->
     <div class="centertitle parallax parallax-hangar hangar-5_0 top-mask" style="background-position: right;">
       <p class="mono">
@@ -299,7 +269,7 @@ Upon setting foot inside USG Ishimura,
 
     <div class="centertitle parallax parallax-hangar hangar-5_0 no-mask" style="background-position: right;">
       <p class="mono">
-sharp, cold air amidst the heated flames wafted around.
+sharp, cold air amidst the heated flames <br> wafted around.
       </p>
     </div>
 
@@ -311,7 +281,7 @@ Eerie echoes reverberate in an empty hangar,
 
     <div class="centertitle parallax parallax-hangar hangar-5_0">
       <p class="mono">
-listening closely, reminiscent of a dying animal.
+listening closely, reminiscent of a <br> dying animal.
       </p>
     </div>
 
@@ -466,29 +436,16 @@ Guess the power's down everywhere. Isaac, get over here and hack the door pad.
 
   <div class="centertitle">
     <p class="mono">
-As an engineer, Isaac has admin privileges to security.
+      As an engineer, Isaac has admin privileges to security. <br>
+      He can override protocols and pry open the doors.
     </p>
   </div>
-
   <div class="centertitle">
     <p class="mono">
-He can override protocols and pry open the doors.
+  Provided that the door pads have sufficient power, <br>
+  it can be done by using his RIG's interface with a click.
     </p>
   </div>
-  
-  <div class="centertitle">
-    <p class="mono">
-  Provided that the door pads have sufficient power,
-    </p>
-  </div>
-
-  <div class="centertitle">
-    <p class="mono">
-it can be done by using his RIG's interface with a click.
-    </p>
-  </div>
-
-
   <!--EMPTYDIV-->
   <div class="half"></div>
 
@@ -503,19 +460,27 @@ it can be done by using his RIG's interface with a click.
     <map name="lounge" cursor="pointer">
       <area shape="circle" coords="395, 245,115" href="#lounge" alt=""
       onclick="
-      show_section(1);
+      show_section(2);
       hide_div('door_pad_lounge');
-      document.getElementById('section-1').scrollIntoView({behavior:'smooth'});
-      document.getElementById('door_pad_activated').play();
+      document.getElementById('section-2').scrollIntoView({behavior:'smooth'});
+      play_music('effect_doors');
       welcome_video.pause();
-      ambient.pause();
+      pause_music('ambient_heartbeat');
+      pause_music('ambient_ishimura');
       " 
       id="lounge_area" style="cursor: pointer;">
     </map>
   </div>
-  </section>
-  <!--FLIGHT LOUNGE-->
-  <section id="section-1">
+    </section>
+
+    <section id="section-2"
+    onpointerenter="
+    play_music('ambient_lounge');
+    pause_music('ambient_heartbeat');
+    pause_music('ambient_ishimura');
+    welcome_video.pause();
+    "
+    >
     <div class="parallax lounge-6_0 top-mask"></div>
     <div class="parallax lounge-6_1"></div>
     <!--div class="parallax lounge-6_2"></div-->
@@ -537,7 +502,10 @@ The emptiness was laden with foreboding,
       </p>
     </div>
 
-    <div class="centertitle" onpointerenter="document.getElementById('lights').play();">
+    <div class="centertitle" 
+    onpointerenter="
+    play_music('effect_lights');
+    ">
       <p class="mono">
 Flickering fluorescent lights snapped him back.
       </p>
@@ -573,14 +541,14 @@ Luggage items were left unattended on the seats.
       </p>
     </div>
 
-    <div class="parallax lounge-6_5_4">
+    <div class="parallax lounge-6_5_4 background-focus-right">
       <p class="mono righttitle">
 The prompter shows that all flights were cancelled
       </p>
     </div>
 
-     <div class="parallax lounge-6_5_4">
-      <p class="mono righttitle">
+     <div class="parallax lounge-6_5_4 background-focus-left">
+      <p class="mono lefttitle">
 If no one got out, where could they have gone?
       </p>
     </div>
@@ -599,13 +567,18 @@ If no one got out, where could they have gone?
 
     <div class="parallax lounge-6_6 is_panic">
       <p class="speech hammond">
- Then re-route the damn power! Look, if we all cooperate, we can figure this out a lot sooner.
+Then re-route the damn power!
       </p>
     </div>
 
+    <div class="parallax lounge-6_6">
+      <p class="speech hammond">
+Look, if we all cooperate, we can figure this out a lot sooner.
+      </p>
+    </div>
     <div class="parallax lounge-6_7 bottom-mask">
       <p class="speech hammond">
- Let's get that computer display up, Isaac.
+Let's get that computer display up, Isaac.
       </p>
     </div>
 
@@ -663,18 +636,21 @@ He would be on his own, separated from the others.
       <area shape="circle" coords="400, 230,160" 
       href="#security" id="security_area" alt=""
       onclick="
-      show_section(2);
+      show_section(3);
       hide_div('door_pad_security');
       show_next_button();
-      document.getElementById('door_pad_activated').play();
-      
-      ">
+      play_music('effect_doors');">
     </map>
   </div>
-  
-  </section>
+    </section>
 
-  <section id="section-2">
+    <section id="section-3" 
+    onpointerenter="
+    play_music('ambient_heartbeat');
+    pause_music('ambient_ishimura');
+    pause_music('ambient_lounge');
+    "
+    >
     <div class="parallax security-7_0 top-mask"></div>
 
     <div class="centertitle parallax security-7_1">
@@ -744,22 +720,18 @@ That this would be the calm before the storm.
     </div>
 
     </div>
-  </section>
+    </section>
 
-
-<!--EMPTYDIV-->
-  <div class="half"></div>
-<a href="deadspace_part_3.html">
-<button id="next" class="save_game">
-    NEXT
-</button>
-</a>
+    <div class="half"></div>
+    <a href="deadspace_part_3.html">
+    <button id="next" class="save_game">
+      NEXT
+    </button>
+    </a>
     
   </main>
-
   <footer>
   </footer>
-
 </body>
 <script src="../js/deadspace.js"></script>
 </html>
