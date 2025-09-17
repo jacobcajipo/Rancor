@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
   <script src="../js/deadspace.js"></script>
   <title>Dead Space - Prologue</title>
-<audio  id="theme" src="../audio/prologue/Dead Space Theme.mp3"></audio>
+<audio  id="theme" src="../audio/prologue/Dead Space Theme.mp3" loop></audio>
 </head>
 
 <body onpageshow="show_section(0); play_music('theme');">
@@ -31,32 +31,26 @@
     </nav>
   </header>
   <main>
-    <!-- Prologue -->
-    <section onpointerenter="
-    play_music('theme');
-    ">
+    <!-- play music soon as start reading, if not automatically played by browser. -->
+    <section onpointerenter="play_music('theme');">
     <div class="centertitle">
       <p class="mono">
 It's only natural for us to fear whatever's lurking in the dark.
       </p>
     </div>
-
-
     <div class="centertitle whited top-mask">
       <p class="mono">
 Not knowing what lies ahead triggers a primal need to escape from it.
       </p>
     </div>
-
     <div class="centertitle whited">
       <p class="mono">
-Anywhere filled with other people,
+Anywhere as long as with other people,
       </p>
     </div>
-
      <div class="centertitle whited bottom-mask">
       <p class="mono">
-we know it's safer than being alone.
+It's dangerous to go alone, as they say.
       </p>
     </div>
 
@@ -264,7 +258,7 @@ One even went as far as to proclaim death as their calling.
     </div>
 
     <div class="centertitle parallax uni_03 background-position-focus-top" style="filter: brightness(75%);">
-      <img src="../img/prologue/marker.png" alt="">
+      <img src="../img/prologue/marker.webp" alt="">
     </div>
 
     <div class="centertitle half parallax uni_03 bottom-mask background-position-focus-top" style="filter: brightness(75%);">
@@ -277,13 +271,13 @@ A man named Isaac Clarke was never fond of the said worship.
       </p>
     </div>
 
-    <div class="centertitle parallax top-bottom-mask" style="background-image: url(../img/prologue/isaac.jpg); background-position: top; filter: brightness(75%);">
+    <div class="centertitle parallax top-bottom-mask">
       <p class="mono">
 Fearing death just as much as he's afraid of being left in the dark.
       </p>
     </div>
 
-    <div class="centertitle">
+    <div class="centertitle parallax isaac top-bottom-mask background-position-focus-top">
       <p class="mono">
 Clinging to life and to the only person he holds dearly.
       </p>

@@ -80,7 +80,10 @@ p.mono.lefttitle {
 .uni_03 {
     background-image: url(../img/prologue/uni_03.webp);
 }
+.isaac {
+    background-image: url(../img/prologue/isaac.webp);
+}
 .floating-hand {
-    background-image: url(../img/prologue/floating_hand.jpg);
+    background-image: url(../img/prologue/floating_hand.webp);
 }
 }
