@@ -5,16 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../../../../css/root.css">
-  <link rel="stylesheet" href="../css/deadspace_part_1.css">
-  <link rel="stylesheet" href="../css/deadspace_part_2.css">
   <link rel="stylesheet" href="../css/deadspace_common.css">
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
   <title>Dead Space Part 1</title>
 </head>
-<body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');play_music('theme_main_menu');"
-on
->
-
+<body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');play_music('theme_main_menu');">
   <header>
     <nav>
       <ul>
@@ -30,7 +25,6 @@ on
       </ul>
     </nav>
   </header>
-
   <audio>
     <audio>
     <audio 
@@ -69,18 +63,15 @@ on
     
   </audio>
   </audio>
-
   <main>
-    
-    <section id="section-0" on>
-      <div id="main-menu-padding-top" class="half"></div>
-    <!--Dead Space Logo-->
+    <section id="section-0">
+    <!--Dead Space Main Menu emulation-->
+    <div id="main-menu-padding-top" class="half">
+    </div>
     <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
       <video id="main_menu" src="../videos/main menu.mp4" width="100%" autoplay loop muted
       onplay="
-      this.scrollIntoView({behavior:'smooth'});
-      
-      "
+        this.scrollIntoView({behavior:'smooth'});"
       onclick="
         pause_music('theme_main_menu');
         this.pause();
@@ -90,27 +81,18 @@ on
         document.getElementById('chapter').scrollIntoView({behavior:'smooth'});
         document.getElementsByTagName('footer')[0].style.display = 'flex';
         play_music('theme_01');        "
-      onended="
-        //show_section(1);
-        //hide_div('main-menu');
-        //document.getElementById('chapter').scrollIntoView({behavior:'smooth'});
-        //play_music('theme_01');
-        "
       ></video>
     </div>
     </section>
 
     <section id="section-1"
-    onpointerenter="
-    play_music('theme_01');
-    pause_music('theme_02');
-    "
-    >
-    <!--Chapter 1, Part 1 Start-->
+      onpointerenter="
+        play_music('theme_01');
+        pause_music('theme_02');">
+    <!--Chapter 1, change font of chapter name to unitology when pointerover, emulate dementia-->
     <div id="chapter" class="" 
     onpointerdown="change_font_on('first-dementia');"
     onpointerleave="change_font_on('first-dementia');"
-    
     > 
       <script>
         function change_font_on(affected_element) {
@@ -128,86 +110,56 @@ on
             }
         }
       </script>   
-      <h2 >
+      <h2>
         Chapter 1:
       </h2>
       <h2 id="first-dementia">
         New Arrivals
       </h2>
     </div>
-
     <div class="centertitle">
       <p class="mono">
-With eyes closed, Isaac tuned out the noise.
+        With eyes closed, Isaac tuned out the noise. <br>
+        The constant screeching of metal against metal.
       </p>
     </div>
 
     <div class="centertitle">
       <p class="mono">
-The constant screeching of metal against metal.
+        While others may find it suffocating,
       </p>
     </div>
-
-    <div class="centertitle">
-      <p class="mono">
-While others may find it suffocating,
-      </p>
-    </div>
-
     <div class="centertitle whited top-bottom-mask">
       <p class="mono">
-somehow, it brought him comfort.
+        somehow, it brought him comfort.
       </p>
     </div>
-
     <div class="centertitle">
       <p class="mono">
-Perhaps after years of deployment,
+        Perhaps after years of deployment, <br>
+        he'd just grown used to it.
       </p>
     </div>
-
-    <div class="centertitle">
-      <p class="mono">
-he'd just grown used to it.
+    <div class="parallax static-0_1 top-mask">
+      <p class="mono lefttitle">
+        A blue light, however, <br> found its way to him.
       </p>
     </div>
-
-
-    <div class="parallax static top-mask">
-      <p class="mono">
-A blue light, however, found its way to him.
+    <div class="parallax static-0_2">
+      <p class="mono lefttitle">
+        His vision was hijacked by <br> a machine-generated list.
       </p>
     </div>
-
-    <div class="parallax static no-mask">
-      <p class="mono">
-His vision was hijacked by a machine-generated list.
-      </p>
-    </div>
-
-    <div class="parallax static no-mask">
-      <p class="mono">
-The mission, a few names, and even fewer directives.
-      </p>
-    </div>
-
-    <div class="parallax static no-mask">
-      <p class="mono">
-Judging from the premise, simple routine maintenance.
-      </p>
-    </div>
-    
     <!--Status Update List-->
     <!--Please animate the text to simulate autotyping-->
-    <div class="centertitle half parallax static no-mask">
+    <div class="centertitle parallax static-0_4">
       <p class="transmitted">
         <strong>CEC MISSION ER529</strong><br>
         STATUS UPDATE... <br>
         USG KELLION EN ROUTE TO AEGIS SYSTEM...<br>
       </p>
     </div>
-
-    <div class="centertitle half parallax static no-mask">
+    <div class="centertitle parallax static-0_5">
       <p class="transmitted">
         <strong>PRIMARY MISSION ASSETS...</strong><br>
         &nbsp&nbsp...ISAAC CLARKE - ENGINEERING AND SHIP SYSTEMS SPECIALIST... <br>
@@ -215,75 +167,63 @@ Judging from the premise, simple routine maintenance.
         &nbsp&nbsp...ZACH HAMMOND - CHIEF SECURITY OFFICER... <br>
       </p>
     </div>
-
-    <div class="centertitle half parallax static no-mask">
+    <div class="centertitle parallax static-0_6">
       <p class="transmitted">
         <strong>DIRECTIVE A:</strong> LOCATE MINING VESSEL USG ISHIMURA... <br>
         <strong>DIRECTIVE B:</strong> DIAGNOSE AND REPAIR COMMUNICATIONS BLACKOUT... <br>
       </p>
     </div>
-
-    <div class="centertitle half parallax static bottom-mask">
+    <div class="centertitle parallax static-0_4 bottom-mask">
       <p class="transmitted">
         <strong> TIME TO CONTACT: 3 MINUTES…</strong><br>
       </p>
     </div>
-
     <!--EMPTYDIV-->
-    <div class="half"></div>
-
+    <div class="half">
+    </div>
     <div class="centertitle">
       <p class="mono">
-Including the two pilots would make a total of five.
+        Including the two pilots would make a total of five. <br>
+        Isaac volunteered to be part of their crew.
       </p>
     </div>
-
     <div class="centertitle whited top-mask">
       <p class="mono">
-Isaac volunteered to be part of their crew.
+        They were beyond delighted to accept his offering;
       </p>
     </div>
-
-    <div class="centertitle whited no-mask">
-      <p class="mono">
-They were beyond delighted to accept his offering;
-      </p>
-    </div>
-
      <div class="centertitle whited bottom-mask">
       <p class="mono">
-Perhaps one would've been insane to work without a fee.
+        Perhaps one would've been insane to work <br> without a fee.
       </p>
     </div>
-<!--Left aligned-->
+<!--Left aligned items-->
     <div class="">
       <p class="mono lefttitle">
-Love for his career wasn't <br>
-his motive for being here.
+        Love for his career wasn't his <br>
+        motive for being here, though.
       </p>
     </div>
 
-    <div class="">
+    <div class="parallax nicole_1 top-mask">
       <p class="mono lefttitle">
-A few days before the expedition, <br>
-he received a message.
+        A few days before the expedition, <br>
+        he received a message.
       </p>
     </div>
-
-    <div class="">
+    <div class="parallax nicole_1 bottom-mask">
       <p class="mono lefttitle">
-An incomplete video log from Nicole, <br>
-a former co-worker at the corporation, 
+        An incomplete video log from Nicole, <br>
+        a former co-worker at the corporation, 
       </p>
     </div>
-
     <div class="">
       <p class="mono lefttitle">
-who is now a long-term partner.
+        who is now a long-term partner.
       </p>
     </div>
-
-    <div class="top-bottom-mask" style="height: fit-content;">
+    <!--Video of Nicole last message. Visible controls.-->
+    <div class="top-bottom-mask image-full-height">
       <video id="nicole_message" src="../videos/Nicole's Last Message.mp4" width="100%" controls
       onplaying="
         pause_music('theme_01');
@@ -310,29 +250,17 @@ who is now a long-term partner.
     ">
     <div class="">
       <p class="mono lefttitle">
-Earning the job as Medical Officer months ago,
+        Earning the job as Medical Officer months ago, <br>
+        She had been in contact aboard the Ishimura.
       </p>
     </div>
-
     <div class="">
       <p class="mono lefttitle">
-She had been in contact aboard the Ishimura.
+        From what he knew, she's satisfied with her job. <br>
+        Despite the heavier workload being placed upon her.
       </p>
     </div>
-
-    <div class="">
-      <p class="mono lefttitle">
-From what he knew, she's satisfied with her job.
-      </p>
-    </div>
-
-    <div class="">
-      <p class="mono lefttitle">
-Despite the heavier workload being placed upon her.
-      </p>
-    </div>
-
-    <div class="centertitle nicole_2 char_nicole parallax top-bottom-mask">
+    <div class="centertitle parallax nicole_2 char_nicole top-bottom-mask">
       <p class="speech">
         <strong>NICOLE:</strong> 
         It's all falling apart here. 
@@ -340,280 +268,197 @@ Despite the heavier workload being placed upon her.
         It's strange... such a little thing...
       </p>
     </div>
-
     <div class="centertitle">
       <p class="mono">
-This made the circumstances a shocking development.
+        This made the circumstances a shocking development. <br>
+        Isaac just couldn't shrug off an estranged feeling.
       </p>
     </div>
-
     <div class="centertitle">
       <p class="mono">
-Isaac just couldn't shrug off an estranged undertone.
+        A hunch that something terrible had already happened.
       </p>
     </div>
-
-    <div class="centertitle">
-      <p class="mono">
-A hunch that something terrible had already happened.
-      </p>
-    </div>
-
     <div class="centertitle whited top-bottom-mask">
       <p class="mono">
-He would need to find her fast and hope to get an answer.
+        He would need to find her fast and hope to get an answer.
       </p>
     </div>
-
+    <!--Kendra introduction-->
     <!--EMPTYDIV-->
-    <div class="half"></div>
-
+    <div class="half">
+    </div>
     <div class="">
       <p class="speech kendra">
- How many times have you watched that thing?       
+        How many times have you watched that thing?       
       </p>
     </div>
-
-    <div class="parallax shockpoint-1_1 no-mask">
+    <div class="parallax shockpoint-1_1">
       <p class="speech kendra">
-Guess you miss her. Don't worry, we're almost there.
+        Guess you miss her. Don't worry, we're almost there.
       </p>
     </div>
-
-    <div class="parallax shockpoint-1_2 no-mask">
+    <div class="parallax shockpoint-1_2">
       <p class="speech kendra">
- You'll be able to look her up once we're on board.
+        You'll be able to look her up once we're on board.
      </p>
     </div>
-
-    <div class="parallax shockpoint-1_3 no-mask">
+    <div class="parallax shockpoint-1_3">
       <p class="speech kendra">
-Sounds like you two have a lot of catching up to do.      
+        Sounds like you two have a lot of catching up to do.      
       </p>
     </div>
-
-    <div class="centertitle parallax shockpoint-1_4 no-mask">
+    <div class="centertitle parallax shockpoint-1_4">
       <p class="mono">
-A calm voice swept in, soothing his worries.
+        A calm voice swept in, <br> soothing his worries.
       </p>
     </div>
-
-    <div class="centertitle parallax shockpoint-1_4 no-mask">
+    <div class="centertitle parallax shockpoint-1_4">
       <p class="mono ">
-It's Kendra Daniels,
+        It's Kendra Daniels, <br>
+        the crew's computer specialist.
       </p>
     </div>
-
-    <div class="centertitle parallax shockpoint-1_4 no-mask">
-      <p class="mono ">
-the crew's computer specialist.
-      </p>
-    </div>
-
     <div class="centertitle parallax shockpoint-1_5 no-mask">
       <p class="mono">
-Very mindful of her to be checking up on others,
+        Very mindful of her to be checking up on others,
       </p>
     </div>
-
     <div class="centertitle parallax shockpoint-1_7 no-mask">
       <p class="mono">
-he was about to respond to her queries,
+        he was about to respond to her queries,
       </p>
     </div>
-
+    <!--Scattered debris-->
     <!--EMPTYDIV-->
     <div class="centertitle">
       <p class="mono">
-But they have arrived at their destination.
+        But they have arrived at their destination.
       </p>
     </div>
-
-    <div class="centertitle asteroids parallax top-bottom-mask"
-    style="background-position: top left;">
+    <div class="centertitle parallax asteroids top-bottom-mask background-focus-left">
     <img src="../img/part_1/asteroids_1.webp" alt="">
     </div>
-
-    <div class="centertitle"
-    style="background-position: top left;">
+    <div class="centertitle">
       <p class="mono">
-Scattered debris littering the outer atmosphere,
+        Scattered debris littering the outer atmosphere,
       </p>
     </div>
-
-     <div class="centertitle asteroids parallax top-mask"
-     style="background-position: right;">
+     <div class="centertitle parallax asteroids top-mask background-focus-right">
       <p class="mono">
-huge rocks of a size that can topple developed cities.
+        huge rocks of a size that can topple developed cities.
       </p>
     </div>
-
-    <div class="centertitle asteroids parallax no-mask"
-    style="background-position: center;">
+    <div class="centertitle parallax asteroids">
       <p class="mono">
-One colossal planet at the mercy of colonists,
+        One colossal planet at the mercy of colonists,
       </p>
     </div>
-
-    <div class="centertitle asteroids parallax no-mask"
-    style="background-position: left;">
+    <div class="centertitle parallax asteroids background-focus-left">
       <p class="mono">
-battered, broken, fragmented beyond recognition.
+        Broken and fragmented.
       </p>
     </div>
-
-    <div class="centertitle half asteroids parallax bottom-mask"
-    style="background-position: left;">
-
+    <div class="centertitle half asteroids parallax bottom-mask background-focus-left">
     </div>
-    
+    <!--AegisVII Indtroduction-->
     <!--EMPTYDIV-->
     <div class="half"></div>
-    <div class="centertitle aegis7 parallax top-mask">
+    <div class="centertitle parallax aegis-2_0 top-mask">
       <p class="mono">
-        The Aegis VII.<br>
+        Aegis VII<br>
       </p>
     </div>
-
-    <div class="centertitle aegis7 parallax no-mask">
+    <div class="centertitle parallax aegis-2_0">
       <p class="mono">
-        It's the seventh planet of the Cygnus Star system.<br>
+        The seventh planet of the Cygnus Star system,<br>
+        Surface covered with a distinct golden orange hue,
       </p>
     </div>
-
-    <div class="centertitle aegis7 parallax no-mask">
-      <p class="mono">
-        The surface covered with a distinct golden orange hue,<br>
+    <div class="centertitle parallax aegis-2_0">
+      <p class="mono panic_mono">
+        obstructed only by the massive void on its far side.
       </p>
     </div>
-
-    <div class="centertitle aegis7 parallax no-mask">
-      <p class="mono">
-        obstructed only by the massive void on its far side.<br>
-      </p>
+    <!--EMPTYDIV with parallax-->
+    <div class="half parallax aegis-2_0 bottom-mask">
     </div>
-
-    <!--EMPTYDIV with aegis7-->
-    <div class="half aegis7 parallax bottom-mask"></div>
-
-    <!--EMPTYDIV-->
-    <div class="half"></div>
-
-    <div class="half">
+    <div class="">
       <p class="speech kendra">
- All this trouble over that chunk of rock.
+        All this trouble over that chunk of rock.
       </p>
     </div>
-
-    <div class="centertitle">
+    <div class="centertitle parallax aegis-2_1 top-mask">
       <p class="mono">
-The first words Kendra thought of upon seeing the Aegis
+        The first words Kendra thought of upon seeing the Aegis <br>
+        sounded like she was talking about a scrapped junk piece.
       </p>
     </div>
-
-    <div class="centertitle">
+    <div class="centertitle parallax aegis-2_2">
       <p class="mono">
-sounded like she was talking about a scrapped junk piece.
+        Though her intention wasn't to offend anybody, <br>
+        She could just be attempting to initiate rapport.
       </p>
     </div>
-
-    <div class="centertitle parallax aegis-2_1 no-mask">
-      <p class="mono">
-Though her intention wasn't to offend anybody,
-      </p>
-    </div>
-
-    <div class="centertitle parallax aegis-2_2 no-mask">
-      <p class="mono">
-She could just be attempting to initiate rapport.
-      </p>
-    </div>
-
-    <div class="parallax aegis-2_3 no-mask">
+    <div class="parallax aegis-2_3">
       <p class="mono lefttitle">
-Zach Hammond,
+        Zach Hammond, the Chief Security 
+        <br> Officer, ticked off.
       </p>
     </div>
-
-    <div class=" parallax aegis-2_4 no-mask">
+    <div class="parallax aegis-2_5">
       <p class="mono lefttitle">
-the Chief Security Officer, ticked off.
+        It was blatant arrogance that needed correcting. <br>
+        One that he felt obliged to explain.
       </p>
     </div>
-
-    <div class="parallax aegis-2_5 no-mask">
-      <p class="mono lefttitle">
-It was blatant arrogance that needed correcting.
-      </p>
-    </div>
-
-    <div class="">
-      <p class="mono lefttitle">
-One that he felt obliged to explain.
-      </p>
-    </div>
-
-    <div class="">
-      <p class="mono lefttitle">
-Hint of his rigid personality.
-      </p>
-    </div>
-
-    <div class="centertitle  parallax aegis-2_6 no-mask">
+    <div class="centertitle parallax aegis-2_6">
       <p class="speech hammond">
-Deep space mining is a lucrative business, Ms. Daniels.
+        Deep space mining is a lucrative business, Ms. Daniels.
       </p>
     </div>
-
-    <div class="centertitle  parallax aegis-2_7 no-mask">
+    <div class="centertitle parallax aegis-2_7">
       <p class="speech hammond">
-Aegis 7 is a gold mine, according to prospectors' reports.
+        Aegis 7 is a gold mine, according to prospectors' reports.
       </p>
     </div>
-
-    <div class="centertitle  parallax aegis-2_8 no-mask">
+    <div class="centertitle  parallax aegis-2_8">
       <p class="speech hammond">
-Cobalt, Silicon, Osmium.
+        Cobalt, Silicon, Osmium.
       </p>
     </div>
-
+    <!--Concordance Introduction-->
     <div class="centertitle">
       <p class="mono">
-Mining for materials on Earth used to be a process.
+        Mining for materials on Earth used to be a process.
       </p>
     </div>
-
     <div class="centertitle">
-      <img src="../img/part_1/cec.webp" alt="">
+      <img src="../img/part_1/cec.webp" alt="CEC Logo">
     </div>
-
     <div class="centertitle half">
       <p class="mono">
-The Concordance Extraction Corporation <br> (CEC)
+        The Concordance Extraction Corporation <br> ( CEC )
       </p>
     </div>
-
-    <div class="centertitle cec-3_1 parallax parallax-contain no-mask">
+    <div class="centertitle cec-3_1 parallax parallax-contain">
       <p class="mono">
-had worked on a solution for years to expedite this.
+        had worked on a solution for years to expedite this.
       </p>
     </div>
-
-    <div class="centertitle cec-3_2 parallax parallax-contain no-mask ">
+    <div class="centertitle cec-3_2 parallax parallax-contain">
       <p class="mono">
-They claim that it is for the benefit of all mankind.
+        They claim that it is for the benefit of all mankind.
       </p>
     </div>
-
     <div class="centertitle cec-3_3 parallax parallax-contain">
       <p class="mono lefttitle">
-For there are a hundred known planets devoid of any life,
+        For there are a hundred known planets devoid of any life,
       </p>
     </div>
-
     <div class="centertitle">
       <p class="mono lefttitle">
-and thousands waiting to be surveyed for prospects.
+        and thousands waiting to be surveyed for prospects.
       </p>
     </div>
     </section>
@@ -621,250 +466,211 @@ and thousands waiting to be surveyed for prospects.
     <section id="section-3"
     onpointerenter="
       pause_music('theme_02');
-      play_music('theme_ishimura');
-    "
-    >
+      play_music('theme_ishimura');">
+      <!--Planetcracker Introduction-->
     <div class="half">
       <p class="speech hammond lefttitle">
-Now, where is she? There she is. We have visual contact.
+        Now, where is she? There she is. We have visual contact.
       </p>
     </div>
-
-    <div class="parallax planetcrackers-4_5 top-bottom-mask">
-      <img src="../img/part_1/asteroids_1.webp" style="filter: blur(2px);" alt="">
+    <div class="parallax planetcrackers-4_5 top-bottom-mask div-darkened-75">
+      <img src="../img/part_1/asteroids_1.webp" class="asteroids-blocking" alt="Asteroids">
     </div>
-
     <div class="half">
       <p class="speech kendra righttitle">
- So that's Ishimura? Impressive…
+        So that's Ishimura? Impressive…
       </p>
     </div>
-
     <div class="centertitle parallax planetcrackers-4_5 top-mask">
       <p class="mono">
-Planet Crackers
+        Planet Crackers
       </p>
     </div>
-
     <div class="centertitle parallax planetcrackers-4_1">
       <p class="mono">
-Gigantic ships built for a single purpose.
+        Gigantic ships built for a single purpose.
      </p>
     </div>
-
     <div class="centertitle parallax planetcrackers-4_2">
       <p class="mono">
-To break open moons and planets to submission,
+        To break open moons and planets to submission, <br>
+        and then, piece by piece,
      </p>
     </div>
-
-    <div class="centertitle parallax planetcrackers-4_2">
-      <p class="mono">
-and then, piece by piece,
+    <div class="centertitle parallax planetcrackers-4_3">
+      <p class="mono panic_mono">
+        tear away at their crust and mantle.
      </p>
     </div>
-
     <div class="centertitle parallax planetcrackers-4_3">
       <p class="mono">
-tear away at their crust and mantle.
-     </p>
-    </div>
-
-    <div class="centertitle parallax planetcrackers-4_3">
-      <p class="mono">
-And when all resources are extracted,
+        And when all resources are extracted,
       </p>
     </div>
-
     <div class="centertitle parallax planetcrackers-4_4 top-bottom-mask">
       <p class="mono panic_mono">
-they're left discarded.
+        they're left discarded.
       </p>
     </div>
-
     <div class="centertitle parallax planetcrackers-4_6">
       <p class="speech hammond">
-The <strong>USG</strong> Ishimura. 
-The biggest Planet Cracker in her class.
-And it looks like they already popped the cork.
-    </p>
+        The <strong>USG</strong> Ishimura. 
+        The biggest Planet Cracker in her class.
+        And it looks like they already popped the cork.
+      </p>
     </div>
-
+    <!--Ishimura Introduction-->
     <!--EMPTYDIV-->
     <div class="half">
-      
     </div>
-    <div class="centertitle background-full-height">
-      <img src="../img/part_1/ishimura_logo.webp" width="100%"
-      class="ishimura-logo" alt="">
+    <div class="centertitle image-full-height">
+      <img src="../img/part_1/ishimura_logo.webp" width="100%" class="max-width-fix" alt="USG Ishimura Logo">
     </div> 
     <div class="centertitle half">
       <p class="mono">
-The USG Ishimura was the first of its kind,
+        The USG Ishimura was the first of its kind,
       </p>
     </div>
     <!--EMPTYDIV-->
     <div class="half">
-      
     </div>
-
     <div class="centertitle">
       <p class="mono">
-and it used to be the crowning achievement of the CEC.
+        and it used to be the crowning achievement of the CEC.
       </p>
     </div>
-
     <div class="centertitle whited top-bottom-mask">
       <p class="mono">
-It has served tirelessly for almost 62 years now.
+        It has served tirelessly for almost 62 years now.
       </p>
     </div>
-
     <div class="centertitle">
       <p class="mono">
-A miracle that it held out for as long as it did.
+        A miracle that it held out for as long as it did.
       </p>
     </div>
-
+    <!--Awaiting response, nothing but silence-->
     <!--EMPTYDIV-->
-    <div class="half"></div>
-
+    <div class="half">
+    </div>
     <div class="parallax silence-6_1">
       <p class="speech kendra lefttitle">
- Why is it all dark? I don't see any running lights.
+        Why is it all dark? I don't see any running lights.
       </p>
     </div>
-
     <div class="parallax silence-6_2">
       <p class="speech hammond righttitle">
-Corporal, take us in closer and hail them. And stay clear of the debris field.
+        Corporal, take us in closer and hail them. And stay clear of the debris field.
       </p>
     </div>
-
     <div class="parallax silence-6_3">
       <p class="speech hammond righttitle">
-We're here to fix their ship, not the other way around.
+        We're here to fix their ship, not the other way around.
       </p>
     </div>
-
     <div class="parallax silence-6_4">
       <p class="speech chen">
-USG Ishimura, this is the emergency maintenance team of the USG Kellion responding to your distress call. Come in, Ishimura.
+        USG Ishimura, this is the emergency maintenance team of the USG Kellion responding to your distress call. Come in, Ishimura.
       </p>
     </div>
-
     <div class="centertitle parallax silence-6_5">
       <p class="mono">
-The crew anxiously searched for any signs of life on board.
+        The crew anxiously searched for any signs of life on board.
       </p>
     </div>
-
-     <div class="centertitle parallax silence-6_6">
+    <div class="centertitle parallax silence-6_6">
       <p class="mono">
-They took turns to garner a response from the radio.
+        They took turns to garner a response from the radio.
       </p>
     </div>
-
-
     <div class="parallax silence-6_7">
-    <p class="speech kendra lefttitle">
- You're going to need to boost the signal if their power is low.
-    </p>
-    </div>
-
-    <div class="parallax silence-6_8">
-    <p class="speech hammond righttitle">
-Yes, we know. Boost the signal. More.
-    </p>
-    </div>
-
-    <div class="parallax silence-6_9">
-    <p class="speech kendra lefttitle">
- Never heard of a total communications blackout on one of these things.
-    </p>
-    </div>
-
-    <div class="parallax silence-6_10">
-    <p class="speech kendra lefttitle">
-You'd think with a thousand people on board, someone would pick up the phone–
-    </p>
-    </div>
-
-    <div class="half centertitle parallax transmit-7_1">
-
-    </div>
-
-    <div class="half centertitle parallax transmit-7_1">
-      <p class="mono">
-A bizarre audio transmission slipped in.
+      <p class="speech kendra lefttitle">
+        You're going to need to boost the signal if their power is low.
       </p>
     </div>
-
+    <div class="parallax silence-6_8">
+      <p class="speech hammond righttitle">
+        Yes, we know. Boost the signal.
+      </p>
+    </div>
+    <div class="parallax silence-6_8">
+      <p class="speech hammond righttitle">
+        More.
+      </p>
+    </div>
+    <div class="parallax silence-6_9">
+      <p class="speech kendra lefttitle">
+        Never heard of a total communications blackout on one of these things.
+      </p>
+    </div>
+    <div class="parallax silence-6_10">
+      <p class="speech kendra lefttitle">
+        You'd think with a thousand people on board, someone would pick up the phone–
+      </p>
+    </div>
+    <!--Bizarre audio transmission-->
+    <!--Emptydiv with transmit-->
     <div class="half centertitle parallax transmit-7_1">
-    <audio 
-    id="unintelligible"
-    src="../audio/part_1/unintelligible.mp3"
-    controls
-    width="50%"
+    </div>
+    <div class="half centertitle parallax transmit-7_1">
+      <p class="mono">
+        A bizarre audio transmission slipped in.
+      </p>
+    </div>
+    <div class="half centertitle parallax transmit-7_1">
+      <audio 
+        id="unintelligible"
+        src="../audio/part_1/unintelligible.mp3"
+        controls
+        width="50%"
 
       onplaying="
       pause_music('theme_01');
       pause_music('theme_02');
       pause_music('theme_ishimura');
-      pause_music('theme_crashing');
-      "
-    >
+      pause_music('theme_crashing');">
     </audio>
-      </div>
-
+    </div>
     <div class="centertitle parallax transmit-7_2">
       <p class="mono lefttitle">
-They all strained hard to make sense of it.
+        They all strained hard to make sense of it.
       </p>
     </div>
-
     <div class="centertitle parallax transmit-7_2">
       <p class="speech chen">
-What is that?
+        What is that?
       </p>
     </div>
-
     <div class="parallax transmit-7_3">
       <p class="speech kendra lefttitle">
- It's a busted array like we thought. Sounds like they're having problems with their encoder.
+        It's a busted array like we thought. Sounds like they're having problems with their encoder.
       </p>
     </div>
-
     <div class="parallax transmit-7_4">
       <p class="speech kendra lefttitle">
- You get us down there, and Isaac and I can fix it. Forty-eight hours max.
+        You get us down there, and Isaac and I can fix it. Forty-eight hours max.
       </p>
     </div>
-
     <div class="parallax transmit-7_5">
       <p class="speech hammond righttitle">
-Alright, you heard the lady.
+        Alright, you heard the lady.
       </p>
     </div>
-
     <div class="parallax transmit-7_6">
       <p class="speech hammond righttitle">
-Take us in. Let's see what needs fixing.
+        Take us in. Let's see what needs fixing.
       </p>
     </div>
-
     <div class="parallax transmit-7_7">
       <p class="speech johnston">
-Gravity tethers engaged.
+        Gravity tethers engaged.
       </p>
     </div>
-
     <div class="parallax transmit-7_8">
       <p class="speech johnston">
-Automatic docking procedure is a go.
+        Automatic docking procedure is a go.
       </p>
     </div>
-
     <div id="crash_start" class="centertitle parallax transmit-7_8"
     onpointerenter="
       pause_music('theme_01');
@@ -874,158 +680,121 @@ Automatic docking procedure is a go.
       show_section(4);
       play_music('theme_crashing');
       play_music('crash3');
-      document.getElementById('section-4').scrollIntoView({behavior:'smooth'});
-    "
-    >
-      
+      document.getElementById('section-4').scrollIntoView({behavior:'smooth'});">
     </div>
     </section>
 
     <section id="section-4"
     onpointerenter="
-      play_music('theme_crashing');
-    "
-    >
-
+      play_music('theme_crashing');">
     <div class="centertitle is_panic parallax crash-8_1">
       <p class="speech chen">
-What the hell?
+        What the hell?
       </p>
     </div>
-
     <div class="centertitle parallax crash-8_1">
-      <p class="mono panic_mono"
-      >
-The USG Kellion was rocked by a sudden blast,
+      <p class="mono panic_mono">
+        The USG Kellion was rocked by a sudden blast,
       </p>
     </div>
-
     <div class="centertitle parallax crash-8_2">
       <p class="mono panic_mono">
-on a magnitude sending it into a rapid freefall.
+        on a magnitude sending it into a rapid freefall.
       </p>
     </div>
-
-
     <div class="is_panic centertitle parallax crash-8_3">
       <p class="speech johnston">
-Sir! The autodock-
+        Sir! The autodock-
       </p>
     </div>
-
     <div class="is_panic parallax crash-8_4">
       <p class="righttitle speech hammond">
-What is it?      
+        What is it?      
       </p>
     </div>
-
     <div class="is_panic centertitle parallax crash-8_5">
       <p class="speech chen">
-We're off track! We're going to hit the hull!
+        We're off track! We're going to hit the hull!
       </p>
     </div>
-
    <div class="centertitle parallax crash-8_6">
       <p class="mono panic_mono">
-Whatever hit them was hurling at high speed,
+        Whatever hit them was hurling at high speed,
       </p>
     </div>
-
     <div class="centertitle parallax crash-8_7">
       <p class="mono panic_mono">
-But they would need to think even faster.
+        But they would need to think even faster.
       </p>
     </div>
-
     <div class="is_panic parallax crash-8_8">
       <p class="righttitle speech hammond">
-Hit the blast shields!
+        Hit the blast shields!
       </p>
     </div>
-
     <div class="is_panic parallax crash-8_9">
       <p class="righttitle speech hammond">
-Their guidance tether is damaged!
+        Their guidance tether is damaged!
       </p>
     </div>
-
     <div class="is_panic parallax crash-8_10">
       <p class="righttitle speech hammond">
-Switch to manual. NOW!
+        Switch to manual. NOW!
       </p>
     </div>
-
     <div class="is_panic parallax abort-9_1">
       <p class="lefttitle speech kendra">
-Inside the magnetic field?
+        Inside the magnetic field?
       </p>
     </div>
-
     <div class="is_panic parallax abort-9_2">
       <p class="lefttitle speech kendra">
-Are you insane?! Abort!
+        Are you insane?! Abort!
       </p>
     </div>
-
     <div class="is_panic parallax abort-9_3">
       <p class="righttitle speech hammond">
-No! We can make it inside!
+        No! We can make it inside!
       </p>
     </div>
-
     <div class="is_panic parallax abort-9_4">
       <p class="righttitle speech hammond">
-Corporal, I gave you an order!
+        Corporal, I gave you an order!
       </p>
     </div>
-
     <div class="is_panic centertitle parallax abort-9_5">
       <p class="mono panic_mono">
-Johnston pulls the lever on the overhead panel,
+        Johnston pulls the lever on the overhead panel,
       </p>
     </div>
-
     <div class="is_panic centertitle parallax abort-9_6">
       <p class="mono panic_mono">
-Effectively closing the blast shields.
+        Effectively closing the blast shields.
       </p>
     </div>
-
     <div class="is_panic centertitle parallax abort-9_7">
       <p class="mono panic_mono">
-The front camera allowed them to see ahead,
+        The front camera allowed them to see ahead,
       </p>
     </div>
-
     <div class="is_panic centertitle parallax abort-9_8">
       <p class="mono panic_mono">
-But the USG Kellion was coming in too fast.
+        But the USG Kellion was coming in too fast.
       </p>
     </div>
-
     <div class="is_panic centertitle parallax abort-9_9">
       <p class="speech chen">
-Damn, the field's too strong!
+        Damn, the field's too strong!
       </p>
     </div>
-
-    <div class="content og crashing crash_fade_1 parallax no-mask" style="background-color: white;">
+    <div class="parallax crash_fade_1">
     </div>
-
-    <div class="crash_fade_2 parallax no-mask">
-    <p class="crashing">
-      
-    </p>
+    <div class="parallax crash_fade_2">
     </div>
-
-    <div class="crash_fade_3 parallax no-mask">
-    
+    <div class="parallax crash_fade_3">
     </div>
-
-    <div class="content og parallax bottom-mask" style="background-color: white;">
+    <div class="bottom-mask" style="background-color: white;">
     </div>
-
-
     <div class="">
     </div>
     </section>
@@ -1038,10 +807,8 @@ Damn, the field's too strong!
     </a>
 
   </main>
-
   <footer style="display: none;">
   </footer>
-
 </body>
 <script src="../js/deadspace.js"></script>
 </html>

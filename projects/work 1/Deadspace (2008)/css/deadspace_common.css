@@ -211,6 +211,7 @@ p.transmitted {
   font-family: bit_font;
   font-size: large;
   text-shadow: 2px 2px #000000;
+  padding: 0 5px;
 }
 
 /*Sound effects font*/
@@ -315,4 +316,25 @@ footer::before {
 }
 .background-focus-left {
     background-position: left;
+}
+.background-focus-top {
+    background-position: top;
+}
+/*DIV Filters*/
+.div-grayscale {
+  filter: grayscale();
+}
+.div-darkened-75 {
+  filter: brightness(75%);
+}
+/*image fixes*/
+.max-width-fix {
+  max-width: 500px;
+}
+.image-full-height {
+  height: fit-content;
+}
+.asteroids-blocking {
+  transform: scale(2); 
+  rotate: 45deg;
 }
