@@ -7,11 +7,20 @@
 .shockpoint_03 {
     background-image: url(../img/prologue/shockpoint_03.png);
 }
+.shockpoint_drive_02 {
+    background-image: url(../img/prologue/Shockpoint_Drive_02.png);
+}
+.shockpoint_drive_03 {
+    background-image: url(../img/prologue/Shockpoint_Drive_03.jpg);
+}
 .earth_01 {
     background-image: url(../img/prologue/power_plant.png);
 }
 .earth_02 {
     background-image: url(../img/prologue/oil_rig.png);
+}
+.workers_01 {
+    background-image: url(../img/prologue/workers.jpg);
 }
 .ignite_01 {
     background-image: url(../img/prologue/ignite_01.png);
@@ -33,6 +42,9 @@
 }
 .uni_03 {
     background-image: url(../img/prologue/uni_03.png);
+}
+.floating-hand {
+    background-image: url(../img/prologue/floating_hand.jpg);
 }
 .background-position-focus-top {
     background-position: top center;

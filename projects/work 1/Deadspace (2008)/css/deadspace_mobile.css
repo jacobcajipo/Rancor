@@ -44,11 +44,20 @@ p.mono.lefttitle {
 .shockpoint_03 {
     background-image: url(../img/prologue/shockpoint_03.webp);
 }
+.shockpoint_drive_02 {
+    background-image: url(../img/prologue/Shockpoint_Drive_02.webp);
+}
+.shockpoint_drive_03 {
+    background-image: url(../img/prologue/Shockpoint_Drive_03.webp);
+}
 .earth_01 {
     background-image: url(../img/prologue/power_plant.webp);
 }
 .earth_02 {
     background-image: url(../img/prologue/oil_rig.webp);
+}
+.workers_01 {
+    background-image: url(../img/prologue/workers.webp);
 }
 .ignite_01 {
     background-image: url(../img/prologue/ignite_01.webp);
@@ -70,5 +79,8 @@ p.mono.lefttitle {
 }
 .uni_03 {
     background-image: url(../img/prologue/uni_03.webp);
+}
+.floating-hand {
+    background-image: url(../img/prologue/floating_hand.jpg);
 }
 }

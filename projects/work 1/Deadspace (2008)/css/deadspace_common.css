@@ -310,3 +310,9 @@ footer::before {
     align-items: center;
     justify-content: center;
   }
+.background-focus-right {
+    background-position: right;
+}
+.background-focus-left {
+    background-position: left;
+}

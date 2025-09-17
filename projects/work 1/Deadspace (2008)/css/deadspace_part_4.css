@@ -29,12 +29,6 @@ section {
 .flashback {
     filter: grayscale();
 }
-.background-focus-right {
-    background-position: right;
-}
-.background-focus-left {
-    background-position: left;
-}
 .background-fitted {
     background-size: contain;
 }
