@@ -107,13 +107,11 @@ p.panic_mono
 
 p.mono.righttitle {
   float: inline-end;
-  /border-right: 5px solid #21ADAE;
   border-right: 5px solid maroon;
   border-bottom: none;
 }
 p.mono.lefttitle {
   float: inline-start; 
-  /border-left: 5px solid #BF6622;
   border-left: 5px solid maroon;
   border-bottom: none;
 }
@@ -124,7 +122,6 @@ div.parallax p.mono {
   border-bottom: none;
   background-color: rgba(10, 10, 10, 0.9);
 }
-
 /*Text location*/
 p.righttitle {
   width: 60%; 
@@ -360,10 +357,36 @@ footer::before {
   transform: scale(2); 
   rotate: 45deg;
 }
+div.image-horizontal-scroll-fix {
+  height: auto;
+  overflow-x: scroll;
+    display: flex;
+    justify-content: start;
+    margin: 0;
+    padding: 0;
+  }
 /*Background fixes*/
 .background-position-70x {
   background-position: 70%;
 }
 .background-position-30x {
   background-position: 30%;
+}
+/*text fixes*/
+p.mono.ishimura-etymology-fix {
+  margin:auto !important; 
+  min-width: fit-content; 
+  background-color: black;
+}
+/*hint*/
+div.hint-container {
+  display: flex;
+  height:fit-content;
+  font-size: smaller; 
+  color: grey; 
+  margin: 0 5px 0 0; 
+  padding: 0 5px 0 0; 
+  border-right: 5px solid yellow; 
+  text-align: right;
+    justify-content: flex-end;
 }

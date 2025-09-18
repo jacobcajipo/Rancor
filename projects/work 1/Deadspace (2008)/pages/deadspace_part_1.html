@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="../../../../css/root.css">
   <link rel="stylesheet" href="../css/deadspace_common.css">
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
-  <title>Dead Space Part 1</title>
+  <script src="../js/deadspace.js"></script>
+  <title>Dead Space - Part 1</title>
 </head>
 <body oncontextmenu="return false" onpageshow="show_section(0);play_video('main_menu');play_music('theme_main_menu');">
   <header>
@@ -67,7 +68,13 @@
     <section id="section-0">
     <!--Dead Space Main Menu emulation-->
     <div id="main-menu-padding-top" class="half">
+      <div class="hint-container">
+        <sub>
+        click on the video to start
+      </sub>
+      </div>
     </div>
+
     <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
       <video id="main_menu" src="../videos/main menu.mp4" width="100%" autoplay loop muted
       onplay="
@@ -140,12 +147,12 @@
         he'd just grown used to it.
       </p>
     </div>
-    <div class="parallax static-0_1 top-mask">
+    <div class="parallax static-0_4 top-mask">
       <p class="mono lefttitle">
         A blue light, however, found its way to him.
       </p>
     </div>
-    <div class="parallax static-0_2">
+    <div class="parallax static-0_6">
       <p class="mono lefttitle">
         His vision was hijacked by a machine-generated list.
       </p>
@@ -223,6 +230,11 @@
       </p>
     </div>
     <!--Video of Nicole last message. Visible controls.-->
+    <div class="hint-container">
+      <sub>
+        watch the video to proceed.
+      </sub>
+    </div>
     <div class="top-bottom-mask image-full-height">
       <video id="nicole_message" src="../videos/Nicole's Last Message.mp4" width="100%" controls
       onplaying="
@@ -670,6 +682,11 @@
       <p class="speech johnston">
         Automatic docking procedure is a go.
       </p>
+    </div>
+    <div class="hint-container">
+      <sub>
+        scroll ahead to proceed.
+      </sub>
     </div>
     <div id="crash_start" class="centertitle parallax transmit-7_8"
     onpointerenter="
