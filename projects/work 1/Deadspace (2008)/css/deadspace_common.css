@@ -109,18 +109,20 @@ p.mono.righttitle {
   float: inline-end;
   border-right: 5px solid maroon;
   border-bottom: none;
+    text-align: left !important;
 }
 p.mono.lefttitle {
   float: inline-start; 
   border-left: 5px solid maroon;
   border-bottom: none;
+  text-align: left !important;
 }
 div.whited p.mono {
   border-bottom: none;
 }
 div.parallax p.mono {
   border-bottom: none;
-  background-color: rgba(10, 10, 10, 0.9);
+  /background-color: rgba(10, 10, 10, 0.9);
 }
 /*Text location*/
 p.righttitle {
@@ -332,7 +334,7 @@ footer::before {
     background-position:  0%;
 }
 .background-focus-bottom-left {
-    background-position: bottom left;
+    background-position: 0 100%;
     left: 0;
     bottom: 0;
 }
@@ -366,6 +368,9 @@ div.image-horizontal-scroll-fix {
     padding: 0;
   }
 /*Background fixes*/
+.background-position-80x {
+  background-position: 80%;
+}
 .background-position-70x {
   background-position: 70%;
 }
