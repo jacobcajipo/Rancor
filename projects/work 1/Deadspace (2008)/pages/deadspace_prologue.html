@@ -70,7 +70,7 @@
     </div>
     <div class="centertitle parallax shockpoint_02 no-mask">
       <p class="mono">
-        An accurate indicator as to how far we have made progress in technology.
+        A reliable indicator as to how far we have made progress in technology.
       </p>
     </div>
     <div class="centertitle parallax shockpoint_03 bottom-mask">
@@ -123,7 +123,7 @@
     </div>
     <div class="centertitle">
       <p class="mono">
-        Governments and corporations flocked to the start of a new era.
+        Governments and corporations flocked to the start of this new era.
       </p>
     </div>
     <div class="centertitle parallax earth_01 top-mask">
@@ -226,10 +226,30 @@
         Clinging to life and to the only person he holds dearly.
       </p>
     </div>
-    <div class="centertitle">
-      <p class="mono">
-        He feels as if he could never be whole without her.
+    <div class="centertitle" onpointerenter="change_font_on('first-dementia');">
+      <p id="first-dementia" class="mono">
+        He feels as if he could never be <span>whole</span> without her.
       </p>
+       <script>
+        function change_font_on(affected_element) {
+          dementia = document.getElementById(affected_element);
+          dementia_font = "glitch";
+        
+            if (dementia.style.fontFamily == dementia_font)
+              {
+                document.getElementById(affected_element).style.fontFamily = "mullish";
+                dementia.style.fontSize = '1em'
+                dementia.innerHTML = 'He feels as if he could never be whole without her.';
+                dementia.style.color = 'inherit';
+              }
+            else {
+              dementia.style.fontFamily = dementia_font;
+              dementia.innerHTML = 'make &nbsp&nbsp us &nbsp&nbsp whole';
+              dementia.style.fontSize = '2em';
+              dementia.style.color = 'red';
+            }
+        }
+      </script>   
     </div>
     <div class="centertitle parallax floating-hand top-bottom-mask">
       <p class="mono">
