@@ -31,7 +31,7 @@ div
   background-color: black;
 }
 div.whited {
-  background-color: dimgray;
+  background-color: rgb(100, 0, 0);
 }
 main div {
   height: 90vh;
@@ -73,14 +73,18 @@ div.half {
 /*TEXT CONTENTS*/
 /*Monologue parts*/
 p.mono {
-  padding: 10px;
+  margin: 0 5px;
+  padding: 10px 5px;
   align-content: center;
-  max-height: 30vh; 
   text-align: center;
-  line-height: 1.5em;
   justify-content: center;
   align-items: center;
-  background-color: rgba(10, 10, 10, 0.9) ;
+  /background-color: rgba(10, 10, 10, 0.9) ;
+  background-color: #000000;
+  overflow-y: auto;
+  max-height: 70px; 
+  max-width: 350px;
+  border-bottom: 2px solid maroon;
 }
 
 p.panic_mono
@@ -88,9 +92,9 @@ p.panic_mono
   /outline: 1px dashed rgb(148, 0, 0);
   outline-offset: 2px;
   border: 1px solid maroon;
-  background-color: maroon ;
+  background-color: rgb(100, 0, 0) !important;
   color: white;
-  font-weight: bolder;
+  font-weight: bold;
   /text-transform: uppercase;
 }
 
@@ -102,16 +106,23 @@ p.panic_mono
 }
 
 p.mono.righttitle {
-  height: fit-content;
-  width: fit-content;
-  text-align: left;
-  float: inline-end; 
+  float: inline-end;
+  /border-right: 5px solid #21ADAE;
+  border-right: 5px solid maroon;
+  border-bottom: none;
 }
 p.mono.lefttitle {
-  width: fit-content;
-  height: fit-content;
-  text-align: left;
   float: inline-start; 
+  /border-left: 5px solid #BF6622;
+  border-left: 5px solid maroon;
+  border-bottom: none;
+}
+div.whited p.mono {
+  border-bottom: none;
+}
+div.parallax p.mono {
+  border-bottom: none;
+  background-color: rgba(10, 10, 10, 0.9);
 }
 
 /*Text location*/
@@ -121,7 +132,7 @@ p.righttitle {
   align-content: center;
   text-align: left;
   padding: 10px;
-  margin: 0;
+  margin: 0 5px 0 0 !important;
 }
 p.lefttitle {
   width: 55%; 
@@ -129,7 +140,7 @@ p.lefttitle {
   align-content: center;
   text-align: left;
   padding: 10px;
-  margin: 0;
+  margin: 0 0 0 5px !important;
 }
 div.suptitle {
   align-content: start; 
@@ -150,7 +161,7 @@ div.centertitle {
 p.speech {
   padding: 10px 2vw;
   width: fit-content;
-  max-width: 80%;
+  width: 300px;
   max-height: 30vh;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.90) !important;
@@ -213,7 +224,10 @@ p.transmitted {
   text-shadow: 2px 2px #000000;
   padding: 0 5px;
 }
-
+/*Speech bubble location*/
+div.parallax p.speech.lefttitle {
+  margin-left: 20px;
+}
 /*Sound effects font*/
 p.loudnoise {
   font-family: crashing;
@@ -315,12 +329,10 @@ footer::before {
   background-position: center;
 }
 .background-focus-right {
-    background-position: right;
-    right: 0;
+    background-position: 100%;
 }
 .background-focus-left {
-    background-position: left;
-    left: 0;
+    background-position:  0%;
 }
 .background-focus-bottom-left {
     background-position: bottom left;
@@ -347,4 +359,11 @@ footer::before {
 .asteroids-blocking {
   transform: scale(2); 
   rotate: 45deg;
+}
+/*Background fixes*/
+.background-position-70x {
+  background-position: 70%;
+}
+.background-position-30x {
+  background-position: 30%;
 }
