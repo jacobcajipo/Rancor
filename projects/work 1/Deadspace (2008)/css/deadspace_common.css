@@ -37,7 +37,7 @@ main div {
   height: 90lvh;
   align-content: center;
   padding: 0 8vw;
-  background-color: orange;
+  background-color: teal;
 }
 div.half {
   height: 30vh;
