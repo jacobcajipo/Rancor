@@ -34,11 +34,10 @@ div.whited {
   background-color: rgb(100, 0, 0);
 }
 main div {
-  height: 100vh;
-  max-height: 90dvh;
+  height: 90lvh;
   align-content: center;
   padding: 0 8vw;
-  background-color: yellowgreen;
+  background-color: orange;
 }
 div.half {
   height: 30vh;
