@@ -16,7 +16,7 @@ main {
 }
 main div {
   height: 100vh;
-  max-height: 100svh;
+  max-height: 600px;
   padding: 0 1vw;
   width: 100%;
 }
