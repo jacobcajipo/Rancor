@@ -8,20 +8,14 @@ body
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-y: scroll;
 }
 main {
   width: 100%;
   overflow: hidden;
 }
 main div {
-  height: 600px;
+  height: 100vh;
   padding: 0 1vw;
-  width: 100%;
-}
-div.half {
-  height: 30vh;
-  position: relative;
 }
 p {
   font-size: 0.9rem;
