@@ -20,7 +20,8 @@ p {
   font-size: 0.9rem;
 }
 .parallax {
-  height: 100vh;
+  position: fixed;
+  height: 99vh;
 }
 .plasma-cutter {
   max-width: none;
