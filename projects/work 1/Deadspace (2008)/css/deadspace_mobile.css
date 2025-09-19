@@ -15,8 +15,7 @@ main {
   overflow: hidden;
 }
 main div {
-  height: 100vh;
-  max-height: 600px;
+  height: 600px;
   padding: 0 1vw;
   width: 100%;
 }
