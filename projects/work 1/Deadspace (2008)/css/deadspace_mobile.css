@@ -16,6 +16,7 @@ main {
 }
 main div {
   padding: 0 1vw;
+  height: 100svh;
 }
 p {
   font-size: 0.9rem;
@@ -24,7 +25,6 @@ p {
   top: 0px;
   left: 0px;
   width: 100%;
-  min-height: 100svh;
 }
 .plasma-cutter {
   max-width: none;

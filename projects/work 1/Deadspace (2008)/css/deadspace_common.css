@@ -37,6 +37,7 @@ main div {
   height: 90vh;
   align-content: center;
   padding: 0 8vw;
+  background-color: green;
 }
 div.half {
   height: 30vh;
@@ -248,7 +249,7 @@ video {
   background-position: center;
   background-size: cover;
   width: 100%;
-  min-height: 100svh;
+  max-height: 100svh;
   margin: 0;
   padding: 0;
 }
