@@ -15,12 +15,13 @@ main {
   overflow: hidden;
 }
 main div {
+  height: 100vh;
+  max-height: 100svh;
   padding: 0 1vw;
-  height: 100svh !important;
   width: 100%;
 }
 div.half {
-  height: 30lvh;
+  height: 30vh;
   position: relative;
 }
 p {
