@@ -248,7 +248,7 @@ video {
   background-position: center;
   background-size: cover;
   width: 100%;
-  height: 88vh;
+  min-height: 100lvh;
   margin: 0;
   padding: 0;
 }
