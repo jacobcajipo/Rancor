@@ -27,7 +27,10 @@ p {
   font-size: 0.9rem;
 }
 .parallax {
+  position: relative;
   width: 100%;
+  top: 0px;
+  left: 0px;
 }
 .plasma-cutter {
   max-width: none;
