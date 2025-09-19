@@ -251,7 +251,7 @@
     <div class=""
     onpointerenter="
       show_section(1);
-      document.getElementById('section-1').scrollIntoView({behavior:'smooth'});
+      document.getElementsByClassName('bridge-4_1')[0].scrollIntoView({behavior:'smooth'});
       play_music('ambient_ishimura');
       pause_music('ambient_lounge');
       pause_music('ambient_heartbeat');
@@ -330,7 +330,7 @@
     </div>
     <div class="hint-container">
       <sub>
-        scroll up to the sensor if video does not play.
+        watch the video to proceed.
       </sub>
     </div>
     <div style="height: auto;" class="top-bottom-mask" >
@@ -338,11 +338,18 @@
       id="welcome_video"
       src="../videos/Part 2/Welcome Aboard.mp4"
       width="100%"
-      height="fit-content">
+      height="fit-content"
+      controls
+        onended="
+        show_section(2);
+        document.getElementsByClassName('bridge-4_7')[0].scrollIntoView({behavior:'smooth'});
+        ">
     </video>
     </div>
-    <!--EMPTYDIV-->
-    <div class="">
+    </section>
+
+    <section id="section-2">
+    <div class="half">
     </div>
     <!--welcome video end-->
     <div class="centertitle parallax bridge-4_7 top-bottom-mask">
@@ -361,8 +368,8 @@
           scroll right to see full image.
       </sub>
     </div>
-    <div class="image-horizontal-scroll-fix top-bottom-mask">
-      <img width="1280" src="../videos/Part 2/ishimura.webp" alt="USG Ishimura nameplate">
+    <div class="image-horizontal-scroll-fix image-full-height top-bottom-mask">
+      <img width="1280px" src="../videos/Part 2/ishimura.webp" alt="USG Ishimura nameplate">
         <p class="lefttitle mono ishimura-etymology-fix">
           Aptly named after Hideki Ishimura,<br>
           the creator of the ShockPoint Drive.
@@ -440,9 +447,9 @@
         <area shape="circle" coords="395, 245,115" href="#lounge" alt="Door pad hologram"
         id="lounge_area" style="cursor: pointer;"
         onclick="
-        show_section(2);
+        show_section(3);
         hide_div('door_pad_lounge');
-        document.getElementById('section-2').scrollIntoView({behavior:'smooth'});
+        document.getElementsByClassName('lounge-6_1')[0].scrollIntoView({behavior:'smooth'});
         play_music('effect_doors');
         welcome_video.pause();
         pause_music('ambient_heartbeat');
@@ -451,7 +458,7 @@
     </div>
     </section>
 
-    <section id="section-2"
+    <section id="section-3"
     onpointerenter="
     play_music('ambient_lounge');
     pause_music('ambient_heartbeat');
@@ -594,16 +601,16 @@
       <area shape="circle" coords="400, 230,160" 
       href="#security" id="security_area" alt=""
       onclick="
-      show_section(3);
+      show_section(4);
       hide_div('door_pad_security');
       show_next_button();
       play_music('effect_doors');
-      document.getElementById('section-3').scrollIntoView({behavior:'smooth'});">
+      document.getElementsByClassName('blood-6_1')[0].scrollIntoView({behavior:'smooth'});">
     </map>
   </div>
     </section>
 
-    <section id="section-3" 
+    <section id="section-4" 
     onpointerenter="
     play_music('ambient_heartbeat');
     pause_music('ambient_ishimura');
