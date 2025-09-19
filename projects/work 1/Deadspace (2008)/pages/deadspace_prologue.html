@@ -14,7 +14,41 @@
 <audio id="whole" src="../audio/prologue/whole.mp3"
 onplay="
 pause_music('theme');
-pause_music('twinkle');"></audio>
+pause_music('twinkle');"
+onended="
+dementia.innerHTML = 'He would never be whole without her.';
+dementia.style.fontFamily = 'mullish';
+dementia.style.fontSize = '1em'
+dementia.style.color = 'inherit';
+dementia.style.borderBottomColor = 'red';
+"
+></audio>
+<script>
+        function change_font_on(affected_element) {
+          dementia = document.getElementById(affected_element);
+          dementia_font = "glitch";
+            // return to normal if clicked again if current font same as set dementia font
+            //if (dementia.style.fontFamily == dementia_font)
+            //  {
+            //    document.getElementById(affected_element).style.fontFamily = "mullish";
+            //    dementia.style.fontSize = '1em'
+            //    dementia.innerHTML = 'He feels as if he could never be whole without her.';
+            //    dementia.style.color = 'inherit';
+            //    dementia.style.borderBottomColor = 'red';
+            //  }
+            //dementia attack if font is different from set dementia font
+           // else {
+              pause_music('theme');
+              pause_music('twinkle');
+              play_music('whole');
+              dementia.style.fontFamily = dementia_font;
+              dementia.innerHTML = 'make &nbsp&nbsp&nbsp us &nbsp&nbsp&nbsp whole';
+              dementia.style.fontSize = '2em';
+              dementia.style.color = 'red';
+              dementia.style.borderBottomColor = 'black';
+            
+        }
+      </script> 
 </head>
 
 <body oncontextmenu="return false" onpageshow="show_section(0); play_music('theme');">
@@ -256,34 +290,8 @@ pause_music('twinkle');"></audio>
       change_font_on('first-dementia');
       ">
       <p id="first-dementia" class="mono">
-        He would never be <span>fix 3</span> without her.
-      </p>
-       <script>
-        function change_font_on(affected_element) {
-          dementia = document.getElementById(affected_element);
-          dementia_font = "glitch";
-            // return to normal if clicked again if current font same as set dementia font
-            if (dementia.style.fontFamily == dementia_font)
-              {
-                document.getElementById(affected_element).style.fontFamily = "mullish";
-                dementia.style.fontSize = '1em'
-                dementia.innerHTML = 'He feels as if he could never be whole without her.';
-                dementia.style.color = 'inherit';
-                dementia.style.borderBottomColor = 'red';
-              }
-            //dementia attack if font is different from set dementia font
-            else {
-              pause_music('theme');
-              pause_music('twinkle');
-              play_music('whole');
-              dementia.style.fontFamily = dementia_font;
-              dementia.innerHTML = 'make &nbsp&nbsp us &nbsp&nbsp whole';
-              dementia.style.fontSize = '2em';
-              dementia.style.color = 'red';
-              dementia.style.borderBottomColor = 'black';
-            }
-        }
-      </script>   
+        He would never be whole without her.
+      </p>  
     </div>
     <div class="centertitle parallax floating-hand top-bottom-mask"
      onpointerenter="
