@@ -16,7 +16,8 @@ main {
 }
 main div {
   padding: 0 1vw;
-  height: 100svh;
+  height: 100vh;
+  max-height: 100svh;
 }
 p {
   font-size: 0.9rem;
