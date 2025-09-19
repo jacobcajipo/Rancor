@@ -348,6 +348,9 @@ footer::before {
 .div-darkened-75 {
   filter: brightness(75%);
 }
+.div-inverted {
+  filter: invert();
+}
 /*image fixes*/
 .max-width-fix {
   max-width: 500px;

@@ -76,7 +76,7 @@
     </div>
 
     <div id="main-menu" class="imagemap-scaling-mobile top-bottom-mask">
-      <video id="main_menu" src="../videos/main menu.mp4" width="100%" autoplay loop muted
+      <video id="main_menu" src="../videos/Part 1/main menu.mp4" width="100%" autoplay loop muted
       onplay="
         this.scrollIntoView({behavior:'smooth'});"
       onclick="
@@ -236,7 +236,7 @@
       </sub>
     </div>
     <div class="top-bottom-mask image-full-height">
-      <video id="nicole_message" src="../videos/Nicole's Last Message.mp4" width="100%" controls
+      <video id="nicole_message" src="../videos/Part 1/last message.mp4" width="100%" controls
       onplaying="
         pause_music('theme_01');
         pause_music('theme_02');
@@ -245,7 +245,6 @@
          "
       onended="
         play_music('theme_02');
-        show_next_button();
         show_section(2);
         show_section(3);
         document.getElementById('section-2').scrollIntoView({behavior:'smooth'})
@@ -494,7 +493,7 @@
     </div>
     <div class="centertitle parallax planetcrackers-4_1">
       <p class="mono">
-        Gigantic ships built for a single purpose.
+        Gigantic ships designed for a single purpose.
      </p>
     </div>
     <div class="centertitle parallax planetcrackers-4_2">
@@ -676,11 +675,11 @@
       pause_music('theme_01');
       pause_music('theme_02');
       pause_music('theme_ishimura');
-
       show_section(4);
       play_music('theme_crashing');
       play_music('crash3');
-      document.getElementById('section-4').scrollIntoView({behavior:'smooth'});">
+      document.getElementById('section-4').scrollIntoView({behavior:'smooth'});
+      show_next_button();">
     </div>
     </section>
 

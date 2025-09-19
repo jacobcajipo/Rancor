@@ -9,7 +9,18 @@
   <link rel="stylesheet" href="../css/deadspace_mobile.css">
   <script src="../js/deadspace.js"></script>
   <title>Dead Space - Prologue</title>
-<audio id="theme" src="../audio/prologue/Dead Space Theme.mp3" loop></audio>
+<audio id="theme" src="../audio/prologue/Dead Space Theme.mp3" loop
+onplay="
+pause_music('twinkle')";
+></audio>
+<audio id="twinkle" src="../audio/prologue/twinkle.mp3" loop
+onplay="
+pause_music('theme')";
+></audio>
+<audio id="whole" src="../audio/prologue/whole.mp3"
+onplay="
+pause_music('theme');
+pause_music('twinkle');"></audio>
 </head>
 
 <body oncontextmenu="return false" onpageshow="show_section(0); play_music('theme');">
@@ -201,62 +212,99 @@
         But looking to justify their existence in this meaningless universe.
       </p>
     </div>
-    <div class="centertitle parallax uni_03 top-mask background-position-focus-top div-grayscale">
+    <div class="centertitle parallax uni_03 top-mask background-position-focus-top div-grayscale"
+    onpointerenter="
+      pause_music('theme');
+      play_music('twinkle');
+      ">
       <p class="mono">
-        One even went as far as to proclaim death as their calling.
+        One even proclaimed death as their calling.
       </p>
     </div>
-    <div class="centertitle parallax uni_03 background-position-focus-top div-darkened-75">
-      <img src="../img/prologue/marker.webp" class="max-width-fix" alt="Unitology Logo">
+    <div class="centertitle parallax uni_03 background-position-focus-top div-darkened-75 image-full-height bottom-mask"
+    onpointerenter="
+      pause_music('theme');
+      play_music('twinkle');
+      ">
+      <img src="../img/prologue/marker.webp" class="max-width-fix image-full-height" alt="Unitology Logo">
     </div>
-    <div class="centertitle half parallax uni_03 bottom-mask background-position-focus-top div-darkened-75">
-    </div>
-    <div class="centertitle">
+    <div class="centertitle"
+    onpointerenter="
+      pause_music('theme');
+      play_music('twinkle');
+      ">
       <p class="mono">
         A man named Isaac Clarke was never fond of the said worship.
       </p>
     </div>
-    <div class="centertitle">
+    <div class="centertitle"
+     onpointerenter="
+      pause_music('theme');
+      play_music('twinkle');
+      ">
       <p class="mono">
         Fearing death just as much as he's afraid of being left in the dark.
       </p>
     </div>
-    <div class="centertitle parallax isaac top-bottom-mask background-focus-top">
+    <div class="centertitle parallax isaac top-bottom-mask background-focus-top"
+     onpointerenter="
+      pause_music('theme');
+      play_music('twinkle');
+      ">
       <p class="mono">
         Clinging to life and to the only person he holds dearly.
       </p>
     </div>
-    <div class="centertitle" onpointerenter="change_font_on('first-dementia');">
+    <div class="centertitle" 
+     onpointerenter="
+      pause_music('theme');
+      "
+    onclick="
+      change_font_on('first-dementia');
+      ">
       <p id="first-dementia" class="mono">
-        He feels as if he could never be <span>whole</span> without her.
+        He would never be <span>whole</span> without her.
       </p>
        <script>
         function change_font_on(affected_element) {
           dementia = document.getElementById(affected_element);
           dementia_font = "glitch";
-        
+            // return to normal if clicked again if current font same as set dementia font
             if (dementia.style.fontFamily == dementia_font)
               {
                 document.getElementById(affected_element).style.fontFamily = "mullish";
                 dementia.style.fontSize = '1em'
                 dementia.innerHTML = 'He feels as if he could never be whole without her.';
                 dementia.style.color = 'inherit';
+                dementia.style.borderBottomColor = 'red';
               }
+            //dementia attack if font is different from set dementia font
             else {
+              pause_music('theme');
+              pause_music('twinkle');
+              play_music('whole');
               dementia.style.fontFamily = dementia_font;
               dementia.innerHTML = 'make &nbsp&nbsp us &nbsp&nbsp whole';
               dementia.style.fontSize = '2em';
               dementia.style.color = 'red';
+              dementia.style.borderBottomColor = 'black';
             }
         }
       </script>   
     </div>
-    <div class="centertitle parallax floating-hand top-bottom-mask">
+    <div class="centertitle parallax floating-hand top-bottom-mask"
+     onpointerenter="
+      pause_music('theme');
+      pause_music('twinkle');
+      ">
       <p class="mono">
         But can his fragile mind and body survive the horrors?
       </p>
     </div>
-    <div class="half">
+    <div class="half"
+    onpointerenter="
+      pause_music('theme');
+      pause_music('twinkle');">
     </div>
     </section>
 
