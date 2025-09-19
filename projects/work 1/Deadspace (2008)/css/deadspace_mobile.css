@@ -17,6 +17,7 @@ main {
 main div {
   padding: 0 1vw;
   min-height: 100lvh !important;
+  width: 100%;
 }
 p {
   font-size: 0.9rem;
@@ -24,6 +25,7 @@ p {
 .parallax {
   top: 0px;
   left: 0px;
+  min-height: 100lvh !important;
   width: 100%;
 }
 .plasma-cutter {
