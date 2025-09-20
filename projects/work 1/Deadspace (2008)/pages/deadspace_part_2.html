@@ -30,10 +30,15 @@
 
 <audio>
 <audio id="ambient_ishimura" src="../audio/part_2/wreck.mp3" loop></audio>
-<audio id="ambient_lounge" src="../audio/part_2/PA_system.mp3" loop></audio>
+<audio id="ambient_lounge" src="../audio/part_2/PA_system.mp3" loop
+onplaying="
+pause_music('broken_light');
+"
+></audio>
 <audio id="ambient_heartbeat" src="../audio/part_2/Dead Space Isaac's breath and heartbeat.mp3" loop></audio>
 <audio id="effect_lights" src="../audio/part_2/lights.mp3"></audio>
 <audio id="effect_doors" src="../audio/part_2/door_pad_activated.mp3"></audio>
+<audio id="broken_light" src="../audio/part_2/broken_light.mp3" loop></audio>
 </audio>
 
   <main>
@@ -614,6 +619,7 @@
     <section id="section-4" 
     onpointerenter="
     play_music('ambient_heartbeat');
+    play_music('broken_light');
     pause_music('ambient_ishimura');
     pause_music('ambient_lounge');">
     <!--EMPTYDIV with security door-->
