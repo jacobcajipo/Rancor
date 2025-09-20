@@ -8,22 +8,35 @@
     <link rel="stylesheet" href="../css/deadspace_part_3.css">
       <link rel="stylesheet" href="../css/deadspace_mobile.css">
     <script src="../js/deadspace.js"></script>
-    <title>Dead Space Part 3</title>
+    <title>Dead Space - Part 3</title>
 </head>
-<body oncontextmenu="return false" onpageshow="show_section(0);">
-  <header style="background-color: transparent;">
+<body oncontextmenu="return false" onpageshow="show_section(0); play_music('broken_lights');play_music('isaac_breathing');">
+  
+  <header>
     <nav>
       <ul>
         <li>
         </li>
-        <li style="background-color: transparent; filter: invert();">
-        <img src="../img/pasted file.png" width="45px" height="45px" alt="">
+        <li>
+        <img id="menu_button" src="../img/pasted file.png" width="45px" height="45px" alt=""
+        onclick="
+          document.getElementById('menu_button').style.rotate = '90deg';
+        "
+        >
         </li>
       </ul>
     </nav>
   </header>
 
-<audio>
+  <audio>
+    <audio id="broken_lights" loop src="../audio/part_3/broken_light.mp3"></audio>
+    <audio id="isaac_breathing" loop src="../audio/part_3/Dead Space Isaac's breath and heartbeat.mp3"></audio>
+    <audio id="objective_complete" src="../audio/part_3/Dead Space _ Objective Complete [Sound Effect].mp3"></audio>
+
+    <audio id="quarantine_activated" src="../audio/part_3/quaratine_activated.mp3"></audio>
+  </audio>
+
+<!--audio>
 <audio id="objective_complete" src="../audio/part_2/Dead Space _ Objective Complete [Sound Effect].mp3"></audio>
 <audio id="quarantine_activated" src="../audio/part_2/quaratine_activated.mp3"></audio>
 <audio id="quarantine_normal"src="../audio/part_2/quarantine_normal.mp3" loop></audio>
@@ -42,73 +55,95 @@
     <audio id="chase" src="../audio/part_3/Chase.mp3"></audio>
     <audio id="broken_lights" src="../audio/part_3/broken_light.mp3" loop></audio>
     <audio id="elev_op" src="../audio/part_3/Elev_op.mp3"></audio>
-</audio>
+</audio-->
 
-<main>
-    <section id="section-0">
+  <main>
+    <section id="section-0"
+    onpointerenter="
+      play_music('broken_lights');
+      play_music('isaac_breathing');
+    "
+    >
       <div class="centertitle">
         <p class="mono">
-Placing his hand on the computer to view the report.
+          Placing his hand to view the report,
         </p>
       </div>
-
-      <div class="centertitle">
+      <div class="centertitle parallax console-0_0 top-bottom-mask">
         <p class="mono">
-The Ishimura’s scaled model sprang up in a hologram.
+          The Ishimura’s scaled model sprang up in a hologram.
         </p>
       </div>
-
-    <div id="console" class="imagemap-scaling-mobile top-bottom-mask">
-      <img src="../img/part_2/console.webp" alt="" usemap="#console_map">
-      <map name="console_map" cursor="pointer">
-        <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" 
-        onclick="
-          show_section(1);
-          hide_div('console');
-          document.getElementById('section-1').scrollIntoView({behavior:'smooth'});
-          objective_complete();">
-      </map>
-    </div>
+      <div class="hint-container">
+        <sub>
+          click on the console to load report.
+        </sub>
+      </div>
+      <div id="console" class="imagemap-scaling-mobile">
+        <img src="../videos/Part 3/console.webp" alt="" usemap="#console_map">
+          <map name="console_map" cursor="pointer">
+            <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" 
+            onclick="
+              show_section(1);
+              hide_div('console');
+              document.getElementsByClassName('report-1_0')[0].scrollIntoView({behavior:'smooth'});
+              play_music('objective_complete');">
+          </map>
+      </div>
     </section>
 
     <section id="section-1">
+    <div class="centertitle parallax report-1_0">
+      <p class="mono">
+        Indicating which areas of the ship are compromised,
+      </p>
+    </div>
+    <div class="centertitle parallax report-1_1">
+      <p class="mono">
+        It lit up blazingly red with every corner.
+      </p>
+    </div>
 
-    <div class="centertitle parallax quarantine-8_0 top-mask">
+    <div class="centertitle parallax report-1_2">
       <p class="speech johnston">
-Huh. That doesn't look good. She's taken a lot of damage.
+        Huh. That doesn't look good. She's taken a lot of damage.
       </p>
     </div>
-
-    <div class="centertitle parallax quarantine-8_0">
-      <p class="mono">
-Indicating which areas of the ship are compromised,
+    <div class="parallax report-1_3 background-position-80x">
+      <p class="speech hammond righttitle">
+        The tram system's offline. 
+        Getting around is going to be difficult. 
       </p>
     </div>
-
-    <div class="centertitle parallax quarantine-8_1">
-      <p class="mono">
-It lit up blazingly red with every inch of the display.
+    <div class="parallax report-1_4 background-position-80x">
+      <p class="speech hammond righttitle">
+        The air seems to be flowing again. That's a start.
       </p>
     </div>
-
-    <div class="parallax quarantine-8_1">
-      <p class="speech hammond">
-The tram system's offline. 
-Getting around is going to be difficult. 
-      </p>
-    </div>
-
-    <div class="parallax quarantine-8_2">
-      <p class="speech hammond">
-The air seems to be flowing again. That's a start.
-      </p>
+    <div class="hint-container">
+      <sub>
+        scroll below to continue.
+      </sub>
     </div>
     <!--emptydiv-->
-    <div class="parallax quarantine-8_2">
+    <div class="parallax report-1_5 background-position-80x"
+    onpointerenter="
+    show_section(2);
+    pause_music('broken_lights');
+    pause_music('isaac_breathing');
+    document.getElementById('section-2').scrollIntoView({behavior:'smooth'});
+    play_music('quaratine_activated');
+    "
+    >
     </div>
+    </section>
+
+    <section id="section-2">
     <!--emptydiv-->
     <div class="parallax quarantine-8_3"  
-    onpointerenter="play_quarantine_activated(); play_quarantine_loop();">
+    onpointerenter="
+    play_quarantine_activated(); 
+    play_quarantine_loop();">
     </div>
 
     <div class="centertitle parallax quarantine-8_3">
@@ -745,7 +780,7 @@ He’s still alive.
       </div>
     </section>
 
-    <section id="section-2" onpointerenter="play_fluorescent();">
+    <section id="section-3" onpointerenter="play_fluorescent();">
         <div class="centertitle parallax elev_1">
           <p class="mono">
 Before he could take a breather,
@@ -791,7 +826,7 @@ The elevator had taken him to the lower level.
     </section>
 
     <!--EMPTYDIV-->
-  <div class="half"></div>
+  <!--div class="half"></div-->
 <a href="deadspace_part_4.html">
 <button id="next" class="save_game" style="display: none;">
     NEXT
