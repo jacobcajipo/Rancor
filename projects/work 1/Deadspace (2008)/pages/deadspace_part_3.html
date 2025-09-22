@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
     <link rel="stylesheet" href="../../../../css/root.css">
     <link rel="stylesheet" href="../css/deadspace_common.css">
     <link rel="stylesheet" href="../css/deadspace_part_3.css">
@@ -10,7 +10,7 @@
     <script src="../js/deadspace.js"></script>
     <title>Dead Space - Part 3</title>
 </head>
-<body oncontextmenu="return false" onpageshow="show_section(0); play_music('broken_lights');play_music('isaac_breathing');">
+<body oncontextmenu="return false" onpageshow="show_section(0); play_music('ambient_broken_lights');play_music('isaac_breathing');">
   
   <header>
     <nav>
@@ -29,11 +29,45 @@
   </header>
 
   <audio>
-    <audio id="broken_lights" loop src="../audio/part_3/broken_light.mp3"></audio>
+    <audio id="ambient_broken_lights" loop src="../audio/part_3/broken_light.mp3"
+    onplaying="pause_music('ambient_aircon');"
+    ></audio>
     <audio id="isaac_breathing" loop src="../audio/part_3/Dead Space Isaac's breath and heartbeat.mp3"></audio>
+    
     <audio id="objective_complete" src="../audio/part_3/Dead Space _ Objective Complete [Sound Effect].mp3"></audio>
+    
+    <audio id="ambient_aircon" loop src="../audio/part_3/Air Conditioner - Sound Effect (SFX).mp3"
+    onplaying="
+    pause_music('ambient_broken_lights');
+    pause_music('ambient_alarm');
+    "
+    ></audio>
+    
+    <audio id="quarantine_activated" src="../audio/part_3/Quarantine Alarm.mp3"
+    onplaying="pause_music('ambient_aircon');"
+    onended="play_music('ambient_alarm')"></audio>
 
-    <audio id="quarantine_activated" src="../audio/part_3/quaratine_activated.mp3"></audio>
+    <audio id="ambient_alarm" loop src="../audio/part_3/Dead Space Horror Sounds and Ambiance_ Quarantine Lockdown.mp3"
+    onplaying="pause_music('ambient_nervous');"
+    ></audio>
+
+
+    <audio id="effect_crash" src="../audio/part_3/crash.mp3"
+    onended="
+    play_music('effect_flop');
+    "
+    ></audio>
+    <audio id="effect_flop" src="../audio/part_3/quarantine_necro_arrives.mp3"></audio>
+  
+    <audio id="ambient_nervous" loop src="../audio/part_3/Slow Heartbeat (for NervousExciting Moments) - Sound Effect for Editing.mp3"
+    onplaying="pause_music('ambient_guns'); pause_music('ambient_broken_lights');pause_music('ambient_alarm');pause_music('ambient_aircon');pause_music('ambient_alarm')"></audio>
+  
+    <audio id="effect_stab" src="../audio/part_3/stab.mp3"
+    onended="play_music('effect_flatline');"
+    ></audio>
+    <audio id="effect_flatline" src="../audio/part_3/flatline_start.mp3"></audio>
+  
+    <audio id="ambient_guns" loop src="../audio/part_3/guns.mp3"></audio>
   </audio>
 
 <!--audio>
@@ -53,14 +87,14 @@
     <audio id="gun_1" src="../audio/part_3/Gun_1.mp3" loop></audio>
     <audio id="gun_2" src="../audio/part_3/Gun_2.mp3" loop></audio>
     <audio id="chase" src="../audio/part_3/Chase.mp3"></audio>
-    <audio id="broken_lights" src="../audio/part_3/broken_light.mp3" loop></audio>
+    <audio id="ambient_broken_lights" src="../audio/part_3/broken_light.mp3" loop></audio>
     <audio id="elev_op" src="../audio/part_3/Elev_op.mp3"></audio>
 </audio-->
 
   <main>
     <section id="section-0"
     onpointerenter="
-      play_music('broken_lights');
+      play_music('ambient_broken_lights');
       play_music('isaac_breathing');
     "
     >
@@ -84,16 +118,27 @@
           <map name="console_map" cursor="pointer">
             <area shape="rect" coords="290,290, 530,460" href="#quarantine" alt="" 
             onclick="
+              pause_music('ambient_broken_lights');
+              pause_music('isaac_breathing');
+              play_music('objective_complete');
               show_section(1);
               hide_div('console');
               document.getElementsByClassName('hint-container')[0].style.display = 'none';
               document.getElementsByClassName('report-1_0')[0].scrollIntoView({behavior:'smooth'});
-              play_music('objective_complete');">
+              play_music('ambient_aircon');
+              ">
           </map>
       </div>
     </section>
 
-    <section id="section-1">
+    <section id="section-1" 
+    onpointerenter="
+    play_music('ambient_aircon');
+    pause_music('ambient_broken_lights');
+    pause_music('isaac_breathing');
+    pause_music('ambient_alarm');
+    "
+    >
     <div class="centertitle parallax report-1_0">
       <p class="mono">
         Indicating which areas of the ship are compromised,
@@ -124,19 +169,23 @@
     <div class="parallax report-1_5 background-position-80x"
     onpointerenter="
     show_section(2);
-    pause_music('broken_lights');
+    pause_music('ambient_broken_lights');
     pause_music('isaac_breathing');
     document.getElementsByClassName('report-1_5')[0].style.display = 'none';
     document.getElementsByClassName('hint-container')[1].style.display = 'none';
-
     document.getElementsByClassName('encounter-2-0')[0].scrollIntoView({behavior:'smooth'});
-    play_music('quaratine_activated');
+    play_music('quarantine_activated');
     "
     >
     </div>
     </section>
 
-    <section id="section-2">
+    <section id="section-2" 
+    onpointerenter="
+    play_music('ambient_alarm');
+    pause_music('ambient_aircon');
+    pause_music('ambient_guns');
+    ">
     <div class="parallax report-1_5 background-position-80x">
     </div>
     <div class="centertitle parallax encounter-2-0 background-position-80x top-mask">
@@ -199,6 +248,8 @@
     </div>
     <div class="parallax encounter-2-9 background-focus-right"
     onpointerenter="
+    pause_music('ambient_alarm');
+    play_music('effect_crash')
     show_section(3);
     document.getElementsByClassName('encounter-2-9')[1].style.display = 'none';
     document.getElementsByClassName('hint-container')[2].style.display = 'none';
@@ -209,7 +260,14 @@
     </div>
     </section>
 
-    <section id="section-3">
+    <section id="section-3"
+    onpointerenter="
+    play_music('ambient_nervous');
+    pause_music('ambient_alarm');
+    pause_music('ambient_broken_lights');
+    pause_music('ambient_aircon');
+    "
+    >
     <div class="parallax behead-3-0 background-focus-right is_panic">
       <p class="speech johnston">
         What the hell?
@@ -241,7 +299,9 @@
         Reaching out to Corporal Johnston,
       </p>
     </div>
-    <div class="centertitle parallax behead-3-5">
+    <div class="centertitle parallax behead-3-5"
+    onpointerenter="play_music('effect_stab');"
+    >
       <p class="mono panic_mono">
         Slicing his head clean off.
       </p>
@@ -251,43 +311,51 @@
         Blood gushed from his neck and spread onto the glass windows.
       </p>
     </div>
+    <div class="hint-container">
+      <sub>
+        scroll below to proceed.
+      </sub>
+    </div>
     <div class="parallax behead-3-6" onpointerenter="
     show_section(4);
+    document.getElementsByClassName('hint-container')[3].style.display = 'none';
+    document.getElementsByClassName('behead-3-6')[1].style.display = 'none';
+    document.getElementsByClassName('crossfire-4-0')[0].scrollIntoView({behavior:'smooth'});
     ">
     </div>
     </section>
 
-    <section id="section-4">
-    <div class="parallax secu_3 is_panic"
+    <section id="section-4"
+    onpointerenter="
+    play_music('ambient_guns');
+    pause_music('ambient_nervous');
+    pause_music('ambient_alarm');
+    "
+    >
+    <div class="parallax crossfire-4-0">
+    </div>
+    <div class="parallax crossfire-4-1 is_panic"
     onpointerenter="play_gun_hammond();">
       <p class="speech hammond">
         Jesus!
       </p>
     </div>
-    <div class="parallax secu_4 is_panic" 
-    onpointerenter="
-    play_gun_chen();
-    ">
+    <div class="parallax crossfire-4-2 is_panic">
       <p class="speech hammond">
         Open fire! Open fire!
       </p>
     </div>
-    <div class="centertitle parallax secu_4">
+    <div class="centertitle parallax crossfire-4-3">
       <p class="mono">
         A barrage of rapid gunfire ensued.
       </p>
     </div>
-    <div class="centertitle parallax secu_5">
+    <div class="centertitle parallax crossfire-4-4">
       <p class="mono">
         Kendra immediately turns to the door pad.
       </p>
     </div>
-    <div class="parallax secu_5 is_panic" onpointerenter="">
-      <p class="speech hammond">
-        Kendra! Power!
-      </p>
-    </div>
-    <div class="centertitle"
+    <div class="centertitle parallax crossfire-4-5"
     onpointerenter="
       play_crash();"
     >
@@ -295,71 +363,68 @@
         Another dropped from the ceiling,
       </p>
     </div>
-    <div class="centertitle"
+    <div class="centertitle parallax crossfire-4-6"
     onpointerenter="
-      play_stab();
+      play_music('effect_stab');
       ">
       <p class="mono panic_mono">
         Killing Chen right where he stood.
       </p>
     </div>
-    <div class="parallax secu_6 is_panic"
-    onpointerenter="">
-      <p class="speech hammond">
-        Kendra!
-      </p>
-    </div>
-    <div class="parallax secu_6">
+    <div class="parallax  crossfire-4-7">
       <p class="speech kendra">
         Come on… Come on...
       </p>
     </div>
+    <div class="parallax crossfire-4-8 is_panic">
+        <p class="speech kendra">
+          Got it!
+        </p>
+    </div>
+    <div class="centertitle parallax crossfire-4-9">
+      <p class="mono">
+        The red hologram in front of her disappears. 
+        Followed by a spark along the door’s hinge.
+      </p>
+    </div>
+    <div class="centertitle parallax crossfire-4-10">
+      <p class="mono">
+        The same happened on the exit next to Isaac.
+      </p>
+    </div>
+    <div class="parallax crossfire-4-11 is_panic">
+      <p class="speech kendra">
+        The door's unlocked! Run!
+      </p>
+    </div>
+    <div class="hint-container">
+      <sub>
+        scroll below to proceed.
+      </sub>
+    </div>
+    <div class="parallax crossfire-4-11 is_panic" 
+    onpointerenter="
+    pause_music('ambient_broken_lights');
+    pause_music('ambient_aircon');
+    pause_music('ambient_alarm');
+    pause_music('ambient_nervous');
+    pause_music('ambient_guns');
+    show_section(5);
 
-        <div class="centertitle"
-        onpointerenter="pause_flatline_loop();">
-          <p class="mono panic_mono">
-With both pilots mercilessly dismembered and beheaded,
-          </p>
-        </div>
+    "
+    >
+    </div>
+    </section>
 
-        <div class="centertitle"
-        onpointerenter="
-        play_necromorph_chase();
-        "
-        >
-          <p class="mono panic_mono">
-The creatures probed their next victims.
-          </p>
-        </div>
-
-        <div class="is_panic"
-        onpointerenter="
-        play_necromorph_chase();
-        pause_gun_hammond();
-        pause_slasher_male_loop();">
-            <p class="speech kendra">
-Got it!
-            </p>
-        </div>
-
-        <div class="centertitle"
-        onpointerenter="
-        play_necromorph_chase();"
-        >
-          <p class="mono">
-The red hologram in front of her disappears. 
-          </p>
-        </div>
-
-        <div class="centertitle"
-        onpointerenter="
-        play_necromorph_chase();"
-        >
-          <p class="mono">
-Followed by a spark along the door’s hinge.
-          </p>
-        </div>
-
+    <section id="section-5"
+    onpointerenter="
+    pause_music('ambient_broken_lights');
+    pause_music('ambient_aircon');
+    pause_music('ambient_alarm');
+    pause_music('ambient_nervous');
+    pause_music('ambient_guns');
+    play_music
+    ">
         <div class="is_panic" style="background-position:left;" 
         onpointerenter="
         
@@ -368,19 +433,6 @@ Followed by a spark along the door’s hinge.
 Isaac, get the hell out of there!
             </p>
         </div>
-
-        <div class="centertitle parallax secu_8">
-            <p class="mono">
-The same thing happened on the exit next to Isaac.
-            </p>
-        </div>
-
-        <div class="centertitle parallax secu_8">
-            <p class="mono">
-Sparks flew, snapping him out of the ensuing chaos.
-            </p>
-        </div>
-
         <div class="parallax secu_9 is_panic" 
         onpointerenter="
         play_necromorph_chase();
@@ -596,8 +648,8 @@ He’s still alive.
           onended="
           document.getElementById('fake').style.display = 'none';
           this.style.position = 'static';
-          show_section(5);
-            document.getElementById('section-5').scrollIntoView({ behavior: 'instant' });
+          show_section(6);
+            document.getElementById('section-6').scrollIntoView({ behavior: 'instant' });
             show_next_button();
             ">
               <source src="../videos/jump scare.mp4" type="video/mp4"
@@ -606,7 +658,7 @@ He’s still alive.
       </div>
     </section>
 
-    <section id="section-5" onpointerenter="play_fluorescent();">
+    <section id="section-6" onpointerenter="play_fluorescent();">
         <div class="centertitle parallax elev_1">
           <p class="mono">
 Before he could take a breather,
@@ -652,7 +704,7 @@ The elevator had taken him to the lower level.
     </section>
 
     <!--EMPTYDIV-->
-  <!--div class="half"></div-->
+  <div class="half"></div>
 <a href="deadspace_part_4.html">
 <button id="next" class="save_game" style="display: none;">
     NEXT
