@@ -253,14 +253,16 @@ pause_music('broken_light');
       </sub>
     </div>
     <!--EMPTYDIV-->
-    <div class=""
+    <div id="isaac_exits" class=""
     onpointerenter="
       show_section(1);
+      hide_div('isaac_exits');
+      document.getElementsByClassName('hint-container')[0].style.display = 'none';
       document.getElementsByClassName('bridge-4_1')[0].scrollIntoView({behavior:'smooth'});
       play_music('ambient_ishimura');
       pause_music('ambient_lounge');
       pause_music('ambient_heartbeat');
-    ">
+      ">
     </div>
     </section>
 
@@ -331,7 +333,7 @@ pause_music('broken_light');
     </div>
     <!--Ishimura welcome video autoplays if tripped onpointerenter-->
      <!--EMPTYDIV-->
-    <div>
+    <div class="half">
     </div>
     <div class="hint-container">
       <sub>
@@ -347,6 +349,7 @@ pause_music('broken_light');
       controls
         onended="
         show_section(2);
+        document.getElementsByClassName('hint-container')[1].style.display = 'none';
         document.getElementsByClassName('bridge-4_7')[0].scrollIntoView({behavior:'smooth'});
         ">
         <track default src="../videos/Part 2/Welcome Aboard.vtt" kind="subtitles" srclang="en" label="English"></track>
@@ -455,6 +458,7 @@ pause_music('broken_light');
         onclick="
         show_section(3);
         hide_div('door_pad_lounge');
+        document.getElementsByClassName('hint-container')[3].style.display = 'none';
         document.getElementsByClassName('lounge-6_1')[0].scrollIntoView({behavior:'smooth'});
         play_music('effect_doors');
         welcome_video.pause();
@@ -608,6 +612,7 @@ pause_music('broken_light');
       href="#security" id="security_area" alt=""
       onclick="
       show_section(4);
+      document.getElementsByClassName('hint-container')[4].style.display = 'none';
       hide_div('door_pad_security');
       show_next_button();
       play_music('effect_doors');

@@ -247,6 +247,7 @@
         play_music('theme_02');
         show_section(2);
         show_section(3);
+        document.getElementsByClassName('hint-container')[1].style.display = 'none';
         document.getElementById('section-2').scrollIntoView({behavior:'smooth'})
         "
       >
@@ -680,7 +681,10 @@
       show_section(4);
       play_music('theme_crashing');
       play_music('crash3');
-      document.getElementById('section-4').scrollIntoView({behavior:'smooth'});
+      hide_div('crash_start');
+      document.getElementsByClassName('crash-8_1')[0].scrollIntoView({behavior:'smooth'});
+      document.getElementsByClassName('hint-container')[2].style.display = 'none';
+
       show_next_button();">
     </div>
     </section>
@@ -688,6 +692,8 @@
     <section id="section-4"
     onpointerenter="
       play_music('theme_crashing');">
+    <div class="parallax transmit-7_8">
+    </div>
     <div class="centertitle is_panic parallax crash-8_1">
       <p class="speech chen">
         What the hell?
