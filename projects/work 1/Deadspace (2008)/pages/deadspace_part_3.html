@@ -82,6 +82,10 @@
     <audio id="effect_Fslasher" src="../audio/part_3/slasher_female.mp3"></audio>
     <audio id="effect_Mslasher" src="../audio/part_3/slasher_male.mp3"></audio>
 
+    <audio id="isaac_pain" src="../audio/part_3/isaac_pain.mp3"></audio>
+    <audio id="isaac_sliced" src="../audio/part_3/isaac_sliced.mp3"
+    onplay="play_music('isaac_pain');"
+    ></audio>
   </audio>
 
 <!--audio>
@@ -583,7 +587,8 @@
     pause_music('ambient_alarm');
     pause_music('ambient_nervous');
     pause_music('ambient_guns');
-
+    play_music('isaac_sliced');
+    //play_music('isaac_pain');
     "
     >
       
@@ -600,6 +605,7 @@
     pause_music('ambient_alarm');
     pause_music('ambient_nervous');
     pause_music('ambient_guns');
+    play_music('ambient_nervous');
     "
     >
     <div class="parallax safe-7-0">
@@ -693,6 +699,7 @@ He’s still alive.
 
           "
           onended="
+          hide_div('scare');
           document.getElementById('fake').style.display = 'none';
           this.style.position = 'static';
           show_section(8);
@@ -705,7 +712,8 @@ He’s still alive.
       </div>
     </section>
 
-    <section id="section-8" onpointerenter="play_fluorescent();">
+    <section id="section-8" onpointerenter="
+    play_music('ambient_nervous');">
         <div class="centertitle parallax elev_1">
           <p class="mono">
             It all happened so fast,
