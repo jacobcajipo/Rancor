@@ -86,28 +86,8 @@
     <audio id="isaac_sliced" src="../audio/part_3/isaac_sliced.mp3"
     onplay="play_music('isaac_pain');"
     ></audio>
+   
   </audio>
-
-<!--audio>
-<audio id="objective_complete" src="../audio/part_2/Dead Space _ Objective Complete [Sound Effect].mp3"></audio>
-<audio id="quarantine_activated" src="../audio/part_2/quaratine_activated.mp3"></audio>
-<audio id="quarantine_normal"src="../audio/part_2/quarantine_normal.mp3" loop></audio>
-<audio id="quarantine_necro"src="../audio/part_2/quarantine_necro.mp3" loop></audio>
-<audio id="quarantine_necro_2" src="../audio/part_2/crash.mp3"></audio>
-<audio id="quarantine_necro_arrives"src="../audio/part_2/quarantine_necro_arrives.mp3"></audio>
-<audio id="flatline_start" src="../audio/part_2/flatline_start.mp3" ></audio>
-<audio id="flatline_loop" src="../audio/part_2/flatline_loop.mp3" loop></audio>
-    <audio id="flatline" src="../audio/part_2/Dead Space RIG Flatline (Death) Sound.mp3"></audio>
-    <audio id="heartbeat" src="../audio/part_2/Dead Space Isaac's breath and heartbeat.mp3"></audio>
-    <audio id="slasher_1" src="../audio/part_3/slasher_male.mp3"></audio>
-    <audio id="slasher_2" src="../audio/part_3/slasher_female.mp3"></audio>
-    <audio id="stab" src="../audio/part_2/stab.mp3"></audio>
-    <audio id="gun_1" src="../audio/part_3/Gun_1.mp3" loop></audio>
-    <audio id="gun_2" src="../audio/part_3/Gun_2.mp3" loop></audio>
-    <audio id="chase" src="../audio/part_3/Chase.mp3"></audio>
-    <audio id="ambient_broken_lights" src="../audio/part_3/broken_light.mp3" loop></audio>
-    <audio id="elev_op" src="../audio/part_3/Elev_op.mp3"></audio>
-</audio-->
 
   <main>
     <section id="section-0"
@@ -189,8 +169,8 @@
     show_section(2);
     pause_music('ambient_broken_lights');
     pause_music('isaac_breathing');
-    //document.getElementsByClassName('report-1_5')[0].style.display = 'none';
-    //document.getElementsByClassName('hint-container')[1].style.display = 'none';
+    document.getElementsByClassName('report-1_5')[0].style.display = 'none';
+    document.getElementsByClassName('hint-container')[1].style.display = 'none';
     document.getElementsByClassName('encounter-2-0')[0].scrollIntoView({behavior:'smooth'});
     play_music('quarantine_activated');
     "
@@ -269,8 +249,8 @@
     pause_music('ambient_alarm');
     play_music('effect_crash')
     show_section(3);
-    //document.getElementsByClassName('encounter-2-9')[1].style.display = 'none';
-    //document.getElementsByClassName('hint-container')[2].style.display = 'none';
+    document.getElementsByClassName('encounter-2-9')[1].style.display = 'none';
+    document.getElementsByClassName('hint-container')[2].style.display = 'none';
     document.getElementById('section-3').scrollIntoView({behavior:'smooth'});
     "
     >
@@ -336,8 +316,8 @@
     </div>
     <div class="parallax behead-3-6" onpointerenter="
     show_section(4);
-    //document.getElementsByClassName('hint-container')[3].style.display = 'none';
-   // document.getElementsByClassName('behead-3-6')[1].style.display = 'none';
+    document.getElementsByClassName('hint-container')[3].style.display = 'none';
+    document.getElementsByClassName('behead-3-6')[1].style.display = 'none';
     document.getElementsByClassName('crossfire-4-0')[0].scrollIntoView({behavior:'smooth'});
     ">
     </div>
@@ -460,15 +440,15 @@
           Something crawled out from the ventilation,            
         </p>
       </div>
-      <div class="parallax crawl-5-1 background-position-40x">
+      <div class="parallax crawl-5-1 background-position-30x">
       </div>
-      <div class="parallax crawl-5-2 background-position-40x">
+      <div class="parallax crawl-5-2 background-position-30x">
       </div>
-      <div class="parallax crawl-5-3 background-position-40x">
+      <div class="parallax crawl-5-3 background-position-30x">
       </div>
-      <div class="parallax crawl-5-4 background-position-40x">
+      <div class="parallax crawl-5-4 background-position-30x">
       </div>
-      <div class="centertitle parallax crawl-5-5 background-position-40x" 
+      <div class="centertitle parallax crawl-5-5 background-position-30x" 
         onpointerenter="
         play_music('effect_Fslasher');
         ">
@@ -516,25 +496,25 @@
     ">
     <div class="parallax chase-6-0">
     </div>
-    <div class="parallax chase-6-1" 
+    <div class="centertitle parallax chase-6-1" 
     onpointerenter="play_music('effect_crash');">
-      <p class="mono panic_mono righttitle" style="width: fit-content;">
+      <p class="mono panic_mono" style="width: fit-content;">
         One...
       </p>
     </div>
     <div class="parallax chase-6-2"> 
     </div>
-    <div class="parallax chase-6-3"
+    <div class="centertitle parallax chase-6-3"
     onpointerenter="play_music('effect_crash');">
-      <p class="mono panic_mono righttitle" style="width: fit-content;">
+      <p class="mono panic_mono" style="width: fit-content;">
         After...
       </p>
     </div>
     <div class="parallax chase-6-4"> 
     </div>
-    <div class="parallax chase-6-5 whited bottom-mask"
+    <div class="centertitle parallax chase-6-5 whited bottom-mask"
     onpointerenter="play_music('effect_crash');">
-      <p class="mono panic_mono righttitle" style="width: fit-content;">
+      <p class="mono panic_mono" style="width: fit-content;">
         Another.
       </p>
     </div>
@@ -559,54 +539,44 @@
       </p>
     </div>
     <div class="centertitle parallax chase-6-9">
-      
     </div>
-
     <div class="hint-container">
       <sub>
         Scroll below to proceed
       </sub>
     </div>
     <div class="centertitle parallax chase-6-10"
-    onpointerenter="
-    show_section(7);
-    document.getElementById('section-7').scrollIntoView({behavior:'smooth'});
-    //pause_music('ambient_chase');
-    //pause_music('effect_Fslasher');
-    //pause_music('effect_Mslasher');
-    pause_music('ambient_broken_lights');
-    pause_music('ambient_aircon');
-    pause_music('ambient_alarm');
-    pause_music('ambient_nervous');
-    pause_music('ambient_guns');
-    //play_music('isaac_sliced');
-    //play_music('isaac_pain');
-    play_video('elevator_door');
-    "
-    >
-      
-    </div>
-    </section>
-
-    <section id="section-7" style="background-color: pink; width: 100%; height: 100vh; z-index: 9;">
-        <div class="imagemap-scaling-mobile" style="margin: auto;">
-        <video id="elevator_door" src="../videos/Part 3/elevator_door.mp4"
-        width="fit-screen" height="100%"
-        onclick="
-        pause_video('elevator_door');
-        show_section(9);
-        hide_section(7);
+      onpointerenter="
+        show_section(7);
+      document.getElementById('section-7').scrollIntoView({behavior:'smooth'});
         pause_music('ambient_broken_lights');
         pause_music('ambient_aircon');
         pause_music('ambient_alarm');
         pause_music('ambient_nervous');
         pause_music('ambient_guns');
-    document.getElementsByClassName('hint-container')[6].style.display = 'none';
-    document.getElementsByClassName('safe-7-1')[0].scrollIntoView({behavior:'instant'});
-    document.getElementsByClassName('chase-6-10')[0].style.display = 'none';
-    play_music('isaac_sliced');
-    play_music('isaac_pain');
+        play_video('elevator_door');
+    "> 
+    </div>
+    </section>
 
+    <section id="section-7" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
+    <div class="imagemap-scaling-mobile">
+      <video id="elevator_door" src="../videos/Part 3/elevator_door.mp4"
+        width="fit-screen" height="100%"
+        onclick="
+          pause_video('elevator_door');
+          show_section(9);
+          hide_section(7);
+          pause_music('ambient_broken_lights');
+          pause_music('ambient_aircon');
+          pause_music('ambient_alarm');
+          pause_music('ambient_nervous');
+          pause_music('ambient_guns');
+          document.getElementsByClassName('hint-container')[6].style.display = 'none';
+          document.getElementsByClassName('safe-7-1')[0].scrollIntoView({behavior:'instant'});
+          document.getElementsByClassName('chase-6-10')[0].style.display = 'none';
+          play_music('isaac_sliced');
+          play_music('isaac_pain');
         "
         onplaying="
           pause_music('ambient_chase');
@@ -625,18 +595,24 @@
         onended="
           hide_section(7);
           show_section(8);
-          attach_top('section-8');
-          //document.getElementsByClassName('crossfire-4-11')[1].style.display = 'flex';
-          //document.getElementsByClassName('hint-container')[4].style.display = 'flex';
-        "
-        ></video>
+          play_video('death');">
+          </video>
       </div>
     </section>
 
     <!--Reload last checkpoint-->
-    <section id="section-8" style="width: 100%; height: 100%;"
-    style="position: fixed; top: 0; left: 0;"
-    >
+    <section id="section-8" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
+      <video id="death" src="../videos/Part 3/death.mp4" width="fit-screen" height="100%"
+      style="margin: auto;"
+      onplay="
+        document.getElementById('death').style.display = 'inline-block';
+        attach_top('death');
+        attach_top('section-8');
+        "
+      onended="
+        document.getElementById('death').style.display = 'none';
+        ">
+      </video>
       <div class="half">
         <div class="hint-container">
             <sub>
@@ -647,12 +623,11 @@
       <div id="retry">
          <button class="save_game"
          onclick="
-          
           hide_section(6);
           hide_section(5);
-         hide_div('section-8');
-        document.getElementsByClassName('crossfire-4-11')[0].scrollIntoView({behavior:'instant'});
-        play_music('ambient_guns');
+          hide_div('section-8');
+          document.getElementsByClassName('crossfire-4-11')[0].scrollIntoView({behavior:'instant'});
+          play_music('ambient_guns');
          "
          >
           Try again?
@@ -662,36 +637,33 @@
 
     <!--GOOD ENDING-->
     <section id="section-9"
-    onpointerenter="
-    pause_music('ambient_chase');
-    pause_music('effect_Fslasher');
-    pause_music('effect_Mslasher');
-    pause_music('ambient_broken_lights');
-    pause_music('ambient_aircon');
-    pause_music('ambient_alarm');
-    pause_music('ambient_nervous');
-    pause_music('ambient_guns');
-    play_music('ambient_nervous');
-    "
-    >
+      onpointerenter="
+      pause_music('ambient_chase');
+      pause_music('effect_Fslasher');
+      pause_music('effect_Mslasher');
+      pause_music('ambient_broken_lights');
+      pause_music('ambient_aircon');
+      pause_music('ambient_alarm');
+      pause_music('ambient_guns');
+      play_music('ambient_nervous');
+    ">
     <div class="parallax safe-7-0">
     </div>
     <div class="centertitle parallax safe-7-1">
       <p class="mono panic_mono">
-        He felt a sharp across his back as he went in.
+        He felt a sharp pain across his back as he went in.
       </p>
     </div>
-    <div class="centertitle parallax safe-7-2"
+    <div class="centertitle parallax safe-7-2 background-position-30x"
     onpointerenter="
     pause_necromorph_chase();
     pause_all_loops();
-    "
-    >
+    ">
       <p class="mono panic_mono">
         Blood dripping down his fingers,
       </p>
     </div>
-    <div class="centertitle parallax safe-7-3"
+    <div class="centertitle parallax safe-7-3 background-position-30x"
     onpointerenter="
     objective_complete();
     ">
@@ -786,11 +758,13 @@
         </div>
         <div class="centertitle parallax elev_3">
           <p class="mono">
-            All he could remember was the fear.
+            He really thought he was safe.
           </p>
         </div>
         <div class="centertitle parallax elev_4">
-          
+          <p class="mono">
+            His whole body trembling from shock.
+          </p>
         </div>
         <div class="centertitle parallax elev_5">
            <p class="mono">
