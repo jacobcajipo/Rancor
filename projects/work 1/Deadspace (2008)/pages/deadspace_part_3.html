@@ -189,8 +189,8 @@
     show_section(2);
     pause_music('ambient_broken_lights');
     pause_music('isaac_breathing');
-    document.getElementsByClassName('report-1_5')[0].style.display = 'none';
-    document.getElementsByClassName('hint-container')[1].style.display = 'none';
+    //document.getElementsByClassName('report-1_5')[0].style.display = 'none';
+    //document.getElementsByClassName('hint-container')[1].style.display = 'none';
     document.getElementsByClassName('encounter-2-0')[0].scrollIntoView({behavior:'smooth'});
     play_music('quarantine_activated');
     "
@@ -269,8 +269,8 @@
     pause_music('ambient_alarm');
     play_music('effect_crash')
     show_section(3);
-    document.getElementsByClassName('encounter-2-9')[1].style.display = 'none';
-    document.getElementsByClassName('hint-container')[2].style.display = 'none';
+    //document.getElementsByClassName('encounter-2-9')[1].style.display = 'none';
+    //document.getElementsByClassName('hint-container')[2].style.display = 'none';
     document.getElementById('section-3').scrollIntoView({behavior:'smooth'});
     "
     >
@@ -336,8 +336,8 @@
     </div>
     <div class="parallax behead-3-6" onpointerenter="
     show_section(4);
-    document.getElementsByClassName('hint-container')[3].style.display = 'none';
-    document.getElementsByClassName('behead-3-6')[1].style.display = 'none';
+    //document.getElementsByClassName('hint-container')[3].style.display = 'none';
+   // document.getElementsByClassName('behead-3-6')[1].style.display = 'none';
     document.getElementsByClassName('crossfire-4-0')[0].scrollIntoView({behavior:'smooth'});
     ">
     </div>
@@ -433,8 +433,8 @@
     pause_music('ambient_guns');
 
     show_section(5);
-    document.getElementsByClassName('crossfire-4-11')[1].style.display = 'none';
-    document.getElementsByClassName('hint-container')[4].style.display = 'none';
+    //document.getElementsByClassName('crossfire-4-11')[1].style.display = 'none';
+    //document.getElementsByClassName('hint-container')[4].style.display = 'none';
     document.getElementsByClassName('crawl-5-0')[0].scrollIntoView({behavior:'smooth'});
     play_music('effect_exploding_bulb');
     play_music('ambient_chase');
@@ -502,8 +502,8 @@
         show_section(6);
         play_music('effect_Fslasher');
         play_music('effect_Mslasher');
-        document.getElementsByClassName('crawl-5-7')[1].style.display = 'none';
-        document.getElementsByClassName('hint-container')[5].style.display = 'none';
+        //document.getElementsByClassName('crawl-5-7')[1].style.display = 'none';
+        //document.getElementsByClassName('hint-container')[5].style.display = 'none';
         document.getElementsByClassName('chase-6-1')[0].scrollIntoView({behavior:'smooth'});
         ">
       </div>
@@ -562,40 +562,106 @@
       
     </div>
 
-    <div class="centertitle parallax chase-6-10">
-      
-    </div>
-
-    <div class="centertitle parallax chase-6-11">
-      
-    </div>
-
     <div class="hint-container">
       <sub>
         Scroll below to proceed
       </sub>
     </div>
-    <div class="centertitle parallax chase-6-11"
+    <div class="centertitle parallax chase-6-10"
     onpointerenter="
     show_section(7);
-    document.getElementsByClassName('safe-7-1')[0].scrollIntoView({behavior:'smooth'});
-    pause_music('ambient_chase');
-    pause_music('effect_Fslasher');
-    pause_music('effect_Mslasher');
+    document.getElementById('section-7').scrollIntoView({behavior:'smooth'});
+    //pause_music('ambient_chase');
+    //pause_music('effect_Fslasher');
+    //pause_music('effect_Mslasher');
     pause_music('ambient_broken_lights');
     pause_music('ambient_aircon');
     pause_music('ambient_alarm');
     pause_music('ambient_nervous');
     pause_music('ambient_guns');
-    play_music('isaac_sliced');
+    //play_music('isaac_sliced');
     //play_music('isaac_pain');
+    play_video('elevator_door');
     "
     >
       
     </div>
     </section>
 
-    <section id="section-7"
+    <section id="section-7" style="background-color: pink; width: 100%; height: 100vh; z-index: 9;">
+        <div class="imagemap-scaling-mobile" style="margin: auto;">
+        <video id="elevator_door" src="../videos/Part 3/elevator_door.mp4"
+        width="fit-screen" height="100%"
+        onclick="
+        pause_video('elevator_door');
+        show_section(9);
+        hide_section(7);
+        pause_music('ambient_broken_lights');
+        pause_music('ambient_aircon');
+        pause_music('ambient_alarm');
+        pause_music('ambient_nervous');
+        pause_music('ambient_guns');
+    document.getElementsByClassName('hint-container')[6].style.display = 'none';
+    document.getElementsByClassName('safe-7-1')[0].scrollIntoView({behavior:'instant'});
+    document.getElementsByClassName('chase-6-10')[0].style.display = 'none';
+    play_music('isaac_sliced');
+    play_music('isaac_pain');
+
+        "
+        onplaying="
+          pause_music('ambient_chase');
+          pause_music('effect_Fslasher');
+          pause_music('effect_Mslasher');
+          attach_top('elevator_door');
+          attach_top('section-7');
+          document.getElementsByClassName('crossfire-4-11')[0].scrollIntoView({behavior:'instant'});
+        "
+        onplay="
+          pause_music('ambient_chase');
+          pause_music('effect_Fslasher');
+          pause_music('effect_Mslasher');
+          document.getElementsByClassName('crossfire-4-11')[0].scrollIntoView({behavior:'instant'});
+        "
+        onended="
+          hide_section(7);
+          show_section(8);
+          attach_top('section-8');
+          //document.getElementsByClassName('crossfire-4-11')[1].style.display = 'flex';
+          //document.getElementsByClassName('hint-container')[4].style.display = 'flex';
+        "
+        ></video>
+      </div>
+    </section>
+
+    <!--Reload last checkpoint-->
+    <section id="section-8" style="width: 100%; height: 100%;"
+    style="position: fixed; top: 0; left: 0;"
+    >
+      <div class="half">
+        <div class="hint-container">
+            <sub>
+              Hint: Click anywhere on the elevator to open.
+            </sub>
+          </div>
+      </div>
+      <div id="retry">
+         <button class="save_game"
+         onclick="
+          
+          hide_section(6);
+          hide_section(5);
+         hide_div('section-8');
+        document.getElementsByClassName('crossfire-4-11')[0].scrollIntoView({behavior:'instant'});
+        play_music('ambient_guns');
+         "
+         >
+          Try again?
+         </button>
+      </div>
+    </section>
+
+    <!--GOOD ENDING-->
+    <section id="section-9"
     onpointerenter="
     pause_music('ambient_chase');
     pause_music('effect_Fslasher');
@@ -633,32 +699,28 @@
         he pushed the button.
       </p>
     </div>
-
     <div class="centertitle parallax chase_12"
     onpointerenter="play_elevator ();">
       <p class="mono">
-The door closes,
+        The door closes,
       </p>
     </div>
-
     <div class="centertitle parallax chase_13"
     onpointerenter="
     pause_all_loops();">
       <p class="mono">
-and the muted screaming outside dwindles.
+        the screaming dwindles.
       </p>
     </div>
-
     <div class="centertitle parallax chase_14" 
     onpointerenter="
     pause_necromorph_chase();
     play_fluorescent();
     ">
       <p class="mono">
-He made it out. 
+        He made it out. 
       </p>
     </div>
-
     <div class="centertitle"
     onpointerenter="
     pause_necromorph_chase();
@@ -667,7 +729,7 @@ He made it out.
     "
     >
       <p class="mono">
-He’s finally safe. 
+        He’s finally safe. 
       </p>
     </div>
 
@@ -678,7 +740,7 @@ He’s finally safe.
     pause_all_loops();
     ">
       <p class="mono">
-He’s still alive. 
+        He’s still alive. 
       </p>
     </div>
 
@@ -686,7 +748,7 @@ He’s still alive.
     onclick="
       document.getElementById('scare').style.display = 'flex';
       document.getElementById('necro_elevator').play();
-      necro_scare_attach();
+      attach_top('necro_elevator');
       ">
       NEXT
     </button>
@@ -702,8 +764,8 @@ He’s still alive.
           hide_div('scare');
           document.getElementById('fake').style.display = 'none';
           this.style.position = 'static';
-          show_section(8);
-            document.getElementById('section-8').scrollIntoView({ behavior: 'instant' });
+          show_section(10);
+            document.getElementById('section-10').scrollIntoView({ behavior: 'instant' });
             show_next_button();
             ">
               <source src="../videos/jump scare.mp4" type="video/mp4"
@@ -712,12 +774,10 @@ He’s still alive.
       </div>
     </section>
 
-    <section id="section-8" onpointerenter="
+    <section id="section-10" onpointerenter="
     play_music('ambient_nervous');">
         <div class="centertitle parallax elev_1">
-          <p class="mono">
-            It all happened so fast,
-          </p>
+         
         </div>
         <div class="centertitle parallax elev_2">
           <p class="mono">
@@ -730,9 +790,7 @@ He’s still alive.
           </p>
         </div>
         <div class="centertitle parallax elev_4">
-          <p class="mono">
-            A lesson to never let his guard down.
-          </p>
+          
         </div>
         <div class="centertitle parallax elev_5">
            <p class="mono">
@@ -742,7 +800,7 @@ He’s still alive.
     </section>
 
     <!--EMPTYDIV-->
-  <div class="half"></div>
+  <div id="next_button_padding" style="display: none;" class="half"></div>
 <a href="deadspace_part_4.html">
 <button id="next" class="save_game" style="display: none;">
     NEXT
@@ -751,7 +809,6 @@ He’s still alive.
 
 </main>
 
-<div class="half"></div>
 <footer>
 </footer>
 </body>

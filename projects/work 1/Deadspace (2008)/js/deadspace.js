@@ -2,6 +2,9 @@
 function show_section(section_number) {
         document.getElementsByTagName('section')[section_number].style.display = 'flex';
     }
+    function hide_section(section_number) {
+        document.getElementsByTagName('section')[section_number].style.display = 'none';
+    }
 function play_music(music_id) {
         document.getElementById(music_id).play();
     }
@@ -19,6 +22,8 @@ function hide_div(div_called) {
     }
 function show_next_button () {
   document.getElementById('next').style.display = "inline-block";
+  document.getElementById('next_button_padding').style.display = "inline-block";
+
 }
 
 //Prologue
@@ -134,9 +139,9 @@ function pause_all_loops() {
   document.getElementById('quarantine_necro').pause();
   document.getElementById('necro').pause();
 }
-function necro_scare_attach() {
-   document.getElementById('necro_elevator').style.position = 'fixed';
-   document.getElementById('necro_elevator').style.top = '0px';
+function attach_top(the_video) {
+   document.getElementById(the_video).style.position = 'fixed';
+   document.getElementById(the_video).style.top = '0px';
 }
 function play_elevator () {
   document.getElementById('elev_op').play();
