@@ -8,77 +8,57 @@
     <link rel="stylesheet" href="../css/deadspace_part_4.css">
     <link rel="stylesheet" href="../css/deadspace_mobile.css">
     <script src="../js/deadspace.js"></script>
-    <title>Dead Space Part 4</title>
-<script>
-    function show_section(section_number) {
-        document.getElementsByTagName('section')[section_number].style.display = 'flex';
-    }
-    function play_video(video_id) {
-        document.getElementById(video_id).play();
-    }
-    function pause_video(video_id) {
-        document.getElementById(video_id).pause();
-    }
-    function hide_div(div_called) {
-        document.getElementById(div_called).style.display = 'none';
-    }
-
-</script>
+    <title>Dead Space - Part 4</title>
 
 <audio id="ambient_workshop" src="../audio/part_4/Deadspace soundtrack 4_ Fly Me to the Aegis Seven Moon.mp3"></audio>
 <audio id="ambient_plasma" src="../audio/part_4/Deadspace soundtrack 5_ Severed Limbs Are Hazardous Waste.mp3"></audio>
 
 </head>
 <body oncontextmenu="return false" onpageshow="show_section(0); play_music('ambient_workshop');">
-  <header style="background-color: transparent;">
+  
+    <header>
     <nav>
       <ul>
         <li>
         </li>
-        <li style="background-color: transparent; filter: invert();">
-        <img src="../img/pasted file.png" width="45px" height="45px" alt="">
+        <li>
+        <img id="menu_button" src="../img/pasted file.png" width="45px" height="45px" alt=""
+        onclick="
+          document.getElementById('menu_button').style.rotate = '90deg';
+        "
+        >
         </li>
       </ul>
     </nav>
-  </header>
+    </header>
 
     <main>
     <section id="section-0">
-
         <div class="centertitle">
           <p class="mono">
-Gaining back his senses,        
+                Gaining back his senses,        
           </p>
         </div>
-
         <div class="centertitle parallax low-1_0 top-bottom-mask background-focus-left">
           <p class="mono">
-he looked beneath his feet.          
+                he looked beneath his feet.          
           </p>
         </div>
-
         <div class="half">
-
         </div>
-
         <div class="centertitle parallax low-1_1 top-mask">
-             <p class="mono panic_mono">
-A monstrous limb,
-             </p>
+            <p class="mono panic_mono">
+                There lies a hideous limb,
+            </p>
          </div>
-
          <div class="centertitle parallax low-1_2 bottom-mask">
              <p class="mono panic_mono">
-a human head,
+                and a severed human head,
              </p>
          </div>
+         <div class="">
 
-         <div class="centertitle">
-             <p class="mono panic_mono">
-and a pool of blood.
-             </p>
          </div>
-
         <!--flashback-->
          <div class="centertitle parallax flashback flash-2_1 top-mask">
 
@@ -98,40 +78,33 @@ and a pool of blood.
         <!--flashback-->
          <div class="centertitle">
             <p class="mono panic_mono">
-The mechanical doors cut off parts of the creature.
+                The mechanical doors cut off parts of the creature.
              </p>
          </div>
-
         <div class="centertitle">
              <p class="mono">
-Might’ve been a trick of the light or his mind,
+                Might’ve been a trick of the light or his mind,
              </p>
         </div>
-        <div class="centertitle parallax low-1_2 top-bottom-mask invert zoomed-500">
-            
+        <div class="centertitle parallax low-1_2 top-bottom-mask invert zoomed-500">  
          </div>
          <div class="centertitle">
              <p class="mono panic_mono">
-But the <em>thing</em> seemed to have moved ever so slightly.
+                But the <em>thing</em> seemed to have moved towards him.
              </p>
          </div>
          <div class="centertitle parallax shop-3_1 top-mask">
              <p class="mono">
-Not taking any more chances, he stepped into the room.
+                Not taking any more chances, he stepped into the room.
              </p>
          </div>
-         <div class="centertitle parallax shop-3_2 bottom-mask">
+         <div class="centertitle parallax shop-3_2">
              <p class="mono">
-Where the muffled cries of a man can be heard.
+                Where the muffled cries of a man can be heard.
              </p>
          </div>
 
-         <div class="centertitle">
-            <p class="mono">
-                First– look for anything he could use to defend himself.
-            </p>
-         </div>
-         <div class="centertitle parallax shop-3_1 background-focus-right top-mask">
+         <div class="centertitle parallax shop-3_1 background-focus-right">
             <p class="mono">
                 His eyes darted frantically in search of a weapon.
             </p>
@@ -148,7 +121,7 @@ Where the muffled cries of a man can be heard.
          </div>
          <div class="centertitle">
             <p class="mono panic_mono">
-                A gruesome scene enough to fuel nightmares.
+                A gut-wretching scene.
             </p>
          </div>
          <div class="centertitle parallax shop-3_4 top-mask">
@@ -168,38 +141,33 @@ Where the muffled cries of a man can be heard.
          </div>
          <div class="centertitle parallax shop-3_5">
             <p class="mono">
-With bloodied hands, he approached the board           
+                With bloodied hands, he approached the board and wrote:           
             </p>
          </div>
-         <div class="centertitle parallax shop-3_5">
-            <p class="mono">
- and wrote:            
-            </p>
-         </div>
-         <div class="centertitle parallax shop-3_6 no-mask">
+         <div class="centertitle parallax shop-3_6">
 
          </div>
-         <div class="centertitle">
+         <div class="half"></div>
+         <div class="centertitle" style="padding-top: 50px;">
             <p class="loudnoise">
-CUT OFF THEIR LIMBS            
+                CUT OFF THEIR LIMBS            
             </p>
          </div>
          <div>
             <p class="mono lefttitle">
-Far from his calm demeanor,
+                Far from his calm demeanor,
             </p>
          </div>
          <div>
             <p class="mono lefttitle">
-he thought of ways to kill,
+                he thought of ways to kill,
             </p>
          </div>
          <div class="centertitle">
             <p class="mono">
-Isaac picks up one of the mining tools atop the workstation.
+                Isaac picks up one of the mining tools atop the workstation.
             </p>
          </div>
-
          <div id="cutter_plasma" class="imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/plasma_cutter.webp" usemap="#plasma" alt="">
             <map name="plasma" cursor="pointer">
@@ -207,6 +175,9 @@ Isaac picks up one of the mining tools atop the workstation.
                 onclick="
                     show_section(1);
                     hide_div('cutter_plasma');
+                    document.getElementsByClassName('plasma-cutter')[0].scrollIntoView({behavior:'smooth'});
+                    document.getElementById('p-cutter').scrollIntoView({behavior:'smooth'});
+
                 "
                 alt="">
             </map>
@@ -216,9 +187,9 @@ Isaac picks up one of the mining tools atop the workstation.
     <section id="section-1">
         <div class="centertitle parallax shop-3_6_2 top-bottom-mask">
         </div>
-        <div class="half"></div>
+        <div class="half" id="p-cutter"></div>
         <div class="centertitle">
-            <img src="../img/part_4/3_shop_6_1.png" class="plasma-cutter" alt="">
+            <img src="../img/part_4/3_shop_6_1.png" class="plasma-cutter" alt="Plasma Cutter">
         </div>
          <div class="centertitle half">
             <p class="mono">
@@ -268,8 +239,9 @@ Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
             </map>
         </div>
         
-    </section id="section-2">
-    <section>
+    </section>
+
+    <section id="section-2">
         <div class="imagemap-scaling-mobile top-bottom-mask" >
             <video id="break_fuse" src="../videos/break fuse.mp4"
             onplay="
@@ -296,6 +268,7 @@ Using his RIG once again to interface with the door pads.
             </map>
         </div>
     </section>
+
     <section id="section-3">
         <div class="imagemap-scaling-mobile top-bottom-mask">
             <video id="too_late" src="../videos/too late.mp4"
@@ -369,6 +342,7 @@ He pointed the Plasma Cutter and fired,
             </video>
         </div>
     </section>
+
     <section id="section-4">
         <div class="centertitle">
             <p class="mono">
@@ -458,6 +432,7 @@ Focusing his aim on its shoulders.
             ></video>
         </div>
     </section>
+
     <section id="section-5">
         <div class="centertitle">
             <p class="mono">
@@ -540,6 +515,7 @@ he hacked its leg apart as well.
             ></video>
         </div>
     </section>
+
     <section id="section-6">
         <div class="centertitle">
             <p class="mono">
@@ -638,6 +614,7 @@ as he stomped on it <strong>like an insect.</strong>
             ></video>
         </div>
     </section>
+
     <section id="section-7">
         <div class="centertitle">
             <p class="mono">
@@ -662,7 +639,7 @@ Does it truly fit the definition of being dead?
     </section>
     
     <!--EMPTYDIV-->
-  <div class="half"></div>
+  <div class="half" id="next_button_padding"></div>
 <a href="deadspace_epilogue.html">
 <button id="next" class="save_game">
     NEXT
