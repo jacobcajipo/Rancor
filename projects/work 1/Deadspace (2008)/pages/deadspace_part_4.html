@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable = no">
     <link rel="stylesheet" href="../../../../css/root.css">
     <link rel="stylesheet" href="../css/deadspace_common.css">
     <link rel="stylesheet" href="../css/deadspace_part_4.css">
@@ -168,6 +168,11 @@
                 Isaac picks up one of the mining tools atop the workstation.
             </p>
          </div>
+         <div class="hint-container">
+            <sub>
+                click on the object to pick up.
+            </sub>
+         </div>
          <div id="cutter_plasma" class="imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/plasma_cutter.webp" usemap="#plasma" alt="">
             <map name="plasma" cursor="pointer">
@@ -224,8 +229,14 @@ Whose cries grew louder with each passing second.
         </div>
         <div class="centertitle">
             <p class="mono">
-Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
+Isaac swung the Plasma Cutter to expose the broken fuse,            
+            </p>
         </div>
+        <div class="hint-container">
+            <sub>
+                click on the fuse to break.
+            </sub>
+         </div>
         <div id="fuse_break" class="imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/fuse.webp" alt="" usemap="#fuse">
             <map name="fuse">
@@ -256,6 +267,11 @@ Isaac swung the Plasma Cutter to expose the broken fuse,            </p>
 Using his RIG once again to interface with the door pads.            
             </p>
         </div>
+        <div class="hint-container">
+            <sub>
+                click on the hologram to open doors.
+            </sub>
+         </div>
         <div id="late" class="imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/doorpad_lower.webp" alt="" usemap="#doorpad_lower">
             <map name="doorpad_lower" cursor="pointer"
@@ -305,6 +321,11 @@ He pointed the Plasma Cutter and fired,
                 document.getElementById(div_name).style.display = 'flex';
             }
         </script>
+        <div class="hint-container">
+            <sub>
+                click anywhere to fire the cutter.
+            </sub>
+         </div>
         <div id="shot_01" class="imagemap-scaling-mobile top-bottom-mask">
             <video src="../videos/shot_01.mp4"
             onclick="
@@ -374,6 +395,11 @@ He took a step back and continued firing.
 Focusing his aim on its shoulders.
             </p>
         </div>
+        <div class="hint-container">
+            <sub>
+                click on the limb to deal damage.
+            </sub>
+         </div>
         <div id="hit-01-vid" class="imagemap-scaling-mobile top-bottom-mask">
             <video id="1st-fire" src="../videos/hit_01.mp4"
             onpointermove="
@@ -454,6 +480,11 @@ Not letting go of the momentum,
 he hacked its leg apart as well.            
             </p>
         </div>
+        <div class="hint-container">
+            <sub>
+                click on the leg to deal damage.
+            </sub>
+         </div>
         <div id="hit-04-pic" class="imagemap-scaling-mobile top-bottom-mask">
             <img src="../img/part_4/hit04_map.png" usemap="#hit04_map" alt="">
             <map name="hit04_map" cursor="pointer">
@@ -552,6 +583,11 @@ Letting out a guttural scream
 as he stomped on it <strong>like an insect.</strong> 
             </p>
         </div>
+        <div class="hint-container">
+            <sub>
+                click and hold to stomp.
+            </sub>
+         </div>
         <div id="stomp_01" class="imagemap-scaling-mobile top-bottom-mask">
             <video id="1st-stomp" src="../videos/stomp_01.mp4"
             oncontextmenu="false"
@@ -574,6 +610,11 @@ as he stomped on it <strong>like an insect.</strong>
                 until the sole of his boot...
             </p></div>
         </div>
+        <div class="hint-container">
+            <sub>
+                click and hold to stomp.
+            </sub>
+         </div>
         <div id="stomp_02" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
             <video id="2nd-stomp" src="../videos/stomp_02.mp4"
             oncontextmenu="false"
@@ -594,8 +635,14 @@ as he stomped on it <strong>like an insect.</strong>
         <div id="riddled" class="hidden-div">
             <div class="centertitle"><p class="mono panic_mono">
                 was riddled with flesh matter.
-            </p></div>
-        </div>        
+            </p>
+            </div>
+        </div> 
+        <div class="hint-container">
+            <sub>
+                click and hold to stomp.
+            </sub>
+         </div>       
         <div id="stomp_03" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
             <video id="3rd-stomp" src="../videos/stomp_03.mp4"
             oncontextmenu="false"
@@ -648,9 +695,6 @@ Does it truly fit the definition of being dead?
     
     </main>
 
-    <div class="half">
-        
-    </div>
     <footer>
 
     </footer>
