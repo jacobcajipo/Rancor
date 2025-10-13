@@ -44,7 +44,7 @@
                 he looked beneath his feet.          
           </p>
         </div>
-        <div class="half">
+        <div class="">
         </div>
         <div class="centertitle parallax low-1_1 top-mask">
             <p class="mono panic_mono">
@@ -81,12 +81,12 @@
                 The mechanical doors cut off parts of the creature.
              </p>
          </div>
-        <div class="centertitle">
+        <div class="centertitle parallax low-1_2 top-mask invert">
              <p class="mono">
                 Might’ve been a trick of the light or his mind,
              </p>
         </div>
-        <div class="centertitle parallax low-1_2 top-bottom-mask invert zoomed-500">  
+        <div class="centertitle parallax low-1_2 bottom-mask invert zoomed-500">  
          </div>
          <div class="centertitle">
              <p class="mono panic_mono">
@@ -156,21 +156,13 @@
          <div>
             <p class="mono lefttitle">
                 Far from his calm demeanor,
-            </p>
-         </div>
-         <div>
-            <p class="mono lefttitle">
                 he thought of ways to kill,
             </p>
          </div>
-         <div class="centertitle">
-            <p class="mono">
-                Isaac picks up one of the mining tools atop the workstation.
-            </p>
-         </div>
+         <!--hint 0-->
          <div class="hint-container">
             <sub>
-                click on the object to pick up.
+                click on the Plasma Cutter to pick it up.
             </sub>
          </div>
          <div id="cutter_plasma" class="imagemap-scaling-mobile top-bottom-mask">
@@ -182,7 +174,7 @@
                     hide_div('cutter_plasma');
                     document.getElementsByClassName('plasma-cutter')[0].scrollIntoView({behavior:'smooth'});
                     document.getElementById('p-cutter').scrollIntoView({behavior:'smooth'});
-
+                    document.getElementsByClassName('hint-container')[0].style.display = 'none';
                 "
                 alt="">
             </map>
@@ -191,6 +183,9 @@
 
     <section id="section-1">
         <div class="centertitle parallax shop-3_6_2 top-bottom-mask">
+            <p class="mono">
+                Isaac picks up one of the mining tools atop the workstation.
+            </p>
         </div>
         <div class="half" id="p-cutter"></div>
         <div class="centertitle">
@@ -227,11 +222,7 @@ He can now aid the helpless man trapped in the next room,
 Whose cries grew louder with each passing second.
             </p>
         </div>
-        <div class="centertitle">
-            <p class="mono">
-Isaac swung the Plasma Cutter to expose the broken fuse,            
-            </p>
-        </div>
+        <!--Hint 1-->
         <div class="hint-container">
             <sub>
                 click on the fuse to break.
@@ -245,6 +236,7 @@ Isaac swung the Plasma Cutter to expose the broken fuse,
                     show_section(2);
                     play_video('break_fuse');
                     hide_div('fuse_break');
+                    document.getElementsByClassName('hint-container')[1].style.display = 'none';
                 "
                 >
             </map>
@@ -264,9 +256,10 @@ Isaac swung the Plasma Cutter to expose the broken fuse,
         </div>
         <div id="doorpad" class="centertitle">
             <p class="mono">
-Using his RIG once again to interface with the door pads.            
+                Using his RIG once again to interface with the door pads.            
             </p>
         </div>
+        <!--Hint 2-->
         <div class="hint-container">
             <sub>
                 click on the hologram to open doors.
@@ -279,13 +272,14 @@ Using his RIG once again to interface with the door pads.
             show_section(3);
             hide_div('late');
             play_video('too_late');
+            document.getElementsByClassName('hint-container')[2].style.display = 'none';
             ">
                 <area shape="circle" coords="407,250,70" href="#section-3" alt="">
             </map>
         </div>
     </section>
 
-    <section id="section-3">
+    <section id="section-3" style="background-color: rgb(100, 0, 0);">
         <div class="imagemap-scaling-mobile top-bottom-mask">
             <video id="too_late" src="../videos/too late.mp4"
             onplay="
@@ -296,24 +290,10 @@ Using his RIG once again to interface with the door pads.
             "
             ></video>
         </div>
-        <div id="already_dead" class="centertitle">
-            <p class="mono">
-                But he was a second too late.
-            </p>
-        </div>
-        <div class="centertitle">
+        <div id="already_dead" class="centertitle whited">
             <p class="mono panic_mono">
+                He was a second too late.
                 The man was already dead.
-            </p>
-        </div>
-        <div class="centertitle">
-            <p class="mono">
-Feeling the vibrations of its scream,
-            </p>
-        </div>
-        <div class="centertitle">
-            <p class="mono">
-He pointed the Plasma Cutter and fired,
             </p>
         </div>
         <script>
@@ -321,6 +301,7 @@ He pointed the Plasma Cutter and fired,
                 document.getElementById(div_name).style.display = 'flex';
             }
         </script>
+        <!--Hint 3-->
         <div class="hint-container">
             <sub>
                 click anywhere to fire the cutter.
@@ -329,7 +310,8 @@ He pointed the Plasma Cutter and fired,
         <div id="shot_01" class="imagemap-scaling-mobile top-bottom-mask">
             <video src="../videos/shot_01.mp4"
             onclick="
-                this.play();                
+                this.play();
+            document.getElementsByClassName('hint-container')[3].style.display = 'none';
                 "
             onended="
                 show_div('shot_02');
@@ -364,37 +346,20 @@ He pointed the Plasma Cutter and fired,
         </div>
     </section>
 
-    <section id="section-4">
-        <div class="centertitle">
-            <p class="mono">
-Trying his best to aim at its limb,            
+    <section id="section-4" style="background-color: rgb(100, 0, 0);">
+        <div class="centertitle whited">
+            <p class="mono panic_mono">
+                It sounded easy on his head,   
+                He failed to take account of its erratic movements.         
             </p>
         </div>
-        <div class="centertitle">
-            <p class="mono">
-it sounded easy on his head,            
+        <div class="centertitle whited">
+            <p class="mono panic_mono">
+                Hyperventilating, his hands began to feel cold.
+                Focusing his aim on its shoulders.
             </p>
         </div>
-        <div class="centertitle whited top-bottom-mask">
-            <p class="mono">
-He failed to take account of its erratic movements.
-            </p>
-        </div>
-        <div class="">
-            <p class="mono panic_mono lefttitle">
-His hands and feet began to feel cold.
-            </p>
-        </div>
-        <div class="">
-            <p class="mono panic_mono lefttitle">
-He took a step back and continued firing.            
-            </p>
-        </div>
-        <div class="">
-            <p class="mono panic_mono lefttitle">
-Focusing his aim on its shoulders.
-            </p>
-        </div>
+        <!--Hint 4-->
         <div class="hint-container">
             <sub>
                 click on the limb to deal damage.
@@ -454,32 +419,25 @@ Focusing his aim on its shoulders.
             onended="
             show_section(5)
             document.getElementById('section-5').scrollIntoView({behavior:'smooth'});
+            document.getElementsByClassName('hint-container')[4].style.display = 'none';
             "
             ></video>
         </div>
     </section>
 
-    <section id="section-5">
-        <div class="centertitle">
-            <p class="mono">
-After multiple focused shots,          
+    <section id="section-5" style="background-color: rgb(100, 0, 0);">
+        <div class="centertitle whited">
+            <p class="mono panic_mono">
+                Its arm flicked away from the body.            
             </p>
         </div>
-        <div class="centertitle">
-            <p class="mono">
-Its whole arm flicked away from the body.            
+        <div class="centertitle whited">
+            <p class="mono panic_mono">
+                Not letting go of the momentum,
+                he hacked its leg apart as well.            
             </p>
         </div>
-        <div class="">
-            <p class="mono lefttitle">
-Not letting go of the momentum,          
-            </p>
-        </div>
-        <div class="">
-            <p class="mono panic_mono lefttitle">
-he hacked its leg apart as well.            
-            </p>
-        </div>
+        <!--Hint 5-->
         <div class="hint-container">
             <sub>
                 click on the leg to deal damage.
@@ -542,47 +500,36 @@ he hacked its leg apart as well.
             onended="
                 show_section(6);
                 document.getElementById('section-6').scrollIntoView({behavior:'smooth'});
+                document.getElementsByClassName('hint-container')[5].style.display = 'none';
             "
             ></video>
         </div>
     </section>
 
-    <section id="section-6">
-        <div class="centertitle">
-            <p class="mono">
-It fell like a log of lumber,
-            </p>
-        </div>
-        <div class="centertitle">
-            <p class="mono">
-where it slobbered on the floor.
-            </p>
-        </div>
-        <div class="centertitle parallax no-clip-0_0 top-bottom-mask">
+    <section id="section-6" style="background-color: rgb(100, 0, 0);">
+        <div class="centertitle whited">
             <p class="mono panic_mono">
-Eventually, he ran out of cartridges,
+                It fell down like lumber,
+                where it slobbered on the floor.
             </p>
         </div>
-        <div class="centertitle">
+        <div class="centertitle parallax no-clip-0_0 top-mask">
             <p class="mono panic_mono">
-but the creature was still moving.
+                Eventually, he ran out of cartridges,
+                but the creature was still moving.
             </p>
         </div>
-        <div class="centertitle parallax no-clip-0_1 top-bottom-mask">
+        <div class="centertitle parallax no-clip-0_1 bottom-mask">
             <p class="mono panic_mono">
-He walked right in front of it in desperation,
+                He walked right in front of it in desperation,
             </p>
         </div>
-        <div class="centertitle">
+        <div class="centertitle whited">
             <p class="mono panic_mono">
-Letting out a guttural scream
+                Letting out a <strong>guttural</strong>  scream
             </p>
         </div>
-        <div class="centertitle">
-            <p class="mono panic_mono">
-as he stomped on it <strong>like an insect.</strong> 
-            </p>
-        </div>
+        <!--Hint 6-->
         <div class="hint-container">
             <sub>
                 click and hold to stomp.
@@ -602,19 +549,17 @@ as he stomped on it <strong>like an insect.</strong>
                 show_div('sole');
                 document.getElementById('sole').scrollIntoView({behavior:'smooth'});
                 show_div('stomp_02');
+                document.getElementsByClassName('hint-container')[6].style.display = 'none';
                 "
             ></video>
         </div>
         <div id="sole" class="hidden-div">
-            <div class="centertitle"><p class="mono panic_mono">
-                until the sole of his boot...
-            </p></div>
-        </div>
-        <div class="hint-container">
-            <sub>
-                click and hold to stomp.
-            </sub>
-         </div>
+            <div class="centertitle whited" style="width: 100%; margin: 0; padding: 0;">
+                <p class="mono panic_mono">
+                    He stomped until the sole of his boot...
+                </p>
+            </div>
+        </div> 
         <div id="stomp_02" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
             <video id="2nd-stomp" src="../videos/stomp_02.mp4"
             oncontextmenu="false"
@@ -633,16 +578,12 @@ as he stomped on it <strong>like an insect.</strong>
             ></video>
         </div>
         <div id="riddled" class="hidden-div">
-            <div class="centertitle"><p class="mono panic_mono">
+            <div class="centertitle whited" style="width: 100%; margin: 0; padding: 0;">
+                <p class="mono panic_mono">
                 was riddled with flesh matter.
-            </p>
+                </p>
             </div>
-        </div> 
-        <div class="hint-container">
-            <sub>
-                click and hold to stomp.
-            </sub>
-         </div>       
+        </div>  
         <div id="stomp_03" class="hidden-div imagemap-scaling-mobile top-bottom-mask">
             <video id="3rd-stomp" src="../videos/stomp_03.mp4"
             oncontextmenu="false"
@@ -663,30 +604,23 @@ as he stomped on it <strong>like an insect.</strong>
     </section>
 
     <section id="section-7">
-        <div class="centertitle">
+        <div class="centertitle whited">
             <p class="mono">
                 It was left with neither limbs nor a head,
             </p>
         </div>
         <div class="centertitle parallax carcass-0_1 top-bottom-mask">
-            <p class="mono panic_mono">
-                just another carcass in a slaughterhouse.
-            </p>
+           
         </div>
         <div class="centertitle">
-            <p class="mono">
-But if cutting off the limbs only meant disabling it,
-            </p>
-        </div>
-        <div class="centertitle whited top-bottom-mask">
             <p class="mono panic_mono">
-Does it truly fit the definition of being dead?
-            </p>
+                Like a carcass in a slaughterhouse.
+            </p>        
         </div>
     </section>
     
     <!--EMPTYDIV-->
-  <div class="half" id="next_button_padding"></div>
+  <div class="half" id="next_button_padding" style="display: none;"></div>
 <a href="deadspace_epilogue.html">
 <button id="next" class="save_game">
     NEXT
