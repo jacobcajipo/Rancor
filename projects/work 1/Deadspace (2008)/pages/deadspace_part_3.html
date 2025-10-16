@@ -579,7 +579,7 @@
           play_music('isaac_pain');
         "
         onplaying="
-          pause_music('ambient_chase');
+          //pause_music('ambient_chase');
           pause_music('effect_Fslasher');
           pause_music('effect_Mslasher');
           attach_top('elevator_door');
@@ -587,7 +587,7 @@
           document.getElementsByClassName('crossfire-4-11')[0].scrollIntoView({behavior:'instant'});
         "
         onplay="
-          pause_music('ambient_chase');
+          //pause_music('ambient_chase');
           pause_music('effect_Fslasher');
           pause_music('effect_Mslasher');
           document.getElementsByClassName('crossfire-4-11')[0].scrollIntoView({behavior:'instant'});
@@ -595,15 +595,15 @@
         onended="
           hide_section(7);
           show_section(8);
+          pause_music('ambient_chase');
           play_video('death');">
           </video>
       </div>
     </section>
 
     <!--Reload last checkpoint-->
-    <section id="section-8" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
-      <video id="death" src="../videos/Part 3/death.mp4" width="fit-screen" height="100%"
-      style="margin: auto;"
+    <section id="section-8" class="whited" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%;">
+      <video id="death" class="whited" src="../videos/Part 3/death.mp4" width="100%" style="margin:auto" height="100%"
       onplay="
         document.getElementById('death').style.display = 'inline-block';
         attach_top('death');
@@ -613,14 +613,14 @@
         document.getElementById('death').style.display = 'none';
         ">
       </video>
-      <div class="half">
-        <div class="hint-container">
-            <sub>
+      <div class="half whited">
+        <div class="hint-container" style="background-color: transparent;">
+            <sub style="color: yellow;">
               Hint: Click anywhere on the elevator to open.
             </sub>
           </div>
       </div>
-      <div id="retry">
+      <div id="retry" class="whited">
          <button class="save_game"
          onclick="
           hide_section(6);

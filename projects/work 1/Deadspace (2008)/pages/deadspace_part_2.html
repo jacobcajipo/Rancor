@@ -591,11 +591,6 @@ pause_music('broken_light');
         he went straight into the control room on his own.
       </p>
     </div>
-    <div class="centertitle">
-      <p class="mono">
-        separating himself from the others.
-      </p>
-    </div>
     <!--DOOR PAD - SECURITY-->
     <div class="hint-container">
       <sub>
@@ -611,12 +606,13 @@ pause_music('broken_light');
       <area shape="circle" coords="400, 230,160" 
       href="#security" id="security_area" alt=""
       onclick="
-      show_section(4);
-      document.getElementsByClassName('hint-container')[4].style.display = 'none';
-      hide_div('door_pad_security');
-      show_next_button();
       play_music('effect_doors');
-      document.getElementsByClassName('blood-6_1')[0].scrollIntoView({behavior:'smooth'});">
+      show_section(4);
+      hide_div('door_pad_security');
+      document.getElementsByClassName('hint-container')[4].style.display = 'none';
+      document.getElementsByClassName('blood-6_1')[0].scrollIntoView({behavior:'smooth'});
+      show_next_button();
+      ">
     </map>
   </div>
     </section>
