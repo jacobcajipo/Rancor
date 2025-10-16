@@ -10,11 +10,22 @@
     <script src="../js/deadspace.js"></script>
     <title>Dead Space - Part 4</title>
 
+<audio id="ambient_00"  loop src="../audio/part_4/ambient_00.mp3"
+onplaying="play_music('effect_cry');"></audio>
+<audio id="ambient_01"  loop src="../audio/part_4/ambient_01.mp3"
+onplaying="play_music('effect_cry');"></audio>
+<audio id="ambient_02"  loop src="../audio/part_4/ambient_02.mp3"
+onplaying="pause_music('effect_cry');"></audio>
+<audio id="ambient_03"  loop src="../audio/part_4/ambient_03.mp3"
+onplaying="pause_music('effect_cry');"></audio>
 <audio id="ambient_workshop" src="../audio/part_4/Deadspace soundtrack 4_ Fly Me to the Aegis Seven Moon.mp3"></audio>
 <audio id="ambient_plasma" src="../audio/part_4/Deadspace soundtrack 5_ Severed Limbs Are Hazardous Waste.mp3"></audio>
+<audio id="effect_cry" loop src="../audio/part_4/effect_cry.mp3"></audio>
+<audio id="effect_cry_02" loop src="../audio/part_4/effect_cry_02.mp3"
+onplaying="pause_music('effect_cry');"></audio>
 
 </head>
-<body oncontextmenu="return false" onpageshow="show_section(0); play_music('ambient_workshop');">
+<body oncontextmenu="return false" onpageshow="show_section(0); play_music('ambient_00');">
   
     <header>
     <nav>
@@ -172,6 +183,10 @@
                 <area shape="square" coords="340,160,450,290" href="#section-1" 
                 onclick="
                     show_section(1);
+                    play_music('ambient_01');
+                    pause_music('ambient_00');
+                    pause_music('effect_cry');
+                    play_music('effect_cry_02');
                     hide_div('cutter_plasma');
                     document.getElementsByClassName('plasma-cutter')[0].scrollIntoView({behavior:'smooth'});
                     document.getElementById('p-cutter').scrollIntoView({behavior:'smooth'});
@@ -270,6 +285,10 @@
             <map name="doorpad_lower" cursor="pointer"
             onclick="
             show_section(3);
+            pause_music('ambient_00');
+            pause_music('ambient_01');
+            play_music('ambient_02');
+            pause_music('effect_cry_02');
             hide_div('late');
             play_video('too_late');
             document.getElementsByClassName('hint-container')[2].style.display = 'none';
@@ -595,6 +614,10 @@
             "
             onended="
                 show_section(7);
+                pause_music('ambient_00');
+                pause_music('ambient_01');
+                pause_music('ambient_02');
+                play_music('ambient_03');
                 document.getElementById('section-7').scrollIntoView({behavior:'smooth'});
                 show_next_button();
                 "
@@ -603,7 +626,7 @@
     </section>
 
     <section id="section-7">
-        <div class="centertitle whited">
+        <div class="centertitle">
             <p class="mono">
                 Without limbs nor a head,
                 Stripped of any semblance of its humanity,
