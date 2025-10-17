@@ -4,6 +4,7 @@ main section.cover_art {
   background-image: none;
   background-size: cover;
   height: 30vh;
+  background-position: 80% 0;
   }
 
   main section.cover_art div {
@@ -38,22 +39,28 @@ main section.summary {
     
   text-decoration: none;
   color: white;
-  height: 120px;
-  width: 95%;
-  padding-left: 2vw;
-  margin: auto;
+  height: 80vh;
+  width: 100%;
+  text-shadow: 2px 2px 1px black;
+  
+  margin: 10vh 0;
+  font-family: rancor;
+  font-size: 1.2em;
+  
+  background-color: rgba(100, 100, 100, .5);
   display: inline-block;
   align-content: center;
   justify-content: center;
+  text-align: center;
   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: black;
+    background-color: transparent;
   }
   main section.parts div a:hover {
   background-color: red;
-  border: 0.1px red solid;
+  //border: 0.1px red solid;
   color:white;
 }
 /*TRAILER*/
