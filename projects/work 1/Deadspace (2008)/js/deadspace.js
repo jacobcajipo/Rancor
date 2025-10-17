@@ -26,6 +26,23 @@ function show_next_button () {
 
 }
 
+//side menu controller
+function control_side_menu() {
+  if (document.getElementById('hidden-menu').style.display === 'flex')
+        {
+            document.getElementById('menu-controller').style.backgroundColor = 'transparent';
+            document.getElementById('menu_button').style.rotate = '180deg';
+            document.getElementById('hidden-menu').style.display = 'none';
+
+        }
+            else
+        {
+            document.getElementById('menu-controller').style.backgroundColor = 'white';
+            document.getElementById('menu_button').style.rotate = '90deg';
+            document.getElementById('hidden-menu').style.display = 'flex';
+        }
+}
+
 //Prologue
 function play_theme() {
   document.getElementById('theme').play();

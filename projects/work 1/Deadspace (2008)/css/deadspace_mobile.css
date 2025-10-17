@@ -709,3 +709,18 @@ div.asteroids {
 .safe-7-3 {
   background-image: url(../img/part_3/7_safe_3.webp);
 }
+/*Prologue background images*/
+.deadspace-2008 {
+  background-image: url(../img/Promo/deadspace1_hero.jpg);
+}
+ .deadspace-2011 {
+    background-image: url(../img/Promo/deadspace2_hero.webp);
+    background-position: 90% 0;
+}
+.deadspace-2013 {
+    background-image: url(../img/Promo/deadspace3_hero.png);
+    background-position: 40% 0;
+}
+.deadspace-2023 {
+    background-image: url(../img/Promo/deadspaceR_hero.png);
+}

@@ -14,19 +14,34 @@
 
   <header>
     <nav>
-      <ul>
-        <li>
-        </li>
-        <li>
+        <li id="menu-controller">
         <img id="menu_button" src="../img/pasted file.png" width="45px" height="45px" alt=""
         onclick="
-          document.getElementById('menu_button').style.rotate = '90deg';
+            control_side_menu();
         "
         >
         </li>
+      <ul>
+        <li id="hidden-menu"
+        style="
+        background-color: black;
+        ">
+            <a href="./deadspace_prologue.html">Prologue</a>
+            <a href="./deadspace_part_1.html">Part 1</a>
+            <a style="background-color: #00ffff;"  href="./deadspace_part_2.html">Part 2</a>
+            <a href="./deadspace_part_3.html">Part 3</a>
+            <a href="./deadspace_part_4.html">Part 4</a>
+            <a href="./deadspace_epilogue.html">Promotion</a>
+
+            <br><br>
+            <hr>
+            <a href="../deadspace.html">Exit to Main Menu</a>
+
+        </li>
+        
       </ul>
     </nav>
-  </header>
+    </header>
 
 <audio>
 <audio id="ambient_ishimura" src="../audio/part_2/wreck.mp3" loop></audio>

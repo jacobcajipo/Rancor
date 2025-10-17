@@ -16,6 +16,38 @@
     </style>
 </head>
 <body onpageshow="show_section(0);show_section(1);show_section(2);show_section(3);show_section(4);show_section(5)">
+    
+    <header>
+    <nav>
+        <li id="menu-controller">
+        <img id="menu_button" src="../img/pasted file.png" width="45px" height="45px" alt=""
+        onclick="
+            control_side_menu();
+        "
+        >
+        </li>
+      <ul>
+        <li id="hidden-menu"
+        style="
+        background-color: black;
+        ">
+            <a href="./deadspace_prologue.html">Prologue</a>
+            <a href="./deadspace_part_1.html">Part 1</a>
+            <a href="./deadspace_part_2.html">Part 2</a>
+            <a href="./deadspace_part_3.html">Part 3</a>
+            <a href="./deadspace_part_4.html">Part 4</a>
+            <a style="background-color: #00ffff;"  href="./deadspace_epilogue.html">Promotion</a>
+
+            <br><br>
+            <hr>
+            <a href="../deadspace.html">Exit to Main Menu</a>
+
+        </li>
+        
+      </ul>
+    </nav>
+    </header>
+    
     <main>
     <section>
         <div class="centertitle">
@@ -43,116 +75,103 @@
         <div class=""></div>
     </section>
     <section>
-        <style>
-            .deadspace-2008 {
-                background-image: url(../img/Promo/deadspace1_hero.jpg);
-            }
-        </style>
-        <div class="parallax deadspace-2008 centertitle half">
+        <div class="parallax deadspace-2008 centertitle half top-mask">
         </div>
         <div class="parallax deadspace-2008 centertitle half">
         <img style="width: 80%;" class="max-width-fix image-full-height" src="../img/Promo/deadspace_logo.png" alt="">
         </div>
-        <div class="parallax centertitle deadspace-2008" style="display: flex; flex-direction: column;">
+        <div class="parallax centertitle deadspace-2008 bottom-mask" style="display: flex; flex-direction: column;">
         <p class="mono" style="background-color: rgba(0, 0, 0, .5); min-height: 30vh; min-width: 90%;">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
         </p>
         <hr>
-        <button>
+        <button class="puchase-button" >
             <a target="_blank" href="https://www.ea.com/games/dead-space/dead-space-classic">
                 Purchase Dead Space (2008)
             </a>
             </button>
         </div>
-        <div class="parallax deadspace-2008 centertitle half">
-            <iframe width="90%" height="fit-content" src="https://www.youtube.com/embed/OyxL0KQB2J0?si=zxuZaFFDhQtAQfey" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        </div>
-        <div class="parallax deadspace-2008 centertitle half">
+        <div class="half">
+        </div>
+        <div class="parallax deadspace-2008 centertitle" style="width: 100%;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OyxL0KQB2J0?si=zxuZaFFDhQtAQfey" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>        
+        </div>
+        <div class="half">
         </div>
     </section>
     <section>
-        <style>
-            .deadspace-2011 {
-                background-image: url(../img/Promo/deadspace2_hero.webp);
-                background-position: 90% 0;
-            }
-        </style>
-        <div class="parallax deadspace-2011 centertitle half">
+        <div class="parallax deadspace-2011 centertitle half top-mask">
         </div>
         <div class="image-full-height parallax deadspace-2011 centertitle half">
         <img style="width: 80%;" class="max-width-fix" src="../img/Promo/deadspace2_logo.png" alt="">
         </div>
-        <div class="parallax centertitle deadspace-2011" style="display: flex; flex-direction: column;">
+        <div class="parallax centertitle deadspace-2011 bottom-mask" style="display: flex; flex-direction: column;">
         <p class="mono" style="background-color: rgba(0, 0, 0, .5); min-height: 30vh; min-width: 90%;">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
         </p>
         <hr>
-        <button>
+        <button class="puchase-button" >
         <a target="_blank" href="https://www.ea.com/games/dead-space/dead-space-classic">
             Purchase Dead Space 2 (2011)
         </a>
         </button>
         </div>
-        <div class="parallax deadspace-2011 centertitle half">
-        <iframe width="90%" height="fit-content" src="https://www.youtube.com/embed/776fi2I8e6U?si=JjQJyY6ADdzyOmmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="half">
         </div>
-        <div class="parallax deadspace-2011 centertitle half">
+        <div class="parallax deadspace-2011 centertitle" style="width: 100%;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/776fi2I8e6U?si=JjQJyY6ADdzyOmmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="half">
         </div>
     </section>
     <section>
-        <style>
-            .deadspace-2013 {
-                background-image: url(../img/Promo/deadspace3_hero.png);
-                background-position: 40% 0;
-            }
-        </style>
-        <div class="parallax deadspace-2013 centertitle half">
+        <div class="parallax deadspace-2013 centertitle half top-mask">
         </div>
         <div class="parallax deadspace-2013 centertitle half image-full-height">
         <img style="width: 80%;" class="max-width-fix" src="../img/Promo/deadspace3_logo.png" alt="">
         </div>
-        <div class="parallax centertitle deadspace-2013" style="display: flex; flex-direction: column;">
+        <div class="parallax centertitle deadspace-2013 bottom-mask" style="display: flex; flex-direction: column;">
         <p class="mono" style="background-color: rgba(0, 0, 0, .5); min-height: 30vh; min-width: 90%;">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
         </p>
         <hr>
-        <button>
+        <button class="puchase-button" >
         <a target="_blank" href="https://www.ea.com/games/dead-space/dead-space-classic">
             Purchase Dead Space 3 (2013)
         </a>
         </button>
         </div>
-        <div class="parallax deadspace-2013 centertitle half">
-        <iframe width="90%" height="fit-content" src="https://www.youtube.com/embed/zdcLe8ZU6ZM?si=Ca2WCMz2a9sbQMBO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="half">
         </div>
-        <div class="parallax deadspace-2013 centertitle half">
+        <div class="parallax deadspace-2013 centertitle" style="width: 100%;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/zdcLe8ZU6ZM?si=Ca2WCMz2a9sbQMBO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="half">
         </div>
     </section>
     <section>
-        <style>
-            .deadspace-2023 {
-                background-image: url(../img/Promo/deadspaceR_hero.png);
-            }
-        </style>
-        <div class="parallax deadspace-2023 centertitle half">
+        <div class="parallax deadspace-2023 centertitle half top-mask">
         </div>
         <div class="parallax deadspace-2023 centertitle half">
         <img style="width: 80%;" class="max-width-fix image-full-height" src="../img/Promo/deadspaceR_logo.png" alt="">
         </div>
-        <div class="parallax centertitle deadspace-2023" style="display: flex; flex-direction: column;">
+        <div class="parallax centertitle deadspace-2023 bottom-mask" style="display: flex; flex-direction: column;">
         <p class="mono" style="background-color: rgba(0, 0, 0, .5); min-height: 30vh; min-width: 90%;">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
         </p>
         <hr>
-        <button>
+        <button class="puchase-button" >
         <a target="_blank" href="https://www.ea.com/games/dead-space/dead-space-classic">
             Purchase Dead Space Remake (2023)
         </a>
         </button>
         </div>
-        <div class="parallax deadspace-2023 centertitle half">
-        <iframe width="90%" height="fit-content" src="https://www.youtube.com/embed/C1yiuM7blIw?si=o2FLb9P8mA70UnEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="half">
         </div>
-        <div class="parallax deadspace-2023 centertitle half">
+        <div class="parallax deadspace-2023 centertitle style="width: 100%;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C1yiuM7blIw?si=o2FLb9P8mA70UnEM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="half">
         </div>
     </section>
     <div>
